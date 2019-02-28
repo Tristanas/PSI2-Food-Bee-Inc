@@ -12,7 +12,7 @@ Laboratorinis darbas
   	Vilius Minkevičius
 	
 
-Vilnius, 2018
+Vilnius, 2019
 
 # 1. Reikalavimai
 

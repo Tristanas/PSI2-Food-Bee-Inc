@@ -50,7 +50,14 @@ Vilnius, 2018
 
 ## Žodynas
 
-## Klasių diagrama
+## Pradinė klasių diagrama
+![Klasių diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Class%20diagram.jpg)
+
+
+Klases gruopuosime į diagramas pagal šias pagrindines esybes:
+ - naudotojas
+ - produkto tiekėjas
+ 
 
 # 3. Užduotys
 

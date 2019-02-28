@@ -6,10 +6,10 @@ Laboratorinis darbas
 
 	Darbą atliko:
 	Manfredas Šiurkus
-  Edvinas Šmita
-  Teodoras Šiaulys
-  Tomas Mikna
-  Vilius Minkevičius
+  	Edvinas Šmita
+  	Teodoras Šiaulys
+  	Tomas Mikna
+  	Vilius Minkevičius
 	
 
 Vilnius, 2018
@@ -55,6 +55,8 @@ Vilnius, 2018
 # 3. Užduotys
 
 ## Pradinė užduočių diagrama
+
+![užduočių diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/UC-diagrama.jpg "Užduočių diagrama")
 
 ## Užduočių scenarijų tekstai
 

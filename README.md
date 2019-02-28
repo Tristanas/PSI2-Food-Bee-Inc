@@ -23,7 +23,7 @@ Patikslinti užsakovo poreikius. Detalizuoti pasirinktu formatu (nurodymose pate
  - Skirstyti į paketus:
   - UC scenarijus
   - klasių diagramas
-  - reikalavimus**?**
+  - reikalavimus **?**
 
 Kai dirbsim gyvai, diskutuojame visi, bet pakeitimus daro atitinkamose vietose atsakingi žmonės. Tarkime, nusprendėme pakeisti alternatyvų scenarijų, pildo Vilius arba Manfredas. Pastebėjome, kad reikia keisti DS modelyje kažką, Tomas ar Edvinas
 

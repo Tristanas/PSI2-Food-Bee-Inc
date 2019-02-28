@@ -60,3 +60,26 @@ Vilnius, 2018
 
 ## Užduočių scenarijų tekstai
 
+## Pavyzdinis reikalavimas
+
+Padarytas remiantis reikalavimu: "2. Pranešti dėl atitinkamų produktų galiojimo laiko pabaigos;"
+Gali būti, kad reikalavimas yra klaidingai suprastas, kadangi dar nepasitikslinome jo.
+
+Jei tai nėra reikalavimas įvesti ar pakeisti galiojimo laiką, kyla tokie klausimai:
+ - Ką reiškia galiojimo laiko pabaiga? Tai, kad produktas dabartiniu metu nebegalioja? 
+ - Tada vartotojas turi galimybę pranešti, kad produktas baigė galioti? 
+ - Ką tada gali padaryti sistema? Kviesti, ką nors išvežti nustojusius galioti produktus?
+
+Taip pat reikia dar pasitikslinti UC formatą. 
+
+### Produktų galiojimo laiko redagavimas:
+Vartotojas lange „Mano produktai“ esančiame sąraše pažymi produktą, kurio galiojimo laikas nenurodytas arba klaidingas. Tada jis paspaudžia mygtuką „redaguoti“. Sistema parodo redagavimo langą. Vartotojas įveda jam žinomą galiojimo laiką. Įvedęs paspaudžia „patvirtinti“ arba apsigalvoja ir spaudžia „atšaukti“. Patvirtinus pokyčius sistema atnaujina parinkto produkto galiojimo laiką (minėti kreipimąsi į duomenų bazę?), grąžina vartotoją į produktų langą. Sąraše vartotojas mato pakeitimą.
+
+#### Alternatyvūs scenarijai: (nebaigta pildyti)
+Redagavimo lange vartotojas paspaudžia „atšaukti“. Visi pokyčiai panaikinami, sistema grąžina vartotoją į „Mano produktai“ langą.
+
+Jei vartotojas įveda galiojimo laiką, pagal kurį produktas jau nustojęs galioti...
+
+#### Grafinės vartotojo sąsajos eskizas:
+
+![Mano produktai](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Mano%20produktai%20GUI.jpg "'Mano produktai langas'")

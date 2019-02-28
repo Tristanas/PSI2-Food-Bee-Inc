@@ -78,7 +78,9 @@ Vartotojas lange „Mano produktai“ esančiame sąraše pažymi produktą, kur
 #### Alternatyvūs scenarijai: (nebaigta pildyti)
 Redagavimo lange vartotojas paspaudžia „atšaukti“. Visi pokyčiai panaikinami, sistema grąžina vartotoją į „Mano produktai“ langą.
 
-Jei vartotojas įveda galiojimo laiką, pagal kurį produktas jau nustojęs galioti...
+Jei vartotojas įveda galiojimo laiką, pagal kurį produktas jau nustojęs galioti... (Sistema ką nors daro su baigusiais galioti produktais?)
+
+Jei keičiamas produktas, kurį atsiuntė Partneris ir jis buvo patvirtinęs galiojimo laiką.... (siunčiamas pranešimas dėl klaidos?)
 
 #### Grafinės vartotojo sąsajos eskizas:
 

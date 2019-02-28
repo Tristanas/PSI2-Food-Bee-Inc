@@ -54,7 +54,7 @@ Vilnius, 2018
 ![Klasių diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Class%20diagram.jpg)
 
 
-Klases gruopuosime į diagramas pagal šias pagrindines esybes:
+Klases grupuosime į diagramas pagal šias pagrindines esybes:
  - naudotojas
  - produkto tiekėjas
  

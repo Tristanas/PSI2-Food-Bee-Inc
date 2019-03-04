@@ -1,6 +1,6 @@
 # Esminės nuorodos:
-[Užsakovo reikalavimai - per pratybas 03-05 dėsim į repozitorijos dokumentą, iki tol dirbame google diske, kartu.](https://docs.google.com/document/d/1OK8YH0PFO4UR0oJfQ5bHP2LUE-6mTf3Ih-gsRSJ5he0/edit)
-[Dokumentas, kurį įteiksime pratybų vedėjai prieš atsiskaitymą.](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Dokumentas.md)
+ - [Užsakovo reikalavimai - per pratybas 03-05 dėsim į repozitorijos dokumentą, iki tol dirbame google diske, kartu.](https://docs.google.com/document/d/1OK8YH0PFO4UR0oJfQ5bHP2LUE-6mTf3Ih-gsRSJ5he0/edit)
+ - [Dokumentas, kurį įteiksime pratybų vedėjai prieš atsiskaitymą.](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Dokumentas.md)
 
 # Kitas susitikimas:
 03-07 prieš paskaitą.
@@ -47,3 +47,8 @@ Paskaitose dėstytojas kartą minėjo, kad patogu turėti repozitorijoje (MagicD
 
 
 Komandos daro namų darbus iš savo skyriaus (tarkim liko padaryti vartotojų pasakojimus -> daro reikalavimų komanda). Vietoje gali dirbti komandos ir ne prie savo dalių.
+
+## Kitos nuorodos:
+ - [Užsakovų projektas.](https://drive.google.com/open?id=1F7c-nigbOuU5vRgCNT4K8Lx1ZI1JdOUF)
+ - [Dėstytojos nurodymai laboratoriniams darbams.](https://drive.google.com/open?id=0B4VxsfLWjQw2OHQ1SUhOM2RzLUFvNlRVWi1CcUF2eFZSRExJ)
+ - [Pradinis planas su bendrai aprašytomis pirmojo laboro darymo fazėmis.](https://docs.google.com/document/d/1ErOuAZ_BnzfAMXsAJ0XUmYCaQCB4K8GXVdxxBEDLhrw/edit)

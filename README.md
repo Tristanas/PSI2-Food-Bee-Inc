@@ -1,8 +1,9 @@
-
+# Esminės nuorodos:
+[Užsakovo reikalavimai - per pratybas 03-05 dėsim į repozitorijos dokumentą, iki tol dirbame google diske, kartu.](https://docs.google.com/document/d/1OK8YH0PFO4UR0oJfQ5bHP2LUE-6mTf3Ih-gsRSJ5he0/edit)
+[Dokumentas, kurį įteiksime pratybų vedėjai prieš atsiskaitymą.](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Dokumentas.md)
 
 # Kitas susitikimas:
-
-
+03-07 prieš paskaitą.
 
 ## Namų darbai:
 Patikslinti užsakovo poreikius. Detalizuoti pasirinktu formatu (nurodymose pateikti du variantai: lentelė arba sakinys:

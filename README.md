@@ -4,6 +4,7 @@
 
 # Kitas susitikimas:
 03-07 prieš paskaitą.
+03-09 šeštadienį 10:00 pas Manfredą barake.
 
 ## Namų darbai:
 Patikslinti užsakovo poreikius. Detalizuoti pasirinktu formatu (nurodymose pateikti du variantai: lentelė arba sakinys:

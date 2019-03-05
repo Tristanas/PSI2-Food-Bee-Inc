@@ -77,6 +77,8 @@ Jei tai nėra reikalavimas įvesti ar pakeisti galiojimo laiką, kyla tokie klau
  - Tada vartotojas turi galimybę pranešti, kad produktas baigė galioti? 
  - Ką tada gali padaryti sistema? Kviesti, ką nors išvežti nustojusius galioti produktus?
 
+**Visgi reikalaujama, kad sistema praneštu naudotojui, kad baigia galioti produktas.**
+
 Taip pat reikia dar pasitikslinti UC formatą. 
 
 ### Produktų galiojimo laiko redagavimas:

@@ -31,19 +31,48 @@ Vilnius, 2019
 
 ## Vartotojiški pasakojimai
 
+
+
+Pavadinimas: 
+Priėmimo testas:
+Prioritetas:
+Sąnaudos:
+
+
+**Kopijavimui lentelė:**
+
 <table class="tg">
   <tr>
-    <th class="tg-0pky" colspan="3">Aš labai noriu šokti</th>
+    <th class="tg-0pky" colspan="3">Pavadinimas: </th>
   </tr>
   <tr>
-    <td class="tg-0pky">Kaip noriu? -Labai</td>
-    <td class="tg-0pky">Kas nori? -Aš</td>
-    <td class="tg-0pky">Ką daryti? - Šokti</td>
+    <td class="tg-0pky">Priėmimo testas: </td>
+    <td class="tg-0pky">Prioritetas: </td>
+    <td class="tg-0pky">Sąnaudos: </td>
   </tr>
   <tr>
-    <td class="tg-0pky" colspan="3">Todėl turiu išmokti šokti.</td>
+    <td class="tg-0pky" colspan="3"></td>
   </tr>
 </table>
+
+**Pavyzdys užpildytos lentelės:**
+
+<table class="tg">
+  <tr>
+    <th class="tg-0pky" colspan="3">Pavadinimas: Pranešimas dėl galiojimo laiko pabaigos</th>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Priėmimo testas: </td>
+    <td class="tg-0pky">Prioritetas: </td>
+    <td class="tg-0pky">Sąnaudos: </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="3">Iki produkto galiojimo pabaigos likus 3 dienoms (jei jo galiojimo laikas nuo įdėjimo į šaldytuvą yra ne mažiau 5d.) ir likus 1 dienai (visada) naudotojas turi gauti pranešimą, įspėjantį apie galiojimo laiko pabaigą ir likusį galiojimo laiką.
+Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama vienu bendru pranešimu.</td>
+  </tr>
+</table>
+
+
 
 
 # 2. Dalykinės srities modelis

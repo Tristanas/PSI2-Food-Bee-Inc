@@ -1,6 +1,7 @@
 # Esminės nuorodos:
  - [Užsakovo reikalavimai - per pratybas 03-05 dėsim į repozitorijos dokumentą, iki tol dirbame google diske, kartu.](https://docs.google.com/document/d/1OK8YH0PFO4UR0oJfQ5bHP2LUE-6mTf3Ih-gsRSJ5he0/edit)
  - [Dokumentas, kurį įteiksime pratybų vedėjai prieš atsiskaitymą.](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Dokumentas.md)
+ - Dirbame su Markdown, šiokį tokį "Cheatsheet" galima rasti [čia.](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 # Kitas susitikimas:
 03-09 šeštadienį 10:00 pas Manfredą barake.
@@ -40,7 +41,6 @@ Kai dirbsim gyvai, diskutuojame visi, bet pakeitimus daro atitinkamose vietose a
 - [x]	Pradinė esybių ir ryšių diagrama.
 - [x]	Iš to paties darbo ištraukti pradinę užduočių diagramą.
 
-Dirbame su Markdown, šiokį tokį "Cheatsheet" galima rasti [čia.](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 # Metodika
 Paskaitose dėstytojas kartą minėjo, kad patogu turėti repozitorijoje (MagicDraw) modelį su visomis diagramomis ir taip pat folderį su nuotraukomis, gautomis konvertuojant diagramas. Tada .md dokumente naudojant nuorodas į tas nuotraukas labai patogu dirbti, nes pakeitus nuotrauką pasikeičia 'rendered' dokumentas. Nereikia kaskart keisti dokumente nuotraukos, mažiau darbo ir mažiau neapdairių klaidų.

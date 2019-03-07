@@ -30,11 +30,11 @@ Vilnius, 2019
  10. Trumpas programos aprašas/paaiškinimas pirmą kartą ja įsijungus.
 
 ## Vartotojiški pasakojimai
-
-
+  
+  
 <table class="tg">
   <tr>
-    <th class="tg-0pky" colspan="3">Pavadinimas: GUI mobiliesiems telefonams</th>
+    <th class="tg-0pky" colspan="3">GUI mobiliesiems telefonams</th>
   </tr>
   <tr>
     <td class="tg-0pky">Priėmimo testas: </td>
@@ -46,9 +46,11 @@ Vilnius, 2019
   </tr>
 </table>
 
+<br></br>
+
 <table class="tg">
   <tr>
-    <th class="tg-0pky" colspan="3">Pavadinimas: Pranešimas dėl galiojimo laiko pabaigos</th>
+    <th class="tg-0pky" colspan="3"> Pranešimas dėl galiojimo laiko pabaigos</th>
   </tr>
   <tr>
     <td class="tg-0pky">Priėmimo testas: </td>
@@ -61,9 +63,11 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
   </tr>
 </table>
 
+<br></br>
+
 <table class="tg">
   <tr>
-    <th class="tg-0pky" colspan="3">Pavadinimas: Prekės užsakymas per mobiliąją programą</th>
+    <th class="tg-0pky" colspan="3"> Prekės užsakymas per mobiliąją programą</th>
   </tr>
   <tr>
     <td class="tg-0pky">Priėmimo testas: </td>
@@ -75,9 +79,11 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
   </tr>
 </table>
 
+<br></br>
+
 <table class="tg">
   <tr>
-    <th class="tg-0pky" colspan="3">Pavadinimas: Dalijimasis savo šaldytuvo turiniu su kitais naudotojais</th>
+    <th class="tg-0pky" colspan="3">Dalijimasis savo šaldytuvo turiniu su kitais naudotojais</th>
   </tr>
   <tr>
     <td class="tg-0pky">Priėmimo testas: </td>
@@ -89,9 +95,11 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
   </tr>
 </table>
 
+<br></br>
+
 <table class="tg">
   <tr>
-    <th class="tg-0pky" colspan="3">Pavadinimas: Pranešimas grupėje</th>
+    <th class="tg-0pky" colspan="3">Pranešimas grupėje</th>
   </tr>
   <tr>
     <td class="tg-0pky">Priėmimo testas: </td>
@@ -103,9 +111,11 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
   </tr>
 </table>
 
+<br></br>
+
 <table class="tg">
   <tr>
-    <th class="tg-0pky" colspan="3">Pavadinimas: Naudotojas atsiverčia kalendorių pirkiniams peržiūrėti</th>
+    <th class="tg-0pky" colspan="3">Naudotojas atsiverčia kalendorių pirkiniams peržiūrėti</th>
   </tr>
   <tr>
     <td class="tg-0pky">Priėmimo testas: </td>
@@ -118,9 +128,11 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
   </tr>
 </table>
 
+<br></br>
+
 <table class="tg">
   <tr>
-    <th class="tg-0pky" colspan="3">Pavadinimas: Naudotojas mato reklamas</th>
+    <th class="tg-0pky" colspan="3">Naudotojas mato reklamas</th>
   </tr>
   <tr>
     <td class="tg-0pky">Priėmimo testas: </td>
@@ -132,9 +144,11 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
   </tr>
 </table>
 
+<br></br>
+
 <table class="tg">
   <tr>
-    <th class="tg-0pky" colspan="3">Pavadinimas: Pagalba vartotojui</th>
+    <th class="tg-0pky" colspan="3">Pagalba vartotojui</th>
   </tr>
   <tr>
     <td class="tg-0pky">Priėmimo testas: </td>
@@ -146,9 +160,11 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
   </tr>
 </table>
 
+<br></br>
+ 
 <table class="tg">
   <tr>
-    <th class="tg-0pky" colspan="3">Pavadinimas: Pranešimas dėl klaidų</th>
+    <th class="tg-0pky" colspan="3">Pranešimas dėl klaidų</th>
   </tr>
   <tr>
     <td class="tg-0pky">Priėmimo testas: </td>
@@ -160,9 +176,11 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
   </tr>
 </table>
 
+<br></br>
+
 <table class="tg">
   <tr>
-    <th class="tg-0pky" colspan="3">Pavadinimas: Naudotojas susipažįsta su sistema</th>
+    <th class="tg-0pky" colspan="3">Naudotojas susipažįsta su sistema</th>
   </tr>
   <tr>
     <td class="tg-0pky">Priėmimo testas: </td>
@@ -173,8 +191,8 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
     <td class="tg-0pky" colspan="3">Sistemai primą kartą įsijungus, naudotojas supažindinamas su pagrindiniu sistemos naudojimu, pateikiant galimų veiksmų sąrašą.Naudotojui taip pat pateikiami galimi sistemos nustatymai, jis su šiais supažindinamas, ir leidžiama jam keisti nustatymus. Naudotojas gali nustatyti, kad šis paaiškinimas kitais kartais nebebus rodomas.</td>
   </tr>
 </table>
-
-
+  
+  
 **Kopijavimui lentelė:**
 
 <table class="tg">

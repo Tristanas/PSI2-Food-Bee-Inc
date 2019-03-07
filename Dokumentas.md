@@ -188,7 +188,7 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
     <td class="tg-0pky">Sąnaudos: </td>
   </tr>
   <tr>
-    <td class="tg-0pky" colspan="3">Sistemai primą kartą įsijungus, naudotojas supažindinamas su pagrindiniu sistemos naudojimu, pateikiant galimų veiksmų sąrašą.Naudotojui taip pat pateikiami galimi sistemos nustatymai, jis su šiais supažindinamas, ir leidžiama jam keisti nustatymus. Naudotojas gali nustatyti, kad šis paaiškinimas kitais kartais nebebus rodomas.</td>
+    <td class="tg-0pky" colspan="3">Per pirmą prisijungimą naudotojas supažindinamas su pagrindiniu sistemos naudojimu, pateikiant galimų veiksmų sąrašą.Naudotojui taip pat pateikiami galimi sistemos nustatymai, jis su šiais supažindinamas, ir leidžiama jam keisti nustatymus. Naudotojas gali nustatyti, kad šis paaiškinimas kitais kartais nebebus rodomas.</td>
   </tr>
 </table>
   

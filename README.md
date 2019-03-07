@@ -3,7 +3,6 @@
  - [Dokumentas, kurį įteiksime pratybų vedėjai prieš atsiskaitymą.](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Dokumentas.md)
 
 # Kitas susitikimas:
-03-07 prieš paskaitą.
 03-09 šeštadienį 10:00 pas Manfredą barake.
 
 ## Namų darbai:
@@ -36,7 +35,7 @@ Kai dirbsim gyvai, diskutuojame visi, bet pakeitimus daro atitinkamose vietose a
 
 
 # Pirmo etapo tikslai:
-- [ ] Patikslinti užsakovo poreikius. Detalizuoti pasirinktu formatu (nurodymose pateikti du variantai: lentelė arba sakinys:
+- [x] Patikslinti užsakovo poreikius. Detalizuoti pasirinktu formatu (nurodymose pateikti du variantai: lentelė arba sakinys:
 „Kaip [mano rolė] norėčiau padaryti [kažkoks veiksmas], kad įgyčiau [kažkokia nauda]“.
 - [x]	Pradinė esybių ir ryšių diagrama.
 - [x]	Iš to paties darbo ištraukti pradinę užduočių diagramą.

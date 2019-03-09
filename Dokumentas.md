@@ -238,11 +238,16 @@ Sistemoje yra produktų, kurių galiojimo terminas artėja prie nustatytos ribos
 * Sistemos nustatymai yra tokie, kurie leistų sistemai siųsti pranešimus.
 ### Pagrindinis scenarijus.
 - Sistemoje yra produktų, kurių galiojimas artėja prie pabaigos.
-- Sistema parodo langą, kuriame nurodyti netrukus nebegaliojantys produktai.
-- Sistema pasiūlo receptą, kuriame yra šių produktų, jei tokį galima sudaryti.
+- Sistemos pagrindinio lango pranešimų juostoje pranešimų piktograma pasikeičia, nurodanti neperskaitytų pranešimų buvimą.
+- Vartotojas paspaudžia ant pranešimų piktogramos, atsiranda naujas langas.
+- Naujame lange nurodyti produktai, kurie tuoj nebegalios, taip pat ir receptas iš šių produktų, jei tokį galima sudaryti.
+- Vartotojas nusorendžia gaminti pagal pasiūlytą receptą.
+- Vartotojas pažymi, kuriuos produktus išmesti, o kuriuos - palikti.
+- Pažymėti sąraše produktai išmetami.
 ### Alternatyvus scenarijus.
-- Vartotojas nenori gaminti pagal pasiūlytą receptą.
-- Netrukus nebegaliojantys produktai išmetami.
+- Vartotojas nusprendžia negaminti pagal pasiūlytą receptą.
+- Vartotojas pažymi, kuriuos produktus palikti, kuriuos - išmesti.
+- Pažymėti produktai išmetami.
 ## Pavyzdinis reikalavimas
 
 ### 0 .Produktų galiojimo laiko redagavimas:

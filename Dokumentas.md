@@ -280,6 +280,9 @@ Jei vartotojas nebenori dalies Krepšelio turinio, jis gali lange "Krepšelis" p
 
 Jei vartotojas nori į krepšelį įtraukti jau pirktus produktus, lange "Šaldytuvas" šalia norimo produkto gali paspausti pliuso ženklą. Sistema įtraukia identišką produktą į krepšelį.
 
+#### Grafinės sasajos eskizas 
+![Produktų užsakymas] (https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/GUIEskizas3.png "'Produktų užsakymas'")
+
 ### 4.
 ### 5.
 ### 6.

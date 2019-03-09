@@ -280,12 +280,18 @@ Jei vartotojas nebenori dalies Krepšelio turinio, jis gali lange "Krepšelis" p
 
 Jei vartotojas nori į krepšelį įtraukti jau pirktus produktus, lange "Šaldytuvas" šalia norimo produkto gali paspausti pliuso ženklą. Sistema įtraukia identišką produktą į krepšelį.
 
-#### Grafinės sasajos eskizas 
+#### Grafinės sąsajos eskizas 
 ![Produktų užsakymas](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/GUIEskizas3.png "'Produktų užsakymas'")
 
 ### 4.
 ### 5.
-### 6.
+### 6. Naudotojas atsiverčia kalendorių produktams peržiūrėti
+Kalendoriaus lange naudotojui automatiškai pavaizduojamos esamo mėnesio dienos ir per jas atvežti produktai. Jei kurią nors dieną yra užsakytų produktų, iš jų keli matomi kalendoriuje, bet taip pat prie dienos yra pliuso formos mygtukas. Naudotojas spaudžia ant pliuso. Sistema suranda dienos užsakymų informaciją ir atvaizduoja ją lange "Dienos produktai". Naudotojas peržiūri kiekvieno produkto informaciją ir išjungia langą. Sistema grąžina naudotoją į kalendoriaus langą.
+#### Alternatyvūs scenarijai:
+Naudotojas spaudžia „žiūrėti pagal galiojimo laiką“.  Sistema atvaizduoja mėnesyje produktų galiojimo pabaigas. Naudotojas pasirenka dieną ir spaudžia „Peržiūrėti“. Sistema atvaizduoja produktus „Dienos produktai“. Norėdamas išvengti pasenusio maisto naudotojas spaudžia „siūlyti receptus“. Sistema ieško receptų, su produktais, kurie pasirinktą dieną baigs galioti.
+Peržiūrėdamas kalendoriuje produktus naudotojas gali pasirinkti produktą ir spausti „Užsakyti daugiau“.
+#### Grafinės sąsajos eskizas
+![Kalendorius](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Calendar.jpg "Kalendoriaus ir Dienos užsakymų langai")
 ### 7.
 ![Reklamos](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Draw.io/DamnAds.jpg "'Reklamų rodymas'")
 ### 8.

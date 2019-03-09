@@ -234,7 +234,7 @@ Klases grupuosime į diagramas pagal šias pagrindines esybes:
 ## Pavyzdinis reikalavimas
 
 ### 0 .Produktų galiojimo laiko redagavimas:
-Vartotojas lange „Mano produktai“ esančiame sąraše pažymi produktą, kurio galiojimo laikas nenurodytas arba klaidingas. Tada jis paspaudžia mygtuką „redaguoti“. Sistema parodo redagavimo langą. Vartotojas įveda jam žinomą galiojimo laiką. Įvedęs paspaudžia „patvirtinti“ arba apsigalvoja ir spaudžia „atšaukti“. Patvirtinus pokyčius sistema atnaujina parinkto produkto galiojimo laiką (minėti kreipimąsi į duomenų bazę?), grąžina vartotoją į produktų langą. Sąraše vartotojas mato pakeitimą.
+Vartotojas lange „Mano produktai“ esančiame sąraše pažymi produktą, kurio galiojimo laikas nenurodytas arba klaidingas. Tada jis paspaudžia mygtuką „redaguoti“. Sistema parodo redagavimo langą. Vartotojas įveda jam žinomą galiojimo laiką. Įvedęs paspaudžia „patvirtinti“. Patvirtinus pokyčius sistema atnaujina parinkto produkto galiojimo laiką (minėti kreipimąsi į duomenų bazę?), grąžina vartotoją į produktų langą. Sąraše vartotojas mato pakeitimą.
 
 #### Alternatyvūs scenarijai: (nebaigta pildyti)
 Redagavimo lange vartotojas paspaudžia „atšaukti“. Visi pokyčiai panaikinami, sistema grąžina vartotoją į „Mano produktai“ langą.

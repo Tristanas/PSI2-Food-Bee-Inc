@@ -294,7 +294,17 @@ Jei vartotojas nori į krepšelį įtraukti jau pirktus produktus, lange "Šaldy
 #### Grafinės sasajos eskizas 
 ![Produktų užsakymas](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/GUIEskizas3.png "'Produktų užsakymas'")
 
-### 4.
+### 4. Šaldytuvo dalinimasis
+
+#### Pagrindinis scenarijus
+Vartotojas norėdamas dalintis šaldytuvo duomenimis su kitais vartotojais lange "Šaldytuvas" gali paspausti mygtuką "Dalintis". Sistema parodo langą "Dalinimasis" su jame esančia vartotojų informacija. Vartotojas gali pažymėti žymimuosius langelius prie vartotojų vardų, su kuriais norima dalintis šaldytuvu, ir paspausti mygtuką "Patvirtinti". Sistema išsiunčia kvietimą kitam vartotojui. Jei kitas vartotjas priima pakvietima - sistema praneša pakvietėjui.
+
+#### Alternatyvūs scenarijai
+Vartotojas lange "Dalinimasis" gali paspausti mygtuką "Atšaukti" norėdamas atšaukti visus tame lange buvusius pasirinkimus. Sistema išjungia langą "Dalinimasis" ir sugražina vartotoją į langą "Šaldytuvas".
+
+#### Grafinės sasajos eskinzas
+![Dalinimasis](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/GUIEskizas4(1).png "'Dalintis'")
+
 ### 5.
 ### 6.
 ### 7.

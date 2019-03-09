@@ -251,13 +251,13 @@ Jei keičiamas produktas, kurį atsiuntė Partneris ir jis buvo patvirtinęs gal
 Rašome vartojimo scenarijų ties tuo numeriu, pagal kurį poreikį yra rašomas.
 Reikia sukurti 5-6 UC tekstus, numeraciją sutvarkysime po to.
 
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
-10.
+### 1.
+### 2.
+### 3.
+### 4.
+### 5.
+### 6.
+### 7.
+### 8.
+### 9.
+### 10.

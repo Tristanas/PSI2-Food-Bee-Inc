@@ -230,7 +230,19 @@ Klases grupuosime į diagramas pagal šias pagrindines esybes:
 ![užduočių diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/UC-diagrama.jpg "Užduočių diagrama")
 
 ## Vartojimo scenarijų tekstai
-
+### Užduoties pavadinimas.
+Pranešti apie produktų galiojimo pabaigą.
+### Užduoties vykdymą inicijuojantis trigeris.
+Sistemoje yra produktų, kurių galiojimo terminas artėja prie nustatytos ribos.
+### Užduoties vykdymo prieš-sąlygos.
+* Sistemos nustatymai yra tokie, kurie leistų sistemai siųsti pranešimus.
+### Pagrindinis scenarijus.
+- Sistemoje yra produktų, kurių galiojimas artėja prie pabaigos.
+- Sistema parodo langą, kuriame nurodyti netrukus nebegaliojantys produktai.
+- Sistema pasiūlo receptą, kuriame yra šių produktų, jei tokį galima sudaryti.
+### Alternatyvus scenarijus.
+- Vartotojas nenori gaminti pagal pasiūlytą receptą.
+- Netrukus nebegaliojantys produktai išmetami.
 ## Pavyzdinis reikalavimas
 
 ### 0 .Produktų galiojimo laiko redagavimas:

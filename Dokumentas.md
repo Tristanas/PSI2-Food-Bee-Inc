@@ -270,6 +270,17 @@ Reikia sukurti 5-6 UC tekstus, numeraciją sutvarkysime po to.
 
 ### 1.
 ### 2.
+### Užduoties pavadinimas.
+Pranešti apie produktų galiojimo pabaigą.
+### Užduoties vykdymą inicijuojantis trigeris.
+Sistemoje yra produktų, kurių galiojimo terminas artėja prie nustatytos ribos.
+### Užduoties vykdymo prieš-sąlygos.
+* Sistemos nustatymai yra tokie, kurie leistų sistemai siųsti pranešimus.
+### Pagrindinis scenarijus.
+Sistemoje yra produktų, kurių galiojimas artėja prie pabaigos. Sistemos pagrindinio lango pranešimų juostoje pranešimų piktograma pasikeičia, nurodanti neperskaitytų pranešimų buvimą. Vartotojas paspaudžia ant pranešimų piktogramos, atsiranda naujas langas. Naujame lange nurodyti produktai, kurie tuoj nebegalios, taip pat ir receptas iš šių produktų, jei tokį galima sudaryti.
+- Vartotojas nusorendžia gaminti pagal pasiūlytą receptą. Vartotojas pažymi, kuriuos produktus išmesti, o kuriuos - palikti. Pažymėti sąraše produktai išmetami.
+### Alternatyvus scenarijus.
+Vartotojas nusprendžia negaminti pagal pasiūlytą receptą. Vartotojas pažymi, kuriuos produktus palikti, kuriuos - išmesti.
 ### 3. Produkto užsakymas
 
 #### Pagrindinis scenarijus

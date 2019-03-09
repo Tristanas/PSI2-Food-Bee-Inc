@@ -284,6 +284,7 @@ Jei vartotojas nori į krepšelį įtraukti jau pirktus produktus, lange "Šaldy
 ### 5.
 ### 6.
 ### 7.
+![Reklamos](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Draw.io/DamnAds.jpg "'Reklamų rodymas'")
 ### 8.
 ### 9.
 ### 10.

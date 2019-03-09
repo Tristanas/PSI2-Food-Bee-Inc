@@ -270,6 +270,17 @@ Reikia sukurti 5-6 UC tekstus, numeraciją sutvarkysime po to.
 
 ### 1.
 ### 2.
+### Užduoties pavadinimas.
+Pranešti apie produktų galiojimo pabaigą.
+### Užduoties vykdymą inicijuojantis trigeris.
+Sistemoje yra produktų, kurių galiojimo terminas artėja prie nustatytos ribos.
+### Užduoties vykdymo prieš-sąlygos.
+* Sistemos nustatymai yra tokie, kurie leistų sistemai siųsti pranešimus.
+### Pagrindinis scenarijus.
+Sistemoje yra produktų, kurių galiojimas artėja prie pabaigos. Sistemos pagrindinio lango pranešimų juostoje pranešimų piktograma pasikeičia, nurodanti neperskaitytų pranešimų buvimą. Vartotojas paspaudžia ant pranešimų piktogramos, atsiranda naujas langas. Naujame lange nurodyti produktai, kurie tuoj nebegalios, taip pat ir receptas iš šių produktų, jei tokį galima sudaryti.
+- Vartotojas nusorendžia gaminti pagal pasiūlytą receptą. Vartotojas pažymi, kuriuos produktus išmesti, o kuriuos - palikti. Pažymėti sąraše produktai išmetami.
+### Alternatyvus scenarijus.
+Vartotojas nusprendžia negaminti pagal pasiūlytą receptą. Vartotojas pažymi, kuriuos produktus palikti, kuriuos - išmesti.
 ### 3. Produkto užsakymas
 
 #### Pagrindinis scenarijus
@@ -285,6 +296,10 @@ Jei vartotojas nori į krepšelį įtraukti jau pirktus produktus, lange "Šaldy
 
 ### 4.
 ### 5.
+### Pagrindinis scenarijus.
+Vartotojas, norėdamas pasidalinti receptais su kitais vartotojais, paspaudžia pokalbių skirsnio piktogramą, esančią pagrindinio lango viršuje. Atsidaro pokalbių langas, kuriame vartotojas gali susirašinėti su kitais vartotojais. Vartotojas pasirenka, su kuo susirašinėti iš pateikto sąrašo. Šiame lange yra susirainėjimui skirtas plotas. Vartotojas paspaudžia mygtuką "Dalintis receptais", atsidarusiame lange vartotojas pažymi receptus, kuriais nori dalintis. Iš pasirinktų receptų automatiškai sugeneruojamas pranešimo tekstas. Vartotojas paspaudžia mygtuką "Siųsti", ir pranešimas išsiunčiamas gavėjui.
+### Alternatyvus scenarijus.
+Jei dėl kokių nors priežasčių pranešimo nepavyko nusiųsti, vartotojas apie tai informuojamas, taip pat nurodoma to priežastis ir jam leidžiama pabandyti siųsti iš naujo. Jei po kelių bandymų vis tiek nepavyksta, vartotojas gali laikinai išsaugoti šį pranešimą lokaliai, kad vėliau vėl galėtų pabandyti jį išsiųsti.
 ### 6. Naudotojas atsiverčia kalendorių produktams peržiūrėti
 Kalendoriaus lange naudotojui automatiškai pavaizduojamos esamo mėnesio dienos ir per jas atvežti produktai. Jei kurią nors dieną yra užsakytų produktų, iš jų keli matomi kalendoriuje, bet taip pat prie dienos yra pliuso formos mygtukas. Naudotojas spaudžia ant pliuso. Sistema suranda dienos užsakymų informaciją ir atvaizduoja ją lange "Dienos produktai". Naudotojas peržiūri kiekvieno produkto informaciją ir išjungia langą. Sistema grąžina naudotoją į kalendoriaus langą.
 #### Alternatyvūs scenarijai
@@ -292,6 +307,7 @@ Naudotojas spaudžia „žiūrėti pagal galiojimo laiką“.  Sistema atvaizduo
 Peržiūrėdamas kalendoriuje produktus naudotojas gali pasirinkti produktą ir spausti „Užsakyti daugiau“.
 #### Grafinės sąsajos eskizas
 ![Kalendorius](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Calendar.jpg "Kalendoriaus ir Dienos užsakymų langai")
+
 ### 7.
 ![Reklamos](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Draw.io/DamnAds.jpg "'Reklamų rodymas'")
 ### 8.

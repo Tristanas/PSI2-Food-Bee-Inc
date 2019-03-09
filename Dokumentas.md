@@ -229,23 +229,11 @@ Klases grupuosime į diagramas pagal šias pagrindines esybes:
 
 ![užduočių diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/UC-diagrama.jpg "Užduočių diagrama")
 
-## Užduočių scenarijų tekstai
+## Vartojimo scenarijų tekstai
 
 ## Pavyzdinis reikalavimas
 
-Padarytas remiantis reikalavimu: "2. Pranešti dėl atitinkamų produktų galiojimo laiko pabaigos;"
-Gali būti, kad reikalavimas yra klaidingai suprastas, kadangi dar nepasitikslinome jo.
-
-Jei tai nėra reikalavimas įvesti ar pakeisti galiojimo laiką, kyla tokie klausimai:
- - Ką reiškia galiojimo laiko pabaiga? Tai, kad produktas dabartiniu metu nebegalioja? 
- - Tada vartotojas turi galimybę pranešti, kad produktas baigė galioti? 
- - Ką tada gali padaryti sistema? Kviesti, ką nors išvežti nustojusius galioti produktus?
-
-**Visgi reikalaujama, kad sistema praneštu naudotojui, kad baigia galioti produktas.**
-
-Taip pat reikia dar pasitikslinti UC formatą. 
-
-### Produktų galiojimo laiko redagavimas:
+### 0 .Produktų galiojimo laiko redagavimas:
 Vartotojas lange „Mano produktai“ esančiame sąraše pažymi produktą, kurio galiojimo laikas nenurodytas arba klaidingas. Tada jis paspaudžia mygtuką „redaguoti“. Sistema parodo redagavimo langą. Vartotojas įveda jam žinomą galiojimo laiką. Įvedęs paspaudžia „patvirtinti“ arba apsigalvoja ir spaudžia „atšaukti“. Patvirtinus pokyčius sistema atnaujina parinkto produkto galiojimo laiką (minėti kreipimąsi į duomenų bazę?), grąžina vartotoją į produktų langą. Sąraše vartotojas mato pakeitimą.
 
 #### Alternatyvūs scenarijai: (nebaigta pildyti)
@@ -258,3 +246,18 @@ Jei keičiamas produktas, kurį atsiuntė Partneris ir jis buvo patvirtinęs gal
 #### Grafinės vartotojo sąsajos eskizas:
 
 ![Mano produktai](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Mano%20produktai%20GUI.jpg "'Mano produktai langas'")
+
+### Placeholderiai, kad nebūtų konfliktų:
+Rašome vartojimo scenarijų ties tuo numeriu, pagal kurį poreikį yra rašomas.
+Reikia sukurti 5-6 UC tekstus, numeraciją sutvarkysime po to.
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.

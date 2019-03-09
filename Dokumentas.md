@@ -253,7 +253,16 @@ Reikia sukurti 5-6 UC tekstus, numeraciją sutvarkysime po to.
 
 ### 1.
 ### 2.
-### 3.
+### 3. Produkto užsakymas
+
+#### Pagrindinis scenarijus
+Vartotojas lange "Parduotuvė" turi galimybę prie produkto pavadinimo paspausti mygtuką "Įtraukti į krepšelį". Sistema įtraukia produktą į krepšelio produktų sarašą. Vartotojas sudėjęs norimus produktus į krepšelį turi galimybę lange "Krepšelis" paspausti mygtuką "Užsakyti". Sistema suformuluoja ir išsiunčia užsakymo užklausą produktų tiekėjui.
+
+#### Alternatyvūs scenarijai
+Jei vartotojas nebenori dalies Krepšelio turinio jis gali lange "Krepšelis" pašymėti žymimuosius langelius šalia nenorimų produktų pavadinimų ir paspausti mygtuką "Pašalinti iš krepšelio". Sistema pašalina prekes iš krepšelio produktų sarašo.
+
+Jei vartotojas nori į krepšelį įtraukti jau pirktus produktus lange "Šaldytuvas" šalia norimo produkto gali paspausti pliuso ženklą. Sistema įtraukia įdentišką produktą į krepšelį.
+
 ### 4.
 ### 5.
 ### 6.

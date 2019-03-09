@@ -273,12 +273,12 @@ Reikia sukurti 5-6 UC tekstus, numeraciją sutvarkysime po to.
 ### 3. Produkto užsakymas
 
 #### Pagrindinis scenarijus
-Vartotojas lange "Parduotuvė" turi galimybę prie produkto pavadinimo paspausti mygtuką "Įtraukti į krepšelį". Sistema įtraukia produktą į krepšelio produktų sarašą. Vartotojas sudėjęs norimus produktus į krepšelį turi galimybę lange "Krepšelis" paspausti mygtuką "Užsakyti". Sistema suformuluoja ir išsiunčia užsakymo užklausą produktų tiekėjui.
+Vartotojas lange "Parduotuvė" turi galimybę prie produkto pavadinimo paspausti mygtuką "Įtraukti į krepšelį". Sistema įtraukia produktą į krepšelio produktų sarašą. Vartotojas, sudėjęs norimus produktus į krepšelį, norėdamas užbaigti užsakymą, spaudžia "Mano krepšelis". Sistema atidaro atitinkamai pavadintą langą, kuriame galima redaguoti krepšelio sudėtį bei užsakyti. Naudotojas spaudžia "Užsakyti". Sistema suformuluoja ir išsiunčia užsakymo užklausą produktų tiekėjui.
 
 #### Alternatyvūs scenarijai
-Jei vartotojas nebenori dalies Krepšelio turinio jis gali lange "Krepšelis" pašymėti žymimuosius langelius šalia nenorimų produktų pavadinimų ir paspausti mygtuką "Pašalinti iš krepšelio". Sistema pašalina prekes iš krepšelio produktų sarašo.
+Jei vartotojas nebenori dalies Krepšelio turinio, jis gali lange "Krepšelis" pažymėti žymimuosius langelius šalia nenorimų produktų pavadinimų ir paspausti mygtuką "Pašalinti iš krepšelio". Sistema pašalina prekes iš krepšelio produktų sąrašo.
 
-Jei vartotojas nori į krepšelį įtraukti jau pirktus produktus lange "Šaldytuvas" šalia norimo produkto gali paspausti pliuso ženklą. Sistema įtraukia įdentišką produktą į krepšelį.
+Jei vartotojas nori į krepšelį įtraukti jau pirktus produktus, lange "Šaldytuvas" šalia norimo produkto gali paspausti pliuso ženklą. Sistema įtraukia identišką produktą į krepšelį.
 
 ### 4.
 ### 5.

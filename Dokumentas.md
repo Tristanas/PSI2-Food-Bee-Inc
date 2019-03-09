@@ -296,6 +296,10 @@ Jei vartotojas nori į krepšelį įtraukti jau pirktus produktus, lange "Šaldy
 
 ### 4.
 ### 5.
+### Pagrindinis scenarijus.
+Vartotojas, norėdamas pasidalinti receptais su kitais vartotojais, paspaudžia pokalbių skirsnio piktogramą, esančią pagrindinio lango viršuje. Atsidaro pokalbių langas, kuriame vartotojas gali susirašinėti su kitais vartotojais. Vartotojas pasirenka, su kuo susirašinėti iš pateikto sąrašo. Šiame lange yra susirainėjimui skirtas plotas. Vartotojas paspaudžia mygtuką "Dalintis receptais", atsidarusiame lange vartotojas pažymi receptus, kuriais nori dalintis. Iš pasirinktų receptų automatiškai sugeneruojamas pranešimo tekstas. Vartotojas paspaudžia mygtuką "Siųsti", ir pranešimas išsiunčiamas gavėjui.
+### Alternatyvus scenarijus.
+Jei dėl kokių nors priežasčių pranešimo nepavyko nusiųsti, vartotojas apie tai informuojamas, taip pat nurodoma to priežastis ir jam leidžiama pabandyti siųsti iš naujo. Jei po kelių bandymų vis tiek nepavyksta, vartotojas gali laikinai išsaugoti šį pranešimą lokaliai, kad vėliau vėl galėtų pabandyti jį išsiųsti.
 ### 6.
 ### 7.
 ![Reklamos](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Draw.io/DamnAds.jpg "'Reklamų rodymas'")

@@ -318,8 +318,17 @@ Peržiūrėdamas kalendoriuje produktus naudotojas gali pasirinkti produktą ir 
 #### Grafinės sąsajos eskizas
 ![Kalendorius](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Calendar.jpg "Kalendoriaus ir Dienos užsakymų langai")
 
-### 7.
-![Reklamos](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Draw.io/DamnAds.jpg "'Reklamų rodymas'")
+### 7. Reklamų rodymas
+#### Pagrindinis scenarijus.
+Vartotojui naršant "Mano produktai" arba "Visi produktai" meniu programa kartais įterpia reklamą tarp rodomų produktų. Reklama yra tokio pačio dydžio kaip ir produktų ikonos, tačiau skiriasi kraštinės spalva. Vartotojams paspaudus ant reklamos jie yra nukreipiami į reklamos nuorodą.
+
+#### Alternatyvūs scenarijai
+Jei reklama yra nuolaida produktui šioje sistemoje, tai paspaudus reklamą vartotojui yra duodamas pasirinkimas nurodytą produktą įtraukti į krepšelį su atitinkama kaina.
+
+Vartotojui paspaudus dešnį pelės mygtuką (arba ilgai palietus, jei naudojamasi mobiliąją versija) atsiranda pasirinkimas pranešti apie netinkamą reklamos turinį. Pasirinkus šį pasirinkimą atsidaro dialogas kuris prašo pasirinkti kodėl ta reklama yra netinkama. Vartotojui patvirtinus pranešimą ši reklama yra neberodoma tam vartotojui, o pranešimas apie netinkamą turinį yra persiunčiamas sistemos administratoriams, kurie nuspręs, ar dėl tos reklamos reikia imtis tolimesnių veiksmų.
+
+#### Grafinės sąsajos eskizas
+![Reklamos](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Draw.io/DamnAds.jpg "Reklamų rodymas")
 ### 8.
 ### 9.
 ### 10.

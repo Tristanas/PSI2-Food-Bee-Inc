@@ -192,24 +192,6 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
   </tr>
 </table>
   
-  
-**Kopijavimui lentelė:**
-
-<table class="tg">
-  <tr>
-    <th class="tg-0pky" colspan="3">Pavadinimas: </th>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Priėmimo testas: </td>
-    <td class="tg-0pky">Prioritetas: </td>
-    <td class="tg-0pky">Sąnaudos: </td>
-  </tr>
-  <tr>
-    <td class="tg-0pky" colspan="3"></td>
-  </tr>
-</table>
-
-
 # 2. Dalykinės srities modelis
 
 ## Žodynas

@@ -220,7 +220,8 @@ Sistemoje yra produktų, kurių galiojimo terminas artėja prie nustatytos ribos
 Artėjant produktų galiojimo laikui prie pabaigos, pagrindinio lango pranešimų juostoje pranešimų piktograma pasikeičia, nurodydama neperskaitytų pranešimų buvimą. Naudotojas paspaudžia ant pranešimų piktogramos. Sistema atidaro langą "Senstantys produktai". Naujame lange nurodyti produktai, kurie tuoj pasens, taip pat ir receptas iš šių produktų, jei tokį galima sudaryti. Naudotojas nusprendžia gaminti pagal pasiūlytą receptą. Naudotojas pažymi, kuriuos produktus išmesti, o kuriuos - palikti. Pažymėti sąraše produktai išmetami.
 #### Alternatyvūs scenarijai
 Naudotojas nusprendžia negaminti pagal pasiūlytą receptą. Sistema atveria langą "Produktų šalinimas". Naudotojas pažymi, kuriuos produktus palikti, kuriuos - išmesti, ir spaudžia "Patvirtinti". Sistema grąžina naudotoja į langą "Senstantys produktai" ir pašalina pažymėtus produktus iš šaldytuvo.
-Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių produktų naudojant senstančius produktus. Sistema parodo jog iš esamų produktų nepavyksta sudaryti recepto. Toliau viskas kaip Nuadotojui nusprendus negaminti recepto.
+
+Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių produktų naudojant senstančius produktus. Vietoje pasiūlyto recepto sistema parodo, jog iš esamų produktų nepavyksta sudaryti recepto. Toliau viskas kaip Naudotojui nusprendus negaminti recepto.
 #### Grafinės sąsajos eskizas
 
 ### 2. Produkto užsakymas

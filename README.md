@@ -7,15 +7,15 @@
 03-11 pirmadienį ??:?? pas Manfredą barake(?).
 
 # LAST TO DO:
-[ ] Antro etapo tikslus pabaigti, t. y. papildyti DS modelį pagal UC tekstus, suderinti UC tekstus su DS modeliu.
-[ ] Peržiūra - kiekvienam poreikiui, UC tekstui, klasių diagramai
-[ ] Peržvelgti "Jų" antrą laboratorinį darbą ir remiantis mūsų parašytais reikalavimais - vartotojiškomis istorijomis - daryti pakeitimus. Rašyti išskirtina spalva arba sudaryti lentelę su informacija apie pakeitimus.
-[ ] Matricos: viena skirta pavaizduoti ryšius tarp klasių ir reikalavimų, kita reikalavimų - užduočių atsekamumui.
-[ ] Paketai: jei klasės grupuojamos, dėti jas į paketus, dėti UC tekstus į paketus ir kiekvienam paketui reikia sudaryti papildytą UC diagramą.
+- [ ] Antro etapo tikslus pabaigti, t. y. papildyti DS modelį pagal UC tekstus, suderinti UC tekstus su DS modeliu.
+- [ ] Peržiūra - kiekvienam poreikiui, UC tekstui, klasių diagramai
+- [ ] Peržvelgti "Jų" antrą laboratorinį darbą ir remiantis mūsų parašytais reikalavimais - vartotojiškomis istorijomis - daryti pakeitimus. Rašyti išskirtina spalva arba sudaryti lentelę su informacija apie pakeitimus.
+- [ ] Matricos: viena skirta pavaizduoti ryšius tarp klasių ir reikalavimų, kita reikalavimų - užduočių atsekamumui.
+- [ ] Paketai: jei klasės grupuojamos, dėti jas į paketus, dėti UC tekstus į paketus ir kiekvienam paketui reikia sudaryti papildytą UC diagramą.
 ## Dokumento paruošimas:
-[ ] Suformatuoti įžanginį "puslapį"
-[ ] sugeneruoti table of contents
-[ ] Last check
+- [ ] Suformatuoti įžanginį "puslapį"
+- [ ] sugeneruoti table of contents
+- [ ] Last check
 
 ## Antro etapo namų darbai:
 Patikslinti užsakovo poreikius. Detalizuoti pasirinktu formatu (nurodymose pateikti du variantai: lentelė arba sakinys:
@@ -30,9 +30,9 @@ Patikslinti užsakovo poreikius. Detalizuoti pasirinktu formatu (nurodymose pate
 
 
 ## Antro etapo tikslai:
- [x] Surašyti bent 5 vartojimo scenarijus (UC tekstai)
- [x] Kiekvienam sukurti GUI eskizus (liko du eskizai)
- [ ] Daryti UC tekstus pagal DS modelį, bet pastebėjus naujus dalykus (atributus, esybes, klases, reikalavimus) - įterpti juos į DS modelį ir reikalavimus. **Taisyti pirmo etapo rezultatus.**
+- [x] Surašyti bent 5 vartojimo scenarijus (UC tekstai)
+- [x] Kiekvienam sukurti GUI eskizus (liko du eskizai)
+- [ ] Daryti UC tekstus pagal DS modelį, bet pastebėjus naujus dalykus (atributus, esybes, klases, reikalavimus) - įterpti juos į DS modelį ir reikalavimus. **Taisyti pirmo etapo rezultatus.**
 
 Kai dirbsim gyvai, diskutuojame visi, bet pakeitimus daro atitinkamose vietose atsakingi žmonės. Tarkime, nusprendėme pakeisti alternatyvų scenarijų, pildo Vilius arba Manfredas. Pastebėjome, kad reikia keisti DS modelyje kažką, Tomas ar Edvinas
 

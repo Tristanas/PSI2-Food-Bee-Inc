@@ -285,3 +285,6 @@ Naudotojui paspaudus dešinį pelės mygtuką (arba ilgai palietus, jei naudojam
 
 #### Grafinės sąsajos eskizas
 ![Reklamos](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Draw.io/DamnAds.jpg "Reklamų rodymas")
+
+#### Sekų diagrama
+![Reklamos Seq](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Draw.io/DamnAds_Seq.jpg "Reklamų rodymo sekų diagrama")

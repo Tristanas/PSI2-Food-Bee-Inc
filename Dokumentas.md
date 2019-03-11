@@ -7,7 +7,7 @@ Laboratorinis darbas
 	Darbą atliko:
 	Manfredas Šiurkus
   	Edvinas Šmita
-  	Teodoras Šiaulys
+  	Teodoras Šaulys
   	Tomas Mikna
   	Vilius Minkevičius
 	
@@ -148,7 +148,7 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
 
 <table class="tg">
   <tr>
-    <th class="tg-0pky" colspan="3">Pagalba vartotojui</th>
+    <th class="tg-0pky" colspan="3">Pagalba naudotojui</th>
   </tr>
   <tr>
     <td class="tg-0pky">Priėmimo testas: </td>
@@ -156,7 +156,7 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
     <td class="tg-0pky">Sąnaudos: </td>
   </tr>
   <tr>
-    <td class="tg-0pky" colspan="3">Šalia visų laukelių, kuriuose vartotojas gali ar turi kažką įvesti, turi būti klaustukas, ant kurio paspaudus pasirodo informacija, nurodanti ką ir kokiu formatu įvesti bei kam tai reikalinga. Klaustukas turi būti ir šalia esminių mygtukų, paspaudus jį nurodomas mygtuko veikimas. Informacija turi būti glausta, iš kelių sakinių, nebent laukas ar mygtukas būtų labai svarbus.</td>
+    <td class="tg-0pky" colspan="3">Šalia visų laukelių, kuriuose naudotojas gali ar turi kažką įvesti, turi būti klaustukas, ant kurio paspaudus pasirodo informacija, nurodanti ką ir kokiu formatu įvesti bei kam tai reikalinga. Klaustukas turi būti ir šalia esminių mygtukų, paspaudus jį nurodomas mygtuko veikimas. Informacija turi būti glausta, iš kelių sakinių, nebent laukas ar mygtukas būtų labai svarbus.</td>
   </tr>
 </table>
 
@@ -188,28 +188,10 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
     <td class="tg-0pky">Sąnaudos: </td>
   </tr>
   <tr>
-    <td class="tg-0pky" colspan="3">Per pirmą prisijungimą naudotojas supažindinamas su pagrindiniu sistemos naudojimu, pateikiant galimų veiksmų sąrašą.Naudotojui taip pat pateikiami galimi sistemos nustatymai, jis su šiais supažindinamas, ir leidžiama jam keisti nustatymus. Naudotojas gali nustatyti, kad šis paaiškinimas kitais kartais nebebus rodomas.</td>
+    <td class="tg-0pky" colspan="3">Per pirmą prisijungimą naudotojas supažindinamas su pagrindiniu sistemos naudojimu, pateikiant galimų veiksmų sąrašą. Naudotojui taip pat pateikiami galimi sistemos nustatymai, jis su šiais supažindinamas, ir leidžiama jam keisti nustatymus. Naudotojas gali nustatyti, kad šis paaiškinimas kitais kartais nebebus rodomas.</td>
   </tr>
 </table>
   
-  
-**Kopijavimui lentelė:**
-
-<table class="tg">
-  <tr>
-    <th class="tg-0pky" colspan="3">Pavadinimas: </th>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Priėmimo testas: </td>
-    <td class="tg-0pky">Prioritetas: </td>
-    <td class="tg-0pky">Sąnaudos: </td>
-  </tr>
-  <tr>
-    <td class="tg-0pky" colspan="3"></td>
-  </tr>
-</table>
-
-
 # 2. Dalykinės srities modelis
 
 ## Žodynas
@@ -229,88 +211,49 @@ Klases grupuosime į diagramas pagal šias pagrindines esybes:
 
 ![užduočių diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/UC-diagrama.jpg "Užduočių diagrama")
 
-## Vartojimo scenarijų tekstai
-### Užduoties pavadinimas.
-Pranešti apie produktų galiojimo pabaigą.
-### Užduoties vykdymą inicijuojantis trigeris.
+### 1. Pranešimas dėl produktų galiojimo pabaigos
+#### Užduoties vykdymą inicijuojantis trigeris
 Sistemoje yra produktų, kurių galiojimo terminas artėja prie nustatytos ribos.
-### Užduoties vykdymo prieš-sąlygos.
+#### Užduoties vykdymo prieš-sąlygos
 * Sistemos nustatymai yra tokie, kurie leistų sistemai siųsti pranešimus.
-### Pagrindinis scenarijus.
-- Sistemoje yra produktų, kurių galiojimas artėja prie pabaigos.
-- Sistemos pagrindinio lango pranešimų juostoje pranešimų piktograma pasikeičia, nurodanti neperskaitytų pranešimų buvimą.
-- Vartotojas paspaudžia ant pranešimų piktogramos, atsiranda naujas langas.
-- Naujame lange nurodyti produktai, kurie tuoj nebegalios, taip pat ir receptas iš šių produktų, jei tokį galima sudaryti.
-- Vartotojas nusorendžia gaminti pagal pasiūlytą receptą.
-- Vartotojas pažymi, kuriuos produktus išmesti, o kuriuos - palikti.
-- Pažymėti sąraše produktai išmetami.
-### Alternatyvus scenarijus.
-- Vartotojas nusprendžia negaminti pagal pasiūlytą receptą.
-- Vartotojas pažymi, kuriuos produktus palikti, kuriuos - išmesti.
-- Pažymėti produktai išmetami.
-## Pavyzdinis reikalavimas
+#### Pagrindinis scenarijus
+Artėjant produktų galiojimo laikui prie pabaigos, pagrindinio lango pranešimų juostoje pranešimų piktograma pasikeičia, nurodydama neperskaitytų pranešimų buvimą. Naudotojas paspaudžia ant pranešimų piktogramos. Sistema atidaro langą "Senstantys produktai". Naujame lange nurodyti produktai, kurie tuoj nebegalios, taip pat ir receptas iš šių produktų, jei tokį galima sudaryti. Naudotojas nusprendžia gaminti pagal pasiūlytą receptą. Naudotojas pažymi, kuriuos produktus išmesti, o kuriuos - palikti. Pažymėti sąraše produktai išmetami.
+#### Alternatyvus scenarijus
+Naudotojas nusprendžia negaminti pagal pasiūlytą receptą. Sistema atveria langą "Produktų šalinimas". Naudotojas pažymi, kuriuos produktus palikti, kuriuos - išmesti, ir spaudžia "Patvirtinti". Sistema grąžina naudotoja į langą "Senstantys produktai" ir pašalina pažymėtus produktus iš šaldytuvo.
+#### Grafinės sąsajos eskizas
 
-### 0 .Produktų galiojimo laiko redagavimas:
-Vartotojas lange „Mano produktai“ esančiame sąraše pažymi produktą, kurio galiojimo laikas nenurodytas arba klaidingas. Tada jis paspaudžia mygtuką „redaguoti“. Sistema parodo redagavimo langą. Vartotojas įveda jam žinomą galiojimo laiką. Įvedęs paspaudžia „patvirtinti“. Patvirtinus pokyčius sistema atnaujina parinkto produkto galiojimo laiką (minėti kreipimąsi į duomenų bazę?), grąžina vartotoją į produktų langą. Sąraše vartotojas mato pakeitimą.
-
-#### Alternatyvūs scenarijai: (nebaigta pildyti)
-Redagavimo lange vartotojas paspaudžia „atšaukti“. Visi pokyčiai panaikinami, sistema grąžina vartotoją į „Mano produktai“ langą.
-
-Jei vartotojas įveda galiojimo laiką, pagal kurį produktas jau nustojęs galioti... (Sistema ką nors daro su baigusiais galioti produktais?)
-
-Jei keičiamas produktas, kurį atsiuntė Partneris ir jis buvo patvirtinęs galiojimo laiką.... (siunčiamas pranešimas dėl klaidos?)
-
-#### Grafinės vartotojo sąsajos eskizas:
-
-![Mano produktai](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Mano%20produktai%20GUI.jpg "'Mano produktai langas'")
-
-### Placeholderiai, kad nebūtų konfliktų:
-Rašome vartojimo scenarijų ties tuo numeriu, pagal kurį poreikį yra rašomas.
-Reikia sukurti 5-6 UC tekstus, numeraciją sutvarkysime po to.
-
-### 1.
-### 2.
-### Užduoties pavadinimas.
-Pranešti apie produktų galiojimo pabaigą.
-### Užduoties vykdymą inicijuojantis trigeris.
-Sistemoje yra produktų, kurių galiojimo terminas artėja prie nustatytos ribos.
-### Užduoties vykdymo prieš-sąlygos.
-* Sistemos nustatymai yra tokie, kurie leistų sistemai siųsti pranešimus.
-### Pagrindinis scenarijus.
-Sistemoje yra produktų, kurių galiojimas artėja prie pabaigos. Sistemos pagrindinio lango pranešimų juostoje pranešimų piktograma pasikeičia, nurodanti neperskaitytų pranešimų buvimą. Vartotojas paspaudžia ant pranešimų piktogramos, atsiranda naujas langas. Naujame lange nurodyti produktai, kurie tuoj nebegalios, taip pat ir receptas iš šių produktų, jei tokį galima sudaryti.
-- Vartotojas nusorendžia gaminti pagal pasiūlytą receptą. Vartotojas pažymi, kuriuos produktus išmesti, o kuriuos - palikti. Pažymėti sąraše produktai išmetami.
-### Alternatyvus scenarijus.
-Vartotojas nusprendžia negaminti pagal pasiūlytą receptą. Vartotojas pažymi, kuriuos produktus palikti, kuriuos - išmesti.
-### 3. Produkto užsakymas
+### 2. Produkto užsakymas
 
 #### Pagrindinis scenarijus
-Vartotojas lange "Parduotuvė" turi galimybę prie produkto pavadinimo paspausti mygtuką "Įtraukti į krepšelį". Sistema įtraukia produktą į krepšelio produktų sarašą. Vartotojas, sudėjęs norimus produktus į krepšelį, norėdamas užbaigti užsakymą, spaudžia "Mano krepšelis". Sistema atidaro atitinkamai pavadintą langą, kuriame galima redaguoti krepšelio sudėtį bei užsakyti. Naudotojas spaudžia "Užsakyti". Sistema suformuluoja ir išsiunčia užsakymo užklausą produktų tiekėjui.
+Naudotojas lange "Parduotuvė" turi galimybę prie produkto pavadinimo paspausti mygtuką "Įtraukti į krepšelį". Sistema įtraukia produktą į krepšelio produktų sąrašą. Naudotojas, sudėjęs norimus produktus į krepšelį, norėdamas užbaigti užsakymą, spaudžia "Mano krepšelis". Sistema atidaro atitinkamai pavadintą langą, kuriame galima redaguoti krepšelio sudėtį bei užsakyti. Naudotojas spaudžia "Užsakyti". Sistema suformuluoja ir išsiunčia užsakymo užklausą produktų tiekėjui.
 
 #### Alternatyvūs scenarijai
-Jei vartotojas nebenori dalies Krepšelio turinio, jis gali lange "Krepšelis" pažymėti žymimuosius langelius šalia nenorimų produktų pavadinimų ir paspausti mygtuką "Pašalinti iš krepšelio". Sistema pašalina prekes iš krepšelio produktų sąrašo.
+Jei naudotojas nebenori dalies Krepšelio turinio, jis gali lange "Krepšelis" pažymėti žymimuosius langelius šalia nenorimų produktų pavadinimų ir paspausti mygtuką "Pašalinti iš krepšelio". Sistema pašalina pažymėtas prekes iš krepšelio produktų sąrašo.
 
-Jei vartotojas nori į krepšelį įtraukti jau pirktus produktus, lange "Šaldytuvas" šalia norimo produkto gali paspausti pliuso ženklą. Sistema įtraukia identišką produktą į krepšelį.
+Jei naudotojas nori į krepšelį įtraukti jau pirktus produktus, lange "Šaldytuvas" šalia norimo produkto gali paspausti pliuso ženklą. Sistema įtraukia identišką produktą į krepšelį.
 
 #### Grafinės sąsajos eskizas 
 ![Produktų užsakymas](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/GUIEskizas3.png "'Produktų užsakymas'")
 
-### 4. Šaldytuvo dalinimasis
+### 3. Šaldytuvo dalinimasis
 
 #### Pagrindinis scenarijus
-Vartotojas norėdamas dalintis šaldytuvo duomenimis su kitais vartotojais lange "Šaldytuvas" gali paspausti mygtuką "Dalintis". Sistema parodo langą "Dalinimasis" su jame esančia vartotojų informacija. Vartotojas gali pažymėti žymimuosius langelius prie vartotojų vardų, su kuriais norima dalintis šaldytuvu, ir paspausti mygtuką "Patvirtinti". Sistema išsiunčia kvietimą kitam vartotojui. Jei kitas vartotjas priima pakvietima - sistema praneša pakvietėjui.
+Naudotojas norėdamas dalintis šaldytuvo duomenimis su kitais naudotojais lange "Šaldytuvas" gali paspausti mygtuką "Dalintis". Sistema parodo langą "Dalinimasis" su jame esančia naudotojų informacija. Naudotojas gali pažymėti žymimuosius langelius prie naudotojų vardų, su kuriais norima dalintis šaldytuvu, ir paspausti mygtuką "Patvirtinti". Sistema išsiunčia kvietimą kitam naudotojui. Jei kitas naudotojas priima pakvietimą - sistema praneša kvietėjui.
 
 #### Alternatyvūs scenarijai
-Vartotojas lange "Dalinimasis" gali paspausti mygtuką "Atšaukti" norėdamas atšaukti visus tame lange buvusius pasirinkimus. Sistema išjungia langą "Dalinimasis" ir sugražina vartotoją į langą "Šaldytuvas".
+Naudotojas lange "Dalinimasis" gali paspausti mygtuką "Atšaukti" norėdamas atšaukti visus tame lange buvusius pasirinkimus. Sistema išjungia langą "Dalinimasis" ir sugrąžina naudotoją į langą "Šaldytuvas".
 
-#### Grafinės sasajos eskinzas
+#### Grafinės sąsajos eskizas
 ![Dalinimasis](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/GUIEskizas4(1).png "'Dalintis'")
 
-### 5.
-### Pagrindinis scenarijus.
-Vartotojas, norėdamas pasidalinti receptais su kitais vartotojais, paspaudžia pokalbių skirsnio piktogramą, esančią pagrindinio lango viršuje. Atsidaro pokalbių langas, kuriame vartotojas gali susirašinėti su kitais vartotojais. Vartotojas pasirenka, su kuo susirašinėti iš pateikto sąrašo. Šiame lange yra susirainėjimui skirtas plotas. Vartotojas paspaudžia mygtuką "Dalintis receptais", atsidarusiame lange vartotojas pažymi receptus, kuriais nori dalintis. Iš pasirinktų receptų automatiškai sugeneruojamas pranešimo tekstas. Vartotojas paspaudžia mygtuką "Siųsti", ir pranešimas išsiunčiamas gavėjui.
-### Alternatyvus scenarijus.
-Jei dėl kokių nors priežasčių pranešimo nepavyko nusiųsti, vartotojas apie tai informuojamas, taip pat nurodoma to priežastis ir jam leidžiama pabandyti siųsti iš naujo. Jei po kelių bandymų vis tiek nepavyksta, vartotojas gali laikinai išsaugoti šį pranešimą lokaliai, kad vėliau vėl galėtų pabandyti jį išsiųsti.
-### 6. Naudotojas atsiverčia kalendorių produktams peržiūrėti
+### 4. Naudotojas bendrauja su kitais grupės nariais per pranešimus
+#### Pagrindinis scenarijus
+Naudotojas, norėdamas pasidalinti receptais su kitais naudotojais, paspaudžia pokalbių skirsnio piktogramą, esančią pagrindinio lango viršuje. Atsidaro pokalbių langas, kuriame naudotojas gali susirašinėti su kitais naudotojais. Naudotojas pasirenka, su kuo susirašinėti iš pateikto sąrašo. Šiame lange yra susirašinėjimui skirtas plotas. Naudotojas paspaudžia mygtuką "Dalintis receptais", atsidariusiame lange naudotojas pažymi receptus, kuriais nori dalintis. Iš pasirinktų receptų automatiškai sugeneruojamas pranešimo tekstas. Naudotojas paspaudžia mygtuką "Siųsti", ir pranešimas išsiunčiamas gavėjui.
+#### Alternatyvus scenarijus
+Dėl kokių nors priežasčių pranešimo nepavyko nusiųsti. Sistema informuoją naudotoją apie tai ir nurodo to priežastį. Naudotojui leidžiama pabandyti siųsti iš naujo. Naudotojas, po kelių nesėkmingų bandymų, laikinai išsaugo šį pranešimą lokaliai, kad vėliau galėtų pabandyti jį išsiųsti.
+#### Grafinės sąsajos eskizas
+![Dalinimasis per pranešimus]()
+### 5. Naudotojas atsiverčia kalendorių produktams peržiūrėti
 Kalendoriaus lange naudotojui automatiškai pavaizduojamos esamo mėnesio dienos ir per jas atvežti produktai. Jei kurią nors dieną yra užsakytų produktų, iš jų keli matomi kalendoriuje, bet taip pat prie dienos yra pliuso formos mygtukas. Naudotojas spaudžia ant pliuso. Sistema suranda dienos užsakymų informaciją ir atvaizduoja ją lange "Dienos produktai". Naudotojas peržiūri kiekvieno produkto informaciją ir išjungia langą. Sistema grąžina naudotoją į kalendoriaus langą.
 #### Alternatyvūs scenarijai
 Naudotojas spaudžia „žiūrėti pagal galiojimo laiką“.  Sistema atvaizduoja mėnesyje produktų galiojimo pabaigas. Naudotojas pasirenka dieną ir spaudžia „Peržiūrėti“. Sistema atvaizduoja produktus „Dienos produktai“. Norėdamas išvengti pasenusio maisto naudotojas spaudžia „siūlyti receptus“. Sistema ieško receptų, su produktais, kurie pasirinktą dieną baigs galioti.
@@ -318,8 +261,14 @@ Peržiūrėdamas kalendoriuje produktus naudotojas gali pasirinkti produktą ir 
 #### Grafinės sąsajos eskizas
 ![Kalendorius](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Calendar.jpg "Kalendoriaus ir Dienos užsakymų langai")
 
-### 7.
-![Reklamos](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Draw.io/DamnAds.jpg "'Reklamų rodymas'")
-### 8.
-### 9.
-### 10.
+### 6. Reklamų rodymas
+#### Pagrindinis scenarijus
+Naudotojui naršant "Mano produktai" arba "Visi produktai" meniu programa kartais įterpia reklamą tarp rodomų produktų. Reklama yra tokio paties dydžio kaip ir produktų paveikslėliai, tačiau skiriasi kraštinės spalva. Naudotojai, paspaudę ant reklamos, yra nukreipiami į reklamos nuorodą.
+
+#### Alternatyvūs scenarijai
+Jei reklama yra nuolaida produktui šioje sistemoje, tai sistema reaguodama į paspaudimą duoda pasirinkimą nurodytą produktą įtraukti į krepšelį su atitinkama kaina. Naudotojas paspaudžia sutikti. Sistema įtraukia produktą į krepšelį.
+
+Naudotojui paspaudus dešinį pelės mygtuką (arba ilgai palietus, jei naudojamasi mobiliąją versija) sistema parodo pasirinkimą pranešti apie netinkamą reklamos turinį. Naudotojas spaudžia "pranešti". Sistema atidaro dialogą, kuriame prašoma nurodyti priežastį, kodėl ta reklama yra netinkama. Naudotojas suveda informaciją ir patvirtina pranešimą. Sistema neberodo jam šios reklamos ir persiunčia pranešimą dėl netinkamo turinio sistemos administratoriams, kurie nuspręs, ar dėl tos reklamos reikia imtis tolimesnių veiksmų.
+
+#### Grafinės sąsajos eskizas
+![Reklamos](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Draw.io/DamnAds.jpg "Reklamų rodymas")

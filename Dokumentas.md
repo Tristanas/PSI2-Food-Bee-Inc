@@ -251,6 +251,9 @@ Naudotojas lange "Dalinimasis" gali paspausti mygtuką "Atšaukti" norėdamas at
 #### Grafinės sąsajos eskizas
 ![Dalinimasis](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/GUIEskizas4(1).png "'Dalintis'")
 
+#### Sekų diagrama
+![Dalinimasis sequence](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/%C5%A0aldytuvoDalinSeq.png "'Dalintis'")
+
 ### 4. Naudotojas bendrauja su kitais grupės nariais per pranešimus
 #### Pagrindinis scenarijus
 Naudotojas, norėdamas pasidalinti receptais su kitais naudotojais, paspaudžia pokalbių skirsnio piktogramą, esančią pagrindinio lango viršuje. Atsidaro pokalbių langas, kuriame naudotojas gali susirašinėti su kitais naudotojais. Naudotojas pasirenka, su kuo susirašinėti iš pateikto sąrašo. Šiame lange yra susirašinėjimui skirtas plotas. Naudotojas paspaudžia mygtuką "Dalintis receptais", atsidariusiame lange naudotojas pažymi receptus, kuriais nori dalintis. Iš pasirinktų receptų automatiškai sugeneruojamas pranešimo tekstas. Naudotojas paspaudžia mygtuką "Siųsti", ir pranešimas išsiunčiamas gavėjui.

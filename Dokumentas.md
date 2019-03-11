@@ -220,9 +220,9 @@ Sistemoje yra produktų, kurių galiojimo terminas artėja prie nustatytos ribos
 #### Užduoties vykdymo prieš-sąlygos
 * Sistemos nustatymai yra tokie, kurie leistų sistemai siųsti pranešimus.
 #### Pagrindinis scenarijus
-Artėjant produktų galiojimo laikui prie pabaigos, pagrindinio lango pranešimų juostoje pranešimų piktograma pasikeičia, nurodydama neperskaitytų pranešimų buvimą. Naudotojas paspaudžia ant pranešimų piktogramos. Sistema atidaro langą "Senstantys produktai". Naujame lange nurodyti produktai, kurie tuoj pasens, taip pat ir receptas iš šių produktų, jei tokį galima sudaryti. Naudotojas nusprendžia gaminti pagal pasiūlytą receptą. Naudotojas pažymi, kuriuos produktus išmesti, o kuriuos - palikti. Pažymėti sąraše produktai išmetami.
+Artėjant produktų galiojimo laikui prie pabaigos, pagrindinio lango pranešimų juostoje pranešimų piktograma pasikeičia, nurodydama neperskaitytų pranešimų buvimą. Naudotojas paspaudžia ant pranešimų piktogramos. Sistema atidaro langą "Senstantys produktai". Naujame lange nurodyti produktai, kurie tuoj pasens, taip pat ir receptai iš šių produktų, jei tokių galima sudaryti. Naudotojas nusprendžia gaminti pagal pasiūlytą receptą. Norėdamas dalį senstančių produktų pašalinti vatrotojas juos pažymi ir spaudžia pašalinti.
 #### Alternatyvūs scenarijai
-Naudotojas nusprendžia negaminti pagal pasiūlytą receptą. Sistema atveria langą "Produktų šalinimas". Naudotojas pažymi, kuriuos produktus palikti, kuriuos - išmesti, ir spaudžia "Patvirtinti". Sistema grąžina naudotoja į langą "Senstantys produktai" ir pašalina pažymėtus produktus iš šaldytuvo.
+Naudotojas nusprendžia negaminti pagal pasiūlytą receptą. Norėdamas dalį senstančių produktų pašalinti vatrotojas juos pažymi ir spaudžia pašalinti. Naudodamas navigacijos mygtukus apačioje vartotojas gryžta į šaldytuvą/parduotuvę/krepšelį.
 
 Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių produktų naudojant senstančius produktus. Vietoje pasiūlyto recepto sistema parodo, jog iš esamų produktų nepavyksta sudaryti recepto. Toliau viskas kaip Naudotojui nusprendus negaminti recepto.
 #### Grafinės sąsajos eskizas

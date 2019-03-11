@@ -272,7 +272,8 @@ Naudotojas spaudžia „žiūrėti pagal galiojimo laiką“.  Sistema atvaizduo
 Naudotojas pasirenka kurių nors metų kokį nors mėnesį. Sistema atvaizduoja to mėnesio informaciją.
 #### Grafinės sąsajos eskizas
 ![Kalendorius](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Calendar.jpg "Kalendoriaus ir Dienos užsakymų langai")
-
+#### Sekų diagrama
+![Kalendoriaus sekos](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/calendar-sequence.jpg "Kalendoriaus seku diagrama")
 ### 6. Reklamų rodymas
 #### Pagrindinis scenarijus
 Naudotojui naršant "Mano produktai" arba "Visi produktai" meniu programa kartais įterpia reklamą tarp rodomų produktų. Reklama yra tokio paties dydžio kaip ir produktų paveikslėliai, tačiau skiriasi kraštinės spalva. Naudotojai, paspaudę ant reklamos, yra nukreipiami į reklamos nuorodą.

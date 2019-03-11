@@ -204,6 +204,9 @@ Klases grupuosime į diagramas pagal šias pagrindines esybes:
  - naudotojas
  - produkto tiekėjas
  
+## Klasių ir reikalavimų matrica
+
+![Klasių Matrica](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/firefox_c1LD6Otfl6.png "Klasių ir reikalavimų matrica")
 
 # 3. Užduotys
 

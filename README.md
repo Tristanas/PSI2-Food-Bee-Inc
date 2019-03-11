@@ -1,12 +1,23 @@
 # Esminės nuorodos:
- - [Užsakovo reikalavimai - per pratybas 03-05 dėsim į repozitorijos dokumentą, iki tol dirbame google diske, kartu.](https://docs.google.com/document/d/1OK8YH0PFO4UR0oJfQ5bHP2LUE-6mTf3Ih-gsRSJ5he0/edit)
+ - [Užsakovo reikalavimai - prirašyta komentarų, jie reikalingi peržiūros metu.](https://docs.google.com/document/d/1OK8YH0PFO4UR0oJfQ5bHP2LUE-6mTf3Ih-gsRSJ5he0/edit)
  - [Dokumentas, kurį įteiksime pratybų vedėjai prieš atsiskaitymą.](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Dokumentas.md)
  - Dirbame su Markdown, šiokį tokį "Cheatsheet" galima rasti [čia.](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 # Kitas susitikimas:
-03-09 šeštadienį 10:00 pas Manfredą barake.
+03-11 pirmadienį ??:?? pas Manfredą barake(?).
 
-## Namų darbai:
+# LAST TO DO:
+[ ] Antro etapo tikslus pabaigti, t. y. papildyti DS modelį pagal UC tekstus, suderinti UC tekstus su DS modeliu.
+[ ] Peržiūra - kiekvienam poreikiui, UC tekstui, klasių diagramai
+[ ] Peržvelgti "Jų" antrą laboratorinį darbą ir remiantis mūsų parašytais reikalavimais - vartotojiškomis istorijomis - daryti pakeitimus. Rašyti išskirtina spalva arba sudaryti lentelę su informacija apie pakeitimus.
+[ ] Matricos: viena skirta pavaizduoti ryšius tarp klasių ir reikalavimų, kita reikalavimų - užduočių atsekamumui.
+[ ] Paketai: jei klasės grupuojamos, dėti jas į paketus, dėti UC tekstus į paketus ir kiekvienam paketui reikia sudaryti papildytą UC diagramą.
+## Dokumento paruošimas:
+[ ] Suformatuoti įžanginį "puslapį"
+[ ] sugeneruoti table of contents
+[ ] Last check
+
+## Antro etapo namų darbai:
 Patikslinti užsakovo poreikius. Detalizuoti pasirinktu formatu (nurodymose pateikti du variantai: lentelė arba sakinys:
 „Kaip [mano rolė] norėčiau padaryti [kažkoks veiksmas], kad įgyčiau [kažkokia nauda]“.
 
@@ -19,13 +30,9 @@ Patikslinti užsakovo poreikius. Detalizuoti pasirinktu formatu (nurodymose pate
 
 
 ## Antro etapo tikslai:
- - Surašyti bent 5 vartojimo scenarijus (UC tekstai)
- - Kiekvienam sukurti GUI eskizus
- - Daryti UC tekstus pagal DS modelį, bet pastebėjus naujus dalykus (atributus, esybes, klases, reikalavimus) - įterpti juos į DS modelį ir reikalavimus. **Taisyti pirmo etapo rezultatus.**
- - Skirstyti į paketus:
-  - UC scenarijus
-  - klasių diagramas
-  - reikalavimus **?**
+ [x] Surašyti bent 5 vartojimo scenarijus (UC tekstai)
+ [x] Kiekvienam sukurti GUI eskizus (liko du eskizai)
+ [ ] Daryti UC tekstus pagal DS modelį, bet pastebėjus naujus dalykus (atributus, esybes, klases, reikalavimus) - įterpti juos į DS modelį ir reikalavimus. **Taisyti pirmo etapo rezultatus.**
 
 Kai dirbsim gyvai, diskutuojame visi, bet pakeitimus daro atitinkamose vietose atsakingi žmonės. Tarkime, nusprendėme pakeisti alternatyvų scenarijų, pildo Vilius arba Manfredas. Pastebėjome, kad reikia keisti DS modelyje kažką, Tomas ar Edvinas
 

@@ -217,10 +217,9 @@ Sistemoje yra produktų, kurių galiojimo terminas artėja prie nustatytos ribos
 #### Užduoties vykdymo prieš-sąlygos
 * Sistemos nustatymai yra tokie, kurie leistų sistemai siųsti pranešimus.
 #### Pagrindinis scenarijus
-Artėjant produktų galiojimo laikui prie pabaigos, pagrindinio lango pranešimų juostoje pranešimų piktograma pasikeičia, nurodydama neperskaitytų pranešimų buvimą. Naudotojas paspaudžia ant pranešimų piktogramos. Sistema atidaro langą "Senstantys produktai". Naujame lange nurodyti produktai, kurie tuoj nebegalios, taip pat ir receptas iš šių produktų, jei tokį galima sudaryti.
-- Naudotojas nusprendžia gaminti pagal pasiūlytą receptą. Naudotojas pažymi, kuriuos produktus išmesti, o kuriuos - palikti. Pažymėti sąraše produktai išmetami.
+Artėjant produktų galiojimo laikui prie pabaigos, pagrindinio lango pranešimų juostoje pranešimų piktograma pasikeičia, nurodydama neperskaitytų pranešimų buvimą. Naudotojas paspaudžia ant pranešimų piktogramos. Sistema atidaro langą "Senstantys produktai". Naujame lange nurodyti produktai, kurie tuoj nebegalios, taip pat ir receptas iš šių produktų, jei tokį galima sudaryti. Naudotojas nusprendžia gaminti pagal pasiūlytą receptą. Naudotojas pažymi, kuriuos produktus išmesti, o kuriuos - palikti. Pažymėti sąraše produktai išmetami.
 #### Alternatyvus scenarijus
-Naudotojas nusprendžia negaminti pagal pasiūlytą receptą. Naudotojas pažymi, kuriuos produktus palikti, kuriuos - išmesti.
+Naudotojas nusprendžia negaminti pagal pasiūlytą receptą. Sistema atveria langą "Produktų šalinimas". Naudotojas pažymi, kuriuos produktus palikti, kuriuos - išmesti, ir spaudžia "Patvirtinti". Sistema grąžina naudotoja į langą "Senstantys produktai" ir pašalina pažymėtus produktus iš šaldytuvo.
 #### Grafinės sąsajos eskizas
 
 ### 2. Produkto užsakymas
@@ -229,7 +228,7 @@ Naudotojas nusprendžia negaminti pagal pasiūlytą receptą. Naudotojas pažymi
 Naudotojas lange "Parduotuvė" turi galimybę prie produkto pavadinimo paspausti mygtuką "Įtraukti į krepšelį". Sistema įtraukia produktą į krepšelio produktų sąrašą. Naudotojas, sudėjęs norimus produktus į krepšelį, norėdamas užbaigti užsakymą, spaudžia "Mano krepšelis". Sistema atidaro atitinkamai pavadintą langą, kuriame galima redaguoti krepšelio sudėtį bei užsakyti. Naudotojas spaudžia "Užsakyti". Sistema suformuluoja ir išsiunčia užsakymo užklausą produktų tiekėjui.
 
 #### Alternatyvūs scenarijai
-Jei naudotojas nebenori dalies Krepšelio turinio, jis gali lange "Krepšelis" pažymėti žymimuosius langelius šalia nenorimų produktų pavadinimų ir paspausti mygtuką "Pašalinti iš krepšelio". Sistema pašalina prekes iš krepšelio produktų sąrašo.
+Jei naudotojas nebenori dalies Krepšelio turinio, jis gali lange "Krepšelis" pažymėti žymimuosius langelius šalia nenorimų produktų pavadinimų ir paspausti mygtuką "Pašalinti iš krepšelio". Sistema pašalina pažymėtas prekes iš krepšelio produktų sąrašo.
 
 Jei naudotojas nori į krepšelį įtraukti jau pirktus produktus, lange "Šaldytuvas" šalia norimo produkto gali paspausti pliuso ženklą. Sistema įtraukia identišką produktą į krepšelį.
 
@@ -251,7 +250,7 @@ Naudotojas lange "Dalinimasis" gali paspausti mygtuką "Atšaukti" norėdamas at
 #### Pagrindinis scenarijus
 Naudotojas, norėdamas pasidalinti receptais su kitais naudotojais, paspaudžia pokalbių skirsnio piktogramą, esančią pagrindinio lango viršuje. Atsidaro pokalbių langas, kuriame naudotojas gali susirašinėti su kitais naudotojais. Naudotojas pasirenka, su kuo susirašinėti iš pateikto sąrašo. Šiame lange yra susirašinėjimui skirtas plotas. Naudotojas paspaudžia mygtuką "Dalintis receptais", atsidariusiame lange naudotojas pažymi receptus, kuriais nori dalintis. Iš pasirinktų receptų automatiškai sugeneruojamas pranešimo tekstas. Naudotojas paspaudžia mygtuką "Siųsti", ir pranešimas išsiunčiamas gavėjui.
 #### Alternatyvus scenarijus
-Jei dėl kokių nors priežasčių pranešimo nepavyko nusiųsti, naudotojas apie tai informuojamas, taip pat nurodoma to priežastis ir jam leidžiama pabandyti siųsti iš naujo. Jei po kelių bandymų vis tiek nepavyksta, naudotojas gali laikinai išsaugoti šį pranešimą lokaliai, kad vėliau vėl galėtų pabandyti jį išsiųsti.
+Dėl kokių nors priežasčių pranešimo nepavyko nusiųsti. Sistema informuoją naudotoją apie tai ir nurodo to priežastį. Naudotojui leidžiama pabandyti siųsti iš naujo. Naudotojas, po kelių nesėkmingų bandymų, laikinai išsaugo šį pranešimą lokaliai, kad vėliau galėtų pabandyti jį išsiųsti.
 #### Grafinės sąsajos eskizas
 ![Dalinimasis per pranešimus]()
 ### 5. Naudotojas atsiverčia kalendorių produktams peržiūrėti
@@ -264,12 +263,12 @@ Peržiūrėdamas kalendoriuje produktus naudotojas gali pasirinkti produktą ir 
 
 ### 6. Reklamų rodymas
 #### Pagrindinis scenarijus
-Naudotojui naršant "Mano produktai" arba "Visi produktai" meniu programa kartais įterpia reklamą tarp rodomų produktų. Reklama yra tokio pačio dydžio kaip ir produktų ikonos, tačiau skiriasi kraštinės spalva. Naudotojams paspaudus ant reklamos jie yra nukreipiami į reklamos nuorodą.
+Naudotojui naršant "Mano produktai" arba "Visi produktai" meniu programa kartais įterpia reklamą tarp rodomų produktų. Reklama yra tokio paties dydžio kaip ir produktų paveikslėliai, tačiau skiriasi kraštinės spalva. Naudotojai, paspaudę ant reklamos, yra nukreipiami į reklamos nuorodą.
 
 #### Alternatyvūs scenarijai
-Jei reklama yra nuolaida produktui šioje sistemoje, tai paspaudus reklamą naudotojui yra duodamas pasirinkimas nurodytą produktą įtraukti į krepšelį su atitinkama kaina.
+Jei reklama yra nuolaida produktui šioje sistemoje, tai sistema reaguodama į paspaudimą duoda pasirinkimą nurodytą produktą įtraukti į krepšelį su atitinkama kaina. Naudotojas paspaudžia sutikti. Sistema įtraukia produktą į krepšelį.
 
-Naudotojui paspaudus dešinį pelės mygtuką (arba ilgai palietus, jei naudojamasi mobiliąją versija) atsiranda pasirinkimas pranešti apie netinkamą reklamos turinį. Pasirinkus šį pasirinkimą atsidaro dialogas kuris prašo pasirinkti kodėl ta reklama yra netinkama. Naudotojui patvirtinus pranešimą ši reklama yra neberodoma tam naudotojui, o pranešimas apie netinkamą turinį yra persiunčiamas sistemos administratoriams, kurie nuspręs, ar dėl tos reklamos reikia imtis tolimesnių veiksmų.
+Naudotojui paspaudus dešinį pelės mygtuką (arba ilgai palietus, jei naudojamasi mobiliąją versija) sistema parodo pasirinkimą pranešti apie netinkamą reklamos turinį. Naudotojas spaudžia "pranešti". Sistema atidaro dialogą, kuriame prašoma nurodyti priežastį, kodėl ta reklama yra netinkama. Naudotojas suveda informaciją ir patvirtina pranešimą. Sistema neberodo jam šios reklamos ir persiunčia pranešimą dėl netinkamo turinio sistemos administratoriams, kurie nuspręs, ar dėl tos reklamos reikia imtis tolimesnių veiksmų.
 
 #### Grafinės sąsajos eskizas
 ![Reklamos](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Draw.io/DamnAds.jpg "Reklamų rodymas")

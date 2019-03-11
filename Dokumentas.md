@@ -226,6 +226,7 @@ Naudotojas nusprendžia negaminti pagal pasiūlytą receptą. Sistema atveria la
 
 Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių produktų naudojant senstančius produktus. Vietoje pasiūlyto recepto sistema parodo, jog iš esamų produktų nepavyksta sudaryti recepto. Toliau viskas kaip Naudotojui nusprendus negaminti recepto.
 #### Grafinės sąsajos eskizas
+![GUIEskizas1.png](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/GUIEskizas1.png "Langas 'Senstantys produktai'")
 
 ### 2. Produkto užsakymas
 

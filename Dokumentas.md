@@ -235,6 +235,9 @@ Jei naudotojas nori į krepšelį įtraukti jau pirktus produktus, lange "Šaldy
 #### Grafinės sąsajos eskizas 
 ![Produktų užsakymas](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/GUIEskizas3.png "'Produktų užsakymas'")
 
+#### Sekų diagrama
+![Produktų užsakymas sequence] (https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Produkt%C5%B3UzsakymasSeq.png "'Produktų užsakymas'")
+
 ### 3. Šaldytuvo dalinimasis
 
 #### Pagrindinis scenarijus

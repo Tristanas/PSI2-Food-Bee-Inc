@@ -227,7 +227,8 @@ Naudotojas nusprendžia negaminti pagal pasiūlytą receptą. Norėdamas dalį s
 Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių produktų naudojant senstančius produktus. Vietoje pasiūlyto recepto sistema parodo, jog iš esamų produktų nepavyksta sudaryti recepto. Toliau viskas kaip Naudotojui nusprendus negaminti recepto.
 #### Grafinės sąsajos eskizas
 ![GUIEskizas1.png](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/GUIEskizas1.png "Langas 'Senstantys produktai'")
-
+#### Sekų diagrama
+**to do**
 ### 2. Produkto užsakymas
 
 #### Pagrindinis scenarijus
@@ -264,7 +265,9 @@ Naudotojas, norėdamas pasidalinti receptais su kitais naudotojais, paspaudžia 
 #### Alternatyvus scenarijus
 Dėl kokių nors priežasčių pranešimo nepavyko nusiųsti. Sistema informuoją naudotoją apie tai ir nurodo to priežastį. Naudotojui leidžiama pabandyti siųsti iš naujo. Naudotojas, po kelių nesėkmingų bandymų, laikinai išsaugo šį pranešimą lokaliai, kad vėliau galėtų pabandyti jį išsiųsti.
 #### Grafinės sąsajos eskizas
-![Dalinimasis per pranešimus]()
+**to do**
+#### Sekų diagrama
+![Bendravimo pranešimais sekų diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/4uc.png)
 ### 5. Naudotojas atsiverčia kalendorių produktams peržiūrėti
 Kalendoriaus lange naudotojui automatiškai pavaizduojamos esamo mėnesio dienos ir per jas atvežti produktai. Jei kurią nors dieną yra užsakytų produktų, iš jų keli matomi kalendoriuje, bet taip pat prie dienos yra pliuso formos mygtukas. Naudotojas spaudžia ant pliuso. Sistema suranda dienos užsakymų informaciją ir atvaizduoja ją lange "Dienos produktai". Peržiūrėdamas kalendoriuje produktus naudotojas pasirenka produktą ir spaudžia „Užsakyti daugiau“. Sistema suranda produktą ir įdeda jį į naudotojo krepšelį. Naudotojas baigęs žiūrėti informaciją išjungia langą. Sistema grąžina naudotoją į kalendoriaus langą.
 #### Alternatyvūs scenarijai

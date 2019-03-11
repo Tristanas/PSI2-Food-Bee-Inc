@@ -3,15 +3,19 @@
  - [Dokumentas, kurį įteiksime pratybų vedėjai prieš atsiskaitymą.](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Dokumentas.md)
  - Dirbame su Markdown, šiokį tokį "Cheatsheet" galima rasti [čia.](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
+TO DO prieš išsiuntimą:
+ - [ ] Peržiūrėti savo UC tekstus ir taisyti/pildyti juos pagal peržiūros punktus (word file su jais messenger pokalbyje)
+ - [ ] Toliau redaguoti "Jų" antrą laborą.
+ - [ ] Pasitikslinti dėl paketų, būtini ar papildomi?
+ - [ ] Dokumentą paruošti.
+
 # Kitas susitikimas:
-03-11 pirmadienį ??:?? pas Manfredą barake(?).
 
 # LAST TO DO:
-- [ ] Antro etapo tikslus pabaigti, t. y. papildyti DS modelį pagal UC tekstus, suderinti UC tekstus su DS modeliu, padaryti likusius 2 GUI eskizus.
-- [ ] Peržiūra - kiekvienam poreikiui, UC tekstui, klasių diagramai
-- [ ] Peržvelgti "Jų" antrą laboratorinį darbą ir remiantis mūsų parašytais reikalavimais - vartotojiškomis istorijomis - daryti pakeitimus. Rašyti išskirtina spalva arba sudaryti lentelę su informacija apie pakeitimus.
+- [x] Antro etapo tikslus pabaigti, t. y. papildyti DS modelį pagal UC tekstus, suderinti UC tekstus su DS modeliu, padaryti likusius 2 GUI eskizus.
+- [x] Peržiūra - kiekvienam poreikiui, UC tekstui, klasių diagramai
+- [x] Peržvelgti "Jų" antrą laboratorinį darbą ir remiantis mūsų parašytais reikalavimais - vartotojiškomis istorijomis - daryti pakeitimus. Rašyti išskirtina spalva arba sudaryti lentelę su informacija apie pakeitimus.
 - [x] Matricos: viena skirta pavaizduoti ryšius tarp klasių ir reikalavimų, kita reikalavimų - užduočių atsekamumui.
-- [ ] Paketai: jei klasės grupuojamos, dėti jas į paketus, dėti UC tekstus į paketus ir kiekvienam paketui reikia sudaryti papildytą UC diagramą.
 ## Dokumento paruošimas:
 - [ ] Suformatuoti įžanginį "puslapį"
 - [ ] sugeneruoti table of contents

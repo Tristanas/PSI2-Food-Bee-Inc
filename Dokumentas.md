@@ -207,7 +207,7 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
 
 ## Klasių ir reikalavimų matrica
 
-![Klasių Matrica](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/firefox_c1LD6Otfl6.png "Klasių ir reikalavimų matrica")
+![Klasių Matrica](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Class-X-Req.jpg "Klasių ir reikalavimų matrica")
 
 # 3. Užduotys
 
@@ -267,7 +267,7 @@ Naudotojas, norėdamas pasidalinti receptais su kitais naudotojais, paspaudžia 
 #### Alternatyvus scenarijus
 Dėl kokių nors priežasčių pranešimo nepavyko nusiųsti. Sistema informuoją naudotoją apie tai ir nurodo to priežastį. Naudotojui leidžiama pabandyti siųsti iš naujo. Naudotojas, po kelių nesėkmingų bandymų, laikinai išsaugo šį pranešimą lokaliai, kad vėliau galėtų pabandyti jį išsiųsti.
 #### Grafinės sąsajos eskizas
-**to do**
+![Pranešimai kitiems](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/4ucgui.png)
 #### Sekų diagrama
 ![Bendravimo pranešimais sekų diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/4uc.png)
 ### 5. Naudotojas atsiverčia kalendorių produktams peržiūrėti

@@ -8,7 +8,7 @@
 TO DO prieš išsiuntimą:
  - [ ] Peržiūrėti savo UC tekstus ir taisyti/pildyti juos pagal peržiūros punktus (word file su jais messenger pokalbyje)
  - [ ] Toliau redaguoti "Jų" antrą laborą.
- - [ ] Pasitikslinti dėl paketų, būtini ar papildomi?
+ - [x] Pasitikslinti dėl paketų, būtini ar papildomi? **PAPILDOMI**
  - [ ] Dokumentą paruošti.
 
 # Kitas susitikimas:

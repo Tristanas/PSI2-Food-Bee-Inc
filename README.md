@@ -4,6 +4,7 @@
  - Dirbame su Markdown, šiokį tokį "Cheatsheet" galima rasti [čia.](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
  - [Užsakovų reikalavimų specifikacijos taisymas.](https://1drv.ms/w/s!Ao3LSVKqY6TXg8t2cWLC-LfMPbrOEg)
  - [Klasių X reikalavimų matricja.](https://1drv.ms/x/s!Ao3LSVKqY6TXg8twB339T6ChHotLiQ)
+ - [Pandox tutorial. Pirmiau reiktų jį atsisiųsti. Šiaip įdomus dalykas, pasibandykit](http://pandoc.org/getting-started.html)
 
 TO DO prieš išsiuntimą:
  - [ ] Peržiūrėti savo UC tekstus ir taisyti/pildyti juos pagal peržiūros punktus (word file su jais messenger pokalbyje)

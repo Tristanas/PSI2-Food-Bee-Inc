@@ -301,3 +301,7 @@ Naudotojui paspaudus dešinį pelės mygtuką (arba ilgai palietus, jei naudojam
 [Pataisyta reikalavimų specifikacija.](https://1drv.ms/w/s!Ao3LSVKqY6TXg8t2cWLC-LfMPbrOEg) Raudonu šriftu žymimi nauji reikalavimai. 
 
 Užduočių ir reikalavimų atsekamumo matricos nepateiksime. Užduočių scenarijų tekstai yra parašyti įgyvendinant 2-7 užsakovo reikalavimus. Taip pat kiekviena užduotis įgyvendina pirmąjį užsakovo reikalavimą.
+
+Pridėta trūkstamas 4 užduoties GUI.
+
+Patikslinta klasių diagramą, klasei "naudotojas" pridėjas atributas "vardas".

@@ -298,6 +298,6 @@ Naudotojui paspaudus dešinį pelės mygtuką (arba ilgai palietus, jei naudojam
 ![Detalesnės užduotys](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Atnaujinta-UC-diagrama.jpg)
 
 # 4. Peržiūros rezultatai:
-![Pataisyta reikalavimų specifikacija.](https://1drv.ms/w/s!Ao3LSVKqY6TXg8t2cWLC-LfMPbrOEg) Raudonu šriftu žymimi nauji reikalavimai. 
+[Pataisyta reikalavimų specifikacija.](https://1drv.ms/w/s!Ao3LSVKqY6TXg8t2cWLC-LfMPbrOEg) Raudonu šriftu žymimi nauji reikalavimai. 
 
 Užduočių ir reikalavimų atsekamumo matricos nepateiksime. Užduočių scenarijų tekstai yra parašyti įgyvendinant 2-7 užsakovo reikalavimus. Taip pat kiekviena užduotis įgyvendina pirmąjį užsakovo reikalavimą.

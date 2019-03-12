@@ -2,6 +2,8 @@
  - [Užsakovo reikalavimai - prirašyta komentarų, jie reikalingi peržiūros metu.](https://docs.google.com/document/d/1OK8YH0PFO4UR0oJfQ5bHP2LUE-6mTf3Ih-gsRSJ5he0/edit)
  - [Dokumentas, kurį įteiksime pratybų vedėjai prieš atsiskaitymą.](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Dokumentas.md)
  - Dirbame su Markdown, šiokį tokį "Cheatsheet" galima rasti [čia.](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+ - [Užsakovų reikalavimų specifikacijos taisymas.](https://1drv.ms/w/s!Ao3LSVKqY6TXg8t2cWLC-LfMPbrOEg)
+ - [Klasių X reikalavimų matricja.](https://1drv.ms/x/s!Ao3LSVKqY6TXg8twB339T6ChHotLiQ)
 
 TO DO prieš išsiuntimą:
  - [ ] Peržiūrėti savo UC tekstus ir taisyti/pildyti juos pagal peržiūros punktus (word file su jais messenger pokalbyje)

@@ -293,3 +293,6 @@ Naudotojui paspaudus dešinį pelės mygtuką (arba ilgai palietus, jei naudojam
 
 #### Sekų diagrama
 ![Reklamos Seq](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Draw.io/DamnAds_Seq.jpg "Reklamų rodymo sekų diagrama")
+
+### Papildyta užduočių diagrama
+![Detalesnės užduotys](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Atnaujinta-UC-diagrama.jpg)

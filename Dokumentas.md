@@ -223,13 +223,14 @@ Sistemoje yra produktų, kurių galiojimo terminas artėja prie nustatytos ribos
 #### Pagrindinis scenarijus
 Artėjant produktų galiojimo laikui prie pabaigos, pagrindinio lango pranešimų juostoje pranešimų piktograma pasikeičia, nurodydama neperskaitytų pranešimų buvimą. Naudotojas paspaudžia ant pranešimų piktogramos. Sistema atidaro langą "Senstantys produktai". Naujame lange nurodyti produktai, kurie tuoj pasens, taip pat ir receptai iš šių produktų, jei tokių galima sudaryti. Naudotojas nusprendžia gaminti pagal pasiūlytą receptą. Norėdamas dalį senstančių produktų pašalinti naudotojas juos pažymi ir spaudžia pašalinti.
 #### Alternatyvūs scenarijai
-Naudotojas nusprendžia negaminti pagal pasiūlytą receptą. Naudotojas pažymi senstančius produktus, kuriuos nori pašalinti be gaminimo, ir spaudžia "pašalinti". Naudodamas navigacijos mygtukus apačioje naudotojas grįžta į šaldytuvą/parduotuvę/krepšelį.
+Naudotojas nusprendžia negaminti pagal pasiūlytą receptą. Naudotojas pažymi senstančius produktus, kuriuos nori pašalinti be gaminimo, ir spaudžia "pašalinti".
 
 Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių produktų naudojant senstančius produktus. Vietoje pasiūlyto recepto sistema parodo, jog iš esamų produktų nepavyksta sudaryti recepto. Toliau viskas kaip Naudotojui nusprendus negaminti recepto.
 #### Grafinės sąsajos eskizas
 ![GUIEskizas1.png](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/GUIEskizas1.png "Langas 'Senstantys produktai'")
 #### Sekų diagrama
-**to do**
+![SEQ1.png](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/SEQ1.png  "Sekų diagrama")
+
 ### 2. Produkto užsakymas
 
 #### Pagrindinis scenarijus

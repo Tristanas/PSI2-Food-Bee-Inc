@@ -20,10 +20,10 @@
 ## Robustiškumo diagramos:
 Forma: (ne)atlikta, Pavadinimas, kas daro, kur nuoroda.
 - [ ] Pranešimas dėl produkto galiojimo pabaigos,
-- [x] Produkto užsakymas, Manfredas + Vilius, (https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Draw.io/Robust-example.html)
+- [x] Produkto užsakymas, Manfredas + Vilius, [diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Draw.io/Robust-example.html)
 - [ ] Šaldytuvo dalinimasis,
 - [ ] Naudotojas bendrauja su kitais grupės nariais per pranešimus,
-- [ ] Naudotojas atsiverčia kalendorių produktams peržiūrėti, Vilius
+- [x] Naudotojas atsiverčia kalendorių produktams peržiūrėti, Vilius, [diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Kalendoriaus-RD.jpg)
 - [ ] Reklamų rodymas
 
 

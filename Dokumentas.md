@@ -249,15 +249,15 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
 
 ![užduočių diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/UC-diagrama.jpg "Užduočių diagrama")
 
-### 3.1. Pranešimas dėl produktų galiojimo pabaigos
+### 3.1. Pranešimo dėl produktų galiojimo pabaigos peržiūrėjimas
 #### Užduoties vykdymą inicijuojantis trigeris
 Sistemoje yra produktų, kurių galiojimo terminas artėja prie nustatytos ribos.
 #### Užduoties vykdymo prieš-sąlygos
 * Sistemos nustatymai yra tokie, kurie leistų sistemai siųsti pranešimus.
 #### Pagrindinis scenarijus
-Artėjant produktų galiojimo laikui prie pabaigos, pagrindinio lango pranešimų juostoje pranešimų piktograma pasikeičia, nurodydama neperskaitytų pranešimų buvimą. Naudotojas paspaudžia ant pranešimų piktogramos. Sistema atidaro langą "Senstantys produktai". Naujame lange nurodyti produktai, kurie tuoj pasens, taip pat ir receptai iš šių produktų, jei tokių galima sudaryti. Naudotojas nusprendžia gaminti pagal pasiūlytą receptą. Norėdamas dalį senstančių produktų pašalinti naudotojas juos pažymi ir spaudžia pašalinti.
+~~Artėjant produktų galiojimo laikui prie pabaigos, pagrindinio lango pranešimų juostoje pranešimų piktograma pasikeičia, nurodydama neperskaitytų pranešimų buvimą.~~ *(Reikia perrašyti pradžią, kad sistema kažką padaro ir parodo naudotojui)* Naudotojas paspaudžia ant pranešimų piktogramos. Sistema atidaro langą "Senstantys produktai". Naujame lange nurodyti produktai, kurie tuoj pasens, taip pat ir receptai iš šių produktų, jei tokių galima sudaryti. ~~Naudotojas nusprendžia gaminti pagal pasiūlytą receptą.~~ Norėdamas dalį senstančių produktų pašalinti naudotojas juos pažymi ir spaudžia pašalinti. Sistema pašalina produktus iš šaldytuvo ir atnaujina vaizduojamą informaciją.
 #### Alternatyvūs scenarijai
-Naudotojas nusprendžia negaminti pagal pasiūlytą receptą. Naudotojas pažymi senstančius produktus, kuriuos nori pašalinti be gaminimo, ir spaudžia "pašalinti".
+Naudotojas nusprendžia gaminti pagal pasiūlytą receptą. Vykdomas gaminimo scenarijus.
 
 Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių produktų naudojant senstančius produktus. Vietoje pasiūlyto recepto sistema parodo, jog iš esamų produktų nepavyksta sudaryti recepto. Toliau viskas kaip Naudotojui nusprendus negaminti recepto.
 #### Grafinės sąsajos eskizas

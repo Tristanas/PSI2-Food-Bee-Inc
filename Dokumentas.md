@@ -265,15 +265,13 @@ Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių 
 #### Sekų diagrama
 ![SEQ1.png](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/SEQ1.png  "Sekų diagrama")
 
-### 3.2. Produkto užsakymas
+### 3.2. Produkto užsakymas per parduotuvę
 
 #### Pagrindinis scenarijus
-Naudotojas lange "Parduotuvė" turi galimybę prie produkto pavadinimo paspausti mygtuką "Įtraukti į krepšelį". Sistema į tai reaguodama įtraukia produktą į krepšelio produktų sąrašą. Naudotojas, sudėjęs norimus produktus į krepšelį, norėdamas užbaigti užsakymą, spaudžia "Mano krepšelis". Sistema atidaro atitinkamai pavadintą langą, kuriame galima redaguoti krepšelio sudėtį bei užsakyti. Naudotojas spaudžia "Užsakyti". Sistema suformuluoja ir išsiunčia užsakymo užklausą produktų tiekėjui.
+Naudotojas lange "Parduotuvė"  paspaudžia mygtuką "Įtraukti į krepšelį", kuris yra prie produkto pavadinimo. Sistema, į tai reaguodama, įtraukia produktą į krepšelio produktų sąrašą. Naudotojas, sudėjęs norimus produktus į krepšelį, norėdamas užbaigti užsakymą, spaudžia "Mano krepšelis". Sistema atidaro atitinkamai pavadintą langą. Naudotojas spaudžia "Užsakyti". Sistema suformuluoja ir išsiunčia užsakymo užklausą produktų tiekėjui.
 
 #### Alternatyvūs scenarijai
-Jei naudotojas nebenori dalies Krepšelio turinio, jis gali lange "Krepšelis" pažymėti žymimuosius langelius šalia nenorimų produktų pavadinimų ir paspausti mygtuką "Pašalinti iš krepšelio". Sistema pašalina pažymėtus elementus iš krepšelio produktų sąrašo.
-
-Jei naudotojas nori į krepšelį įtraukti jau pirktus produktus, lange "Šaldytuvas" šalia norimo produkto gali paspausti pliuso ženklą. Sistema įtraukia identišką produktą į krepšelį.
+Jei naudotojas nebenori dalies Krepšelio turinio, jis pažymi lange "Krepšelis" pažymėti žymimuosius langelius šalia nenorimų produktų pavadinimų ir paspaudžia mygtuką "Pašalinti iš krepšelio". Sistema pašalina pažymėtus elementus iš krepšelio produktų sąrašo.
 
 #### Grafinės sąsajos eskizas 
 ![Produktų užsakymas](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/GUIEskizas3.png "'Produktų užsakymas'")
@@ -281,13 +279,19 @@ Jei naudotojas nori į krepšelį įtraukti jau pirktus produktus, lange "Šaldy
 #### Sekų diagrama
 ![Produktų užsakymas sequence](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Produkt%C5%B3U%C5%BEsSeq.png "'Produktų užsakymas'")
 
+#### Peržiūros rezultatas:
+1. Sukurti atskirą scenarijų: "Užsakymas produktų per šaldytuvą"
+
+Jei naudotojas nori į krepšelį įtraukti jau pirktus produktus, lange "Šaldytuvas" šalia norimo produkto gali paspausti pliuso ženklą. Sistema įtraukia identišką produktą į krepšelį.
+
+
 ### 3.3. Šaldytuvo dalinimasis
 
 #### Pagrindinis scenarijus
-Naudotojas norėdamas dalintis šaldytuvo duomenimis su kitais naudotojais lange "Šaldytuvas" gali paspausti mygtuką "Dalintis". Sistema parodo langą "Dalinimasis" su jame esančia naudotojų informacija. Naudotojas gali pažymėti žymimuosius langelius prie naudotojų vardų, su kuriais norima dalintis šaldytuvu, ir paspausti mygtuką "Patvirtinti". Sistema išsiunčia kvietimą kitam naudotojui. Jei kitas naudotojas priima pakvietimą - sistema praneša kvietėjui.
+Naudotojas, norėdamas dalintis šaldytuvu, lange "Šaldytuvas" spaudžia mygtuką "Dalintis". Sistema parodo langą "Dalinimasis" su jame esančia naudotojų informacija. Naudotojas pažymi žymimuosius langelius prie naudotojų vardų, su kuriais nori dalintis šaldytuvu, ir paspaudžia mygtuką "Patvirtinti". Sistema išsiunčia kvietimą kitiems naudotojams. Jei kitas naudotojas priima pakvietimą, sistema atverčia langą "Pranešimas", su informacija, kas priėmė. 
 
 #### Alternatyvūs scenarijai
-Naudotojas lange "Dalinimasis" gali paspausti mygtuką "Atšaukti" norėdamas atšaukti visus tame lange buvusius pasirinkimus. Sistema išjungia langą "Dalinimasis" ir sugrąžina naudotoją į langą "Šaldytuvas".
+Naudotojas lange "Dalinimasis" paspaudžia mygtuką "Atšaukti". Sistema pašalina visus tame lange buvusius pasirinkimus. Sistema tada sugrąžina naudotoją į langą "Šaldytuvas".
 
 #### Grafinės sąsajos eskizas
 ![Dalinimasis](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/GUIEskizas4(1).png "'Dalintis'")
@@ -305,10 +309,10 @@ Dėl kokių nors priežasčių pranešimo nepavyko nusiųsti. Sistema informuoj�
 #### Sekų diagrama
 ![Bendravimo pranešimais sekų diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/4uc.png)
 ### 3.5. Naudotojas atsiverčia kalendorių produktams peržiūrėti
-Kalendoriaus lange naudotojui automatiškai pavaizduojamos esamo mėnesio dienos ir per jas atvežti produktai. Jei kurią nors dieną yra užsakytų produktų, iš jų keli matomi kalendoriuje, bet taip pat prie dienos yra pliuso formos mygtukas. Naudotojas spaudžia ant pliuso. Sistema suranda dienos užsakymų informaciją ir atvaizduoja ją lange "Dienos produktai". Peržiūrėdamas kalendoriuje produktus naudotojas pasirenka produktą ir spaudžia „Užsakyti daugiau“. Sistema suranda produktą ir įdeda jį į naudotojo krepšelį. Naudotojas baigęs žiūrėti informaciją išjungia langą. Sistema grąžina naudotoją į kalendoriaus langą.
+Kalendoriaus lange naudotojui automatiškai pavaizduojamas esamas mėnesis. Sistema automatiškai pavaizduoja kiekvieną užsakymą ties diena, kada buvo užsakyta. Naudotojas spaudžia ant pliuso prie dienos. Sistema suranda dienos užsakymų informaciją ir atvaizduoja ją lange "Dienos produktai". Peržiūrėdamas produktus naudotojas pasirenka vieną ir spaudžia „Užsakyti daugiau“. Sistema suranda produktą ir įdeda jį į naudotojo krepšelį. Naudotojas spaudžia "Grįžti". Sistema grąžina naudotoją į kalendoriaus langą.
 #### Alternatyvūs scenarijai
-Naudotojas spaudžia „žiūrėti pagal galiojimo laiką“.  Sistema atvaizduoja mėnesyje produktų galiojimo pabaigas. Naudotojas pasirenka dieną ir spaudžia „Peržiūrėti“. Sistema atvaizduoja produktus „Dienos produktai“. Norėdamas išvengti pasenusio maisto naudotojas spaudžia „siūlyti receptus“.  Sistema ieško receptų, su produktais, kurie pasirinktą dieną baigs galioti. Sistema nuveda naudotoją į receptų langą ir pavaizduoja rastus receptus. Naudotojas išsirenka receptą ir spaudžia "gaminti". Sistema pašalina produktus, atnaujina vaizduojamą informaciją. Naudotojas grąžinamas į kalendoriaus langą.
-Naudotojas pasirenka kurių nors metų kokį nors mėnesį. Sistema atvaizduoja to mėnesio informaciją. Tada scenarijus tęsiasi kaip pagrindinis, tik su pasirinktu mėnesiu.
+Naudotojas spaudžia „žiūrėti pagal galiojimo laiką“.  Sistema atvaizduoja mėnesyje produktų galiojimo pabaigas. Naudotojas pasirenka dieną ir spaudžia „Peržiūrėti“. Sistema atvaizduoja produktus lange „Dienos produktai“. Norėdamas išvengti pasenusio maisto naudotojas spaudžia „siūlyti receptus“.  Sistema ieško receptų, su produktais, kurie pasirinktą dieną baigs galioti. Sistema nuveda naudotoją į receptų langą ir pavaizduoja rastus receptus. Naudotojas išsirenka receptą ir spaudžia "gaminti". Sistema pašalina produktus, atnaujina vaizduojamą informaciją. Naudotojas grąžinamas į kalendoriaus langą.
+Naudotojas pasirenka kurių nors metų kokį nors mėnesį. Sistema atvaizduoja to mėnesio užsakytus produktus. Tada scenarijus tęsiasi kaip pagrindinis, tik su pasirinktu mėnesiu.
 #### Grafinės sąsajos eskizas
 ![Kalendorius](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Calendar.jpg "Kalendoriaus ir Dienos užsakymų langai")
 #### Sekų diagrama

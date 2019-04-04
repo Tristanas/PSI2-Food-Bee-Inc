@@ -31,20 +31,6 @@ Vilnius, 2019
 
 ## Vartotojiški pasakojimai
   
-  
-<table class="tg">
-  <tr>
-    <th class="tg-0pky" colspan="3">GUI mobiliesiems telefonams</th>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Priėmimo testas: </td>
-    <td class="tg-0pky">Prioritetas: </td>
-    <td class="tg-0pky">Sąnaudos: </td>
-  </tr>
-  <tr>
-    <td class="tg-0pky" colspan="3">Programėlė mobiliesiems telefonams, kurioje vartotojas gali matyti šaldytuvo turinį, matyti bei gaminti receptus. Turi taip pat atitikti 2-10 reikalavimus.</td>
-  </tr>
-</table>
 
 <br></br>
 
@@ -58,7 +44,7 @@ Vilnius, 2019
     <td class="tg-0pky">Sąnaudos: </td>
   </tr>
   <tr>
-    <td class="tg-0pky" colspan="3">Iki produkto galiojimo pabaigos likus 3 dienoms (jei jo galiojimo laikas nuo įdėjimo į šaldytuvą yra ne mažiau 5d.) ir likus 1 dienai (visada) naudotojas turi gauti pranešimą, įspėjantį apie galiojimo laiko pabaigą ir likusį galiojimo laiką.
+    <td class="tg-0pky" colspan="3">Iki produkto galiojimo pabaigos likus 3 dienoms (jei jo galiojimo laikas nuo įdėjimo į šaldytuvą yra ne mažiau 5d.) ir likus 1 dienai (visada) turi būti gautas pranešimas, įspėjantis apie galiojimo laiko pabaigą ir likusį galiojimo laiką.
 Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama vienu bendru pranešimu.</td>
   </tr>
 </table>
@@ -75,7 +61,7 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
     <td class="tg-0pky">Sąnaudos: </td>
   </tr>
   <tr>
-    <td class="tg-0pky" colspan="3">Per mobilią programą naudotojas gali ieškoti produktų ir sudaryti užsakymus. Šioje programoje palengvinama prieiga prie tiekėjo svetainėje esančios produktų informacijos. Naudotojas pasirenka produktus ir programa per svetainę sukuria užsakymą.</td>
+    <td class="tg-0pky" colspan="3">Per mobilią programą naudotojas gali ieškoti produktų ir sudaryti užsakymus. Turi būti galima pasirinkti ir užsakyti produktus.</td>
   </tr>
 </table>
 
@@ -91,7 +77,7 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
     <td class="tg-0pky">Sąnaudos: </td>
   </tr>
   <tr>
-    <td class="tg-0pky" colspan="3">Naudotojas, jei nori dalintis savo šaldytuvo turiniu, turi sukurti grupę. Į ją gali kviesti kitus naudotojus. Šie, priėmę kvietimą, galės matyti šaldytuvo turinį, ieškoti receptų ir gaminti. Naudotojai gali atmesti arba priimti  kvietimą.</td>
+    <td class="tg-0pky" colspan="3">Naudotojas, jei nori dalintis savo šaldytuvo turiniu, turi sukurti grupę. Į ją gali kviesti kitus naudotojus. Naudotojai gali atmesti arba priimti kvietimą.</td>
   </tr>
 </table>
 
@@ -99,7 +85,7 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
 
 <table class="tg">
   <tr>
-    <th class="tg-0pky" colspan="3">Pranešimas grupėje</th>
+    <th class="tg-0pky" colspan="3">Vartotojo šaldytuvo matymas</th>
   </tr>
   <tr>
     <td class="tg-0pky">Priėmimo testas: </td>
@@ -107,7 +93,55 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
     <td class="tg-0pky">Sąnaudos: </td>
   </tr>
   <tr>
-    <td class="tg-0pky" colspan="3">Naudotojas gali palikti pranešimą, kuris matomas visiems grupės nariams. Pranešimai skirti konkrečiam produktui arba receptui. Pranešimai matomi peržiūrint produkto ar recepto informaciją.</td>
+    <td class="tg-0pky" colspan="3"> Turi būti galimybė matyti šaldytuvo turinį, ieškoti receptų ir pažymėti kokius receptus gaminsi.</td>
+  </tr>
+</table>
+
+<br></br>
+
+<table class="tg">
+  <tr>
+    <th class="tg-0pky" colspan="3">Pranešimo sukurimas</th>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Priėmimo testas: </td>
+    <td class="tg-0pky">Prioritetas: </td>
+    <td class="tg-0pky">Sąnaudos: </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="3">Naudotojas gali palikti pranešimą, kuris matomas tik grupės nariams. </td>
+  </tr>
+</table>
+
+<br></br>
+
+<table class="tg">
+  <tr>
+    <th class="tg-0pky" colspan="3">Produkto pranešimai</th>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Priėmimo testas: </td>
+    <td class="tg-0pky">Prioritetas: </td>
+    <td class="tg-0pky">Sąnaudos: </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="3"> Pranešimai skirti konkrečiam produktui arba receptui.</td>
+  </tr>
+</table>
+
+<br></br>
+
+<table class="tg">
+  <tr>
+    <th class="tg-0pky" colspan="3">Pranešimų peržiūrėjimas</th>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Priėmimo testas: </td>
+    <td class="tg-0pky">Prioritetas: </td>
+    <td class="tg-0pky">Sąnaudos: </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="3">Pranešimai matomi peržiūrint produkto ar recepto informaciją.</td>
   </tr>
 </table>
 
@@ -140,7 +174,7 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
     <td class="tg-0pky">Sąnaudos: </td>
   </tr>
   <tr>
-    <td class="tg-0pky" colspan="3">Programoje įterpiamos maisto tiekėjo reklamos skoningai, kad negadintų naudotojo patirties. Produktų sąraše yra rekomenduojamos tiekėjo parinktos prekės. Šalia naudotojui aktualios informacijos yra rodomos tiekėjo reklaminės nuotraukos. Tiekėjas turi galimybę nustatyti naują reklamą ar pridėti ją į rodomų reklamų rinkinį.</td>
+    <td class="tg-0pky" colspan="3">Produktų sąraše yra rekomenduojamos tiekėjo parinktos prekės. Šalia naudotojui aktualios informacijos yra rodomos tiekėjo reklaminės nuotraukos. Tiekėjas turi galimybę nustatyti naują reklamą ar pridėti ją į rodomų reklamų rinkinį.</td>
   </tr>
 </table>
 
@@ -156,7 +190,7 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
     <td class="tg-0pky">Sąnaudos: </td>
   </tr>
   <tr>
-    <td class="tg-0pky" colspan="3">Šalia visų laukelių, kuriuose naudotojas gali ar turi kažką įvesti, turi būti klaustukas, ant kurio paspaudus pasirodo informacija, nurodanti ką ir kokiu formatu įvesti bei kam tai reikalinga. Klaustukas turi būti ir šalia esminių mygtukų, paspaudus jį nurodomas mygtuko veikimas. Informacija turi būti glausta, iš kelių sakinių, nebent laukas ar mygtukas būtų labai svarbus.</td>
+    <td class="tg-0pky" colspan="3">Prieš vedant informaciją į lauką ar spaudžiant mygtuką turi būti galimybė gauti informaciją apie tą mygtuką ar lauką. Informacija turi būti glausta ir suprantama.</td>
   </tr>
 </table>
 
@@ -172,7 +206,7 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
     <td class="tg-0pky">Sąnaudos: </td>
   </tr>
   <tr>
-    <td class="tg-0pky" colspan="3">Kai programoje įvyksta klaida, kuri sustabdo ar nutraukia veikimą, būna automatiškai pranešama specialistams. Taip pat pranešama apie nutrūkusį ryšį su tiekėjo svetaine ir užsakymo sudarymo klaidas. Turi būti galimybė pačiam naudotojui pranešti apie klaidą, jei nesutampa gautų produktų informacija su esančia sistemoje.</td>
+    <td class="tg-0pky" colspan="3">Kai programoje įvyksta klaida, kuri sustabdo ar nutraukia veikimą, būna automatiškai pranešama specialistams. Turi būti galimybė pranešti apie klaidą, jei nesutampa gautų produktų informacija su esančia sistemoje.</td>
   </tr>
 </table>
 

@@ -155,6 +155,9 @@ Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių 
 #### Sekų diagrama
 ![SEQ1.png](./Nuotraukos/SEQ1.png  "Sekų diagrama")
 
+#### Robustiškumo diagrama
+![RD3.2](./Nuotraukos/three_point_one.png "Pranešimas apie senstančius produktus - robustiškumo diagrama")
+
 ### 3.3. Produkto užsakymas per parduotuvę
 
 #### Pagrindinis scenarijus
@@ -169,6 +172,9 @@ Jei naudotojas nebenori dalies Krepšelio turinio, jis pažymi lange "Krepšelis
 
 #### Sekų diagrama
 ![Produktų užsakymas sequence](./Nuotraukos/Produkt%C5%B3U%C5%BEsSeq.png "'Produktų užsakymas'")
+
+#### Robustiškumo diagrama
+![RD3.3](./Nuotraukos/ROBUSTProduktoUzs.png "Produkto ožsakymas parduotuvėje - robustiškumo diagrama")
 
 #### Peržiūros rezultatas:
 1. Sukurti atskirą scenarijų: "Užsakymas produktų per šaldytuvą"
@@ -191,6 +197,9 @@ Naudotojas lange "Dalinimasis" paspaudžia mygtuką "Atšaukti". Sistema pašali
 #### Sekų diagrama
 ![Dalinimasis sequence](./Nuotraukos/%C5%A0aldytuvoDalinSeq.png "'Dalintis'")
 
+#### Robustiškumo diagrama
+![RD3.4](./Nuotraukos/ROBUSTSaldytuvoDali.png "Šaldytuvo dalinimasis - robustiškumo diagrama")
+
 ### 3.5. Naudotojas bendrauja su kitais grupės nariais per pranešimus
 
 #### Pagrindinis scenarijus
@@ -202,8 +211,12 @@ Dėl kokių nors priežasčių pranešimo nepavyko nusiųsti. Sistema informuoj�
 #### Grafinės sąsajos eskizas
 ![Pranešimai kitiems](./Nuotraukos/4ucgui.png)  
 
+
 #### Sekų diagrama
-![Bendravimo pranešimais sekų diagrama](./Nuotraukos/4uc.png)  
+![Bendravimo pranešimais sekų diagrama](./Nuotraukos/4uc.png)
+
+#### Robustiškumo diagrama
+![RD3.5](./Nuotraukos/BendravimasGrupeje_robust.png "Bendravimas tarp grupės narių - robustiškumo diagrama")
 
 ### 3.6. Naudotojas atsiverčia kalendorių produktams peržiūrėti
 
@@ -218,7 +231,10 @@ Naudotojas pasirenka kurių nors metų kokį nors mėnesį. Sistema atvaizduoja 
 ![Kalendorius](./Nuotraukos/Calendar.jpg "Kalendoriaus ir Dienos užsakymų langai")  
 
 #### Sekų diagrama  
-![Kalendoriaus sekos](./Nuotraukos/calendar-sequence.jpg "Kalendoriaus seku diagrama")  
+![Kalendoriaus sekos](./Nuotraukos/calendar-sequence.jpg "Kalendoriaus seku diagrama")   
+
+#### Robustiškumo diagrama
+![RD3.6](./Nuotraukos/Kalendoriaus-RD.jpg "Produktų peržiūra kalendoriuje - robustiškumo diagrama")
 
 ### 3.7. Reklamų rodymas  
 
@@ -235,9 +251,12 @@ Naudotojui paspaudus dešinį pelės mygtuką (arba ilgai palietus, jei naudojam
 #### Grafinės sąsajos eskizas
 ![Reklamos](./Nuotraukos/DamnAds.jpg "Reklamų rodymas")
 
-#### Sekų diagrama
-![Reklamos Seq](./Nuotraukos/DamnAds_Seq.jpg "Reklamų rodymo sekų diagrama")
 
+#### Sekų diagrama
+![Reklamos Seq](./Nuotraukos/DamnAds_Seq.jpg "Reklamų rodymo sekų diagrama") 
+
+#### Robustiškumo diagrama
+![RD3.7](./Nuotraukos/DamnAds_Robust.png "Reklamų rodymas - robustiškumo diagrama")
 
 ### 3.8 Papildyta užduočių diagrama
 ![Detalesnės užduotys](./Nuotraukos/Atnaujinta-UC-diagrama.jpg)

@@ -24,9 +24,9 @@ Forma: (ne)atlikta, Pavadinimas, kas daro, kur nuoroda.
 
 
 ## Dokumento paruošimas:
-- [ ] Suformatuoti įžanginį "puslapį"
-- [ ] sugeneruoti table of contents
-- [ ] Last check
+- [x] Suformatuoti įžanginį "puslapį" - Tai yra atskiras pdf dokumentas, kurį galima prijungti su PDF sujungimo aplikacija.
+- [x] Sugeneruoti table of contents - padaryta rankiniu būdu.
+- [ ] Kompiliavimas ir last check.
 
 ### Apie namų darbo darymo metodą
  - Galima savarankiškai bet kam redaguoti užsakovo reikalavimus:

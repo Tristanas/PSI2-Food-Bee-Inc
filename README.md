@@ -19,7 +19,7 @@
 # Progresas:
 ## Robustiškumo diagramos:
 Forma: (ne)atlikta, Pavadinimas, kas daro, kur nuoroda.
-- [ ] Pranešimas dėl produkto galiojimo pabaigos,
+- [ ] Pranešimas dėl produkto galiojimo pabaigos, Teodoras, in progress
 - [x] Produkto užsakymas, Manfredas + Vilius, [diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Draw.io/Robust-example.html)
 - [ ] Šaldytuvo dalinimasis,
 - [ ] Naudotojas bendrauja su kitais grupės nariais per pranešimus,

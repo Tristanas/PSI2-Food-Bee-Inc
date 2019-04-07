@@ -17,8 +17,8 @@
 Forma: (ne)atlikta, Pavadinimas, kas daro, kur nuoroda.
 - [ ] Pranešimas dėl produkto galiojimo pabaigos, Teodoras, in progress
 - [x] Produkto užsakymas, Manfredas + Vilius, [diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Draw.io/Robust-example.html)
-- [ ] Šaldytuvo dalinimasis,
-- [ ] Naudotojas bendrauja su kitais grupės nariais per pranešimus,
+- [x] Šaldytuvo dalinimasis, Manfredas, [diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/ROBUSTSaldytuvoDali.png)
+- [ ] Naudotojas bendrauja su kitais grupės nariais per pranešimus, Tomas, in progress
 - [x] Naudotojas atsiverčia kalendorių produktams peržiūrėti, Vilius, [diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Kalendoriaus-RD.jpg)
 - [x] Reklamų rodymas, Edvinas, [diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/Reklamu-Rodymas/Nuotraukos/DamnAds_Robust.png)
 

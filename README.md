@@ -7,14 +7,10 @@
 # Kitas susitikimas:
 2019-04-08 10:00 Didlaukyje, ant sofų antrame aukšte. Vietoje paskaitų?
 
-# Namų darbai iki susitikimo:
-- Atsisiųsti PSI knygą ir iš jos ar kitų šaltinių pasimokyti braižyti robustiškumo diagramas.
-- Nubraižyti robustiškumo diagramą (su draw.io arba magicdraw) pasirinktam UC. Į messenger pranešti, kokiam UC braižai.
-
 # Susitikimo tikslai:
-- Baigti braižyti robustiškumo diagramas. Nepamirškite, UC tekstas turi atitikti diagramą, bet tekstas turi būti taisomas braižant.
-- Padaryti jų peržiūrą.
-- Sutarti dėl architektūros pjūvių ir pradėti projektuoti.
+- Peržiūrėti neperžiūrėtas robustiškumo diagramas.
+- Papildyti dalykinės srities modelį. 
+- Aptarti architektūros pjūvius.
 
 # Progresas:
 ## Robustiškumo diagramos:
@@ -43,3 +39,4 @@ Forma: (ne)atlikta, Pavadinimas, kas daro, kur nuoroda.
  - [Dėstytojos nurodymai laboratoriniams darbams.](https://drive.google.com/open?id=0B4VxsfLWjQw2OHQ1SUhOM2RzLUFvNlRVWi1CcUF2eFZSRExJ)
  - [Pandox tutorial. Pirmiau reiktų jį atsisiųsti. Šiaip įdomus dalykas, pasibandykit](http://pandoc.org/getting-started.html)
  - [Klasių X reikalavimų matricja.](https://1drv.ms/x/s!Ao3LSVKqY6TXg8twB339T6ChHotLiQ)
+ - [Patogi svetainė pdf dokumentų jungimui](https://www.ilovepdf.com/)

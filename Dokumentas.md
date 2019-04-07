@@ -65,13 +65,11 @@ Vilnius, 2019
 Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama vienu bendru pranešimu.</td>
   </tr>
 </table>
--->
-
+	Lentelės pavyzdys su Markdown sintakse
 |  |
 |:-------------------------------------------------------------:|
 |  |
-
-
+-->
 | Pranešimas dėl galiojimo laiko pabaigos |
 |:-----------------------------------:|
 | Iki produkto galiojimo pabaigos likus 3 dienoms (jei jo galiojimo laikas nuo įdėjimo į šaldytuvą yra ne mažiau 5d.) ir likus 1 dienai (visada) turi būti gautas pranešimas, įspėjantis apie galiojimo laiko pabaigą ir likusį galiojimo laiką. <br> Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama vienu bendru pranešimu. |

@@ -49,11 +49,9 @@ Vilnius, 2019
  10. Trumpas programos aprašas/paaiškinimas pirmą kartą ja įsijungus.
 
 ## 1.2 Vartotojiški pasakojimai
-  
 
-<br></br>
-
-<table class="tg">
+<!-- Senas lentelės formatas, neveikia su pandoc
+	<table class="tg">
   <tr>
     <th class="tg-0pky" colspan="3"> Pranešimas dėl galiojimo laiko pabaigos</th>
   </tr>
@@ -67,184 +65,62 @@ Vilnius, 2019
 Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama vienu bendru pranešimu.</td>
   </tr>
 </table>
+-->
 
-<br></br>
+|  |
+|:-------------------------------------------------------------:|
+|  |
 
-<table class="tg">
-  <tr>
-    <th class="tg-0pky" colspan="3"> Prekės užsakymas per mobiliąją programą</th>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Priėmimo testas: </td>
-    <td class="tg-0pky">Prioritetas: </td>
-    <td class="tg-0pky">Sąnaudos: </td>
-  </tr>
-  <tr>
-    <td class="tg-0pky" colspan="3">Per mobilią programą naudotojas gali ieškoti produktų ir sudaryti užsakymus. Turi būti galima pasirinkti ir užsakyti produktus.</td>
-  </tr>
-</table>
 
-<br></br>
+| Pranešimas dėl galiojimo laiko pabaigos |
+|:-----------------------------------:|
+| Iki produkto galiojimo pabaigos likus 3 dienoms (jei jo galiojimo laikas nuo įdėjimo į šaldytuvą yra ne mažiau 5d.) ir likus 1 dienai (visada) turi būti gautas pranešimas, įspėjantis apie galiojimo laiko pabaigą ir likusį galiojimo laiką. <br> Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama vienu bendru pranešimu. |
+   
+| Prekės užsakymas per mobiliąją programą |
+|:-------------------------------------------------------------:|
+| Per mobilią programą naudotojas gali ieškoti produktų ir sudaryti užsakymus. Turi būti galima pasirinkti ir užsakyti produktus. |
+   
 
-<table class="tg">
-  <tr>
-    <th class="tg-0pky" colspan="3">Dalijimasis savo šaldytuvo turiniu su kitais naudotojais</th>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Priėmimo testas: </td>
-    <td class="tg-0pky">Prioritetas: </td>
-    <td class="tg-0pky">Sąnaudos: </td>
-  </tr>
-  <tr>
-    <td class="tg-0pky" colspan="3">Naudotojas, jei nori dalintis savo šaldytuvo turiniu, turi sukurti grupę. Į ją gali kviesti kitus naudotojus. Naudotojai gali atmesti arba priimti kvietimą.</td>
-  </tr>
-</table>
+| Dalijimasis savo šaldytuvo turiniu su kitais naudotojais |
+|:-------------------------------------------------------------:|
+| Naudotojas, jei nori dalintis savo šaldytuvo turiniu, turi sukurti grupę. Į ją gali kviesti kitus naudotojus. Naudotojai gali atmesti arba priimti kvietimą. |
+   
+| Vartotojo šaldytuvo matymas |
+|:-------------------------------------------------------------:|
+| Turi būti galimybė matyti šaldytuvo turinį, ieškoti receptų ir pažymėti kokius receptus gaminsi. |
+   
+| Pranešimo sukurimas |
+|:-------------------------------------------------------------:|
+| Naudotojas gali palikti pranešimą, kuris matomas tik grupės nariams.  |
+   
+| Produkto pranešimai |
+|:-------------------------------------------------------------:|
+| Pranešimai skirti konkrečiam produktui arba receptui. |
+   
+| Pranešimų peržiūrėjimas |
+|:-------------------------------------------------------------:|
+| Pranešimai matomi peržiūrint produkto ar recepto informaciją. |
+   
+| Naudotojas atsiverčia kalendorių pirkiniams peržiūrėti |
+|:-------------------------------------------------------------:|
+| Naudotojas gali atsidaryti kalendorių, kuriame mato visus pirktus produktus. <br>Atlikus užsakymą automatiškai išsaugoma, kas ir kada buvo užsakyta, ir tai atvaizduojama kalendoriuje. Naudotojas gali pasirinkti konkrečią dieną ir matyti detalią užsakymų informaciją. Taip pat galima pažiūrėti kalendoriuje produktus pagal pristatymo datą ir galiojimo pabaigą. |
+   
+| Naudotojas mato reklamas |
+|:-------------------------------------------------------------:|
+| Produktų sąraše yra rekomenduojamos tiekėjo parinktos prekės. Šalia naudotojui aktualios informacijos yra rodomos tiekėjo reklaminės nuotraukos. Tiekėjas turi galimybę nustatyti naują reklamą ar pridėti ją į rodomų reklamų rinkinį. |
+   
+| Pagalba naudotojui |
+|:-------------------------------------------------------------:|
+| Prieš vedant informaciją į lauką ar spaudžiant mygtuką turi būti galimybė gauti informaciją apie tą mygtuką ar lauką. Informacija turi būti glausta ir suprantama. |
+   
+| Pranešimas dėl klaidų |
+|:-------------------------------------------------------------:|
+| Kai programoje įvyksta klaida, kuri sustabdo ar nutraukia veikimą, būna automatiškai pranešama specialistams. Turi būti galimybė pranešti apie klaidą, jei nesutampa gautų produktų informacija su esančia sistemoje. |
+   
+| Naudotojas susipažįsta su sistema |
+|:-------------------------------------------------------------:|
+| Per pirmą prisijungimą naudotojas supažindinamas su pagrindiniu sistemos naudojimu, pateikiant galimų veiksmų sąrašą. Naudotojui taip pat pateikiami galimi sistemos nustatymai, jis su šiais supažindinamas, ir leidžiama jam keisti nustatymus. Naudotojas gali nustatyti, kad šis paaiškinimas kitais kartais nebebus rodomas. |
 
-<br></br>
-
-<table class="tg">
-  <tr>
-    <th class="tg-0pky" colspan="3">Vartotojo šaldytuvo matymas</th>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Priėmimo testas: </td>
-    <td class="tg-0pky">Prioritetas: </td>
-    <td class="tg-0pky">Sąnaudos: </td>
-  </tr>
-  <tr>
-    <td class="tg-0pky" colspan="3"> Turi būti galimybė matyti šaldytuvo turinį, ieškoti receptų ir pažymėti kokius receptus gaminsi.</td>
-  </tr>
-</table>
-
-<br></br>
-
-<table class="tg">
-  <tr>
-    <th class="tg-0pky" colspan="3">Pranešimo sukurimas</th>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Priėmimo testas: </td>
-    <td class="tg-0pky">Prioritetas: </td>
-    <td class="tg-0pky">Sąnaudos: </td>
-  </tr>
-  <tr>
-    <td class="tg-0pky" colspan="3">Naudotojas gali palikti pranešimą, kuris matomas tik grupės nariams. </td>
-  </tr>
-</table>
-
-<br></br>
-
-<table class="tg">
-  <tr>
-    <th class="tg-0pky" colspan="3">Produkto pranešimai</th>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Priėmimo testas: </td>
-    <td class="tg-0pky">Prioritetas: </td>
-    <td class="tg-0pky">Sąnaudos: </td>
-  </tr>
-  <tr>
-    <td class="tg-0pky" colspan="3"> Pranešimai skirti konkrečiam produktui arba receptui.</td>
-  </tr>
-</table>
-
-<br></br>
-
-<table class="tg">
-  <tr>
-    <th class="tg-0pky" colspan="3">Pranešimų peržiūrėjimas</th>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Priėmimo testas: </td>
-    <td class="tg-0pky">Prioritetas: </td>
-    <td class="tg-0pky">Sąnaudos: </td>
-  </tr>
-  <tr>
-    <td class="tg-0pky" colspan="3">Pranešimai matomi peržiūrint produkto ar recepto informaciją.</td>
-  </tr>
-</table>
-
-<br></br>
-
-<table class="tg">
-  <tr>
-    <th class="tg-0pky" colspan="3">Naudotojas atsiverčia kalendorių pirkiniams peržiūrėti</th>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Priėmimo testas: </td>
-    <td class="tg-0pky">Prioritetas: </td>
-    <td class="tg-0pky">Sąnaudos: </td>
-  </tr>
-  <tr>
-    <td class="tg-0pky" colspan="3">Naudotojas gali atsidaryti kalendorių, kuriame mato visus pirktus produktus.
- Atlikus užsakymą automatiškai išsaugoma, kas ir kada buvo užsakyta, ir tai atvaizduojama kalendoriuje. Naudotojas gali pasirinkti konkrečią dieną ir matyti detalią užsakymų informaciją. Taip pat galima pažiūrėti kalendoriuje produktus pagal pristatymo datą ir galiojimo pabaigą.</td>
-  </tr>
-</table>
-
-<br></br>
-
-<table class="tg">
-  <tr>
-    <th class="tg-0pky" colspan="3">Naudotojas mato reklamas</th>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Priėmimo testas: </td>
-    <td class="tg-0pky">Prioritetas: </td>
-    <td class="tg-0pky">Sąnaudos: </td>
-  </tr>
-  <tr>
-    <td class="tg-0pky" colspan="3">Produktų sąraše yra rekomenduojamos tiekėjo parinktos prekės. Šalia naudotojui aktualios informacijos yra rodomos tiekėjo reklaminės nuotraukos. Tiekėjas turi galimybę nustatyti naują reklamą ar pridėti ją į rodomų reklamų rinkinį.</td>
-  </tr>
-</table>
-
-<br></br>
-
-<table class="tg">
-  <tr>
-    <th class="tg-0pky" colspan="3">Pagalba naudotojui</th>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Priėmimo testas: </td>
-    <td class="tg-0pky">Prioritetas: </td>
-    <td class="tg-0pky">Sąnaudos: </td>
-  </tr>
-  <tr>
-    <td class="tg-0pky" colspan="3">Prieš vedant informaciją į lauką ar spaudžiant mygtuką turi būti galimybė gauti informaciją apie tą mygtuką ar lauką. Informacija turi būti glausta ir suprantama.</td>
-  </tr>
-</table>
-
-<br></br>
- 
-<table class="tg">
-  <tr>
-    <th class="tg-0pky" colspan="3">Pranešimas dėl klaidų</th>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Priėmimo testas: </td>
-    <td class="tg-0pky">Prioritetas: </td>
-    <td class="tg-0pky">Sąnaudos: </td>
-  </tr>
-  <tr>
-    <td class="tg-0pky" colspan="3">Kai programoje įvyksta klaida, kuri sustabdo ar nutraukia veikimą, būna automatiškai pranešama specialistams. Turi būti galimybė pranešti apie klaidą, jei nesutampa gautų produktų informacija su esančia sistemoje.</td>
-  </tr>
-</table>
-
-<br></br>
-
-<table class="tg">
-  <tr>
-    <th class="tg-0pky" colspan="3">Naudotojas susipažįsta su sistema</th>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Priėmimo testas: </td>
-    <td class="tg-0pky">Prioritetas: </td>
-    <td class="tg-0pky">Sąnaudos: </td>
-  </tr>
-  <tr>
-    <td class="tg-0pky" colspan="3">Per pirmą prisijungimą naudotojas supažindinamas su pagrindiniu sistemos naudojimu, pateikiant galimų veiksmų sąrašą. Naudotojui taip pat pateikiami galimi sistemos nustatymai, jis su šiais supažindinamas, ir leidžiama jam keisti nustatymus. Naudotojas gali nustatyti, kad šis paaiškinimas kitais kartais nebebus rodomas.</td>
-  </tr>
-</table>
-  
 # 2. Dalykinės srities modelis
 
 ## 2.1 Esybių sąrašas

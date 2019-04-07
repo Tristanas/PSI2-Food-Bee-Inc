@@ -192,12 +192,6 @@ Figūroje 6 bendrauja... (Placeholderis aprašymui)
 <!-- pagebreak -->
 #### Robustiškumo diagrama
 ![RD3.3](./Nuotraukos/ROBUSTProduktoUzs.png "Produkto ožsakymas parduotuvėje - robustiškumo diagrama")
-<!-- pagebreak -->
-
-#### Peržiūros rezultatas:
-1. Sukurti atskirą scenarijų: "Užsakymas produktų per šaldytuvą"
-
-Jei naudotojas nori į krepšelį įtraukti jau pirktus produktus, lange "Šaldytuvas" šalia norimo produkto gali paspausti pliuso ženklą. Sistema įtraukia identišką produktą į krepšelį.
 
 <!-- pagebreak -->
 ### 3.4. Šaldytuvo dalinimasis

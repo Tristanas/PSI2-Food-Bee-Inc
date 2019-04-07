@@ -155,14 +155,10 @@ Naudotojas nusprendžia gaminti pagal pasiūlytą receptą. Vykdomas gaminimo sc
 
 Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių produktų naudojant senstančius produktus. Vietoje pasiūlyto recepto sistema parodo, jog iš esamų produktų nepavyksta sudaryti recepto. Toliau viskas kaip Naudotojui nusprendus negaminti recepto.
 
-<!-- pagebreak -->
-
 #### Grafinės sąsajos eskizas
 ![GUIEskizas1.png](./Nuotraukos/GUIEskizas1.png "Langas 'Senstantys produktai'")
 
 Figūroje 3 pavaizduoti x, y ir z langai. (Placeholderis gui eskizo aprašymui)
-
-<!-- pagebreak -->
 
 #### Sekų diagrama
 ![SEQ1.png](./Nuotraukos/SEQ1.png  "Sekų diagrama")
@@ -179,24 +175,15 @@ Naudotojas lange "Parduotuvė"  paspaudžia mygtuką "Įtraukti į krepšelį", 
 #### Alternatyvūs scenarijai
 Jei naudotojas nebenori dalies Krepšelio turinio, jis pažymi lange "Krepšelis" pažymėti žymimuosius langelius šalia nenorimų produktų pavadinimų ir paspaudžia mygtuką "Pašalinti iš krepšelio". Sistema pašalina pažymėtus elementus iš krepšelio produktų sąrašo.
 
-<!-- pagebreak -->
-
 #### Grafinės sąsajos eskizas 
 ![Produktų užsakymas](./Nuotraukos/GUIEskizas3.png "'Produktų užsakymas'")
 
 Figūroje 5 pavaizduoti x, y ir z langai. (Placeholderis gui eskizo aprašymui)
 
-<!-- pagebreak -->
-
 #### Sekų diagrama
 ![Produktų užsakymas sequence](./Nuotraukos/Produkt%C5%B3U%C5%BEsSeq.png "'Produktų užsakymas'")
 
 Figūroje 6 bendrauja... (Placeholderis aprašymui)
-
-#### Peržiūros rezultatas:
-1. Sukurti atskirą scenarijų: "Užsakymas produktų per šaldytuvą"
-
-Jei naudotojas nori į krepšelį įtraukti jau pirktus produktus, lange "Šaldytuvas" šalia norimo produkto gali paspausti pliuso ženklą. Sistema įtraukia identišką produktą į krepšelį.
 
 <!-- pagebreak -->
 
@@ -208,14 +195,10 @@ Naudotojas, norėdamas dalintis šaldytuvu, lange "Šaldytuvas" spaudžia mygtuk
 #### Alternatyvūs scenarijai
 Naudotojas lange "Dalinimasis" paspaudžia mygtuką "Atšaukti". Sistema pašalina visus tame lange buvusius pasirinkimus. Sistema tada sugrąžina naudotoją į langą "Šaldytuvas".
 
-<!-- pagebreak -->
-
 #### Grafinės sąsajos eskizas
 ![Dalinimasis](./Nuotraukos/GUIEskizas4(1).png "'Dalintis'")
 
 Figūroje 7 pavaizduoti x, y ir z langai. (Placeholderis gui eskizo aprašymui)
-
-<!-- pagebreak -->
 
 #### Sekų diagrama
 ![Dalinimasis sequence](./Nuotraukos/%C5%A0aldytuvoDalinSeq.png "'Dalintis'")
@@ -232,14 +215,10 @@ Naudotojas, norėdamas pasidalinti receptais su kitais naudotojais, paspaudžia 
 #### Alternatyvus scenarijus
 Dėl kokių nors priežasčių pranešimo nepavyko nusiųsti. Sistema informuoją naudotoją apie tai ir nurodo to priežastį. Naudotojui leidžiama pabandyti siųsti iš naujo. Naudotojas, po kelių nesėkmingų bandymų, laikinai išsaugo šį pranešimą lokaliai, kad vėliau galėtų pabandyti jį išsiųsti.  
 
-<!-- pagebreak -->
-
 #### Grafinės sąsajos eskizas
 ![Pranešimai kitiems](./Nuotraukos/4ucgui.png)  
 
 Figūroje 9 pavaizduoti x, y ir z langai. (Placeholderis gui eskizo aprašymui)
-
-<!-- pagebreak -->
 
 #### Sekų diagrama
 ![Bendravimo pranešimais sekų diagrama](./Nuotraukos/4uc.png)  
@@ -257,14 +236,10 @@ Kalendoriaus lange naudotojui automatiškai pavaizduojamas esamas mėnesis. Sist
 Naudotojas spaudžia „žiūrėti pagal galiojimo laiką“.  Sistema atvaizduoja mėnesyje produktų galiojimo pabaigas. Naudotojas pasirenka dieną ir spaudžia „Peržiūrėti“. Sistema atvaizduoja produktus lange „Dienos produktai“. Norėdamas išvengti pasenusio maisto naudotojas spaudžia „siūlyti receptus“.  Sistema ieško receptų, su produktais, kurie pasirinktą dieną baigs galioti. Sistema nuveda naudotoją į receptų langą ir pavaizduoja rastus receptus. Naudotojas išsirenka receptą ir spaudžia "gaminti". Sistema pašalina produktus, atnaujina vaizduojamą informaciją. Naudotojas grąžinamas į kalendoriaus langą.  
 Naudotojas pasirenka kurių nors metų kokį nors mėnesį. Sistema atvaizduoja to mėnesio užsakytus produktus. Tada scenarijus tęsiasi kaip pagrindinis, tik su pasirinktu mėnesiu.  
 
-<!-- pagebreak -->
-
 #### Grafinės sąsajos eskizas
 ![Kalendorius](./Nuotraukos/Calendar.jpg "Kalendoriaus ir Dienos užsakymų langai")  
 
 Figūroje 11 pavaizduoti x, y ir z langai. (Placeholderis gui eskizo aprašymui)
-
-<!-- pagebreak -->
 
 #### Sekų diagrama  
 ![Kalendoriaus sekos](./Nuotraukos/calendar-sequence.jpg "Kalendoriaus seku diagrama")  
@@ -285,15 +260,10 @@ Naudotojas nenorėdamas matyti reklamos, spaudžia jos kampe esantį "x" mygtuk�
 
 Naudotojui paspaudus dešinį pelės mygtuką (arba ilgai palietus, jei naudojamasi mobiliąją versija) sistema parodo pasirinkimą pranešti apie netinkamą reklamos turinį. Naudotojas spaudžia "pranešti". Sistema atidaro dialogą, kuriame prašoma nurodyti priežastį, kodėl ta reklama yra netinkama. Naudotojas suveda informaciją ir spaudžia "patvirtina". Sistema neberodo jam šios reklamos ir persiunčia pranešimą dėl netinkamo turinio sistemos administratoriams, kurie nuspręs, ar dėl tos reklamos reikia imtis tolimesnių veiksmų.
 
-<!-- pagebreak -->
-
 #### Grafinės sąsajos eskizas
 ![Reklamos](./Nuotraukos/DamnAds.jpg "Reklamų rodymas")
 
 Figūroje 13 pavaizduoti x, y ir z langai. (Placeholderis gui eskizo aprašymui)
-
-
-<!-- pagebreak -->
 
 #### Sekų diagrama
 ![Reklamos Seq](./Nuotraukos/DamnAds_Seq.jpg "Reklamų rodymo sekų diagrama")

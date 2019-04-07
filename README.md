@@ -5,7 +5,7 @@
  - [Use Case Driven Object Modeling With UML - atsisiuntimui.](https://www.facebook.com/download/1946693242124404/Book-Eng-02%2520-%2520Use%2520Case%2520Driven%2520Object%2520Modeling%2520with%2520UML%2520-%2520Theory%2520and%2520Practice-%2520Rosenberg.pdf?hash=AcrkpwpSxKHDTMm4)
  
 # Kitas susitikimas:
-2019-04-04 9:00 Didlaukyje, ant sofų antrame aukšte.
+2019-04-08 10:00 Didlaukyje, ant sofų antrame aukšte. Vietoje paskaitų?
 
 # Namų darbai iki susitikimo:
 - Atsisiųsti PSI knygą ir iš jos ar kitų šaltinių pasimokyti braižyti robustiškumo diagramas.

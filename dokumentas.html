@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>PSI dokumentas</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="turinys">Turinys</h1>
+<ol type="1">
+<li><a href="#1-reikalavimai">Reikalavimai</a>
+<ol type="1">
+<li><a href="#11-užsakovo-poreikiai">Užsakovo poreikiai</a></li>
+<li><a href="#12-vartotojiški-pasakojimai">Vartotojiški pasakojimai</a></li>
+</ol></li>
+<li><a href="#2-dalykinės-srities-modelis">Dalykinės srities modelis</a>
+<ol type="1">
+<li><a href="#21-esybių-sąrašas">Esybių sąrašas</a></li>
+<li><a href="#22-pradinė-klasių-diagrama">Pradinė klasių diagrama</a></li>
+<li><a href="#23-klasių-ir-reikalavimų-matrica">Klasių ir reikalavimų matrica</a></li>
+</ol></li>
+<li><a href="#3-užduotys">Užduotys</a>
+<ol type="1">
+<li><a href="#31-pradinė-užduočių-diagrama">Pradinė užduočių diagrama</a></li>
+<li><a href="#32-pranešimo-dėl-produktų-galiojimo-pabaigos-peržiūrėjimas">Pranešimo dėl produktų galiojimo pabaigos peržiūrėjimas</a></li>
+<li><a href="#33-produkto-užsakymas-per-parduotuvę">Produkto užsakymas per parduotuvę</a></li>
+<li><a href="#34-šaldytuvo-dalinimasis">Šaldytuvo dalinimasis</a></li>
+<li><a href="#35-naudotojas-bendrauja-su-kitais-grupės-nariais-per-pranešimus">Naudotojas bendrauja su kitais grupės nariais per pranešimus</a></li>
+<li><a href="#36-naudotojas-atsiverčia-kalendorių-produktams-peržiūrėti">Naudotojas atsiverčia kalendorių produktams peržiūrėti</a></li>
+<li><a href="#37-reklamų-rodymas">Reklamų rodymas</a></li>
+<li><a href="#38-papildyta-užduočių-diagrama">Papildyta užduočių diagrama</a></li>
+</ol></li>
+<li><a href="#4-peržiūros-rezultatai">Peržiūros rezultatai</a></li>
+</ol>
+
+<h1 id="reikalavimai">1. Reikalavimai</h1>
+<h2 id="užsakovo-poreikiai">1.1 Užsakovo poreikiai</h2>
+<ol type="1">
+<li>Pritaikyti programą mobiliesiems telefonams.</li>
+<li>Pranešti dėl atitinkamų produktų galiojimo laiko pabaigos.</li>
+<li>Galimybė užsakyti prekes per mobiliąją programą.</li>
+<li>Galimybė dalintis šaldytuvo turiniu su kitais naudotojais(grupė).</li>
+<li>Pranešimai, komentarai tarp šeimos narių dėl produktų, receptų.</li>
+<li>Kalendoriaus integracija į programą, žymint pirktus produktus pagal dienas.</li>
+<li>Numatyti galimybę atvaizduoti maisto tiekėjo pateikiamas reklamas.</li>
+<li>Aktyviai teikiama pagalba naudotojui programos naudojimo klausimais.</li>
+<li>Automatinis programos klaidų perdavimas kokybės užtikrinimo specialistams.</li>
+<li>Trumpas programos aprašas/paaiškinimas pirmą kartą ja įsijungus.</li>
+</ol>
+<h2 id="vartotojiški-pasakojimai">1.2 Vartotojiški pasakojimai</h2>
+<!-- Senas lentelės formatas, neveikia su pandoc
+    <table class="tg">
+  <tr>
+    <th class="tg-0pky" colspan="3"> Pranešimas dėl galiojimo laiko pabaigos</th>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Priėmimo testas: </td>
+    <td class="tg-0pky">Prioritetas: </td>
+    <td class="tg-0pky">Sąnaudos: </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" colspan="3">Iki produkto galiojimo pabaigos likus 3 dienoms (jei jo galiojimo laikas nuo įdėjimo į šaldytuvą yra ne mažiau 5d.) ir likus 1 dienai (visada) turi būti gautas pranešimas, įspėjantis apie galiojimo laiko pabaigą ir likusį galiojimo laiką.
+Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama vienu bendru pranešimu.</td>
+  </tr>
+</table>
+    Lentelės pavyzdys su Markdown sintakse
+|  |
+|:-------------------------------------------------------------:|
+|  |
+-->
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Pranešimas dėl galiojimo laiko pabaigos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Iki produkto galiojimo pabaigos likus 3 dienoms (jei jo galiojimo laikas nuo įdėjimo į šaldytuvą yra ne mažiau 5d.) ir likus 1 dienai (visada) turi būti gautas pranešimas, įspėjantis apie galiojimo laiko pabaigą ir likusį galiojimo laiką. <br> Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama vienu bendru pranešimu.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Prekės užsakymas per mobiliąją programą</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Per mobilią programą naudotojas gali ieškoti produktų ir sudaryti užsakymus. Turi būti galima pasirinkti ir užsakyti produktus.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Dalijimasis savo šaldytuvo turiniu su kitais naudotojais</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Naudotojas, jei nori dalintis savo šaldytuvo turiniu, turi sukurti grupę. Į ją gali kviesti kitus naudotojus. Naudotojai gali atmesti arba priimti kvietimą.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Vartotojo šaldytuvo matymas</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Turi būti galimybė matyti šaldytuvo turinį, ieškoti receptų ir pažymėti kokius receptus gaminsi.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Pranešimo sukurimas</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Naudotojas gali palikti pranešimą, kuris matomas tik grupės nariams.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Produkto pranešimai</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Pranešimai skirti konkrečiam produktui arba receptui.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Pranešimų peržiūrėjimas</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Pranešimai matomi peržiūrint produkto ar recepto informaciją.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Naudotojas atsiverčia kalendorių pirkiniams peržiūrėti</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Naudotojas gali atsidaryti kalendorių, kuriame mato visus pirktus produktus. <br>Atlikus užsakymą automatiškai išsaugoma, kas ir kada buvo užsakyta, ir tai atvaizduojama kalendoriuje. Naudotojas gali pasirinkti konkrečią dieną ir matyti detalią užsakymų informaciją. Taip pat galima pažiūrėti kalendoriuje produktus pagal pristatymo datą ir galiojimo pabaigą.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Naudotojas mato reklamas</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Produktų sąraše yra rekomenduojamos tiekėjo parinktos prekės. Šalia naudotojui aktualios informacijos yra rodomos tiekėjo reklaminės nuotraukos. Tiekėjas turi galimybę nustatyti naują reklamą ar pridėti ją į rodomų reklamų rinkinį.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Pagalba naudotojui</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Prieš vedant informaciją į lauką ar spaudžiant mygtuką turi būti galimybė gauti informaciją apie tą mygtuką ar lauką. Informacija turi būti glausta ir suprantama.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Pranešimas dėl klaidų</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Kai programoje įvyksta klaida, kuri sustabdo ar nutraukia veikimą, būna automatiškai pranešama specialistams. Turi būti galimybė pranešti apie klaidą, jei nesutampa gautų produktų informacija su esančia sistemoje.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Naudotojas susipažįsta su sistema</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Per pirmą prisijungimą naudotojas supažindinamas su pagrindiniu sistemos naudojimu, pateikiant galimų veiksmų sąrašą. Naudotojui taip pat pateikiami galimi sistemos nustatymai, jis su šiais supažindinamas, ir leidžiama jam keisti nustatymus. Naudotojas gali nustatyti, kad šis paaiškinimas kitais kartais nebebus rodomas.</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="dalykinės-srities-modelis">2. Dalykinės srities modelis</h1>
+<h2 id="esybių-sąrašas">2.1 Esybių sąrašas</h2>
+<ul>
+<li>Produktas</li>
+<li>Tiekėjas</li>
+<li>Naudotojas</li>
+<li>Šaldytuvas</li>
+<li>Receptas</li>
+</ul>
+<h2 id="pradinė-klasių-diagrama">2.2 Pradinė klasių diagrama</h2>
+<figure>
+<img src="./Nuotraukos/Class%20diagram.jpg" alt="Klasių diagrama" /><figcaption>Klasių diagrama</figcaption>
+</figure>
+<h2 id="klasių-ir-reikalavimų-matrica">2.3 Klasių ir reikalavimų matrica</h2>
+<figure>
+<img src="./Nuotraukos/Class-X-Req.jpg" title="Klasių ir reikalavimų matrica" alt="Klasių Matrica" /><figcaption>Klasių Matrica</figcaption>
+</figure>
+<h1 id="užduotys">3. Užduotys</h1>
+<h2 id="pradinė-užduočių-diagrama">3.1 Pradinė užduočių diagrama</h2>
+<figure>
+<img src="./Nuotraukos/UC-diagrama.jpg" title="Užduočių diagrama" alt="užduočių diagrama" /><figcaption>užduočių diagrama</figcaption>
+</figure>
+<h3 id="pranešimo-dėl-produktų-galiojimo-pabaigos-peržiūrėjimas">3.2. Pranešimo dėl produktų galiojimo pabaigos peržiūrėjimas</h3>
+<h4 id="užduoties-vykdymą-inicijuojantis-trigeris">Užduoties vykdymą inicijuojantis trigeris</h4>
+<p>Sistemoje yra produktų, kurių galiojimo terminas artėja prie nustatytos ribos.</p>
+<h4 id="užduoties-vykdymo-prieš-sąlygos">Užduoties vykdymo prieš-sąlygos</h4>
+<p>Sistemos nustatymai yra tokie, kurie leistų sistemai siųsti pranešimus.</p>
+<h4 id="pagrindinis-scenarijus">Pagrindinis scenarijus</h4>
+<p><del>Artėjant produktų galiojimo laikui prie pabaigos, pagrindinio lango pranešimų juostoje pranešimų piktograma pasikeičia, nurodydama neperskaitytų pranešimų buvimą.</del> <em>(Reikia perrašyti pradžią, kad sistema kažką padaro ir parodo naudotojui)</em> Naudotojas paspaudžia ant pranešimų piktogramos. Sistema atidaro langą “Senstantys produktai”. Naujame lange nurodyti produktai, kurie tuoj pasens, taip pat ir receptai iš šių produktų, jei tokių galima sudaryti. <del>Naudotojas nusprendžia gaminti pagal pasiūlytą receptą.</del> Norėdamas dalį senstančių produktų pašalinti naudotojas juos pažymi ir spaudžia pašalinti. Sistema pašalina produktus iš šaldytuvo ir atnaujina vaizduojamą informaciją.</p>
+<h4 id="alternatyvūs-scenarijai">Alternatyvūs scenarijai</h4>
+<p>Naudotojas nusprendžia gaminti pagal pasiūlytą receptą. Vykdomas gaminimo scenarijus.</p>
+<p>Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių produktų naudojant senstančius produktus. Vietoje pasiūlyto recepto sistema parodo, jog iš esamų produktų nepavyksta sudaryti recepto. Toliau viskas kaip Naudotojui nusprendus negaminti recepto.</p>
+<h4 id="grafinės-sąsajos-eskizas">Grafinės sąsajos eskizas</h4>
+<figure>
+<img src="./Nuotraukos/GUIEskizas1.png" title="Langas &#39;Senstantys produktai&#39;" alt="GUIEskizas1.png" /><figcaption>GUIEskizas1.png</figcaption>
+</figure>
+<h4 id="sekų-diagrama">Sekų diagrama</h4>
+<figure>
+<img src="./Nuotraukos/SEQ1.png" title="Sekų diagrama" alt="SEQ1.png" /><figcaption>SEQ1.png</figcaption>
+</figure>
+<h3 id="produkto-užsakymas-per-parduotuvę">3.3. Produkto užsakymas per parduotuvę</h3>
+<h4 id="pagrindinis-scenarijus-1">Pagrindinis scenarijus</h4>
+<p>Naudotojas lange “Parduotuvė” paspaudžia mygtuką “Įtraukti į krepšelį”, kuris yra prie produkto pavadinimo. Sistema, į tai reaguodama, įtraukia produktą į krepšelio produktų sąrašą. Naudotojas, sudėjęs norimus produktus į krepšelį, norėdamas užbaigti užsakymą, spaudžia “Mano krepšelis”. Sistema atidaro atitinkamai pavadintą langą. Naudotojas spaudžia “Užsakyti”. Sistema suformuluoja ir išsiunčia užsakymo užklausą produktų tiekėjui.</p>
+<h4 id="alternatyvūs-scenarijai-1">Alternatyvūs scenarijai</h4>
+<p>Jei naudotojas nebenori dalies Krepšelio turinio, jis pažymi lange “Krepšelis” pažymėti žymimuosius langelius šalia nenorimų produktų pavadinimų ir paspaudžia mygtuką “Pašalinti iš krepšelio”. Sistema pašalina pažymėtus elementus iš krepšelio produktų sąrašo.</p>
+<h4 id="grafinės-sąsajos-eskizas-1">Grafinės sąsajos eskizas</h4>
+<figure>
+<img src="./Nuotraukos/GUIEskizas3.png" title="&#39;Produktų užsakymas&#39;" alt="Produktų užsakymas" /><figcaption>Produktų užsakymas</figcaption>
+</figure>
+<h4 id="sekų-diagrama-1">Sekų diagrama</h4>
+<figure>
+<img src="./Nuotraukos/Produkt%C5%B3U%C5%BEsSeq.png" title="&#39;Produktų užsakymas&#39;" alt="Produktų užsakymas sequence" /><figcaption>Produktų užsakymas sequence</figcaption>
+</figure>
+<h4 id="peržiūros-rezultatas">Peržiūros rezultatas:</h4>
+<ol type="1">
+<li>Sukurti atskirą scenarijų: “Užsakymas produktų per šaldytuvą”</li>
+</ol>
+<p>Jei naudotojas nori į krepšelį įtraukti jau pirktus produktus, lange “Šaldytuvas” šalia norimo produkto gali paspausti pliuso ženklą. Sistema įtraukia identišką produktą į krepšelį.</p>
+<h3 id="šaldytuvo-dalinimasis">3.4. Šaldytuvo dalinimasis</h3>
+<h4 id="pagrindinis-scenarijus-2">Pagrindinis scenarijus</h4>
+<p>Naudotojas, norėdamas dalintis šaldytuvu, lange “Šaldytuvas” spaudžia mygtuką “Dalintis”. Sistema parodo langą “Dalinimasis” su jame esančia naudotojų informacija. Naudotojas pažymi žymimuosius langelius prie naudotojų vardų, su kuriais nori dalintis šaldytuvu, ir paspaudžia mygtuką “Patvirtinti”. Sistema išsiunčia kvietimą kitiems naudotojams. Jei kitas naudotojas priima pakvietimą, sistema atverčia langą “Pranešimas”, su informacija, kas priėmė.</p>
+<h4 id="alternatyvūs-scenarijai-2">Alternatyvūs scenarijai</h4>
+<p>Naudotojas lange “Dalinimasis” paspaudžia mygtuką “Atšaukti”. Sistema pašalina visus tame lange buvusius pasirinkimus. Sistema tada sugrąžina naudotoją į langą “Šaldytuvas”.</p>
+<h4 id="grafinės-sąsajos-eskizas-2">Grafinės sąsajos eskizas</h4>
+<figure>
+<img src="./Nuotraukos/GUIEskizas4(1).png" title="&#39;Dalintis&#39;" alt="Dalinimasis" /><figcaption>Dalinimasis</figcaption>
+</figure>
+<h4 id="sekų-diagrama-2">Sekų diagrama</h4>
+<figure>
+<img src="./Nuotraukos/%C5%A0aldytuvoDalinSeq.png" title="&#39;Dalintis&#39;" alt="Dalinimasis sequence" /><figcaption>Dalinimasis sequence</figcaption>
+</figure>
+<h3 id="naudotojas-bendrauja-su-kitais-grupės-nariais-per-pranešimus">3.5. Naudotojas bendrauja su kitais grupės nariais per pranešimus</h3>
+<h4 id="pagrindinis-scenarijus-3">Pagrindinis scenarijus</h4>
+<p>Naudotojas, norėdamas pasidalinti receptais su kitais naudotojais, paspaudžia pokalbių skirsnio piktogramą, esančią pagrindinio lango viršuje. Atsidaro pokalbių langas, kuriame naudotojas gali susirašinėti su kitais naudotojais. Naudotojas pasirenka, su kuo susirašinėti iš pateikto sąrašo. Šiame lange yra susirašinėjimui skirtas plotas. Naudotojas paspaudžia mygtuką “Dalintis receptais”, atsidariusiame lange naudotojas pažymi receptus, kuriais nori dalintis. Iš pasirinktų receptų automatiškai sugeneruojamas pranešimo tekstas. Naudotojas paspaudžia mygtuką “Siųsti”, ir pranešimas išsiunčiamas gavėjui.</p>
+<h4 id="alternatyvus-scenarijus">Alternatyvus scenarijus</h4>
+<p>Dėl kokių nors priežasčių pranešimo nepavyko nusiųsti. Sistema informuoją naudotoją apie tai ir nurodo to priežastį. Naudotojui leidžiama pabandyti siųsti iš naujo. Naudotojas, po kelių nesėkmingų bandymų, laikinai išsaugo šį pranešimą lokaliai, kad vėliau galėtų pabandyti jį išsiųsti.</p>
+<h4 id="grafinės-sąsajos-eskizas-3">Grafinės sąsajos eskizas</h4>
+<figure>
+<img src="./Nuotraukos/4ucgui.png" alt="Pranešimai kitiems" /><figcaption>Pranešimai kitiems</figcaption>
+</figure>
+<h4 id="sekų-diagrama-3">Sekų diagrama</h4>
+<figure>
+<img src="./Nuotraukos/4uc.png" alt="Bendravimo pranešimais sekų diagrama" /><figcaption>Bendravimo pranešimais sekų diagrama</figcaption>
+</figure>
+<h3 id="naudotojas-atsiverčia-kalendorių-produktams-peržiūrėti">3.6. Naudotojas atsiverčia kalendorių produktams peržiūrėti</h3>
+<h4 id="pagrindinis-scenarijus-4">Pagrindinis scenarijus</h4>
+<p>Kalendoriaus lange naudotojui automatiškai pavaizduojamas esamas mėnesis. Sistema automatiškai pavaizduoja kiekvieną užsakymą ties diena, kada buvo užsakyta. Naudotojas spaudžia ant pliuso prie dienos. Sistema suranda dienos užsakymų informaciją ir atvaizduoja ją lange “Dienos produktai”. Peržiūrėdamas produktus naudotojas pasirenka vieną ir spaudžia „Užsakyti daugiau“. Sistema suranda produktą ir įdeda jį į naudotojo krepšelį. Naudotojas spaudžia”Grįžti". Sistema grąžina naudotoją į kalendoriaus langą.</p>
+<h4 id="alternatyvūs-scenarijai-3">Alternatyvūs scenarijai</h4>
+<p>Naudotojas spaudžia „žiūrėti pagal galiojimo laiką“. Sistema atvaizduoja mėnesyje produktų galiojimo pabaigas. Naudotojas pasirenka dieną ir spaudžia „Peržiūrėti“. Sistema atvaizduoja produktus lange „Dienos produktai“. Norėdamas išvengti pasenusio maisto naudotojas spaudžia „siūlyti receptus“. Sistema ieško receptų, su produktais, kurie pasirinktą dieną baigs galioti. Sistema nuveda naudotoją į receptų langą ir pavaizduoja rastus receptus. Naudotojas išsirenka receptą ir spaudžia”gaminti". Sistema pašalina produktus, atnaujina vaizduojamą informaciją. Naudotojas grąžinamas į kalendoriaus langą.<br />
+Naudotojas pasirenka kurių nors metų kokį nors mėnesį. Sistema atvaizduoja to mėnesio užsakytus produktus. Tada scenarijus tęsiasi kaip pagrindinis, tik su pasirinktu mėnesiu.</p>
+<h4 id="grafinės-sąsajos-eskizas-4">Grafinės sąsajos eskizas</h4>
+<figure>
+<img src="./Nuotraukos/Calendar.jpg" title="Kalendoriaus ir Dienos užsakymų langai" alt="Kalendorius" /><figcaption>Kalendorius</figcaption>
+</figure>
+<h4 id="sekų-diagrama-4">Sekų diagrama</h4>
+<figure>
+<img src="./Nuotraukos/calendar-sequence.jpg" title="Kalendoriaus seku diagrama" alt="Kalendoriaus sekos" /><figcaption>Kalendoriaus sekos</figcaption>
+</figure>
+<h3 id="reklamų-rodymas">3.7. Reklamų rodymas</h3>
+<h4 id="pagrindinis-scenarijus-5">Pagrindinis scenarijus</h4>
+<p>Naudotojui naršant “Mano produktai” arba “Visi produktai” meniu sistema kartais įterpia reklamą tarp rodomų produktų. Reklama yra tokio paties dydžio kaip ir produktų paveikslėliai, tačiau skiriasi kraštinės spalva. Naudotojas paspaudžia ant reklamos. Sistema nukreipia naudotoją į reklamos nuorodą.</p>
+<h4 id="alternatyvūs-scenarijai-4">Alternatyvūs scenarijai</h4>
+<p>Jei reklama yra nuolaida produktui šioje sistemoje, tai sistema reaguodama į paspaudimą duoda pasirinkimą nurodytą produktą įtraukti į krepšelį su atitinkama kaina. Naudotojas paspaudžia sutikti. Sistema įtraukia produktą į krepšelį.</p>
+<p>Naudotojas nenorėdamas matyti reklamos, spaudžia jos kampe esantį “x” mygtuką. Sistema paslepia reklamą ir vietoje jos vaizduoja produktą.</p>
+<p>Naudotojui paspaudus dešinį pelės mygtuką (arba ilgai palietus, jei naudojamasi mobiliąją versija) sistema parodo pasirinkimą pranešti apie netinkamą reklamos turinį. Naudotojas spaudžia “pranešti”. Sistema atidaro dialogą, kuriame prašoma nurodyti priežastį, kodėl ta reklama yra netinkama. Naudotojas suveda informaciją ir spaudžia “patvirtina”. Sistema neberodo jam šios reklamos ir persiunčia pranešimą dėl netinkamo turinio sistemos administratoriams, kurie nuspręs, ar dėl tos reklamos reikia imtis tolimesnių veiksmų.</p>
+<h4 id="grafinės-sąsajos-eskizas-5">Grafinės sąsajos eskizas</h4>
+<figure>
+<img src="./Draw.io/DamnAds.jpg" title="Reklamų rodymas" alt="Reklamos" /><figcaption>Reklamos</figcaption>
+</figure>
+<h4 id="sekų-diagrama-5">Sekų diagrama</h4>
+<figure>
+<img src="./Draw.io/DamnAds_Seq.jpg" title="Reklamų rodymo sekų diagrama" alt="Reklamos Seq" /><figcaption>Reklamos Seq</figcaption>
+</figure>
+<h3 id="papildyta-užduočių-diagrama">3.8 Papildyta užduočių diagrama</h3>
+<figure>
+<img src="./Nuotraukos/Atnaujinta-UC-diagrama.jpg" alt="Detalesnės užduotys" /><figcaption>Detalesnės užduotys</figcaption>
+</figure>
+<h1 id="peržiūros-rezultatai">4. Peržiūros rezultatai</h1>
+<p><a href="https://1drv.ms/w/s!Ao3LSVKqY6TXg8t2cWLC-LfMPbrOEg">Pataisyta reikalavimų specifikacija.</a> Raudonu šriftu žymimi nauji reikalavimai.</p>
+<p>Užduočių ir reikalavimų atsekamumo matricos nepateiksime. Užduočių scenarijų tekstai yra parašyti įgyvendinant 2-7 užsakovo reikalavimus. Taip pat kiekviena užduotis įgyvendina pirmąjį užsakovo reikalavimą.</p>
+<p>Pridėta trūkstamas 4 užduoties GUI.</p>
+<p>Patikslinta klasių diagramą, klasei “naudotojas” pridėjas atributas “vardas”.</p>
+</body>
+</html>

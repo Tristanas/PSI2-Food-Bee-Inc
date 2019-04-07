@@ -1,20 +1,7 @@
-VILNIAUS UNIVERSITETAS 
-MATEMATIKOS IR INFORMATIKOS FAKUTLETAS
-
- “Food Bee Inc.”
-Laboratorinis darbas
-
-	Darbą atliko:
-	Manfredas Šiurkus
-  	Edvinas Šmita
-  	Teodoras Šaulys
-  	Tomas Mikna
-  	Vilius Minkevičius
-	
-
-Vilnius, 2019
 
 # Turinys
+   
+   
 1. [Reikalavimai](#1-reikalavimai) 
 	1. [Užsakovo poreikiai](#11-užsakovo-poreikiai) 
 	2. [Vartotojiški pasakojimai](#12-vartotojiški-pasakojimai) 
@@ -32,7 +19,7 @@ Vilnius, 2019
 	7. [Reklamų rodymas](#37-reklamų-rodymas)
 	8. [Papildyta užduočių diagrama](#38-papildyta-užduočių-diagrama)
 4. [Peržiūros rezultatai](#4-peržiūros-rezultatai)
-
+    
 # 1. Reikalavimai
 
 ## 1.1 Užsakovo poreikiai
@@ -49,7 +36,8 @@ Vilnius, 2019
  10. Trumpas programos aprašas/paaiškinimas pirmą kartą ja įsijungus.
 
 ## 1.2 Vartotojiški pasakojimai
-
+   
+   
 <!-- Senas lentelės formatas, neveikia su pandoc
 	<table class="tg">
   <tr>
@@ -70,6 +58,7 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
 |:-------------------------------------------------------------:|
 |  |
 -->
+
 | Pranešimas dėl galiojimo laiko pabaigos |
 |:-----------------------------------:|
 | Iki produkto galiojimo pabaigos likus 3 dienoms (jei jo galiojimo laikas nuo įdėjimo į šaldytuvą yra ne mažiau 5d.) ir likus 1 dienai (visada) turi būti gautas pranešimas, įspėjantis apie galiojimo laiko pabaigą ir likusį galiojimo laiką. <br> Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama vienu bendru pranešimu. |
@@ -136,6 +125,7 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
 
 ![Klasių Matrica](./Nuotraukos/Class-X-Req.jpg "Klasių ir reikalavimų matrica")
 
+
 # 3. Užduotys
 
 ## 3.1 Pradinė užduočių diagrama
@@ -143,18 +133,25 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
 ![užduočių diagrama](./Nuotraukos/UC-diagrama.jpg "Užduočių diagrama")
 
 ### 3.2. Pranešimo dėl produktų galiojimo pabaigos peržiūrėjimas
+
 #### Užduoties vykdymą inicijuojantis trigeris
 Sistemoje yra produktų, kurių galiojimo terminas artėja prie nustatytos ribos.
+
 #### Užduoties vykdymo prieš-sąlygos
-* Sistemos nustatymai yra tokie, kurie leistų sistemai siųsti pranešimus.
+Sistemos nustatymai yra tokie, kurie leistų sistemai siųsti pranešimus.
+
 #### Pagrindinis scenarijus
 ~~Artėjant produktų galiojimo laikui prie pabaigos, pagrindinio lango pranešimų juostoje pranešimų piktograma pasikeičia, nurodydama neperskaitytų pranešimų buvimą.~~ *(Reikia perrašyti pradžią, kad sistema kažką padaro ir parodo naudotojui)* Naudotojas paspaudžia ant pranešimų piktogramos. Sistema atidaro langą "Senstantys produktai". Naujame lange nurodyti produktai, kurie tuoj pasens, taip pat ir receptai iš šių produktų, jei tokių galima sudaryti. ~~Naudotojas nusprendžia gaminti pagal pasiūlytą receptą.~~ Norėdamas dalį senstančių produktų pašalinti naudotojas juos pažymi ir spaudžia pašalinti. Sistema pašalina produktus iš šaldytuvo ir atnaujina vaizduojamą informaciją.
+
 #### Alternatyvūs scenarijai
 Naudotojas nusprendžia gaminti pagal pasiūlytą receptą. Vykdomas gaminimo scenarijus.
 
 Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių produktų naudojant senstančius produktus. Vietoje pasiūlyto recepto sistema parodo, jog iš esamų produktų nepavyksta sudaryti recepto. Toliau viskas kaip Naudotojui nusprendus negaminti recepto.
+
 #### Grafinės sąsajos eskizas
 ![GUIEskizas1.png](./Nuotraukos/GUIEskizas1.png "Langas 'Senstantys produktai'")
+
+
 #### Sekų diagrama
 ![SEQ1.png](./Nuotraukos/SEQ1.png  "Sekų diagrama")
 
@@ -168,6 +165,7 @@ Jei naudotojas nebenori dalies Krepšelio turinio, jis pažymi lange "Krepšelis
 
 #### Grafinės sąsajos eskizas 
 ![Produktų užsakymas](./Nuotraukos/GUIEskizas3.png "'Produktų užsakymas'")
+
 
 #### Sekų diagrama
 ![Produktų užsakymas sequence](./Nuotraukos/Produkt%C5%B3U%C5%BEsSeq.png "'Produktų užsakymas'")
@@ -189,30 +187,43 @@ Naudotojas lange "Dalinimasis" paspaudžia mygtuką "Atšaukti". Sistema pašali
 #### Grafinės sąsajos eskizas
 ![Dalinimasis](./Nuotraukos/GUIEskizas4(1).png "'Dalintis'")
 
+
 #### Sekų diagrama
 ![Dalinimasis sequence](./Nuotraukos/%C5%A0aldytuvoDalinSeq.png "'Dalintis'")
 
 ### 3.5. Naudotojas bendrauja su kitais grupės nariais per pranešimus
+
 #### Pagrindinis scenarijus
-Naudotojas, norėdamas pasidalinti receptais su kitais naudotojais, paspaudžia pokalbių skirsnio piktogramą, esančią pagrindinio lango viršuje. Atsidaro pokalbių langas, kuriame naudotojas gali susirašinėti su kitais naudotojais. Naudotojas pasirenka, su kuo susirašinėti iš pateikto sąrašo. Šiame lange yra susirašinėjimui skirtas plotas. Naudotojas paspaudžia mygtuką "Dalintis receptais", atsidariusiame lange naudotojas pažymi receptus, kuriais nori dalintis. Iš pasirinktų receptų automatiškai sugeneruojamas pranešimo tekstas. Naudotojas paspaudžia mygtuką "Siųsti", ir pranešimas išsiunčiamas gavėjui.
+Naudotojas, norėdamas pasidalinti receptais su kitais naudotojais, paspaudžia pokalbių skirsnio piktogramą, esančią pagrindinio lango viršuje. Atsidaro pokalbių langas, kuriame naudotojas gali susirašinėti su kitais naudotojais. Naudotojas pasirenka, su kuo susirašinėti iš pateikto sąrašo. Šiame lange yra susirašinėjimui skirtas plotas. Naudotojas paspaudžia mygtuką "Dalintis receptais", atsidariusiame lange naudotojas pažymi receptus, kuriais nori dalintis. Iš pasirinktų receptų automatiškai sugeneruojamas pranešimo tekstas. Naudotojas paspaudžia mygtuką "Siųsti", ir pranešimas išsiunčiamas gavėjui.  
+
 #### Alternatyvus scenarijus
-Dėl kokių nors priežasčių pranešimo nepavyko nusiųsti. Sistema informuoją naudotoją apie tai ir nurodo to priežastį. Naudotojui leidžiama pabandyti siųsti iš naujo. Naudotojas, po kelių nesėkmingų bandymų, laikinai išsaugo šį pranešimą lokaliai, kad vėliau galėtų pabandyti jį išsiųsti.
+Dėl kokių nors priežasčių pranešimo nepavyko nusiųsti. Sistema informuoją naudotoją apie tai ir nurodo to priežastį. Naudotojui leidžiama pabandyti siųsti iš naujo. Naudotojas, po kelių nesėkmingų bandymų, laikinai išsaugo šį pranešimą lokaliai, kad vėliau galėtų pabandyti jį išsiųsti.  
+
 #### Grafinės sąsajos eskizas
-![Pranešimai kitiems](./Nuotraukos/4ucgui.png)
+![Pranešimai kitiems](./Nuotraukos/4ucgui.png)  
+
 #### Sekų diagrama
-![Bendravimo pranešimais sekų diagrama](./Nuotraukos/4uc.png)
+![Bendravimo pranešimais sekų diagrama](./Nuotraukos/4uc.png)  
+
 ### 3.6. Naudotojas atsiverčia kalendorių produktams peržiūrėti
-Kalendoriaus lange naudotojui automatiškai pavaizduojamas esamas mėnesis. Sistema automatiškai pavaizduoja kiekvieną užsakymą ties diena, kada buvo užsakyta. Naudotojas spaudžia ant pliuso prie dienos. Sistema suranda dienos užsakymų informaciją ir atvaizduoja ją lange "Dienos produktai". Peržiūrėdamas produktus naudotojas pasirenka vieną ir spaudžia „Užsakyti daugiau“. Sistema suranda produktą ir įdeda jį į naudotojo krepšelį. Naudotojas spaudžia "Grįžti". Sistema grąžina naudotoją į kalendoriaus langą.
-#### Alternatyvūs scenarijai
-Naudotojas spaudžia „žiūrėti pagal galiojimo laiką“.  Sistema atvaizduoja mėnesyje produktų galiojimo pabaigas. Naudotojas pasirenka dieną ir spaudžia „Peržiūrėti“. Sistema atvaizduoja produktus lange „Dienos produktai“. Norėdamas išvengti pasenusio maisto naudotojas spaudžia „siūlyti receptus“.  Sistema ieško receptų, su produktais, kurie pasirinktą dieną baigs galioti. Sistema nuveda naudotoją į receptų langą ir pavaizduoja rastus receptus. Naudotojas išsirenka receptą ir spaudžia "gaminti". Sistema pašalina produktus, atnaujina vaizduojamą informaciją. Naudotojas grąžinamas į kalendoriaus langą.
-Naudotojas pasirenka kurių nors metų kokį nors mėnesį. Sistema atvaizduoja to mėnesio užsakytus produktus. Tada scenarijus tęsiasi kaip pagrindinis, tik su pasirinktu mėnesiu.
-#### Grafinės sąsajos eskizas
-![Kalendorius](./Nuotraukos/Calendar.jpg "Kalendoriaus ir Dienos užsakymų langai")
-#### Sekų diagrama
-![Kalendoriaus sekos](./Nuotraukos/calendar-sequence.jpg "Kalendoriaus seku diagrama")
-### 3.7. Reklamų rodymas
+
 #### Pagrindinis scenarijus
-Naudotojui naršant "Mano produktai" arba "Visi produktai" meniu sistema kartais įterpia reklamą tarp rodomų produktų. Reklama yra tokio paties dydžio kaip ir produktų paveikslėliai, tačiau skiriasi kraštinės spalva. Naudotojas paspaudžia ant reklamos. Sistema nukreipia naudotoją į reklamos nuorodą.
+Kalendoriaus lange naudotojui automatiškai pavaizduojamas esamas mėnesis. Sistema automatiškai pavaizduoja kiekvieną užsakymą ties diena, kada buvo užsakyta. Naudotojas spaudžia ant pliuso prie dienos. Sistema suranda dienos užsakymų informaciją ir atvaizduoja ją lange "Dienos produktai". Peržiūrėdamas produktus naudotojas pasirenka vieną ir spaudžia „Užsakyti daugiau“. Sistema suranda produktą ir įdeda jį į naudotojo krepšelį. Naudotojas spaudžia "Grįžti". Sistema grąžina naudotoją į kalendoriaus langą.  
+
+#### Alternatyvūs scenarijai  
+Naudotojas spaudžia „žiūrėti pagal galiojimo laiką“.  Sistema atvaizduoja mėnesyje produktų galiojimo pabaigas. Naudotojas pasirenka dieną ir spaudžia „Peržiūrėti“. Sistema atvaizduoja produktus lange „Dienos produktai“. Norėdamas išvengti pasenusio maisto naudotojas spaudžia „siūlyti receptus“.  Sistema ieško receptų, su produktais, kurie pasirinktą dieną baigs galioti. Sistema nuveda naudotoją į receptų langą ir pavaizduoja rastus receptus. Naudotojas išsirenka receptą ir spaudžia "gaminti". Sistema pašalina produktus, atnaujina vaizduojamą informaciją. Naudotojas grąžinamas į kalendoriaus langą.  
+Naudotojas pasirenka kurių nors metų kokį nors mėnesį. Sistema atvaizduoja to mėnesio užsakytus produktus. Tada scenarijus tęsiasi kaip pagrindinis, tik su pasirinktu mėnesiu.  
+
+#### Grafinės sąsajos eskizas
+![Kalendorius](./Nuotraukos/Calendar.jpg "Kalendoriaus ir Dienos užsakymų langai")  
+
+#### Sekų diagrama  
+![Kalendoriaus sekos](./Nuotraukos/calendar-sequence.jpg "Kalendoriaus seku diagrama")  
+
+### 3.7. Reklamų rodymas  
+
+#### Pagrindinis scenarijus  
+Naudotojui naršant "Mano produktai" arba "Visi produktai" meniu sistema kartais įterpia reklamą tarp rodomų produktų. Reklama yra tokio paties dydžio kaip ir produktų paveikslėliai, tačiau skiriasi kraštinės spalva. Naudotojas paspaudžia ant reklamos. Sistema nukreipia naudotoją į reklamos nuorodą. 
 
 #### Alternatyvūs scenarijai
 Jei reklama yra nuolaida produktui šioje sistemoje, tai sistema reaguodama į paspaudimą duoda pasirinkimą nurodytą produktą įtraukti į krepšelį su atitinkama kaina. Naudotojas paspaudžia sutikti. Sistema įtraukia produktą į krepšelį.
@@ -222,13 +233,15 @@ Naudotojas nenorėdamas matyti reklamos, spaudžia jos kampe esantį "x" mygtuk�
 Naudotojui paspaudus dešinį pelės mygtuką (arba ilgai palietus, jei naudojamasi mobiliąją versija) sistema parodo pasirinkimą pranešti apie netinkamą reklamos turinį. Naudotojas spaudžia "pranešti". Sistema atidaro dialogą, kuriame prašoma nurodyti priežastį, kodėl ta reklama yra netinkama. Naudotojas suveda informaciją ir spaudžia "patvirtina". Sistema neberodo jam šios reklamos ir persiunčia pranešimą dėl netinkamo turinio sistemos administratoriams, kurie nuspręs, ar dėl tos reklamos reikia imtis tolimesnių veiksmų.
 
 #### Grafinės sąsajos eskizas
-![Reklamos](./Draw.io/DamnAds.jpg "Reklamų rodymas")
+![Reklamos](./Nuotraukos/DamnAds.jpg "Reklamų rodymas")
 
 #### Sekų diagrama
-![Reklamos Seq](./Draw.io/DamnAds_Seq.jpg "Reklamų rodymo sekų diagrama")
+![Reklamos Seq](./Nuotraukos/DamnAds_Seq.jpg "Reklamų rodymo sekų diagrama")
+
 
 ### 3.8 Papildyta užduočių diagrama
 ![Detalesnės užduotys](./Nuotraukos/Atnaujinta-UC-diagrama.jpg)
+
 
 # 4. Peržiūros rezultatai
 [Pataisyta reikalavimų specifikacija.](https://1drv.ms/w/s!Ao3LSVKqY6TXg8t2cWLC-LfMPbrOEg) Raudonu šriftu žymimi nauji reikalavimai. 

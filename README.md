@@ -28,6 +28,10 @@ Forma: (ne)atlikta, Pavadinimas, kas daro, kur nuoroda.
 - [x] Sugeneruoti table of contents - padaryta rankiniu būdu.
 - [ ] Kompiliavimas ir last check.
 
+### Dokumento generavimo veiksmai:
+- komanda "pandoc dokumentas.md -s -o dokumentas.pdf" naudojantis cmd projekto aplanke.
+- Sujungimas titulinio lapo su dokumentu naudojantis <www.ilovepdf.com>.
+
 ### Apie namų darbo darymo metodą
  - Galima savarankiškai bet kam redaguoti užsakovo reikalavimus:
   - plėsti juos, 

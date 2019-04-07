@@ -15,18 +15,18 @@ Laboratorinis darbas
 Vilnius, 2019
 
 # Table of Contents
-1. [Example](example)
-2. [Example2](example2)
-3. [Third Example](third-example)
+1. [Example](#example)
+2. [Example2](#example2)
+3. [Third Example](#third-example)
 
 # Example
 # Example2
 # Third Example
 
 # Turinys
-1. [Reikalavimai](reikalavimai)
-2. [Dalykinės srities modelis](dalykinės srities modelis)
-3. [Užduotys](užduotys)
+1. [Reikalavimai](#1-reikalavimai)
+2. [Dalykinės srities modelis](#2-dalykinės-srities-modelis)
+3. [Užduotys](#3-užduotys)
 
 # 1. Reikalavimai
 

@@ -31,7 +31,9 @@ Forma: (ne)atlikta, Pavadinimas, kas daro, kur nuoroda.
 ### Dokumento generavimo veiksmai:
 - komanda "pandoc dokumentas.md -s -o dokumentas.pdf" naudojantis cmd projekto aplanke.
 - Sujungimas titulinio lapo su dokumentu naudojantis <www.ilovepdf.com>.
-
+- Kopijuoti dokumentą ir kiekvienoje nuorodoje pakeisti tašku dalį iki „/nuotraukos“. 
+- Gautą dokumentą su pandoc konvertuoti į pdf. 
+- Sujungti titulinį pdf su gautu pdf į vieną dokumentą. 
 ### Apie namų darbo darymo metodą
  - Galima savarankiškai bet kam redaguoti užsakovo reikalavimus:
   - plėsti juos, 

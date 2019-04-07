@@ -14,9 +14,28 @@ Laboratorinis darbas
 
 Vilnius, 2019
 
+# Turinys
+1. [Reikalavimai](#1-reikalavimai) 
+	1. [Užsakovo poreikiai](#11-užsakovo-poreikiai) 
+	2. [Vartotojiški pasakojimai](#12-vartotojiški-pasakojimai) 
+2. [Dalykinės srities modelis](#2-dalykinės-srities-modelis) 
+	1. [Esybių sąrašas](#21-esybių-sąrašas)
+	2. [Pradinė klasių diagrama](#22-pradinė-klasių-diagrama)
+	3. [Klasių ir reikalavimų matrica](#23-klasių-ir-reikalavimų-matrica)
+3. [Užduotys](#3-užduotys)
+	1. [Pradinė užduočių diagrama](#31-pradinė-užduočių-diagrama)
+	2. [Pranešimo dėl produktų galiojimo pabaigos peržiūrėjimas](#32-pranešimo-dėl-produktų-galiojimo-pabaigos-peržiūrėjimas)
+	3. [Produkto užsakymas per parduotuvę](#33-produkto-užsakymas-per-parduotuvę)
+	4. [Šaldytuvo dalinimasis](#34-šaldytuvo-dalinimasis)
+	5. [Naudotojas bendrauja su kitais grupės nariais per pranešimus](#35-naudotojas-bendrauja-su-kitais-grupės-nariais-per-pranešimus)
+	6. [Naudotojas atsiverčia kalendorių produktams peržiūrėti](#36-naudotojas-atsiverčia-kalendorių-produktams-peržiūrėti)
+	7. [Reklamų rodymas](#37-reklamų-rodymas)
+	8. [Papildyta užduočių diagrama](#38-papildyta-užduočių-diagrama)
+4. [Peržiūros rezultatai](#4-peržiūros-rezultatai)
+
 # 1. Reikalavimai
 
-## Užsakovo reikalavimai
+## 1.1 Užsakovo poreikiai
 
  1. Pritaikyti programą mobiliesiems telefonams.
  2. Pranešti dėl atitinkamų produktų galiojimo laiko pabaigos.
@@ -29,7 +48,7 @@ Vilnius, 2019
  9. Automatinis programos klaidų perdavimas kokybės užtikrinimo specialistams.
  10. Trumpas programos aprašas/paaiškinimas pirmą kartą ja įsijungus.
 
-## Vartotojiški pasakojimai
+## 1.2 Vartotojiški pasakojimai
   
 
 <br></br>
@@ -228,28 +247,28 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
   
 # 2. Dalykinės srities modelis
 
-## Esybių sąrašas
+## 2.1 Esybių sąrašas
  * Produktas
  * Tiekėjas
  * Naudotojas
  * Šaldytuvas
  * Receptas
 
-## Pradinė klasių diagrama
+## 2.2 Pradinė klasių diagrama
 ![Klasių diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Class%20diagram.jpg)
 
 
-## Klasių ir reikalavimų matrica
+## 2.3 Klasių ir reikalavimų matrica
 
 ![Klasių Matrica](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Class-X-Req.jpg "Klasių ir reikalavimų matrica")
 
 # 3. Užduotys
 
-## Pradinė užduočių diagrama
+## 3.1 Pradinė užduočių diagrama
 
 ![užduočių diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/UC-diagrama.jpg "Užduočių diagrama")
 
-### 3.1. Pranešimo dėl produktų galiojimo pabaigos peržiūrėjimas
+### 3.2. Pranešimo dėl produktų galiojimo pabaigos peržiūrėjimas
 #### Užduoties vykdymą inicijuojantis trigeris
 Sistemoje yra produktų, kurių galiojimo terminas artėja prie nustatytos ribos.
 #### Užduoties vykdymo prieš-sąlygos
@@ -265,7 +284,7 @@ Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių 
 #### Sekų diagrama
 ![SEQ1.png](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/SEQ1.png  "Sekų diagrama")
 
-### 3.2. Produkto užsakymas per parduotuvę
+### 3.3. Produkto užsakymas per parduotuvę
 
 #### Pagrindinis scenarijus
 Naudotojas lange "Parduotuvė"  paspaudžia mygtuką "Įtraukti į krepšelį", kuris yra prie produkto pavadinimo. Sistema, į tai reaguodama, įtraukia produktą į krepšelio produktų sąrašą. Naudotojas, sudėjęs norimus produktus į krepšelį, norėdamas užbaigti užsakymą, spaudžia "Mano krepšelis". Sistema atidaro atitinkamai pavadintą langą. Naudotojas spaudžia "Užsakyti". Sistema suformuluoja ir išsiunčia užsakymo užklausą produktų tiekėjui.
@@ -285,7 +304,7 @@ Jei naudotojas nebenori dalies Krepšelio turinio, jis pažymi lange "Krepšelis
 Jei naudotojas nori į krepšelį įtraukti jau pirktus produktus, lange "Šaldytuvas" šalia norimo produkto gali paspausti pliuso ženklą. Sistema įtraukia identišką produktą į krepšelį.
 
 
-### 3.3. Šaldytuvo dalinimasis
+### 3.4. Šaldytuvo dalinimasis
 
 #### Pagrindinis scenarijus
 Naudotojas, norėdamas dalintis šaldytuvu, lange "Šaldytuvas" spaudžia mygtuką "Dalintis". Sistema parodo langą "Dalinimasis" su jame esančia naudotojų informacija. Naudotojas pažymi žymimuosius langelius prie naudotojų vardų, su kuriais nori dalintis šaldytuvu, ir paspaudžia mygtuką "Patvirtinti". Sistema išsiunčia kvietimą kitiems naudotojams. Jei kitas naudotojas priima pakvietimą, sistema atverčia langą "Pranešimas", su informacija, kas priėmė. 
@@ -299,7 +318,7 @@ Naudotojas lange "Dalinimasis" paspaudžia mygtuką "Atšaukti". Sistema pašali
 #### Sekų diagrama
 ![Dalinimasis sequence](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/%C5%A0aldytuvoDalinSeq.png "'Dalintis'")
 
-### 3.4. Naudotojas bendrauja su kitais grupės nariais per pranešimus
+### 3.5. Naudotojas bendrauja su kitais grupės nariais per pranešimus
 #### Pagrindinis scenarijus
 Naudotojas, norėdamas pasidalinti receptais su kitais naudotojais, paspaudžia pokalbių skirsnio piktogramą, esančią pagrindinio lango viršuje. Atsidaro pokalbių langas, kuriame naudotojas gali susirašinėti su kitais naudotojais. Naudotojas pasirenka, su kuo susirašinėti iš pateikto sąrašo. Šiame lange yra susirašinėjimui skirtas plotas. Naudotojas paspaudžia mygtuką "Dalintis receptais", atsidariusiame lange naudotojas pažymi receptus, kuriais nori dalintis. Iš pasirinktų receptų automatiškai sugeneruojamas pranešimo tekstas. Naudotojas paspaudžia mygtuką "Siųsti", ir pranešimas išsiunčiamas gavėjui.
 #### Alternatyvus scenarijus
@@ -308,7 +327,7 @@ Dėl kokių nors priežasčių pranešimo nepavyko nusiųsti. Sistema informuoj�
 ![Pranešimai kitiems](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/4ucgui.png)
 #### Sekų diagrama
 ![Bendravimo pranešimais sekų diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/4uc.png)
-### 3.5. Naudotojas atsiverčia kalendorių produktams peržiūrėti
+### 3.6. Naudotojas atsiverčia kalendorių produktams peržiūrėti
 Kalendoriaus lange naudotojui automatiškai pavaizduojamas esamas mėnesis. Sistema automatiškai pavaizduoja kiekvieną užsakymą ties diena, kada buvo užsakyta. Naudotojas spaudžia ant pliuso prie dienos. Sistema suranda dienos užsakymų informaciją ir atvaizduoja ją lange "Dienos produktai". Peržiūrėdamas produktus naudotojas pasirenka vieną ir spaudžia „Užsakyti daugiau“. Sistema suranda produktą ir įdeda jį į naudotojo krepšelį. Naudotojas spaudžia "Grįžti". Sistema grąžina naudotoją į kalendoriaus langą.
 #### Alternatyvūs scenarijai
 Naudotojas spaudžia „žiūrėti pagal galiojimo laiką“.  Sistema atvaizduoja mėnesyje produktų galiojimo pabaigas. Naudotojas pasirenka dieną ir spaudžia „Peržiūrėti“. Sistema atvaizduoja produktus lange „Dienos produktai“. Norėdamas išvengti pasenusio maisto naudotojas spaudžia „siūlyti receptus“.  Sistema ieško receptų, su produktais, kurie pasirinktą dieną baigs galioti. Sistema nuveda naudotoją į receptų langą ir pavaizduoja rastus receptus. Naudotojas išsirenka receptą ir spaudžia "gaminti". Sistema pašalina produktus, atnaujina vaizduojamą informaciją. Naudotojas grąžinamas į kalendoriaus langą.
@@ -317,7 +336,7 @@ Naudotojas pasirenka kurių nors metų kokį nors mėnesį. Sistema atvaizduoja 
 ![Kalendorius](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Calendar.jpg "Kalendoriaus ir Dienos užsakymų langai")
 #### Sekų diagrama
 ![Kalendoriaus sekos](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/calendar-sequence.jpg "Kalendoriaus seku diagrama")
-### 3.6. Reklamų rodymas
+### 3.7. Reklamų rodymas
 #### Pagrindinis scenarijus
 Naudotojui naršant "Mano produktai" arba "Visi produktai" meniu sistema kartais įterpia reklamą tarp rodomų produktų. Reklama yra tokio paties dydžio kaip ir produktų paveikslėliai, tačiau skiriasi kraštinės spalva. Naudotojas paspaudžia ant reklamos. Sistema nukreipia naudotoją į reklamos nuorodą.
 
@@ -334,10 +353,10 @@ Naudotojui paspaudus dešinį pelės mygtuką (arba ilgai palietus, jei naudojam
 #### Sekų diagrama
 ![Reklamos Seq](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Draw.io/DamnAds_Seq.jpg "Reklamų rodymo sekų diagrama")
 
-### Papildyta užduočių diagrama
+### 3.8 Papildyta užduočių diagrama
 ![Detalesnės užduotys](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Atnaujinta-UC-diagrama.jpg)
 
-# 4. Peržiūros rezultatai:
+# 4. Peržiūros rezultatai
 [Pataisyta reikalavimų specifikacija.](https://1drv.ms/w/s!Ao3LSVKqY6TXg8t2cWLC-LfMPbrOEg) Raudonu šriftu žymimi nauji reikalavimai. 
 
 Užduočių ir reikalavimų atsekamumo matricos nepateiksime. Užduočių scenarijų tekstai yra parašyti įgyvendinant 2-7 užsakovo reikalavimus. Taip pat kiekviena užduotis įgyvendina pirmąjį užsakovo reikalavimą.

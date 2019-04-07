@@ -24,7 +24,7 @@ Forma: (ne)atlikta, Pavadinimas, kas daro, kur nuoroda.
 - [ ] Šaldytuvo dalinimasis,
 - [ ] Naudotojas bendrauja su kitais grupės nariais per pranešimus,
 - [x] Naudotojas atsiverčia kalendorių produktams peržiūrėti, Vilius, [diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Kalendoriaus-RD.jpg)
-- [ ] Reklamų rodymas
+- [x] Reklamų rodymas, Edvinas, [diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/Reklamu-Rodymas/Nuotraukos/DamnAds_Robust.png)
 
 
 ## Dokumento paruošimas:

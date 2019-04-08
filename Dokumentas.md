@@ -242,19 +242,21 @@ Dėl kokių nors priežasčių pranešimo nepavyko nusiųsti. Sistema informuoj�
 
 <!-- pagebreak -->
 #### Grafinės sąsajos eskizas
-![Pranešimai kitiems](./Nuotraukos/4ucgui.png)  
+![GUI3.5](./Nuotraukos/4ucgui.png "Fig. 3.5.1 - Langas 'Bendravimas grupėje'")  
 
-Figūroje 9 pavaizduoti x, y ir z langai. (Placeholderis gui eskizo aprašymui)
+Figūroje 3.5.1 pavaizduotos numatomos grafinės sąsajos pokalbiai bei receptų dalinimasis. Pokalbių lange figūruoja pokalbio gija, kurioje rodomi visi iki šiol toje grupėje su vartotoju pasidalinti receptai, tos grupės nariai, kuriuos galima pasirinkti, bei patvirtinimo mygtukas dalintis receptais, kuris nukreipia į receptų dalinimosi langą, kuriame galima pasirinkti receptus, kuriais norima dalintis.
 
 <!-- pagebreak -->
 #### Sekų diagrama
-![Bendravimo pranešimais sekų diagrama](./Nuotraukos/4uc.png)
+![SD3.5](./Nuotraukos/4uc.png "Fig. 3.5.2 - Bendravimas tarp grupės narių - sekų diagrama")
+
+Sekų diagramoje 3.5.2 parodomi žingsniai, kuriuos sistema vykdo sąveikaudama su vartotoju vykdant pagrindinį ir/ar alternatyvius scenarijus, kai vartotojas nori su kitais vartotojais grupėje dalintis savo receptais.
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
 ![RD3.5](./Nuotraukos/BendravimasGrupeje_robust.png "Bendravimas tarp grupės narių - robustiškumo diagrama")
 
-Figūroje 10 bendrauja... (Placeholderis aprašymui)
+Robustiškumo diagramoje 3.5.3 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su pokalbių langu, o vėliau galimai receptų dalinimosi langu bei pradinis atsiradimo pokalbių lange procesas.
 
 <!-- pagebreak -->
 ### 3.6. Naudotojas atsiverčia kalendorių produktams peržiūrėti

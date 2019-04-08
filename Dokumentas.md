@@ -308,8 +308,11 @@ Figūroje 15 yra detalesnė užduočių diagrama, kurioje pavaizduotos užduotys
 # 4. Peržiūros rezultatai
 [Pataisyta reikalavimų specifikacija.](https://1drv.ms/w/s!Ao3LSVKqY6TXg8t2cWLC-LfMPbrOEg) Raudonu šriftu žymimi nauji reikalavimai. 
 
-Užduočių ir reikalavimų atsekamumo matricos nepateiksime. Užduočių scenarijų tekstai yra parašyti įgyvendinant 2-7 užsakovo reikalavimus. Taip pat kiekviena užduotis įgyvendina pirmąjį užsakovo reikalavimą.
+<!-- pagebreak -->
+# 5. Techninė architektūra
 
-Pridėta trūkstamas 4 užduoties GUI.
+# 5.1. Sistemos komponentai
+![L1 sistemos komponentų diagrama](./Nuotraukos/L1-komponentai.jpg)
 
-Patikslinta klasių diagramą, klasei "naudotojas" pridėjas atributas "vardas".
+# 5.2. Fizinis pjūvis
+![Sistemos išsidėstymo diagrama](./Nuotraukos/robust-example.jpg)

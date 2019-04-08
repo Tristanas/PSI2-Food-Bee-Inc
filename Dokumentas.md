@@ -67,7 +67,7 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
    
 | Prekės užsakymas per mobiliąją programą |
 |:-------------------------------------------------------------:|
-| Per mobilią programą naudotojas gali ieškoti produktų ir sudaryti užsakymus. Turi būti galima pasirinkti ir užsakyti produktus. |
+| Naudotojas gali ieškoti produktų ir sudaryti užsakymus. Turi būti galima pasirinkti ir užsakyti produktus. |
    
 
 | Dalijimasis savo šaldytuvo turiniu su kitais naudotojais |
@@ -80,11 +80,11 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
    
 | Pranešimo sukurimas |
 |:-------------------------------------------------------------:|
-| Naudotojas gali palikti pranešimą, kuris matomas tik grupės nariams.  |
+| Naudotojas gali palikti pranešimą, kuris matomas tik grupės nariams. |
    
 | Produkto pranešimai |
 |:-------------------------------------------------------------:|
-| Pranešimai skirti konkrečiam produktui arba receptui. |
+| Pranešimai skirti konkrečiam produktui arba receptui. Naudotojas turi galėti ištrinti pranešimą apie produktą. |
    
 | Pranešimų peržiūrėjimas |
 |:-------------------------------------------------------------:|
@@ -104,11 +104,11 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
    
 | Pranešimas dėl klaidų |
 |:-------------------------------------------------------------:|
-| Kai programoje įvyksta klaida, kuri sustabdo ar nutraukia veikimą, būna automatiškai pranešama specialistams. Turi būti galimybė pranešti apie klaidą, jei nesutampa gautų produktų informacija su esančia sistemoje. |
+| Kai programoje įvyksta klaida, kuri sustabdo ar nutraukia veikimą, būna automatiškai pranešama specialistams. Turi būti galimybė pranešti apie klaidą, jei nesutampa gautų produktų informacija. |
    
 | Naudotojas susipažįsta su sistema |
 |:-------------------------------------------------------------:|
-| Per pirmą prisijungimą naudotojas supažindinamas su pagrindiniu sistemos naudojimu, pateikiant galimų veiksmų sąrašą. Naudotojui taip pat pateikiami galimi sistemos nustatymai, jis su šiais supažindinamas, ir leidžiama jam keisti nustatymus. Naudotojas gali nustatyti, kad šis paaiškinimas kitais kartais nebebus rodomas. |
+| Per pirmą prisijungimą naudotojas turi būti supažindinamas su pagrindiniu sistemos naudojimu, pateikiant galimų veiksmų sąrašą. Naudotojui taip pat pateikiami galimi sistemos nustatymai, jis su šiais supažindinamas, ir leidžiama jam keisti nustatymus. Naudotojas gali nustatyti, kad šis paaiškinimas kitais kartais nebebus rodomas. |
 
 <!-- pagebreak -->
 # 2. Dalykinės srities modelis

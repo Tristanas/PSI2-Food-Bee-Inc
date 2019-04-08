@@ -139,7 +139,7 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
 ### 3.2. Pranešimo dėl produktų galiojimo pabaigos peržiūrėjimas
 
 #### Užduoties vykdymą inicijuojantis trigeris
-Sistemoje yra produktų, kurių galiojimo terminas artėja prie nustatytos ribos.
+Sistemoje aptinkamas vienas ar daugiau produktaų kurių galiojimo data skiriasi nuo esamos datos per vartotojo nustatytą dienų skaičių. (Toliau: senstantis produktas)
 
 #### Užduoties vykdymo prieš-sąlygos
 Sistemos nustatymai yra tokie, kurie leistų sistemai siųsti pranešimus.
@@ -154,19 +154,18 @@ Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių 
 
 <!-- pagebreak -->
 #### Grafinės sąsajos eskizas
-![GUIEskizas1.png](./Nuotraukos/GUIEskizas1.png "Langas 'Senstantys produktai'")
-
-Figūroje 3 pavaizduoti x, y ir z langai. (Placeholderis gui eskizo aprašymui)
+![GUI3.2](./Nuotraukos/GUIEskizas1.png "Fig. 3.2.1 - Langas 'Senstantys produktai'")
+Figūroje 3.2.1 pavaizduotas __**OUTDATED LANGAS**__
 
 <!-- pagebreak -->
 #### Sekų diagrama
-![SEQ1.png](./Nuotraukos/SEQ1.png  "Sekų diagrama")
-
-Figūroje 4 bendrauja... (Placeholderis aprašymui)
+![SD3.2](./Nuotraukos/SEQ1.png  "Fig. 3.2.2 - Sekų diagrama")
+Sekų diagramoje 3.2.2 parodomi žingsniai, kuriuos sistema vykdo sąveikaudama su vartotoju, kai sistemoje yra senstančių produktų. 
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
 ![RD3.2](./Nuotraukos/three_point_one.png "Pranešimas apie senstančius produktus - robustiškumo diagrama")
+Robustiškumo diagramoje 3.2.3 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su grafine sąsaja, kurioje rodomi senstantys produktai.
 
 <!-- pagebreak -->
 ### 3.3. Produkto užsakymas per parduotuvę

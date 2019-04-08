@@ -222,9 +222,11 @@ Figūroje 8 bendrauja... (Placeholderis aprašymui)
 ### 3.5. Naudotojas bendrauja su kitais grupės nariais per pranešimus
 
 #### Pagrindinis scenarijus
-Naudotojas, norėdamas pasidalinti receptais su kitais naudotojais, paspaudžia pokalbių skirsnio piktogramą, esančią pagrindinio lango viršuje. Atsidaro pokalbių langas, kuriame naudotojas gali susirašinėti su kitais naudotojais. Naudotojas pasirenka, su kuo susirašinėti iš pateikto sąrašo. Šiame lange yra susirašinėjimui skirtas plotas. Naudotojas paspaudžia mygtuką "Dalintis receptais", atsidariusiame lange naudotojas pažymi receptus, kuriais nori dalintis. Iš pasirinktų receptų automatiškai sugeneruojamas pranešimo tekstas. Naudotojas paspaudžia mygtuką "Siųsti", ir pranešimas išsiunčiamas gavėjui.  
+Naudotojas, norėdamas pasidalinti receptais su kitais naudotojais, paspaudžia pokalbių skirsnio piktogramą, esančią pagrindinio lango viršuje. Atsidaro pokalbių langas, kuriame naudotojas gali susirašinėti su kitais naudotojais. Naudotojas iš pateikto sąrašo pasirenka aresatą, su kuriuo nori susirašinėti. Šiame lange esantis susirašinėjimui skirtas plotas tampa aktyvus. Naudotojas šiame plote parašo pranešimą ir paspaudžia mygtuką "Siųsti". Pranešimas išsiunčiamas gavėjui.  
 
 #### Alternatyvus scenarijus
+Jei naudotojas nori pasidalinti receptu, jis, pasirinkęs su kuo susirašinėti, paspaudžia mygtuką "Dalintis receptais". Atsidariusiame receptų lange naudotojas pažymi receptus, kuriais nori dalintis, tada spaudžia mygtuką "patvirtinti". Pasirinkti receptai pridedami prie pranešimo.
+
 Dėl kokių nors priežasčių pranešimo nepavyko nusiųsti. Sistema informuoją naudotoją apie tai ir nurodo to priežastį. Naudotojui leidžiama pabandyti siųsti iš naujo. Naudotojas, po kelių nesėkmingų bandymų, laikinai išsaugo šį pranešimą lokaliai, kad vėliau galėtų pabandyti jį išsiųsti.  
 
 <!-- pagebreak -->

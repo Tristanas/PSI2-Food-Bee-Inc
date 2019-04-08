@@ -67,7 +67,7 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
    
 | Prekės užsakymas per mobiliąją programą |
 |:-------------------------------------------------------------:|
-| Per mobilią programą naudotojas gali ieškoti produktų ir sudaryti užsakymus. Turi būti galima pasirinkti ir užsakyti produktus. |
+| Naudotojas gali ieškoti produktų ir sudaryti užsakymus. Turi būti galima pasirinkti ir užsakyti produktus. |
    
 
 | Dalijimasis savo šaldytuvo turiniu su kitais naudotojais |
@@ -80,11 +80,11 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
    
 | Pranešimo sukurimas |
 |:-------------------------------------------------------------:|
-| Naudotojas gali palikti pranešimą, kuris matomas tik grupės nariams.  |
+| Naudotojas gali palikti pranešimą, kuris matomas tik grupės nariams. |
    
 | Produkto pranešimai |
 |:-------------------------------------------------------------:|
-| Pranešimai skirti konkrečiam produktui arba receptui. |
+| Pranešimai skirti konkrečiam produktui arba receptui. Naudotojas turi galėti ištrinti pranešimą apie produktą. |
    
 | Pranešimų peržiūrėjimas |
 |:-------------------------------------------------------------:|
@@ -104,11 +104,11 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
    
 | Pranešimas dėl klaidų |
 |:-------------------------------------------------------------:|
-| Kai programoje įvyksta klaida, kuri sustabdo ar nutraukia veikimą, būna automatiškai pranešama specialistams. Turi būti galimybė pranešti apie klaidą, jei nesutampa gautų produktų informacija su esančia sistemoje. |
+| Kai programoje įvyksta klaida, kuri sustabdo ar nutraukia veikimą, būna automatiškai pranešama specialistams. Turi būti galimybė pranešti apie klaidą, jei nesutampa gautų produktų informacija. |
    
 | Naudotojas susipažįsta su sistema |
 |:-------------------------------------------------------------:|
-| Per pirmą prisijungimą naudotojas supažindinamas su pagrindiniu sistemos naudojimu, pateikiant galimų veiksmų sąrašą. Naudotojui taip pat pateikiami galimi sistemos nustatymai, jis su šiais supažindinamas, ir leidžiama jam keisti nustatymus. Naudotojas gali nustatyti, kad šis paaiškinimas kitais kartais nebebus rodomas. |
+| Per pirmą prisijungimą naudotojas turi būti supažindinamas su pagrindiniu sistemos naudojimu, pateikiant galimų veiksmų sąrašą. Naudotojui taip pat pateikiami galimi sistemos nustatymai, jis su šiais supažindinamas, ir leidžiama jam keisti nustatymus. Naudotojas gali nustatyti, kad šis paaiškinimas kitais kartais nebebus rodomas. |
 
 <!-- pagebreak -->
 # 2. Dalykinės srities modelis
@@ -145,12 +145,10 @@ Sistemoje yra produktų, kurių galiojimo terminas artėja prie nustatytos ribos
 Sistemos nustatymai yra tokie, kurie leistų sistemai siųsti pranešimus.
 
 #### Pagrindinis scenarijus
-~~Artėjant produktų galiojimo laikui prie pabaigos, pagrindinio lango pranešimų juostoje pranešimų piktograma pasikeičia, nurodydama neperskaitytų pranešimų buvimą.~~ *(Reikia perrašyti pradžią, kad sistema kažką padaro ir parodo naudotojui)* Naudotojas paspaudžia ant pranešimų piktogramos. Sistema atidaro langą "Senstantys produktai". Naujame lange nurodyti produktai, kurie tuoj pasens, taip pat ir receptai iš šių produktų, jei tokių galima sudaryti. ~~Naudotojas nusprendžia gaminti pagal pasiūlytą receptą.~~ Norėdamas dalį senstančių produktų pašalinti naudotojas juos pažymi ir spaudžia pašalinti. Sistema pašalina produktus iš šaldytuvo ir atnaujina vaizduojamą informaciją.
+Kai sistemoje atsiranda produktų, kurių galiojimo laikas artėja prie pabaigos (esant nustatytam intervalui iki jos), naudotojas apie tai informuojamas pranešimų piktogramos pranešimų juostoje spalvos pasikeitimu. Naudotojas paspaudžia ant pranešimų piktogramos. Sistema atidaro langą "Senstantys produktai". Naujame lange nurodyti produktai, kurie tuoj pasens, taip pat ir receptai iš šių produktų, jei tokių galima sudaryti. Naudotojas pasirenka vieną iš pasiūlytų receptų ir spaudžia mygtuką "Gaminti". Norėdamas dalį senstančių produktų pašalinti naudotojas juos pažymi ir spaudžia pašalinti. Sistema pašalina produktus iš šaldytuvo ir atnaujina vaizduojamą informaciją.
 
 #### Alternatyvūs scenarijai
-Naudotojas nusprendžia gaminti pagal pasiūlytą receptą. Vykdomas gaminimo scenarijus.
-
-Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių produktų naudojant senstančius produktus. Vietoje pasiūlyto recepto sistema parodo, jog iš esamų produktų nepavyksta sudaryti recepto. Toliau viskas kaip Naudotojui nusprendus negaminti recepto.
+Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių produktų naudojant senstančius produktus. Vietoje pasiūlyto recepto sistema parodo, jog iš esamų produktų nepavyksta sudaryti recepto. Norėdamas visus ar dalį senstančių produktų pašalinti naudotojas juos pažymi ir spaudžia pašalinti. Sistema pašalina produktus iš šaldytuvo ir atnaujina vaizduojamą informaciją.  
 
 <!-- pagebreak -->
 #### Grafinės sąsajos eskizas
@@ -222,9 +220,11 @@ Figūroje 8 bendrauja... (Placeholderis aprašymui)
 ### 3.5. Naudotojas bendrauja su kitais grupės nariais per pranešimus
 
 #### Pagrindinis scenarijus
-Naudotojas, norėdamas pasidalinti receptais su kitais naudotojais, paspaudžia pokalbių skirsnio piktogramą, esančią pagrindinio lango viršuje. Atsidaro pokalbių langas, kuriame naudotojas gali susirašinėti su kitais naudotojais. Naudotojas pasirenka, su kuo susirašinėti iš pateikto sąrašo. Šiame lange yra susirašinėjimui skirtas plotas. Naudotojas paspaudžia mygtuką "Dalintis receptais", atsidariusiame lange naudotojas pažymi receptus, kuriais nori dalintis. Iš pasirinktų receptų automatiškai sugeneruojamas pranešimo tekstas. Naudotojas paspaudžia mygtuką "Siųsti", ir pranešimas išsiunčiamas gavėjui.  
+Naudotojas, norėdamas pasidalinti receptais su kitais naudotojais, paspaudžia pokalbių skirsnio piktogramą, esančią pagrindinio lango viršuje. Atsidaro pokalbių langas, kuriame naudotojas gali susirašinėti su kitais naudotojais. Naudotojas iš pateikto sąrašo pasirenka aresatą, su kuriuo nori susirašinėti. Šiame lange esantis susirašinėjimui skirtas plotas tampa aktyvus. Naudotojas šiame plote parašo pranešimą ir paspaudžia mygtuką "Siųsti". Pranešimas išsiunčiamas gavėjui.  
 
 #### Alternatyvus scenarijus
+Jei naudotojas nori pasidalinti receptu, jis, pasirinkęs su kuo susirašinėti, paspaudžia mygtuką "Dalintis receptais". Atsidariusiame receptų lange naudotojas pažymi receptus, kuriais nori dalintis, tada spaudžia mygtuką "patvirtinti". Pasirinkti receptai pridedami prie pranešimo.
+
 Dėl kokių nors priežasčių pranešimo nepavyko nusiųsti. Sistema informuoją naudotoją apie tai ir nurodo to priežastį. Naudotojui leidžiama pabandyti siųsti iš naujo. Naudotojas, po kelių nesėkmingų bandymų, laikinai išsaugo šį pranešimą lokaliai, kad vėliau galėtų pabandyti jį išsiųsti.  
 
 <!-- pagebreak -->

@@ -133,7 +133,7 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
 
 ## 3.1 Pradinė užduočių diagrama
 
-![užduočių diagrama](./Nuotraukos/UC-diagrama.jpg "Užduočių diagrama")
+![užduočių diagrama](./Nuotraukos/UC-diagrama.jpg "Fig 3.1 - pradinė užduočių diagrama")
 
 <!-- pagebreak -->
 ### 3.2. Pranešimo dėl produktų galiojimo pabaigos peržiūrėjimas
@@ -185,19 +185,21 @@ Jei naudotojas nebenori dalies Krepšelio turinio, jis pažymi lange "Krepšelis
 ![GUI3.3](./Nuotraukos/GUIEskizas3.png "Fig. 3.3.1 - Langas 'Produktų užsakymas'")
 
 Figūroje 3.3.1 pavaizduoti parduotuvės ir krepšelio grafinės sąsajos eskizai. Visuose languose yra duota galimybė pereiti į bent kurį kitą minėtą langą (sąsajos apačioje).
+
 Parduotuvės lange yra numatoma rodyti produktą, jo aprašymą ir mygtuką pridėti produktą į krepšelį.
 Krepšelio lange yra numatoma rodyti visus vartotojo į krepšelį pridėtus produktus, galimybė juos žymėti ir pažymėtus produktus arba šalinti iš krepšelio, arba juos užsakyti.
-<!--Šaldytuvo lange numatoma vaizduoti visus vartotojo šaldytuve esančius produktus, galimybė juos papildyti (pereinama prie užsakymo) ir mygtukas pereiti prie senstančių produktų lango (Žr. 3.2).-->
 
+<!--Šaldytuvo lange numatoma vaizduoti visus vartotojo šaldytuve esančius produktus, galimybė juos papildyti (pereinama prie užsakymo) ir mygtukas pereiti prie senstančių produktų lango (Žr. 3.2).
+-->
 <!-- pagebreak -->
 #### Sekų diagrama
-![GUI3.3](./Nuotraukos/Produkt%C5%B3U%C5%BEsSeq.png "Fig 3.3.1 - Langas 'Produktų užsakymas'")
+![SD3.3](./Nuotraukos/Produkt%C5%B3U%C5%BEsSeq.png "Fig 3.3.2 - Produktų užsakymas parduotuvėje - sekų diagrama")
 
 Sekų diagramoje 3.3.2 parodomi žingsniai, kuriuos sistema vykdo sąveikaudama su vartotoju vykdant pagrindinį ir/ar alternatyvius scenarijus, kai vartotojas nori užsisakyti produktus parduotuvės lange.
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![RD3.3](./Nuotraukos/ROBUSTProduktoUzs.png "Produkto ožsakymas parduotuvėje - robustiškumo diagrama")
+![RD3.3](./Nuotraukos/ROBUSTProduktoUzs.png "Fig. 3.3.3 - Produkto užsakymas parduotuvėje - robustiškumo diagrama")
 
 Robustiškumo diagramoje 3.3.3 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su parduotuvės ir/ar krepšelio grafinėmis sąsajomis.
 

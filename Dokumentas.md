@@ -145,12 +145,10 @@ Sistemoje yra produktų, kurių galiojimo terminas artėja prie nustatytos ribos
 Sistemos nustatymai yra tokie, kurie leistų sistemai siųsti pranešimus.
 
 #### Pagrindinis scenarijus
-~~Artėjant produktų galiojimo laikui prie pabaigos, pagrindinio lango pranešimų juostoje pranešimų piktograma pasikeičia, nurodydama neperskaitytų pranešimų buvimą.~~ *(Reikia perrašyti pradžią, kad sistema kažką padaro ir parodo naudotojui)* Naudotojas paspaudžia ant pranešimų piktogramos. Sistema atidaro langą "Senstantys produktai". Naujame lange nurodyti produktai, kurie tuoj pasens, taip pat ir receptai iš šių produktų, jei tokių galima sudaryti. ~~Naudotojas nusprendžia gaminti pagal pasiūlytą receptą.~~ Norėdamas dalį senstančių produktų pašalinti naudotojas juos pažymi ir spaudžia pašalinti. Sistema pašalina produktus iš šaldytuvo ir atnaujina vaizduojamą informaciją.
+Kai sistemoje atsiranda produktų, kurių galiojimo laikas artėja prie pabaigos (esant nustatytam intervalui iki jos), naudotojas apie tai informuojamas pranešimų piktogramos pranešimų juostoje spalvos pasikeitimu. Naudotojas paspaudžia ant pranešimų piktogramos. Sistema atidaro langą "Senstantys produktai". Naujame lange nurodyti produktai, kurie tuoj pasens, taip pat ir receptai iš šių produktų, jei tokių galima sudaryti. Naudotojas pasirenka vieną iš pasiūlytų receptų ir spaudžia mygtuką "Gaminti". Norėdamas dalį senstančių produktų pašalinti naudotojas juos pažymi ir spaudžia pašalinti. Sistema pašalina produktus iš šaldytuvo ir atnaujina vaizduojamą informaciją.
 
 #### Alternatyvūs scenarijai
-Naudotojas nusprendžia gaminti pagal pasiūlytą receptą. Vykdomas gaminimo scenarijus.
-
-Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių produktų naudojant senstančius produktus. Vietoje pasiūlyto recepto sistema parodo, jog iš esamų produktų nepavyksta sudaryti recepto. Toliau viskas kaip Naudotojui nusprendus negaminti recepto.
+Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių produktų naudojant senstančius produktus. Vietoje pasiūlyto recepto sistema parodo, jog iš esamų produktų nepavyksta sudaryti recepto. Norėdamas visus ar dalį senstančių produktų pašalinti naudotojas juos pažymi ir spaudžia pašalinti. Sistema pašalina produktus iš šaldytuvo ir atnaujina vaizduojamą informaciją.  
 
 <!-- pagebreak -->
 #### Grafinės sąsajos eskizas

@@ -184,9 +184,10 @@ Jei naudotojas nebenori dalies Krepšelio turinio, jis pažymi lange "Krepšelis
 #### Grafinės sąsajos eskizas 
 ![GUI3.3](./Nuotraukos/GUIEskizas3.png "Fig. 3.3.1 - Langas 'Produktų užsakymas'")
 
-Figūroje 3.3.1 pavaizduoti parduotuvės ir krepšelio grafinės sąsajos eskizai. Visuose languose yra duota galimybė pereiti į bent kurį kitą minėtą langą (sąsajos apačioje).
+Figūroje 3.3.1 pavaizduoti parduotuvės ir krepšelio grafinės sąsajos eskizai. Abiejuose languose yra duota galimybė pereiti į kitus sistemos langus (sąsajos apačioje).
 
 Parduotuvės lange yra numatoma rodyti produktą, jo aprašymą ir mygtuką pridėti produktą į krepšelį.
+
 Krepšelio lange yra numatoma rodyti visus vartotojo į krepšelį pridėtus produktus, galimybė juos žymėti ir pažymėtus produktus arba šalinti iš krepšelio, arba juos užsakyti.
 
 <!--Šaldytuvo lange numatoma vaizduoti visus vartotojo šaldytuve esančius produktus, galimybė juos papildyti (pereinama prie užsakymo) ir mygtukas pereiti prie senstančių produktų lango (Žr. 3.2).
@@ -214,19 +215,21 @@ Naudotojas lange "Dalinimasis" paspaudžia mygtuką "Atšaukti". Sistema pašali
 
 <!-- pagebreak -->
 #### Grafinės sąsajos eskizas
-![Dalinimasis](./Nuotraukos/GUIEskizas4(1).png "'Dalintis'")
+![GUI3.4](./Nuotraukos/GUIEskizas4(1).png "Fig. 3.4.1 - Langas 'Dalintis'")
 
-Figūroje 7 pavaizduoti x, y ir z langai. (Placeholderis gui eskizo aprašymui)
+Figūroje 3.4.1 pavaizduota numatoma šaldytuvo dalinimosi grafinė sąsaja (bei numatomas būdas į ją pereiti iš šaldytuvo lango). Šiame lange yra rodomi kitų vartotojų vardai ir galimybė tuos vartotojus pažymėt, kad su jais tęsti dalinimąsi.
 
 <!-- pagebreak -->
 #### Sekų diagrama
-![Dalinimasis sequence](./Nuotraukos/%C5%A0aldytuvoDalinSeq.png "'Dalintis'")
+![SD3.4](./Nuotraukos/%C5%A0aldytuvoDalinSeq.png "Fig. 3.4.2 - Šaldytuvo dalinimasis - sekų diagrama")
 
-Figūroje 8 bendrauja... (Placeholderis aprašymui)
+Sekų diagramoje 3.4.2 parodomi žingsniai, kuriuos sistema vykdo sąveikaudama su vartotoju vykdant pagrindinį ir/ar alternatyvius scenarijus, kai vartotojas nori su kitais vartotojais dalintis savo šaldytuvo turiniu.
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![RD3.4](./Nuotraukos/ROBUSTSaldytuvoDali.png "Šaldytuvo dalinimasis - robustiškumo diagrama")
+![RD3.4](./Nuotraukos/ROBUSTSaldytuvoDali.png "Fig 3.4.3 - Šaldytuvo dalinimasis - robustiškumo diagrama")
+
+Robustiškumo diagramoje 3.4.3 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su šaldytuvo dalinimosi grafine sąsaja, bei veiklos, nusakančios kaip vartotojas į šią sąsają patenka iš šaldytuvo lango.
 
 <!-- pagebreak -->
 ### 3.5. Naudotojas bendrauja su kitais grupės nariais per pranešimus

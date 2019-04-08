@@ -139,6 +139,7 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
 ### 3.2. Pranešimo dėl produktų galiojimo pabaigos peržiūrėjimas
 
 #### Užduoties vykdymą inicijuojantis trigeris
+~~Sistemoje yra produktų, kurių galiojimo terminas artėja prie nustatytos ribos.~~
 Sistemoje aptinkamas vienas ar daugiau produktaų kurių galiojimo data skiriasi nuo esamos datos per vartotojo nustatytą dienų skaičių. (Toliau: senstantis produktas)
 
 #### Užduoties vykdymo prieš-sąlygos
@@ -155,16 +156,19 @@ Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių 
 <!-- pagebreak -->
 #### Grafinės sąsajos eskizas
 ![GUI3.2](./Nuotraukos/GUIEskizas1.png "Fig. 3.2.1 - Langas 'Senstantys produktai'")
+
 Figūroje 3.2.1 pavaizduotas __**OUTDATED LANGAS**__
 
 <!-- pagebreak -->
 #### Sekų diagrama
-![SD3.2](./Nuotraukos/SEQ1.png  "Fig. 3.2.2 - Sekų diagrama")
-Sekų diagramoje 3.2.2 parodomi žingsniai, kuriuos sistema vykdo sąveikaudama su vartotoju, kai sistemoje yra senstančių produktų. 
+![SD3.2](./Nuotraukos/SEQ1.png  "Fig. 3.2.2 - Senstantys produktai - sekų diagrama")
+
+Sekų diagramoje 3.2.2 parodomi žingsniai, kuriuos sistema vykdo sąveikaudama su vartotoju vykdant pagrindinį ir/ar alternatyvius scenarijus, kai sistemoje yra senstančių produktų. 
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![RD3.2](./Nuotraukos/three_point_one.png "Pranešimas apie senstančius produktus - robustiškumo diagrama")
+![RD3.2](./Nuotraukos/three_point_one.png "Fig. 3.2.3 - Senstantys produktai - robustiškumo diagrama")
+
 Robustiškumo diagramoje 3.2.3 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su grafine sąsaja, kurioje rodomi senstantys produktai.
 
 <!-- pagebreak -->
@@ -178,19 +182,24 @@ Jei naudotojas nebenori dalies Krepšelio turinio, jis pažymi lange "Krepšelis
 
 <!-- pagebreak -->
 #### Grafinės sąsajos eskizas 
-![Produktų užsakymas](./Nuotraukos/GUIEskizas3.png "'Produktų užsakymas'")
+![GUI3.3](./Nuotraukos/GUIEskizas3.png "Fig. 3.3.1 - Langas 'Produktų užsakymas'")
 
-Figūroje 5 pavaizduoti x, y ir z langai. (Placeholderis gui eskizo aprašymui)
+Figūroje 3.3.1 pavaizduoti parduotuvės ir krepšelio grafinės sąsajos eskizai. Visuose languose yra duota galimybė pereiti į bent kurį kitą minėtą langą (sąsajos apačioje).
+Parduotuvės lange yra numatoma rodyti produktą, jo aprašymą ir mygtuką pridėti produktą į krepšelį.
+Krepšelio lange yra numatoma rodyti visus vartotojo į krepšelį pridėtus produktus, galimybė juos žymėti ir pažymėtus produktus arba šalinti iš krepšelio, arba juos užsakyti.
+<!--Šaldytuvo lange numatoma vaizduoti visus vartotojo šaldytuve esančius produktus, galimybė juos papildyti (pereinama prie užsakymo) ir mygtukas pereiti prie senstančių produktų lango (Žr. 3.2).-->
 
 <!-- pagebreak -->
 #### Sekų diagrama
-![Produktų užsakymas sequence](./Nuotraukos/Produkt%C5%B3U%C5%BEsSeq.png "'Produktų užsakymas'")
+![GUI3.3](./Nuotraukos/Produkt%C5%B3U%C5%BEsSeq.png "Fig 3.3.1 - Langas 'Produktų užsakymas'")
 
-Figūroje 6 bendrauja... (Placeholderis aprašymui)
+Sekų diagramoje 3.3.2 parodomi žingsniai, kuriuos sistema vykdo sąveikaudama su vartotoju vykdant pagrindinį ir/ar alternatyvius scenarijus, kai vartotojas nori užsisakyti produktus parduotuvės lange.
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
 ![RD3.3](./Nuotraukos/ROBUSTProduktoUzs.png "Produkto ožsakymas parduotuvėje - robustiškumo diagrama")
+
+Robustiškumo diagramoje 3.3.3 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su parduotuvės ir/ar krepšelio grafinėmis sąsajomis.
 
 <!-- pagebreak -->
 ### 3.4. Šaldytuvo dalinimasis

@@ -242,7 +242,7 @@ Figūroje 9 pavaizduoti x, y ir z langai. (Placeholderis gui eskizo aprašymui)
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![RD3.5](./Nuotraukos/BendravimasGrupeje_robust.png "Bendravimas tarp grupės narių - robustiškumo diagrama")
+![RD3.5](./Nuotraukos/ROBUSTnaudotBendrPerPranesimus.png "Bendravimas tarp grupės narių - robustiškumo diagrama")
 
 Figūroje 10 bendrauja... (Placeholderis aprašymui)
 
@@ -326,6 +326,6 @@ Serveris yra sudarytas iš dviejų lygmenų: servisų ir duomenų. Servisų lygm
 Servisų lygmuo bendrauja su Barboros internetine parduotuve per API keliais tikslais. Pirmas yra minėtas užsakymų perdavimas. Antras tikslas yra užsakymų būsenos sekimas, kad būtų galima fiksuoti, kada klientų užsakyti produktai atsiranda jų inventoriuje. Trečia funkcija yra produktų informacijos pasiėmimas. Serveris periodiškai kreipiasi į Barborą siekdamas atnaujinti parduodamų produktų sąrašą.
 
 # 5.2. Fizinis pjūvis
-![Sistemos išsidėstymo diagrama](./Nuotraukos/deployment.jpg)
+![Sistemos išsidėstymo diagrama](./Nuotraukos/Deployment.jpg)
 
 Pagal išsidėstymo diagramą numatoma, kad serveryje veiks Windows operacinė sistema ir bus aptarnaujami stacionarūs kompiuteriai, irgi turintys Windows operacinę sistemą bei "Food Bee Inc" klientinę aplikaciją. Aptarnaujami ir išmanieji telefonai, turintys Android operacinę sistemą ir įrašytą "Food Bee Inc" aplikaciją. Bendravimas tarp serverio ir klientų vyksta HTTPS protokolu. Serveris su Barboros internetinės parduotuvės sistema bendrauja irgi HTTPS protokolu.

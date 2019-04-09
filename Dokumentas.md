@@ -19,7 +19,10 @@
 	7. [Reklamų rodymas](#37-reklamų-rodymas)
 	8. [Papildyta užduočių diagrama](#38-papildyta-užduočių-diagrama)
 4. [Peržiūros rezultatai](#4-peržiūros-rezultatai)
-    
+5. [Techninė architektūra](#5-techninė-architektūra)
+	1. [Sistemos architektūra](#51-sistemos-komponentai)
+	2. [Fizinis pjūvis](#52-fizinis-pjūvis)
+	
 <!-- pagebreak -->
 
 # 1. Reikalavimai
@@ -67,7 +70,7 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
    
 | Prekės užsakymas per mobiliąją programą |
 |:-------------------------------------------------------------:|
-| Per mobilią programą naudotojas gali ieškoti produktų ir sudaryti užsakymus. Turi būti galima pasirinkti ir užsakyti produktus. |
+| Naudotojas gali ieškoti produktų ir sudaryti užsakymus. Turi būti galima pasirinkti ir užsakyti produktus. |
    
 
 | Dalijimasis savo šaldytuvo turiniu su kitais naudotojais |
@@ -80,11 +83,11 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
    
 | Pranešimo sukurimas |
 |:-------------------------------------------------------------:|
-| Naudotojas gali palikti pranešimą, kuris matomas tik grupės nariams.  |
+| Naudotojas gali palikti pranešimą, kuris matomas tik grupės nariams. |
    
 | Produkto pranešimai |
 |:-------------------------------------------------------------:|
-| Pranešimai skirti konkrečiam produktui arba receptui. |
+| Pranešimai skirti konkrečiam produktui arba receptui. Naudotojas turi galėti ištrinti pranešimą apie produktą. |
    
 | Pranešimų peržiūrėjimas |
 |:-------------------------------------------------------------:|
@@ -104,11 +107,11 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
    
 | Pranešimas dėl klaidų |
 |:-------------------------------------------------------------:|
-| Kai programoje įvyksta klaida, kuri sustabdo ar nutraukia veikimą, būna automatiškai pranešama specialistams. Turi būti galimybė pranešti apie klaidą, jei nesutampa gautų produktų informacija su esančia sistemoje. |
+| Kai programoje įvyksta klaida, kuri sustabdo ar nutraukia veikimą, būna automatiškai pranešama specialistams. Turi būti galimybė pranešti apie klaidą, jei nesutampa gautų produktų informacija. |
    
 | Naudotojas susipažįsta su sistema |
 |:-------------------------------------------------------------:|
-| Per pirmą prisijungimą naudotojas supažindinamas su pagrindiniu sistemos naudojimu, pateikiant galimų veiksmų sąrašą. Naudotojui taip pat pateikiami galimi sistemos nustatymai, jis su šiais supažindinamas, ir leidžiama jam keisti nustatymus. Naudotojas gali nustatyti, kad šis paaiškinimas kitais kartais nebebus rodomas. |
+| Per pirmą prisijungimą naudotojas turi būti supažindinamas su pagrindiniu sistemos naudojimu, pateikiant galimų veiksmų sąrašą. Naudotojui taip pat pateikiami galimi sistemos nustatymai, jis su šiais supažindinamas, ir leidžiama jam keisti nustatymus. Naudotojas gali nustatyti, kad šis paaiškinimas kitais kartais nebebus rodomas. |
 
 <!-- pagebreak -->
 # 2. Dalykinės srities modelis
@@ -146,12 +149,10 @@ Sistemoje aptinkamas vienas ar daugiau produktaų kurių galiojimo data skiriasi
 Sistemos nustatymai yra tokie, kurie leistų sistemai siųsti pranešimus.
 
 #### Pagrindinis scenarijus
-~~Artėjant produktų galiojimo laikui prie pabaigos, pagrindinio lango pranešimų juostoje pranešimų piktograma pasikeičia, nurodydama neperskaitytų pranešimų buvimą.~~ *(Reikia perrašyti pradžią, kad sistema kažką padaro ir parodo naudotojui)* Naudotojas paspaudžia ant pranešimų piktogramos. Sistema atidaro langą "Senstantys produktai". Naujame lange nurodyti produktai, kurie tuoj pasens, taip pat ir receptai iš šių produktų, jei tokių galima sudaryti. ~~Naudotojas nusprendžia gaminti pagal pasiūlytą receptą.~~ Norėdamas dalį senstančių produktų pašalinti naudotojas juos pažymi ir spaudžia pašalinti. Sistema pašalina produktus iš šaldytuvo ir atnaujina vaizduojamą informaciją.
+Kai sistemoje atsiranda produktų, kurių galiojimo laikas artėja prie pabaigos (esant nustatytam intervalui iki jos), naudotojas apie tai informuojamas pranešimų piktogramos pranešimų juostoje spalvos pasikeitimu. Naudotojas paspaudžia ant pranešimų piktogramos. Sistema atidaro langą "Senstantys produktai". Naujame lange nurodyti produktai, kurie tuoj pasens, taip pat ir receptai iš šių produktų, jei tokių galima sudaryti. Naudotojas pasirenka vieną iš pasiūlytų receptų ir spaudžia mygtuką "Gaminti". Norėdamas dalį senstančių produktų pašalinti naudotojas juos pažymi ir spaudžia pašalinti. Sistema pašalina produktus iš šaldytuvo ir atnaujina vaizduojamą informaciją.
 
 #### Alternatyvūs scenarijai
-Naudotojas nusprendžia gaminti pagal pasiūlytą receptą. Vykdomas gaminimo scenarijus.
-
-Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių produktų naudojant senstančius produktus. Vietoje pasiūlyto recepto sistema parodo, jog iš esamų produktų nepavyksta sudaryti recepto. Toliau viskas kaip Naudotojui nusprendus negaminti recepto.
+Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių produktų naudojant senstančius produktus. Vietoje pasiūlyto recepto sistema parodo, jog iš esamų produktų nepavyksta sudaryti recepto. Norėdamas visus ar dalį senstančių produktų pašalinti naudotojas juos pažymi ir spaudžia pašalinti. Sistema pašalina produktus iš šaldytuvo ir atnaujina vaizduojamą informaciją.  
 
 <!-- pagebreak -->
 #### Grafinės sąsajos eskizas
@@ -235,9 +236,11 @@ Robustiškumo diagramoje 3.4.3 pavaizduotos kokios veiklos vyksta sistemoje, kai
 ### 3.5. Naudotojas bendrauja su kitais grupės nariais per pranešimus
 
 #### Pagrindinis scenarijus
-Naudotojas, norėdamas pasidalinti receptais su kitais naudotojais, paspaudžia pokalbių skirsnio piktogramą, esančią pagrindinio lango viršuje. Atsidaro pokalbių langas, kuriame naudotojas gali susirašinėti su kitais naudotojais. Naudotojas pasirenka, su kuo susirašinėti iš pateikto sąrašo. Šiame lange yra susirašinėjimui skirtas plotas. Naudotojas paspaudžia mygtuką "Dalintis receptais", atsidariusiame lange naudotojas pažymi receptus, kuriais nori dalintis. Iš pasirinktų receptų automatiškai sugeneruojamas pranešimo tekstas. Naudotojas paspaudžia mygtuką "Siųsti", ir pranešimas išsiunčiamas gavėjui.  
+Naudotojas, norėdamas pasidalinti receptais su kitais naudotojais, paspaudžia pokalbių skirsnio piktogramą, esančią pagrindinio lango viršuje. Atsidaro pokalbių langas, kuriame naudotojas gali susirašinėti su kitais naudotojais. Naudotojas iš pateikto adresątų sąrašo pasirenka, kam nori siųsti pranešimą. Šiame lange esantis susirašinėjimui skirtas plotas tampa aktyvus. Naudotojas šiame plote parašo pranešimą ir paspaudžia mygtuką "Siųsti". Pranešimas išsiunčiamas gavėjui.  
 
 #### Alternatyvus scenarijus
+Jei naudotojas nori pasidalinti receptu, jis, pasirinkęs su kuo susirašinėti, paspaudžia mygtuką "Dalintis receptais". Atsidariusiame receptų lange naudotojas pažymi receptus, kuriais nori dalintis, tada spaudžia mygtuką "Patvirtinti". Pasirinkti receptai pridedami prie pranešimo.
+
 Dėl kokių nors priežasčių pranešimo nepavyko nusiųsti. Sistema informuoją naudotoją apie tai ir nurodo to priežastį. Naudotojui leidžiama pabandyti siųsti iš naujo. Naudotojas, po kelių nesėkmingų bandymų, laikinai išsaugo šį pranešimą lokaliai, kad vėliau galėtų pabandyti jį išsiųsti.  
 
 <!-- pagebreak -->
@@ -254,7 +257,7 @@ Sekų diagramoje 3.5.2 parodomi žingsniai, kuriuos sistema vykdo sąveikaudama 
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![RD3.5](./Nuotraukos/BendravimasGrupeje_robust.png "Bendravimas tarp grupės narių - robustiškumo diagrama")
+![RD3.5](./Nuotraukos/ROBUSTnaudotBendrPerPranesimus.png "Bendravimas tarp grupės narių - robustiškumo diagrama")
 
 Robustiškumo diagramoje 3.5.3 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su pokalbių langu, o vėliau galimai receptų dalinimosi langu bei pradinis atsiradimo pokalbių lange procesas.
 
@@ -327,8 +330,21 @@ Figūroje 15 yra detalesnė užduočių diagrama, kurioje pavaizduotos užduotys
 # 4. Peržiūros rezultatai
 [Pataisyta reikalavimų specifikacija.](https://1drv.ms/w/s!Ao3LSVKqY6TXg8t2cWLC-LfMPbrOEg) Raudonu šriftu žymimi nauji reikalavimai. 
 
-Užduočių ir reikalavimų atsekamumo matricos nepateiksime. Užduočių scenarijų tekstai yra parašyti įgyvendinant 2-7 užsakovo reikalavimus. Taip pat kiekviena užduotis įgyvendina pirmąjį užsakovo reikalavimą.
+<!-- pagebreak -->
+# 5. Techninė architektūra
 
-Pridėta trūkstamas 4 užduoties GUI.
+   Nuspręsta sistemos techninę architektūrą pavaizduoti dviem pjūviais: fiziniu ir kūrimo. Pirmu yra pavaizduotas programų sistemos komponentų išsidėstymas tinkle ir kokiais protokolais bendraujama tarpusavyje, o antru - loginis sąryšis tarp komponentų ir kaip su jais sąveikauja agentai. Pagal komponentų diagramą (figūra 15) numatoma kliento-serverio architektūra, kur serveris gauna informaciją iš išorinės sistemos, bet taip pat laiko klientų informaciją duomenų bazėje. Fiziniame pjūvyje numatomos bendraujančių įrenginių operacinės sistemos (Windows, Android, Linux) ir bendravimo protokolas (HTTPS).
 
-Patikslinta klasių diagramą, klasei "naudotojas" pridėjas atributas "vardas".
+# 5.1. Sistemos komponentai
+![L1 sistemos komponentų diagrama](./Nuotraukos/L1-komponentai.jpg)
+
+Figūroje 15 pavaizduota, iš kokių komponentų susideda sistema ir kaip ji sąveikauja agentais ir kitomis sistemomis. Su sistema sąveikauja dviejų tipų asmenys: naudotojai ir reklamų tiekėjai. Numatyta, kad jie naudodamiesi grafinėmis sąsajomis galėtų pasiekti savo tikslus. Reklamų tiekėjai gali talpinti ir užsakyti reklamas naudodamiesi tik desktopine aplikacija, nes numatyta telefone pateikti mažesnį funkcionalumo rinkinį. Aplikacijos, asmenims prisiregistravus, siunčia serveriui užklausas ir gauna iš jo atsakymus per užklausų jungtį. Užklausos yra įvairios: užsakymo formavimo, šaldytuvo produktų peržiūros, receptų paieškos, recepto kūrimo, grupės formavimo ir naudotojų pranešimai.
+   
+Serveris yra sudarytas iš dviejų lygmenų: servisų ir duomenų. Servisų lygmuo gauna iš klientų užklausas ir nusprendžia, kreiptis į Barboros internetinę parduotuvę arba į savo duomenų bazę. Jei gauta užklausa sudaryti užsakymą, servisų lygmuo transformuoja užklausą į užsakymą ir perduoda Barborai bei duomenų sluoksniui, kad būtų išsaugota užklausa. Jei užklausa yra gauti produktų ar kitokios informacijos, servisų lygmuo kreipiasi į duomenų lygmenį. Duomenų lygmuo gautas užklausas transformuoja į duomenų bazės užklausas, kuriomis keičia nurodytą informaciją arba gauna tokią, kurios ieškoma. Gautą atsaką iš duomenų bazės duomenų sluoksnis transformuoja į užklausą, kurią servisas gali siųsti klientams.
+   
+Servisų lygmuo bendrauja su Barboros internetine parduotuve per API keliais tikslais. Pirmas yra minėtas užsakymų perdavimas. Antras tikslas yra užsakymų būsenos sekimas, kad būtų galima fiksuoti, kada klientų užsakyti produktai atsiranda jų inventoriuje. Trečia funkcija yra produktų informacijos pasiėmimas. Serveris periodiškai kreipiasi į Barborą siekdamas atnaujinti parduodamų produktų sąrašą.
+
+# 5.2. Fizinis pjūvis
+![Sistemos išsidėstymo diagrama](./Nuotraukos/Deployment.jpg)
+
+Pagal išsidėstymo diagramą numatoma, kad serveryje veiks Windows operacinė sistema ir bus aptarnaujami stacionarūs kompiuteriai, irgi turintys Windows operacinę sistemą bei "Food Bee Inc" klientinę aplikaciją. Aptarnaujami ir išmanieji telefonai, turintys Android operacinę sistemą ir įrašytą "Food Bee Inc" aplikaciją. Bendravimas tarp serverio ir klientų vyksta HTTPS protokolu. Serveris su Barboros internetinės parduotuvės sistema bendrauja irgi HTTPS protokolu.

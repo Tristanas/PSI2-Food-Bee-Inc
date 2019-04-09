@@ -127,22 +127,22 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
  * Receptas
 
 ## 2.2 Pradinė klasių diagrama
-![Klasių diagrama](./Nuotraukos/Class%20diagram.jpg "2.2. diagrama - dalykinės srities klasės")
+![2.2. diagrama - Klasių diagrama](./Nuotraukos/Class%20diagram.jpg " 2.2. diagrama - dalykinės srities klasės")
 
 Dalykinės srites struktūrą galima pamatyti 2.2. diagramoje. Svarbiausia klasė yra naudotojo paskyra. Ją sukuria naudotojas prisiregistruodamas. Naudotojai sudaro grupes, kuriose dalinasi receptais per pranešimus. Produktai yra teikiami produktų tiekėjo, reklamos - reklamų tiekėjo. Kiekvienas naudotojas turi savo šaldytuvą ir gali juo dalintis su naudotojų grupe.
 
 ## 2.3 Klasių ir reikalavimų matrica
 
-![Klasių Matrica](./Nuotraukos/Class-X-Req.jpg "2.3. figūra - Klasių ir reikalavimų matrica")
+![2.3. figūra - Klasių ir reikalavimų matrica](./Nuotraukos/Class-X-Req.jpg "2.3. figūra - Klasių ir reikalavimų matrica")
 
-Klasių ir reikalavimų matricoje (figūra 2,3) nurodomi sąryšiai tarp užsakovo reikalavimų ir dalykinės srities klasių. Matosi, kad svarbiausia klasė yra naudotojo paskyra. Visi reikalavimai yra įgyvendinami bent viena klase ir kiekviena klasė įgyvendina bent vieną reikalavimą.
+Klasių ir reikalavimų matricoje (figūra 2.3) nurodomi sąryšiai tarp užsakovo reikalavimų ir dalykinės srities klasių. Matosi, kad svarbiausia klasė yra naudotojo paskyra. Visi reikalavimai yra įgyvendinami bent viena klase ir kiekviena klasė įgyvendina bent vieną reikalavimą.
 
 <!-- pagebreak -->
 # 3. Užduotys
 
 ## 3.1 Pradinė užduočių diagrama
 
-![užduočių diagrama](./Nuotraukos/UC-diagrama.jpg "diagrama 3.1. Užduotys")
+![diagrama 3.1. Užduotys](./Nuotraukos/UC-diagrama.jpg "diagrama 3.1. Užduotys")
 
 3.1 diagramoje pavaizduotos pagrindinės sistemos naudotojų užduotys. Naudotojas siekia prisijungęs prie sistemos užsakyti produktus, dalintis receptais, savo šaldytuvo turiniu, peržiūrėti turimus produktus kalendoriuje bei peržiūrėti pranešimus dėl senstančių produktų. Reklamų tiekėjas siekia užsakyti reklamą, t.y., kad sistema rodytų jo reklamą naudotojams.
 
@@ -164,19 +164,19 @@ Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių 
 
 <!-- pagebreak -->
 #### Grafinės sąsajos eskizas
-![GUI3.2](./Nuotraukos/GUIEskizas1.png "Fig. 3.2.1 - Langas 'Senstantys produktai'")
+![3.2.1 pav. 'Senstantys produktai'](./Nuotraukos/GUIEskizas1.png "Fig. 3.2.1 - Langas 'Senstantys produktai'")
 
-Figūroje 3.2.1 pavaizduotas produktų peržiūros langas, kuriame išryškinti senstantys produktai. Lango apačioje yra siūlomi receptai, kurių sudėtyje yra pažymėti senstantys produktai.
+Paveikslėlyje 3.2.1 pavaizduotas produktų peržiūros langas, kuriame išryškinti senstantys produktai. Lango apačioje yra siūlomi receptai, kurių sudėtyje yra pažymėti senstantys produktai.
 
 <!-- pagebreak -->
 #### Sekų diagrama
-![SD3.2](./Nuotraukos/SEQ1.png  "Fig. 3.2.2 - Senstantys produktai - sekų diagrama")
+![diagrama 3.2.2 - Senstantys produktai - seka](./Nuotraukos/SEQ1.png  "diagrama 3.2.2 - Senstantys produktai - sekų diagrama")
 
 Sekų diagramoje 3.2.2 parodomi žingsniai, kuriuos sistema vykdo sąveikaudama su vartotoju vykdant pagrindinį ir/ar alternatyvius scenarijus, kai sistemoje yra senstančių produktų. 
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![RD3.2](./Nuotraukos/three_point_one.png "Fig. 3.2.3 - Senstantys produktai - robustiškumo diagrama")
+![Diagrama 3.2.3 - Senstantys produktai - robustiškumo diagrama](./Nuotraukos/three_point_one.png "Fig. 3.2.3 - Senstantys produktai - robustiškumo diagrama")
 
 Robustiškumo diagramoje 3.2.3 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su grafine sąsaja, kurioje rodomi senstantys produktai.
 
@@ -191,7 +191,7 @@ Jei naudotojas nebenori dalies Krepšelio turinio, jis pažymi lange "Krepšelis
 
 <!-- pagebreak -->
 #### Grafinės sąsajos eskizas 
-![GUI3.3](./Nuotraukos/GUIEskizas3.png "Fig. 3.3.1 - Langas 'Produktų užsakymas'")
+![3.3.1 - Langas 'Produktų užsakymas'](./Nuotraukos/GUIEskizas3.png "Fig. 3.3.1 - Langas 'Produktų užsakymas'")
 
 Figūroje 3.3.1 pavaizduoti parduotuvės ir krepšelio grafinės sąsajos eskizai. Abiejuose languose yra duota galimybė pereiti į kitus sistemos langus (sąsajos apačioje).
 
@@ -203,13 +203,13 @@ Krepšelio lange yra numatoma rodyti visus vartotojo į krepšelį pridėtus pro
 -->
 <!-- pagebreak -->
 #### Sekų diagrama
-![SD3.3](./Nuotraukos/Produkt%C5%B3U%C5%BEsSeq.png "Fig 3.3.2 - Produktų užsakymas parduotuvėje - sekų diagrama")
+![Diagrama 3.3.2 - Produktų užsakymas parduotuvėje - sekos](./Nuotraukos/Produkt%C5%B3U%C5%BEsSeq.png "Fig 3.3.2 - Produktų užsakymas parduotuvėje - sekų diagrama")
 
 Sekų diagramoje 3.3.2 parodomi žingsniai, kuriuos sistema vykdo sąveikaudama su vartotoju vykdant pagrindinį ir/ar alternatyvius scenarijus, kai vartotojas nori užsisakyti produktus parduotuvės lange.
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![RD3.3](./Nuotraukos/ROBUSTProduktoUzs.png "Fig. 3.3.3 - Produkto užsakymas parduotuvėje - robustiškumo diagrama")
+![3.3.3 - Produkto užsakymas parduotuvėje - robustiškumo diagrama](./Nuotraukos/ROBUSTProduktoUzs.png "Fig. 3.3.3 - Produkto užsakymas parduotuvėje - robustiškumo diagrama")
 
 Robustiškumo diagramoje 3.3.3 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su parduotuvės ir/ar krepšelio grafinėmis sąsajomis.
 
@@ -224,19 +224,19 @@ Naudotojas lange "Dalinimasis" paspaudžia mygtuką "Atšaukti". Sistema pašali
 
 <!-- pagebreak -->
 #### Grafinės sąsajos eskizas
-![GUI3.4](./Nuotraukos/GUIEskizas4(1).png "Fig. 3.4.1 - Langas 'Dalintis'")
+![3.4.1 - Langas 'Dalintis'](./Nuotraukos/GUIEskizas4(1).png "Fig. 3.4.1 - Langas 'Dalintis'")
 
 Figūroje 3.4.1 pavaizduota numatoma šaldytuvo dalinimosi grafinė sąsaja (bei numatomas būdas į ją pereiti iš šaldytuvo lango). Šiame lange yra rodomi kitų vartotojų vardai ir galimybė tuos vartotojus pažymėt, kad su jais tęsti dalinimąsi.
 
 <!-- pagebreak -->
 #### Sekų diagrama
-![SD3.4](./Nuotraukos/%C5%A0aldytuvoDalinSeq.png "Fig. 3.4.2 - Šaldytuvo dalinimasis - sekų diagrama")
+![3.4.2 - Šaldytuvo dalinimasis - sekų diagrama](./Nuotraukos/%C5%A0aldytuvoDalinSeq.png "Fig. 3.4.2 - Šaldytuvo dalinimasis - sekų diagrama")
 
 Sekų diagramoje 3.4.2 parodomi žingsniai, kuriuos sistema vykdo sąveikaudama su vartotoju vykdant pagrindinį ir/ar alternatyvius scenarijus, kai vartotojas nori su kitais vartotojais dalintis savo šaldytuvo turiniu.
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![RD3.4](./Nuotraukos/ROBUSTSaldytuvoDali.png "Fig 3.4.3 - Šaldytuvo dalinimasis - robustiškumo diagrama")
+![3.4.3 - Šaldytuvo dalinimasis - robustiškumo diagrama](./Nuotraukos/ROBUSTSaldytuvoDali.png "Fig 3.4.3 - Šaldytuvo dalinimasis - robustiškumo diagrama")
 
 Robustiškumo diagramoje 3.4.3 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su šaldytuvo dalinimosi grafine sąsaja, bei veiklos, nusakančios kaip vartotojas į šią sąsają patenka iš šaldytuvo lango.
 
@@ -253,19 +253,19 @@ Dėl kokių nors priežasčių pranešimo nepavyko nusiųsti. Sistema informuoj�
 
 <!-- pagebreak -->
 #### Grafinės sąsajos eskizas
-![GUI3.5](./Nuotraukos/4ucgui.png "Fig. 3.5.1 - Langas 'Bendravimas grupėje'")  
+![3.5.1 - Langas 'Bendravimas grupėje'](./Nuotraukos/4ucgui.png "Fig. 3.5.1 - Langas 'Bendravimas grupėje'")  
 
 Figūroje 3.5.1 pavaizduotos numatomos grafinės sąsajos pokalbiai bei receptų dalinimasis. Pokalbių lange figūruoja pokalbio gija, kurioje rodomi visi iki šiol toje grupėje su vartotoju pasidalinti receptai, tos grupės nariai, kuriuos galima pasirinkti, bei patvirtinimo mygtukas dalintis receptais, kuris nukreipia į receptų dalinimosi langą, kuriame galima pasirinkti receptus, kuriais norima dalintis.
 
 <!-- pagebreak -->
 #### Sekų diagrama
-![SD3.5](./Nuotraukos/4uc.png "Fig. 3.5.2 - Bendravimas tarp grupės narių - sekų diagrama")
+![3.5.2 - Bendravimas tarp grupės narių - sekų diagrama](./Nuotraukos/4uc.png "Fig. 3.5.2 - Bendravimas tarp grupės narių - sekų diagrama")
 
 Sekų diagramoje 3.5.2 parodomi žingsniai, kuriuos sistema vykdo sąveikaudama su vartotoju vykdant pagrindinį ir/ar alternatyvius scenarijus, kai vartotojas nori su kitais vartotojais grupėje dalintis savo receptais.
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![RD3.5](./Nuotraukos/ROBUSTnaudotBendrPerPranesimus.png "Bendravimas tarp grupės narių - robustiškumo diagrama")
+![3.5.3 Bendravimas tarp grupės narių - robustiškumo diagrama](./Nuotraukos/ROBUSTnaudotBendrPerPranesimus.png "Bendravimas tarp grupės narių - robustiškumo diagrama")
 
 Robustiškumo diagramoje 3.5.3 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su pokalbių langu, o vėliau galimai receptų dalinimosi langu bei pradinis atsiradimo pokalbių lange procesas.
 
@@ -281,19 +281,19 @@ Naudotojas pasirenka kurių nors metų kokį nors mėnesį. Sistema atvaizduoja 
 
 <!-- pagebreak -->
 #### Grafinės sąsajos eskizas
-![GUI3.6](./Nuotraukos/Calendar.jpg "Fig. 3.6.1 - Kalendoriaus ir Dienos užsakymų langai")  
+![3.6.1 - Kalendoriaus ir Dienos užsakymų langai](./Nuotraukos/Calendar.jpg "Fig. 3.6.1 - Kalendoriaus ir Dienos užsakymų langai")  
 
 Figūroje 3.6.1 pavaizduoti kalendoriaus ir dienos aprašymo langai. Iš kalendoriaus patenkama į dienos langą paspaudžiant "+" mygtuką prie dienos. Kiekviena mėnesio diena, kurios metu buvo gautas užsakymas, turi aktyvų "+" mygtuką. Dienos lange yra pavaizduoti užsakymai ir jais gauti produktai: pavadinimai, kiekiai, kainos. Ties kiekvienu produktu galima pasirinkti užsakyti daugiau to produkto. Kalendoriaus lango viršuje yra mygtukai, leidžiantys žiūrėti produktus pagal pasirinktą metriką: užsakymo datą arba galiojimo laiką. Dienos lange leidžiama ieškoti receptų su dienos produktais, kas yra itin svarbu, jei tie produktai artimiausiu metu baigs galioti.
 
 <!-- pagebreak -->
 #### Sekų diagrama  
-![SD3.6](./Nuotraukos/calendar-sequence.jpg "Fig. 3.6.2 - Produktų peržiūra kalendoriuje - sekų diagrama")   
+![3.6.2 - Produktų peržiūra kalendoriuje - sekų diagrama](./Nuotraukos/calendar-sequence.jpg "Fig. 3.6.2 - Produktų peržiūra kalendoriuje - sekų diagrama")   
 
 Figūroje 3.6.2 yra pavaizduota diagrama, nurodanti naudotojo bendravimo su sistema veiksmų seką. Sistema, reaguodama į naudotojo paspaudimus atidaro tam tikrus langus ir atlieka tam tikras operacijas. Naudotojas pirma sąveikauja su kalendoriaus langu, tada paspaudęs ant "+" ties mėnesio diena - su dienos produktų langu. Produktų lange paspaudęs "grįžti" yra grąžinamas į kalendoriaus langą. 
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![RD3.6](./Nuotraukos/Kalendoriaus-RD.jpg "Fig. 3.6.3 - Produktų peržiūra kalendoriuje - robustiškumo diagrama")
+![3.6.3 - Produktų peržiūra kalendoriuje - robustiškumo diagrama](./Nuotraukos/Kalendoriaus-RD.jpg "Fig. 3.6.3 - Produktų peržiūra kalendoriuje - robustiškumo diagrama")
 
 Figūroje 3.6.3 pavaizduotoje robustiškumo diagramoje pavaizduotas pagrindinis užduoties scenarijus ir alternatyvieji per objektus. Naudotojas sąveikauja pirma su kalendoriaus langu, tada su dienos produktų, o šiame lange pasirinkęs gauti receptus - su receptų langu.
 
@@ -312,19 +312,19 @@ Naudotojui paspaudus dešinį pelės mygtuką (arba ilgai palietus, jei naudojam
 
 <!-- pagebreak -->
 #### Grafinės sąsajos eskizas
-![GUI3.7](./Nuotraukos/DamnAds.jpg "Fig. 3.7.1 - Reklamų rodymo grafinė sąsaja")
+![3.7.1 - Reklamų rodymo grafinė sąsaja](./Nuotraukos/DamnAds.jpg "Fig. 3.7.1 - Reklamų rodymo grafinė sąsaja")
 
 Figūroje 3.7.1 yra pavaizduota numatoma grafinės sąsajos dalis kuri yra skirta būti bent kuriame produktus rodančiame lange. Naršant produktus, kaip pavaizduota, kartais yra įterpiama reklama, kuri nuo kitų produktų skiriasi savo kraštinės spalva (produktai apibrėžti juodai, o reklama mėlynai), bei tuo, kad kampe turi "x" mygtuką.
 
 <!-- pagebreak -->
 #### Sekų diagrama
-![SD3.7](./Nuotraukos/DamnAds_Seq.jpg "Reklamų rodymo sekų diagrama") 
+![3.7.2 - Reklamų rodymo sekų diagrama](./Nuotraukos/DamnAds_Seq.jpg "Reklamų rodymo sekų diagrama") 
 
 Sekų diagramoje 3.7.2 parodomi žingsniai, kuriuos sistema vykdo sąveikaudama su vartotoju vykdant pagrindinį ir/ar alternatyvius scenarijus, kai vartotojas sąveikauja (arba ne) su reklama - arba teigiamai (paspausdamas ją), arba neigiamai ("x" mygtuku ją panaikindamas, arba pranešdamas apie netinkamą turinį).
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![RD3.7](./Nuotraukos/DamnAds_Robust.png "Reklamų rodymas - robustiškumo diagrama")
+![3.7.3 - Reklamų rodymas - robustiškumo diagrama](./Nuotraukos/DamnAds_Robust.png "Reklamų rodymas - robustiškumo diagrama")
 
 Robustiškumo diagramoje 3.7.3 pavaizduotos kokios veiklų sekos vyksta sistemoje, kai vartotojas teigiamai arba neigiamai sąveikauja su reklama.
 
@@ -344,15 +344,15 @@ Figūroje 15 yra detalesnė užduočių diagrama, kurioje pavaizduotos užduotys
    Nuspręsta sistemos techninę architektūrą pavaizduoti dviem pjūviais: fiziniu ir kūrimo. Pirmu yra pavaizduotas programų sistemos komponentų išsidėstymas tinkle ir kokiais protokolais bendraujama tarpusavyje, o antru - loginis sąryšis tarp komponentų ir kaip su jais sąveikauja agentai. Pagal komponentų diagramą (figūra 15) numatoma kliento-serverio architektūra, kur serveris gauna informaciją iš išorinės sistemos, bet taip pat laiko klientų informaciją duomenų bazėje. Fiziniame pjūvyje numatomos bendraujančių įrenginių operacinės sistemos (Windows, Android, Linux) ir bendravimo protokolas (HTTPS).
 
 # 5.1. Sistemos komponentai
-![L1 sistemos komponentų diagrama](./Nuotraukos/L1-komponentai.jpg)
+![5.1. - komponentų diagrama](./Nuotraukos/L1-komponentai.jpg)
 
-Figūroje 15 pavaizduota, iš kokių komponentų susideda sistema ir kaip ji sąveikauja agentais ir kitomis sistemomis. Su sistema sąveikauja dviejų tipų asmenys: naudotojai ir reklamų tiekėjai. Numatyta, kad jie naudodamiesi grafinėmis sąsajomis galėtų pasiekti savo tikslus. Reklamų tiekėjai gali talpinti ir užsakyti reklamas naudodamiesi tik desktopine aplikacija, nes numatyta telefone pateikti mažesnį funkcionalumo rinkinį. Aplikacijos, asmenims prisiregistravus, siunčia serveriui užklausas ir gauna iš jo atsakymus per užklausų jungtį. Užklausos yra įvairios: užsakymo formavimo, šaldytuvo produktų peržiūros, receptų paieškos, recepto kūrimo, grupės formavimo ir naudotojų pranešimai.
+Figūroje 5.1. pavaizduota, iš kokių komponentų susideda sistema ir kaip ji sąveikauja agentais ir kitomis sistemomis. Su sistema sąveikauja dviejų tipų asmenys: naudotojai ir reklamų tiekėjai. Numatyta, kad jie naudodamiesi grafinėmis sąsajomis galėtų pasiekti savo tikslus. Reklamų tiekėjai gali talpinti ir užsakyti reklamas naudodamiesi tik desktopine aplikacija, nes numatyta telefone pateikti mažesnį funkcionalumo rinkinį. Aplikacijos, asmenims prisiregistravus, siunčia serveriui užklausas ir gauna iš jo atsakymus per užklausų jungtį. Užklausos yra įvairios: užsakymo formavimo, šaldytuvo produktų peržiūros, receptų paieškos, recepto kūrimo, grupės formavimo ir naudotojų pranešimai.
    
 Serveris yra sudarytas iš dviejų lygmenų: servisų ir duomenų. Servisų lygmuo gauna iš klientų užklausas ir nusprendžia, kreiptis į Barboros internetinę parduotuvę arba į savo duomenų bazę. Jei gauta užklausa sudaryti užsakymą, servisų lygmuo transformuoja užklausą į užsakymą ir perduoda Barborai bei duomenų sluoksniui, kad būtų išsaugota užklausa. Jei užklausa yra gauti produktų ar kitokios informacijos, servisų lygmuo kreipiasi į duomenų lygmenį. Duomenų lygmuo gautas užklausas transformuoja į duomenų bazės užklausas, kuriomis keičia nurodytą informaciją arba gauna tokią, kurios ieškoma. Gautą atsaką iš duomenų bazės duomenų sluoksnis transformuoja į užklausą, kurią servisas gali siųsti klientams.
    
 Servisų lygmuo bendrauja su Barboros internetine parduotuve per API keliais tikslais. Pirmas yra minėtas užsakymų perdavimas. Antras tikslas yra užsakymų būsenos sekimas, kad būtų galima fiksuoti, kada klientų užsakyti produktai atsiranda jų inventoriuje. Trečia funkcija yra produktų informacijos pasiėmimas. Serveris periodiškai kreipiasi į Barborą siekdamas atnaujinti parduodamų produktų sąrašą.
 
 # 5.2. Fizinis pjūvis
-![Sistemos išsidėstymo diagrama](./Nuotraukos/Deployment.jpg)
+![5.2. - komponentų išsidėstymas tinkle](./Nuotraukos/Deployment.jpg)
 
-Pagal išsidėstymo diagramą numatoma, kad serveryje veiks Windows operacinė sistema ir bus aptarnaujami stacionarūs kompiuteriai, irgi turintys Windows operacinę sistemą bei "Food Bee Inc" klientinę aplikaciją. Aptarnaujami ir išmanieji telefonai, turintys Android operacinę sistemą ir įrašytą "Food Bee Inc" aplikaciją. Bendravimas tarp serverio ir klientų vyksta HTTPS protokolu. Serveris su Barboros internetinės parduotuvės sistema bendrauja irgi HTTPS protokolu.
+Pagal išsidėstymo diagramą (5.2 figūra) numatoma, kad serveryje veiks Windows operacinė sistema ir bus aptarnaujami stacionarūs kompiuteriai, irgi turintys Windows operacinę sistemą bei "Food Bee Inc" klientinę aplikaciją. Aptarnaujami ir išmanieji telefonai, turintys Android operacinę sistemą ir įrašytą "Food Bee Inc" aplikaciją. Bendravimas tarp serverio ir klientų vyksta HTTPS protokolu. Serveris su Barboros internetinės parduotuvės sistema bendrauja irgi HTTPS protokolu.

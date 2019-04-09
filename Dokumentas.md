@@ -166,7 +166,7 @@ Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių 
 #### Grafinės sąsajos eskizas
 ![GUI3.2](./Nuotraukos/GUIEskizas1.png "Fig. 3.2.1 - Langas 'Senstantys produktai'")
 
-Figūroje 3.2.1 pavaizduotas __**OUTDATED LANGAS**__
+Figūroje 3.2.1 pavaizduotas produktų peržiūros langas, kuriame išryškinti senstantys produktai. Lango apačioje yra siūlomi receptai, kurių sudėtyje yra pažymėti senstantys produktai.
 
 <!-- pagebreak -->
 #### Sekų diagrama

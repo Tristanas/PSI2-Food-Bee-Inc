@@ -328,11 +328,11 @@ Sekų diagramoje 3.7.2 parodomi žingsniai, kuriuos sistema vykdo sąveikaudama 
 
 Robustiškumo diagramoje 3.7.3 pavaizduotos kokios veiklų sekos vyksta sistemoje, kai vartotojas teigiamai arba neigiamai sąveikauja su reklama.
 
-<!-- pagebreak -->
+<!-- 
 ### 3.8 Papildyta užduočių diagrama
-Figūroje 15 yra detalesnė užduočių diagrama, kurioje pavaizduotos užduotys... (placeholderis užduočių diagramos aprašymui)
+Figūroje 15 yra detalesnė užduočių diagrama, kurioje pavaizduotos užduotys... (placeholderis užduočių diagramos aprašymui) -->
 
-![Detalesnės užduotys](./Nuotraukos/Atnaujinta-UC-diagrama.jpg)
+<!--![Detalesnės užduotys](./Nuotraukos/Atnaujinta-UC-diagrama.jpg) -->
 
 <!-- pagebreak -->
 # 4. Peržiūros rezultatai

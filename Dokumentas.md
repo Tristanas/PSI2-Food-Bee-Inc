@@ -118,25 +118,33 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
 
 ## 2.1 Esybių sąrašas
  * Produktas
+ * Pranešimas
+ * Grupė
+ * Užsakymas
  * Tiekėjas
  * Naudotojas
  * Šaldytuvas
  * Receptas
 
 ## 2.2 Pradinė klasių diagrama
-![Klasių diagrama](./Nuotraukos/Class%20diagram.jpg)
+![Klasių diagrama](./Nuotraukos/Class%20diagram.jpg "2.2. diagrama - dalykinės srities klasės")
 
+Dalykinės srites struktūrą galima pamatyti 2.2. diagramoje. Svarbiausia klasė yra naudotojo paskyra. Ją sukuria naudotojas prisiregistruodamas. Naudotojai sudaro grupes, kuriose dalinasi receptais per pranešimus. Produktai yra teikiami produktų tiekėjo, reklamos - reklamų tiekėjo. Kiekvienas naudotojas turi savo šaldytuvą ir gali juo dalintis su naudotojų grupe.
 
 ## 2.3 Klasių ir reikalavimų matrica
 
-![Klasių Matrica](./Nuotraukos/Class-X-Req.jpg "Klasių ir reikalavimų matrica")
+![Klasių Matrica](./Nuotraukos/Class-X-Req.jpg "2.3. figūra - Klasių ir reikalavimų matrica")
+
+Klasių ir reikalavimų matricoje (figūra 2,3) nurodomi sąryšiai tarp užsakovo reikalavimų ir dalykinės srities klasių. Matosi, kad svarbiausia klasė yra naudotojo paskyra. Visi reikalavimai yra įgyvendinami bent viena klase ir kiekviena klasė įgyvendina bent vieną reikalavimą.
 
 <!-- pagebreak -->
 # 3. Užduotys
 
 ## 3.1 Pradinė užduočių diagrama
 
-![užduočių diagrama](./Nuotraukos/UC-diagrama.jpg "Užduočių diagrama")
+![užduočių diagrama](./Nuotraukos/UC-diagrama.jpg "diagrama 3.1. Užduotys")
+
+3.1. diagramoje pavaizduotos pagrindinės sistemos naudotojų užduotys. Naudotojas siekia prisijungęs prie sistemos užsakyti produktus, dalintis receptais, savo šaldytuvo turiniu, peržiūrėti turimus produktus kalendoriuje bei peržiūrėti pranešimus dėl senstančių produktų. Reklamų tiekėjas siekia užsakyti reklamą, t.y., kad sistema rodytų jo reklamą naudotojams.
 
 <!-- pagebreak -->
 ### 3.2. Pranešimo dėl produktų galiojimo pabaigos peržiūrėjimas

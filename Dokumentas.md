@@ -136,38 +136,41 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
 
 ## 3.1 Pradinė užduočių diagrama
 
-![užduočių diagrama](./Nuotraukos/UC-diagrama.jpg "Užduočių diagrama")
+![užduočių diagrama](./Nuotraukos/UC-diagrama.jpg "Fig 3.1 - pradinė užduočių diagrama")
 
 <!-- pagebreak -->
 ### 3.2. Pranešimo dėl produktų galiojimo pabaigos peržiūrėjimas
 
 #### Užduoties vykdymą inicijuojantis trigeris
-Sistemoje yra produktų, kurių galiojimo terminas artėja prie nustatytos ribos.
+~~Sistemoje yra produktų, kurių galiojimo terminas artėja prie nustatytos ribos.~~
+Sistemoje aptinkamas vienas ar daugiau produktų kurių galiojimo data skiriasi nuo esamos datos per vartotojo nustatytą dienų skaičių. (Toliau: senstantis produktas)
 
 #### Užduoties vykdymo prieš-sąlygos
 Sistemos nustatymai yra tokie, kurie leistų sistemai siųsti pranešimus.
 
 #### Pagrindinis scenarijus
-Kai sistemoje atsiranda produktų, kurių galiojimo laikas artėja prie pabaigos (esant nustatytam intervalui iki jos), naudotojas apie tai informuojamas pranešimų piktogramos pranešimų juostoje spalvos pasikeitimu. Naudotojas paspaudžia ant pranešimų piktogramos. Sistema atidaro langą "Senstantys produktai". Naujame lange nurodyti produktai, kurie tuoj pasens, taip pat ir receptai iš šių produktų, jei tokių galima sudaryti. Naudotojas pasirenka vieną iš pasiūlytų receptų ir spaudžia mygtuką "Gaminti". Norėdamas dalį senstančių produktų pašalinti naudotojas juos pažymi ir spaudžia pašalinti. Sistema pašalina produktus iš šaldytuvo ir atnaujina vaizduojamą informaciją.
+Naudotojas yra informuojamas pranešimų piktogramos pranešimų juostoje spalvos pasikeitimu, kad esama senstančių produktų. Naudotojas paspaudžia ant pranešimų piktogramos. Sistema atidaro langą "Senstantys produktai". Naujame lange nurodyti produktai, kurie tuoj pasens, taip pat ir receptai iš šių produktų, jei tokių galima sudaryti. Naudotojas pasirenka vieną iš pasiūlytų receptų ir spaudžia mygtuką "Gaminti". Norėdamas dalį senstančių produktų pašalinti naudotojas juos pažymi ir spaudžia pašalinti. Sistema pašalina produktus iš šaldytuvo ir atnaujina vaizduojamą informaciją.
 
 #### Alternatyvūs scenarijai
 Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių produktų naudojant senstančius produktus. Vietoje pasiūlyto recepto sistema parodo, jog iš esamų produktų nepavyksta sudaryti recepto. Norėdamas visus ar dalį senstančių produktų pašalinti naudotojas juos pažymi ir spaudžia pašalinti. Sistema pašalina produktus iš šaldytuvo ir atnaujina vaizduojamą informaciją.  
 
 <!-- pagebreak -->
 #### Grafinės sąsajos eskizas
-![GUIEskizas1.png](./Nuotraukos/GUIEskizas1.png "Langas 'Senstantys produktai'")
+![GUI3.2](./Nuotraukos/GUIEskizas1.png "Fig. 3.2.1 - Langas 'Senstantys produktai'")
 
-Figūroje 3 pavaizduoti x, y ir z langai. (Placeholderis gui eskizo aprašymui)
+Figūroje 3.2.1 pavaizduotas __**OUTDATED LANGAS**__
 
 <!-- pagebreak -->
 #### Sekų diagrama
-![SEQ1.png](./Nuotraukos/SEQ1.png  "Sekų diagrama")
+![SD3.2](./Nuotraukos/SEQ1.png  "Fig. 3.2.2 - Senstantys produktai - sekų diagrama")
 
-Figūroje 4 bendrauja... (Placeholderis aprašymui)
+Sekų diagramoje 3.2.2 parodomi žingsniai, kuriuos sistema vykdo sąveikaudama su vartotoju vykdant pagrindinį ir/ar alternatyvius scenarijus, kai sistemoje yra senstančių produktų. 
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![RD3.2](./Nuotraukos/three_point_one.png "Pranešimas apie senstančius produktus - robustiškumo diagrama")
+![RD3.2](./Nuotraukos/three_point_one.png "Fig. 3.2.3 - Senstantys produktai - robustiškumo diagrama")
+
+Robustiškumo diagramoje 3.2.3 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su grafine sąsaja, kurioje rodomi senstantys produktai.
 
 <!-- pagebreak -->
 ### 3.3. Produkto užsakymas per parduotuvę
@@ -180,19 +183,27 @@ Jei naudotojas nebenori dalies Krepšelio turinio, jis pažymi lange "Krepšelis
 
 <!-- pagebreak -->
 #### Grafinės sąsajos eskizas 
-![Produktų užsakymas](./Nuotraukos/GUIEskizas3.png "'Produktų užsakymas'")
+![GUI3.3](./Nuotraukos/GUIEskizas3.png "Fig. 3.3.1 - Langas 'Produktų užsakymas'")
 
-Figūroje 5 pavaizduoti x, y ir z langai. (Placeholderis gui eskizo aprašymui)
+Figūroje 3.3.1 pavaizduoti parduotuvės ir krepšelio grafinės sąsajos eskizai. Abiejuose languose yra duota galimybė pereiti į kitus sistemos langus (sąsajos apačioje).
 
+Parduotuvės lange yra numatoma rodyti produktą, jo aprašymą ir mygtuką pridėti produktą į krepšelį.
+
+Krepšelio lange yra numatoma rodyti visus vartotojo į krepšelį pridėtus produktus, galimybė juos žymėti ir pažymėtus produktus arba šalinti iš krepšelio, arba juos užsakyti.
+
+<!--Šaldytuvo lange numatoma vaizduoti visus vartotojo šaldytuve esančius produktus, galimybė juos papildyti (pereinama prie užsakymo) ir mygtukas pereiti prie senstančių produktų lango (Žr. 3.2).
+-->
 <!-- pagebreak -->
 #### Sekų diagrama
-![Produktų užsakymas sequence](./Nuotraukos/Produkt%C5%B3U%C5%BEsSeq.png "'Produktų užsakymas'")
+![SD3.3](./Nuotraukos/Produkt%C5%B3U%C5%BEsSeq.png "Fig 3.3.2 - Produktų užsakymas parduotuvėje - sekų diagrama")
 
-Figūroje 6 bendrauja... (Placeholderis aprašymui)
+Sekų diagramoje 3.3.2 parodomi žingsniai, kuriuos sistema vykdo sąveikaudama su vartotoju vykdant pagrindinį ir/ar alternatyvius scenarijus, kai vartotojas nori užsisakyti produktus parduotuvės lange.
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![RD3.3](./Nuotraukos/ROBUSTProduktoUzs.png "Produkto ožsakymas parduotuvėje - robustiškumo diagrama")
+![RD3.3](./Nuotraukos/ROBUSTProduktoUzs.png "Fig. 3.3.3 - Produkto užsakymas parduotuvėje - robustiškumo diagrama")
+
+Robustiškumo diagramoje 3.3.3 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su parduotuvės ir/ar krepšelio grafinėmis sąsajomis.
 
 <!-- pagebreak -->
 ### 3.4. Šaldytuvo dalinimasis
@@ -205,19 +216,21 @@ Naudotojas lange "Dalinimasis" paspaudžia mygtuką "Atšaukti". Sistema pašali
 
 <!-- pagebreak -->
 #### Grafinės sąsajos eskizas
-![Dalinimasis](./Nuotraukos/GUIEskizas4(1).png "'Dalintis'")
+![GUI3.4](./Nuotraukos/GUIEskizas4(1).png "Fig. 3.4.1 - Langas 'Dalintis'")
 
-Figūroje 7 pavaizduoti x, y ir z langai. (Placeholderis gui eskizo aprašymui)
+Figūroje 3.4.1 pavaizduota numatoma šaldytuvo dalinimosi grafinė sąsaja (bei numatomas būdas į ją pereiti iš šaldytuvo lango). Šiame lange yra rodomi kitų vartotojų vardai ir galimybė tuos vartotojus pažymėt, kad su jais tęsti dalinimąsi.
 
 <!-- pagebreak -->
 #### Sekų diagrama
-![Dalinimasis sequence](./Nuotraukos/%C5%A0aldytuvoDalinSeq.png "'Dalintis'")
+![SD3.4](./Nuotraukos/%C5%A0aldytuvoDalinSeq.png "Fig. 3.4.2 - Šaldytuvo dalinimasis - sekų diagrama")
 
-Figūroje 8 bendrauja... (Placeholderis aprašymui)
+Sekų diagramoje 3.4.2 parodomi žingsniai, kuriuos sistema vykdo sąveikaudama su vartotoju vykdant pagrindinį ir/ar alternatyvius scenarijus, kai vartotojas nori su kitais vartotojais dalintis savo šaldytuvo turiniu.
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![RD3.4](./Nuotraukos/ROBUSTSaldytuvoDali.png "Šaldytuvo dalinimasis - robustiškumo diagrama")
+![RD3.4](./Nuotraukos/ROBUSTSaldytuvoDali.png "Fig 3.4.3 - Šaldytuvo dalinimasis - robustiškumo diagrama")
+
+Robustiškumo diagramoje 3.4.3 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su šaldytuvo dalinimosi grafine sąsaja, bei veiklos, nusakančios kaip vartotojas į šią sąsają patenka iš šaldytuvo lango.
 
 <!-- pagebreak -->
 ### 3.5. Naudotojas bendrauja su kitais grupės nariais per pranešimus
@@ -232,19 +245,21 @@ Dėl kokių nors priežasčių pranešimo nepavyko nusiųsti. Sistema informuoj�
 
 <!-- pagebreak -->
 #### Grafinės sąsajos eskizas
-![Pranešimai kitiems](./Nuotraukos/4ucgui.png)  
+![GUI3.5](./Nuotraukos/4ucgui.png "Fig. 3.5.1 - Langas 'Bendravimas grupėje'")  
 
-Figūroje 9 pavaizduoti x, y ir z langai. (Placeholderis gui eskizo aprašymui)
+Figūroje 3.5.1 pavaizduotos numatomos grafinės sąsajos pokalbiai bei receptų dalinimasis. Pokalbių lange figūruoja pokalbio gija, kurioje rodomi visi iki šiol toje grupėje su vartotoju pasidalinti receptai, tos grupės nariai, kuriuos galima pasirinkti, bei patvirtinimo mygtukas dalintis receptais, kuris nukreipia į receptų dalinimosi langą, kuriame galima pasirinkti receptus, kuriais norima dalintis.
 
 <!-- pagebreak -->
 #### Sekų diagrama
-![Bendravimo pranešimais sekų diagrama](./Nuotraukos/4uc.png)
+![SD3.5](./Nuotraukos/4uc.png "Fig. 3.5.2 - Bendravimas tarp grupės narių - sekų diagrama")
+
+Sekų diagramoje 3.5.2 parodomi žingsniai, kuriuos sistema vykdo sąveikaudama su vartotoju vykdant pagrindinį ir/ar alternatyvius scenarijus, kai vartotojas nori su kitais vartotojais grupėje dalintis savo receptais.
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
 ![RD3.5](./Nuotraukos/ROBUSTnaudotBendrPerPranesimus.png "Bendravimas tarp grupės narių - robustiškumo diagrama")
 
-Figūroje 10 bendrauja... (Placeholderis aprašymui)
+Robustiškumo diagramoje 3.5.3 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su pokalbių langu, o vėliau galimai receptų dalinimosi langu bei pradinis atsiradimo pokalbių lange procesas.
 
 <!-- pagebreak -->
 ### 3.6. Naudotojas atsiverčia kalendorių produktams peržiūrėti
@@ -258,19 +273,21 @@ Naudotojas pasirenka kurių nors metų kokį nors mėnesį. Sistema atvaizduoja 
 
 <!-- pagebreak -->
 #### Grafinės sąsajos eskizas
-![Kalendorius](./Nuotraukos/Calendar.jpg "Kalendoriaus ir Dienos užsakymų langai")  
+![GUI3.6](./Nuotraukos/Calendar.jpg "Fig. 3.6.1 - Kalendoriaus ir Dienos užsakymų langai")  
 
-Figūroje 11 pavaizduoti x, y ir z langai. (Placeholderis gui eskizo aprašymui)
+Figūroje 3.6.1 pavaizduoti kalendoriaus ir dienos aprašymo langai. Iš kalendoriaus patenkama į dienos langą paspaudžiant "+" mygtuką prie dienos. Kiekviena mėnesio diena, kurios metu buvo gautas užsakymas, turi aktyvų "+" mygtuką. Dienos lange yra pavaizduoti užsakymai ir jais gauti produktai: pavadinimai, kiekiai, kainos. Ties kiekvienu produktu galima pasirinkti užsakyti daugiau to produkto. Kalendoriaus lango viršuje yra mygtukai, leidžiantys žiūrėti produktus pagal pasirinktą metriką: užsakymo datą arba galiojimo laiką. Dienos lange leidžiama ieškoti receptų su dienos produktais, kas yra itin svarbu, jei tie produktai artimiausiu metu baigs galioti.
 
 <!-- pagebreak -->
 #### Sekų diagrama  
-![Kalendoriaus sekos](./Nuotraukos/calendar-sequence.jpg "Kalendoriaus seku diagrama")   
+![SD3.6](./Nuotraukos/calendar-sequence.jpg "Fig. 3.6.2 - Produktų peržiūra kalendoriuje - sekų diagrama")   
+
+Figūroje 3.6.2 yra pavaizduota diagrama, nurodanti naudotojo bendravimo su sistema veiksmų seką. Sistema, reaguodama į naudotojo paspaudimus atidaro tam tikrus langus ir atlieka tam tikras operacijas. Naudotojas pirma sąveikauja su kalendoriaus langu, tada paspaudęs ant "+" ties mėnesio diena - su dienos produktų langu. Produktų lange paspaudęs "grįžti" yra grąžinamas į kalendoriaus langą. 
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![RD3.6](./Nuotraukos/Kalendoriaus-RD.jpg "Produktų peržiūra kalendoriuje - robustiškumo diagrama")
+![RD3.6](./Nuotraukos/Kalendoriaus-RD.jpg "Fig. 3.6.3 - Produktų peržiūra kalendoriuje - robustiškumo diagrama")
 
-Figūroje 12 bendrauja... (Placeholderis aprašymui)
+Figūroje 3.6.3 pavaizduotoje robustiškumo diagramoje pavaizduotas pagrindinis užduoties scenarijus ir alternatyvieji per objektus. Naudotojas sąveikauja pirma su kalendoriaus langu, tada su dienos produktų, o šiame lange pasirinkęs gauti receptus - su receptų langu.
 
 <!-- pagebreak -->
 ### 3.7. Reklamų rodymas  
@@ -287,19 +304,21 @@ Naudotojui paspaudus dešinį pelės mygtuką (arba ilgai palietus, jei naudojam
 
 <!-- pagebreak -->
 #### Grafinės sąsajos eskizas
-![Reklamos](./Nuotraukos/DamnAds.jpg "Reklamų rodymas")
+![GUI3.7](./Nuotraukos/DamnAds.jpg "Fig. 3.7.1 - Reklamų rodymo grafinė sąsaja")
 
-Figūroje 13 pavaizduoti x, y ir z langai. (Placeholderis gui eskizo aprašymui)
+Figūroje 3.7.1 yra pavaizduota numatoma grafinės sąsajos dalis kuri yra skirta būti bent kuriame produktus rodančiame lange. Naršant produktus, kaip pavaizduota, kartais yra įterpiama reklama, kuri nuo kitų produktų skiriasi savo kraštinės spalva (produktai apibrėžti juodai, o reklama mėlynai), bei tuo, kad kampe turi "x" mygtuką.
 
 <!-- pagebreak -->
 #### Sekų diagrama
-![Reklamos Seq](./Nuotraukos/DamnAds_Seq.jpg "Reklamų rodymo sekų diagrama") 
+![SD3.7](./Nuotraukos/DamnAds_Seq.jpg "Reklamų rodymo sekų diagrama") 
 
-Figūroje 14 bendrauja... (Placeholderis aprašymui)
+Sekų diagramoje 3.7.2 parodomi žingsniai, kuriuos sistema vykdo sąveikaudama su vartotoju vykdant pagrindinį ir/ar alternatyvius scenarijus, kai vartotojas sąveikauja (arba ne) su reklama - arba teigiamai (paspausdamas ją), arba neigiamai ("x" mygtuku ją panaikindamas, arba pranešdamas apie netinkamą turinį).
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
 ![RD3.7](./Nuotraukos/DamnAds_Robust.png "Reklamų rodymas - robustiškumo diagrama")
+
+Robustiškumo diagramoje 3.7.3 pavaizduotos kokios veiklų sekos vyksta sistemoje, kai vartotojas teigiamai arba neigiamai sąveikauja su reklama.
 
 <!-- pagebreak -->
 ### 3.8 Papildyta užduočių diagrama

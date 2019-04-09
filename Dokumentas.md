@@ -301,19 +301,21 @@ Naudotojui paspaudus dešinį pelės mygtuką (arba ilgai palietus, jei naudojam
 
 <!-- pagebreak -->
 #### Grafinės sąsajos eskizas
-![Reklamos](./Nuotraukos/DamnAds.jpg "Reklamų rodymas")
+![GUI3.7](./Nuotraukos/DamnAds.jpg "Fig. 3.7.1 - Reklamų rodymo grafinė sąsaja")
 
-Figūroje 13 pavaizduoti x, y ir z langai. (Placeholderis gui eskizo aprašymui)
+Figūroje 3.7.1 yra pavaizduota numatoma grafinės sąsajos dalis kuri yra skirta būti bent kuriame produktus rodančiame lange. Naršant produktus, kaip pavaizduota, kartais yra įterpiama reklama, kuri nuo kitų produktų skiriasi savo kraštinės spalva (produktai apibrėžti juodai, o reklama mėlynai), bei tuo, kad kampe turi "x" mygtuką.
 
 <!-- pagebreak -->
 #### Sekų diagrama
-![Reklamos Seq](./Nuotraukos/DamnAds_Seq.jpg "Reklamų rodymo sekų diagrama") 
+![SD3.7](./Nuotraukos/DamnAds_Seq.jpg "Reklamų rodymo sekų diagrama") 
 
-Figūroje 14 bendrauja... (Placeholderis aprašymui)
+Sekų diagramoje 3.7.2 parodomi žingsniai, kuriuos sistema vykdo sąveikaudama su vartotoju vykdant pagrindinį ir/ar alternatyvius scenarijus, kai vartotojas sąveikauja (arba ne) su reklama - arba teigiamai (paspausdamas ją), arba neigiamai ("x" mygtuku ją panaikindamas, arba pranešdamas apie netinkamą turinį).
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
 ![RD3.7](./Nuotraukos/DamnAds_Robust.png "Reklamų rodymas - robustiškumo diagrama")
+
+Robustiškumo diagramoje 3.7.3 pavaizduotos kokios veiklų sekos vyksta sistemoje, kai vartotojas teigiamai arba neigiamai sąveikauja su reklama.
 
 <!-- pagebreak -->
 ### 3.8 Papildyta užduočių diagrama

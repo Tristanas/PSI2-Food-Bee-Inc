@@ -270,21 +270,21 @@ Naudotojas pasirenka kurių nors metų kokį nors mėnesį. Sistema atvaizduoja 
 
 <!-- pagebreak -->
 #### Grafinės sąsajos eskizas
-![Kalendorius](./Nuotraukos/Calendar.jpg "Kalendoriaus ir Dienos užsakymų langai")  
+![GUI3.6](./Nuotraukos/Calendar.jpg "Fig. 3.6.1 - Kalendoriaus ir Dienos užsakymų langai")  
 
-Figūroje 11 pavaizduoti kalendoriaus ir dienos aprašymo langai. Iš kalendoriaus patenkama į dienos langą paspaudžiant "+" mygtuką prie dienos. Kiekviena mėnesio diena, kurios metu buvo gautas užsakymas, turi aktyvų "+" mygtuką. Dienos lange yra pavaizduoti užsakymai ir jais gauti produktai: pavadinimai, kiekiai, kainos. Ties kiekvienu produktu galima pasirinkti užsakyti daugiau to produkto. Kalendoriaus lango viršuje yra mygtukai, leidžiantys žiūrėti produktus pagal pasirinktą metriką: užsakymo datą arba galiojimo laiką. Dienos lange leidžiama ieškoti receptų su dienos produktais, kas yra itin svarbu, jei tie produktai artimiausiu metu baigs galioti.
+Figūroje 3.6.1 pavaizduoti kalendoriaus ir dienos aprašymo langai. Iš kalendoriaus patenkama į dienos langą paspaudžiant "+" mygtuką prie dienos. Kiekviena mėnesio diena, kurios metu buvo gautas užsakymas, turi aktyvų "+" mygtuką. Dienos lange yra pavaizduoti užsakymai ir jais gauti produktai: pavadinimai, kiekiai, kainos. Ties kiekvienu produktu galima pasirinkti užsakyti daugiau to produkto. Kalendoriaus lango viršuje yra mygtukai, leidžiantys žiūrėti produktus pagal pasirinktą metriką: užsakymo datą arba galiojimo laiką. Dienos lange leidžiama ieškoti receptų su dienos produktais, kas yra itin svarbu, jei tie produktai artimiausiu metu baigs galioti.
 
 <!-- pagebreak -->
 #### Sekų diagrama  
-![Kalendoriaus sekos](./Nuotraukos/calendar-sequence.jpg "Kalendoriaus seku diagrama")   
+![SD3.6](./Nuotraukos/calendar-sequence.jpg "Fig. 3.6.2 - Produktų peržiūra kalendoriuje - sekų diagrama")   
 
-Figūroje 12 yra pavaizduota diagrama, nurodanti naudotojo bendravimo su sistema veiksmų seką. Sistema, reaguodama į naudotojo paspaudimus atidaro tam tikrus langus ir atlieka tam tikras operacijas. Naudotojas pirma sąveikauja su kalendoriaus langu, tada paspaudęs ant "+" ties mėnesio diena - su dienos produktų langu. Produktų lange paspaudęs "grįžti" yra grąžinamas į kalendoriaus langą. 
+Figūroje 3.6.2 yra pavaizduota diagrama, nurodanti naudotojo bendravimo su sistema veiksmų seką. Sistema, reaguodama į naudotojo paspaudimus atidaro tam tikrus langus ir atlieka tam tikras operacijas. Naudotojas pirma sąveikauja su kalendoriaus langu, tada paspaudęs ant "+" ties mėnesio diena - su dienos produktų langu. Produktų lange paspaudęs "grįžti" yra grąžinamas į kalendoriaus langą. 
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![RD3.6](./Nuotraukos/Kalendoriaus-RD.jpg "Produktų peržiūra kalendoriuje - robustiškumo diagrama")
+![RD3.6](./Nuotraukos/Kalendoriaus-RD.jpg "Fig. 3.6.3 - Produktų peržiūra kalendoriuje - robustiškumo diagrama")
 
-Figūroje 13 pavaizduotoje robustiškumo diagramoje pavaizduotas pagrindinis užduoties scenarijus ir alternatyvieji per objektus. Naudotojas sąveikauja pirma su kalendoriaus langu, tada su dienos produktų, o šiame lange pasirinkęs gauti receptus - su receptų langu.
+Figūroje 3.6.3 pavaizduotoje robustiškumo diagramoje pavaizduotas pagrindinis užduoties scenarijus ir alternatyvieji per objektus. Naudotojas sąveikauja pirma su kalendoriaus langu, tada su dienos produktų, o šiame lange pasirinkęs gauti receptus - su receptų langu.
 
 <!-- pagebreak -->
 ### 3.7. Reklamų rodymas  

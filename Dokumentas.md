@@ -17,7 +17,7 @@
 	5. [Naudotojas bendrauja su kitais grupės nariais per pranešimus](#35-naudotojas-bendrauja-su-kitais-grupės-nariais-per-pranešimus)
 	6. [Naudotojas atsiverčia kalendorių produktams peržiūrėti](#36-naudotojas-atsiverčia-kalendorių-produktams-peržiūrėti)
 	7. [Reklamų rodymas](#37-reklamų-rodymas)
-	8. [Papildyta užduočių diagrama](#38-papildyta-užduočių-diagrama)
+	<!--8. [Papildyta užduočių diagrama](#38-papildyta-užduočių-diagrama)-->
 4. [Peržiūros rezultatai](#4-peržiūros-rezultatai)
 5. [Techninė architektūra](#5-techninė-architektūra)
 	1. [Sistemos architektūra](#51-sistemos-komponentai)

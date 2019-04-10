@@ -329,11 +329,14 @@ Sekų diagramoje 3.7.2 parodomi žingsniai, kuriuos sistema vykdo sąveikaudama 
 
 Robustiškumo diagramoje 3.7.3 pavaizduotos kokios veiklų sekos vyksta sistemoje, kai vartotojas teigiamai arba neigiamai sąveikauja su reklama.
 
-<!-- 
+<!-- pagebreak --> 
 ### 3.8 Papildyta užduočių diagrama
-Figūroje 15 yra detalesnė užduočių diagrama, kurioje pavaizduotos užduotys... (placeholderis užduočių diagramos aprašymui) -->
 
-<!--![Detalesnės užduotys](./Nuotraukos/UC-papildyta.jpg) -->
+![3.8. Detalesnė užduočių diagrama](./Nuotraukos/UC-papildyta.jpg) 
+
+Figūroje 3.8 yra pavaizduota detalesnė užduočių diagrama. Joje yra ne tik aprašyti užduočių scenarijai, bet ir pastebėti kiti, logiškai vykdomi prieš ar po aprašytų scenarijų. Numatyta, kad naudotojas gali dalintis receptais ir bendrauti pranešimais tik prisijungęs prie naudotojų grupės. Naudotojas dalindamasis šaldytuvu sukuria naują grupę, nebent dalinasi su grupe, kurios yra narys. Kad naudotojas užsakytų produktą, turi jį įdėti į krepšelį. Tik užsakius krepšelį produktas bus laikomas užsakytu. Reklamų tiekėjas užsakydamas reklamą patalpina ją į sistemą.
+
+Naudotojas peržiūrėdamas senstančius produktus pranešimuose ar kalendoriuje gali ieškoti tokių receptų, kuriais išvengtų sugedusio maisto. Jei naudotojas nenori gaminti ar neįmanoma sudaryti tokių receptų, jam leidžiama šalinti senstančius produktus iš sistemos. Naudotojas pažymi, kad gamina receptą, sistema pateikia gamybos informaciją ir kitokią pagalbą. Gaminimo pabaigoje sistema automatiškai pašalina sunaudotus produktus.
 
 <!-- pagebreak -->
 # 4. Peržiūros rezultatai

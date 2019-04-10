@@ -127,13 +127,13 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
  * Receptas
 
 ## 2.2 Pradinė klasių diagrama
-![2.2. diagrama - Klasių diagrama](./Nuotraukos/Class%20diagram.jpg " 2.2. diagrama - dalykinės srities klasės")
+![2.2. - Klasių diagrama](./Nuotraukos/Klases.jpg " 2.2. diagrama - dalykinės srities klasės")
 
 Dalykinės srites struktūrą galima pamatyti 2.2. diagramoje. Svarbiausia klasė yra naudotojo paskyra. Ją sukuria naudotojas prisiregistruodamas. Naudotojai sudaro grupes, kuriose dalinasi receptais per pranešimus. Produktai yra teikiami produktų tiekėjo, reklamos - reklamų tiekėjo. Kiekvienas naudotojas turi savo šaldytuvą ir gali juo dalintis su naudotojų grupe.
 
 ## 2.3 Klasių ir reikalavimų matrica
 
-![2.3. figūra - Klasių ir reikalavimų matrica](./Nuotraukos/Class-X-Req.jpg "2.3. figūra - Klasių ir reikalavimų matrica")
+![2.3. - Klasių ir reikalavimų matrica](./Nuotraukos/Class-X-Req.jpg "2.3. figūra - Klasių ir reikalavimų matrica")
 
 Klasių ir reikalavimų matricoje (figūra 2.3) nurodomi sąryšiai tarp užsakovo reikalavimų ir dalykinės srities klasių. Matosi, kad svarbiausia klasė yra naudotojo paskyra. Visi reikalavimai yra įgyvendinami bent viena klase ir kiekviena klasė įgyvendina bent vieną reikalavimą.
 
@@ -142,7 +142,7 @@ Klasių ir reikalavimų matricoje (figūra 2.3) nurodomi sąryšiai tarp užsako
 
 ## 3.1 Pradinė užduočių diagrama
 
-![diagrama 3.1. Užduotys](./Nuotraukos/UC-diagrama.jpg "diagrama 3.1. Užduotys")
+![3.1. - Užduočių diagrama](./Nuotraukos/UC.jpg "diagrama 3.1. Užduotys")
 
 3.1 diagramoje pavaizduotos pagrindinės sistemos naudotojų užduotys. Naudotojas siekia prisijungęs prie sistemos užsakyti produktus, dalintis receptais, savo šaldytuvo turiniu, peržiūrėti turimus produktus kalendoriuje bei peržiūrėti pranešimus dėl senstančių produktų. Reklamų tiekėjas siekia užsakyti reklamą, t.y., kad sistema rodytų jo reklamą naudotojams.
 
@@ -164,19 +164,19 @@ Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių 
 
 <!-- pagebreak -->
 #### Grafinės sąsajos eskizas
-![3.2.1 pav. 'Senstantys produktai'](./Nuotraukos/GUIEskizas1.png "Fig. 3.2.1 - Langas 'Senstantys produktai'")
+![3.2.1 - langas 'Senstantys produktai'](./Nuotraukos/GUIEskizas1.png "Fig. 3.2.1 - Langas 'Senstantys produktai'")
 
 Paveikslėlyje 3.2.1 pavaizduotas produktų peržiūros langas, kuriame išryškinti senstantys produktai. Lango apačioje yra siūlomi receptai, kurių sudėtyje yra pažymėti senstantys produktai.
 
 <!-- pagebreak -->
 #### Sekų diagrama
-![diagrama 3.2.2 - Senstantys produktai - seka](./Nuotraukos/SEQ1.png  "diagrama 3.2.2 - Senstantys produktai - sekų diagrama")
+![3.2.2 - Senstantys produktai - sekų diagrama](./Nuotraukos/SEQ1.png  "diagrama 3.2.2 - Senstantys produktai - sekų diagrama")
 
 Sekų diagramoje 3.2.2 parodomi žingsniai, kuriuos sistema vykdo sąveikaudama su vartotoju vykdant pagrindinį ir/ar alternatyvius scenarijus, kai sistemoje yra senstančių produktų. 
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![Diagrama 3.2.3 - Senstantys produktai - robustiškumo diagrama](./Nuotraukos/three_point_one.png "Fig. 3.2.3 - Senstantys produktai - robustiškumo diagrama")
+![3.2.3 - Senstantys produktai - robustiškumo diagrama](./Nuotraukos/three_point_one.png "Fig. 3.2.3 - Senstantys produktai - robustiškumo diagrama")
 
 Robustiškumo diagramoje 3.2.3 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su grafine sąsaja, kurioje rodomi senstantys produktai.
 
@@ -187,7 +187,7 @@ Robustiškumo diagramoje 3.2.3 pavaizduotos kokios veiklos vyksta sistemoje, kai
 Naudotojas lange "Parduotuvė"  paspaudžia mygtuką "Įtraukti į krepšelį", kuris yra prie produkto pavadinimo. Sistema, į tai reaguodama, įtraukia produktą į krepšelio produktų sąrašą. Naudotojas, sudėjęs norimus produktus į krepšelį, norėdamas užbaigti užsakymą, spaudžia "Mano krepšelis". Sistema atidaro atitinkamai pavadintą langą. Naudotojas spaudžia "Užsakyti". Sistema suformuluoja ir išsiunčia užsakymo užklausą produktų tiekėjui.
 
 #### Alternatyvūs scenarijai
-Jei naudotojas nebenori dalies Krepšelio turinio, jis pažymi lange "Krepšelis" pažymėti žymimuosius langelius šalia nenorimų produktų pavadinimų ir paspaudžia mygtuką "Pašalinti iš krepšelio". Sistema pašalina pažymėtus elementus iš krepšelio produktų sąrašo.
+Jei naudotojas nebenori dalies Krepšelio turinio, jis pažymi lange "Krepšelis" žymimuosius langelius šalia nenorimų produktų pavadinimų ir paspaudžia mygtuką "Pašalinti iš krepšelio". Sistema pašalina pažymėtus elementus iš krepšelio produktų sąrašo.
 
 <!-- pagebreak -->
 #### Grafinės sąsajos eskizas 
@@ -203,7 +203,7 @@ Krepšelio lange yra numatoma rodyti visus vartotojo į krepšelį pridėtus pro
 -->
 <!-- pagebreak -->
 #### Sekų diagrama
-![Diagrama 3.3.2 - Produktų užsakymas parduotuvėje - sekos](./Nuotraukos/Produkt%C5%B3U%C5%BEsSeq.png "Fig 3.3.2 - Produktų užsakymas parduotuvėje - sekų diagrama")
+![3.3.2 - Produktų užsakymas parduotuvėje - sekų diagrama](./Nuotraukos/Produkt%C5%B3U%C5%BEsSeq.png "Fig 3.3.2 - Produktų užsakymas parduotuvėje - sekų diagrama")
 
 Sekų diagramoje 3.3.2 parodomi žingsniai, kuriuos sistema vykdo sąveikaudama su vartotoju vykdant pagrindinį ir/ar alternatyvius scenarijus, kai vartotojas nori užsisakyti produktus parduotuvės lange.
 
@@ -244,7 +244,7 @@ Robustiškumo diagramoje 3.4.3 pavaizduotos kokios veiklos vyksta sistemoje, kai
 ### 3.5. Naudotojas bendrauja su kitais grupės nariais per pranešimus
 
 #### Pagrindinis scenarijus
-Naudotojas, norėdamas pasidalinti receptais su kitais naudotojais, paspaudžia pokalbių skirsnio piktogramą, esančią pagrindinio lango viršuje. Atsidaro pokalbių langas, kuriame naudotojas gali susirašinėti su kitais naudotojais. Naudotojas iš pateikto adresątų sąrašo pasirenka, kam nori siųsti pranešimą. Šiame lange esantis susirašinėjimui skirtas plotas tampa aktyvus. Naudotojas šiame plote parašo pranešimą ir paspaudžia mygtuką "Siųsti". Pranešimas išsiunčiamas gavėjui.  
+Naudotojas, norėdamas pasidalinti receptais su kitais naudotojais, paspaudžia pokalbių skirsnio piktogramą, esančią pagrindinio lango viršuje. Atsidaro pokalbių langas, kuriame naudotojas gali susirašinėti su kitais naudotojais. Naudotojas iš pateikto adresatų sąrašo pasirenka, kam nori siųsti pranešimą. Šiame lange esantis susirašinėjimui skirtas plotas tampa aktyvus. Naudotojas šiame plote parašo pranešimą ir paspaudžia mygtuką "Siųsti". Pranešimas išsiunčiamas gavėjui.  
 
 #### Alternatyvus scenarijus
 Jei naudotojas nori pasidalinti receptu, jis, pasirinkęs su kuo susirašinėti, paspaudžia mygtuką "Dalintis receptais". Atsidariusiame receptų lange naudotojas pažymi receptus, kuriais nori dalintis, tada spaudžia mygtuką "Patvirtinti". Pasirinkti receptai pridedami prie pranešimo.
@@ -332,7 +332,7 @@ Robustiškumo diagramoje 3.7.3 pavaizduotos kokios veiklų sekos vyksta sistemoj
 ### 3.8 Papildyta užduočių diagrama
 Figūroje 15 yra detalesnė užduočių diagrama, kurioje pavaizduotos užduotys... (placeholderis užduočių diagramos aprašymui) -->
 
-<!--![Detalesnės užduotys](./Nuotraukos/Atnaujinta-UC-diagrama.jpg) -->
+<!--![Detalesnės užduotys](./Nuotraukos/UC-papildyta.jpg) -->
 
 <!-- pagebreak -->
 # 4. Peržiūros rezultatai

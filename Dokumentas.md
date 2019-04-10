@@ -127,7 +127,8 @@ Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama v
  * Receptas
 
 ## 2.2 Pradinė klasių diagrama
-![2.2. - Klasių diagrama](./Nuotraukos/Klases.jpg " 2.2. diagrama - dalykinės srities klasės")
+
+![2.2. - Klasių diagrama](./Nuotraukos/Klases.jpg "dalykinės srities klasės")
 
 Dalykinės srites struktūrą galima pamatyti 2.2. diagramoje. Svarbiausia klasė yra naudotojo paskyra. Ją sukuria naudotojas prisiregistruodamas. Naudotojai sudaro grupes, kuriose dalinasi receptais per pranešimus. Produktai yra teikiami produktų tiekėjo, reklamos - reklamų tiekėjo. Kiekvienas naudotojas turi savo šaldytuvą ir gali juo dalintis su naudotojų grupe.
 

@@ -17,12 +17,12 @@ Padaryti sekų diagramą savo UC. Sekų diagramoje bendrauja agentai ir objektai
 
 ## Robustiškumo diagramos:
 Pavadinimas, kas daro, nuoroda.
-1. Pranešimas dėl produkto galiojimo pabaigos, Teodoras, in progress
-2. Produkto užsakymas, Manfredas + Vilius, [diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Draw.io/Robust-example.html)
-3. Šaldytuvo dalinimasis, Manfredas, [diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/ROBUSTSaldytuvoDali.png)
-4. Naudotojas bendrauja su kitais grupės nariais per pranešimus, Tomas, in progress
-5. Naudotojas atsiverčia kalendorių produktams peržiūrėti, Vilius, [diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Kalendoriaus-RD.jpg)
-6. Reklamų rodymas, Edvinas, [diagrama](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/Reklamu-Rodymas/Nuotraukos/DamnAds_Robust.png)
+1. Pranešimas dėl produkto galiojimo pabaigos, Teodoras, [diagrama.](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/three_point_one.png)
+2. Produkto užsakymas, Manfredas + Vilius, [diagrama.](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Draw.io/Robust-example.html)
+3. Šaldytuvo dalinimasis, Manfredas, [diagrama.](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/ROBUSTSaldytuvoDali.png)
+4. Naudotojas bendrauja su kitais grupės nariais per pranešimus, Tomas. [diagrama.](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/ROBUSTnaudotBendrPerPranesimus.png)
+5. Naudotojas atsiverčia kalendorių produktams peržiūrėti, Vilius, [diagrama.](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/master/Nuotraukos/Kalendoriaus-RD.jpg)
+6. Reklamų rodymas, Edvinas, [diagrama.](https://github.com/Tristanas/PSI2-Food-Bee-Inc/blob/Reklamu-Rodymas/Nuotraukos/DamnAds_Robust.png)
 
 ### Dokumento generavimo veiksmai:
 - atkomentuoti visus "\pagebreak" naudojant find and replace. 

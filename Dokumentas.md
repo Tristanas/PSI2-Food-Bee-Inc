@@ -334,7 +334,7 @@ Naudotojui paspaudus dešinį pelės mygtuką (arba ilgai palietus, jei naudojam
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![Reklamų rodymas - robustiškumo diagrama](./Nuotraukos/RD-DamnAds.png "Fig. 3.7.1 Reklamų rodymas - robustiškumo diagrama")
+![Reklamų rodymas - robustiškumo diagrama](./Nuotraukos/RD-damnads.png "Fig. 3.7.1 Reklamų rodymas - robustiškumo diagrama")
 
 Robustiškumo diagramoje 3.7.1 pavaizduotos kokios veiklų sekos vyksta sistemoje, kai vartotojas teigiamai arba neigiamai sąveikauja su reklama.
 

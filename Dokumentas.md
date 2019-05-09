@@ -43,66 +43,49 @@
 
 ## 1.2 Vartotojiški pasakojimai
    
-   
-<!-- Senas lentelės formatas, neveikia su pandoc
-	<table class="tg">
-  <tr>
-    <th class="tg-0pky" colspan="3"> Pranešimas dėl galiojimo laiko pabaigos</th>
-  </tr>
-  <tr>
-    <td class="tg-0pky">Priėmimo testas: </td>
-    <td class="tg-0pky">Prioritetas: </td>
-    <td class="tg-0pky">Sąnaudos: </td>
-  </tr>
-  <tr>
-    <td class="tg-0pky" colspan="3">Iki produkto galiojimo pabaigos likus 3 dienoms (jei jo galiojimo laikas nuo įdėjimo į šaldytuvą yra ne mažiau 5d.) ir likus 1 dienai (visada) turi būti gautas pranešimas, įspėjantis apie galiojimo laiko pabaigą ir likusį galiojimo laiką.
-Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama vienu bendru pranešimu.</td>
-  </tr>
-</table>
-	Lentelės pavyzdys su Markdown sintakse
-|  |
-|:-------------------------------------------------------------:|
-|  |
--->
-
 | Pranešimas dėl galiojimo laiko pabaigos |
 |:-----------------------------------:|
 | Iki produkto galiojimo pabaigos likus 3 dienoms (jei jo galiojimo laikas nuo įdėjimo į šaldytuvą yra ne mažiau 5d.) ir likus 1 dienai (visada) turi būti gautas pranešimas, įspėjantis apie galiojimo laiko pabaigą ir likusį galiojimo laiką. <br> Jei kelių produktų galiojimo laikas sutampa, apie juos turi būti pranešama vienu bendru pranešimu. |
    
-| Prekės užsakymas per mobiliąją programą |
+| Prekės užsakymas per mobiliojo programą |
 |:-------------------------------------------------------------:|
-| Naudotojas gali ieškoti produktų ir sudaryti užsakymus. Turi būti galima pasirinkti ir užsakyti produktus. |
+| Mobiliojo programoje naudotojas gali ieškoti, kokius produktus parduoda tiekėjai. Turi būti langas, kuriame galima peržiūrėti prekes, jas užsakyti arba įtraukti į krepšelį. Turi būti galimybė atskirame lange redaguoti krepšelio turinį ir užsakyti arba atšaukti.|
    
 
 | Dalijimasis savo šaldytuvo turiniu su kitais naudotojais |
 |:-------------------------------------------------------------:|
-| Naudotojas, jei nori dalintis savo šaldytuvo turiniu, turi sukurti grupę. Į ją gali kviesti kitus naudotojus. Naudotojai gali atmesti arba priimti kvietimą. |
+| Naudotojas, jei nori dalintis savo šaldytuvo turiniu, turi sukurti grupę. Į ją gali kviesti kitus naudotojus. Naudotojai gali atmesti arba priimti kvietimą. Sukurtoje grupėje turi būti galimybė dalintis ir receptais.|
    
-| Vartotojo šaldytuvo matymas |
+| Šaldytuvo informacijos peržiūrėjimas |
 |:-------------------------------------------------------------:|
-| Turi būti galimybė matyti šaldytuvo turinį, ieškoti receptų ir pažymėti kokius receptus gaminsi. |
+| Turi būti galimybė matyti šaldytuvo turinį, ieškoti receptų ir pažymėti kokius receptus gaminsi. Reikalinga paieška, kad būtų galima patogiai surasti norimą produktą ar panašius produktus.|
    
-| Pranešimo sukurimas |
+| Bendravimas apie receptus |
 |:-------------------------------------------------------------:|
-| Naudotojas gali palikti pranešimą, kuris matomas tik grupės nariams. |
+| Turi būti galimybė pranešti grupės nariams apie naujo recepto sukūrimą arba kokią kitą naujieną (pvz., šaldytuvas sugedo). Nariai atsakydami rašo komentarus, matomus taip pat visiems.|
    
-| Produkto pranešimai |
+| Produktų komentavimas |
 |:-------------------------------------------------------------:|
-| Pranešimai skirti konkrečiam produktui arba receptui. Naudotojas turi galėti ištrinti pranešimą apie produktą. |
+| Turi būti galimybė grupės nariui rašyti apie konkretų produktą. Naudotojas turi galėti redaguoti ir ištrinti savo komentarus. |
    
 | Pranešimų peržiūrėjimas |
 |:-------------------------------------------------------------:|
-| Pranešimai matomi peržiūrint produkto ar recepto informaciją. |
+| Pranešimai ir su jais susiję komentarai matomi peržiūrint produkto ar recepto informaciją. |
    
 | Naudotojas atsiverčia kalendorių pirkiniams peržiūrėti |
 |:-------------------------------------------------------------:|
-| Naudotojas gali atsidaryti kalendorių, kuriame mato visus pirktus produktus. <br>Atlikus užsakymą automatiškai išsaugoma, kas ir kada buvo užsakyta, ir tai atvaizduojama kalendoriuje. Naudotojas gali pasirinkti konkrečią dieną ir matyti detalią užsakymų informaciją. Taip pat galima pažiūrėti kalendoriuje produktus pagal pristatymo datą ir galiojimo pabaigą. |
+| Naudotojas gali atsidaryti kalendorių, kuriame mato visus pirktus produktus. Atlikus užsakymą automatiškai išsaugoma, kas ir kada buvo užsakyta, ir tai atvaizduojama. Naudotojas gali pasirinkti konkrečią dieną ir matyti detalią užsakymų informaciją. Taip pat galima pažiūrėti kalendoriuje produktus pagal pristatymo datą ir galiojimo pabaigą. |
    
-| Naudotojas mato reklamas |
+| Reklamų talpinimas |
 |:-------------------------------------------------------------:|
-| Produktų sąraše yra rekomenduojamos tiekėjo parinktos prekės. Šalia naudotojui aktualios informacijos yra rodomos tiekėjo reklaminės nuotraukos. Tiekėjas turi galimybę nustatyti naują reklamą ar pridėti ją į rodomų reklamų rinkinį. |
+| Turi būti galimybė nustatyti naują reklamą ar pridėti ją į rodomų reklamų rinkinį. Turi būti pasirinkimas patalpinti konkretaus produkto reklamą, kuri būtų matoma tarp naudotojo turimų produktų ar galimų pirkinių, arba reklaminį skelbimą, kuris būtų šalia naudotojui aktualios informacijos.|
+
+| Reklamų peržiūrėjimas |
+|:-------------------------------------------------------------:|
+| Turi būti galimybė paspausti ant sudominusios reklamos ir naršyklėje pamatyti jos turinį, nebent reklamuojamą produktą galima įsigyti naudojantis programa. Taip pat turi būti galimybė uždaryti nemėgstamas reklamas ir pranešti apie netinkamo turinio reklamas. |
+
    
-| Pagalba naudotojui |
+| Pagalba naudotojantis sistema |
 |:-------------------------------------------------------------:|
 | Prieš vedant informaciją į lauką ar spaudžiant mygtuką turi būti galimybė gauti informaciją apie tą mygtuką ar lauką. Informacija turi būti glausta ir suprantama. |
    
@@ -161,8 +144,7 @@ Figūroje 1.3.1.5 pavaizduoti kalendoriaus ir dienos aprašymo langai. Iš kalen
 
 Figūroje 1.3.1.6 yra pavaizduota numatoma grafinės sąsajos dalis kuri yra skirta būti bent kuriame produktus rodančiame lange. Naršant produktus, kaip pavaizduota, kartais yra įterpiama reklama, kuri nuo kitų produktų skiriasi savo kraštinės spalva (produktai apibrėžti juodai, o reklama mėlynai), bei tuo, kad kampe turi "x" mygtuką.
 
-
-
+### 1.3.2 Vartotojo ir sistemos sąveika vykdant užduotis
 
 <!-- pagebreak -->
 #### 1.3.2.1 Pranešimo dėl produktų galiojimo pabaigos peržiūrėjimas

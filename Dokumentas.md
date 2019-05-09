@@ -128,7 +128,7 @@ Paveikslėlyje 1.3.1.1 pavaizduotas produktų peržiūros langas, kuriame išry�
 
 <!-- pagebreak -->
 #### 1.3.1.2 Langas "Produktų užsakymas"
-![Langas 'Produktų užsakymas'](./Nuotraukos/GUI-parduotuve-krepšelis.png "Fig. 1.3.1.2 - Langas 'Produktų užsakymas'")
+![Langas 'Produktų užsakymas'](./Nuotraukos/GUI-parduotuvė-krepšelis.png "Fig. 1.3.1.2 - Langas 'Produktų užsakymas'")
 
 Figūroje 1.3.1.2 pavaizduoti parduotuvės ir krepšelio grafinės sąsajos eskizai. Abiejuose languose yra duota galimybė pereiti į kitus sistemos langus (sąsajos apačioje).
 

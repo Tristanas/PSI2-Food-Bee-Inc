@@ -252,9 +252,9 @@ Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių 
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![3.2.3 - Senstantys produktai - robustiškumo diagrama](./Nuotraukos/three_point_one.png "Fig. 3.2.3 - Senstantys produktai - robustiškumo diagrama")
+![Senstantys produktai - robustiškumo diagrama](./Nuotraukos/RD-galiojimo-pranešimai.png "Fig. 3.2.1 - Senstantys produktai - robustiškumo diagrama")
 
-Robustiškumo diagramoje 3.2.3 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su grafine sąsaja, kurioje rodomi senstantys produktai.
+Robustiškumo diagramoje 3.2.1 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su grafine sąsaja, kurioje rodomi senstantys produktai.
 
 <!-- pagebreak -->
 ### 3.3. Produkto užsakymas per parduotuvę
@@ -267,9 +267,9 @@ Jei naudotojas nebenori dalies Krepšelio turinio, jis pažymi lange "Krepšelis
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![3.3.3 - Produkto užsakymas parduotuvėje - robustiškumo diagrama](./Nuotraukos/ROBUSTProduktoUzs.png "Fig. 3.3.3 - Produkto užsakymas parduotuvėje - robustiškumo diagrama")
+![Produkto užsakymas parduotuvėje - robustiškumo diagrama](./Nuotraukos/RD-produkto-užsakymas.png "Fig. 3.3.1 - Produkto užsakymas parduotuvėje - robustiškumo diagrama")
 
-Robustiškumo diagramoje 3.3.3 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su parduotuvės ir/ar krepšelio grafinėmis sąsajomis.
+Robustiškumo diagramoje 3.3.1 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su parduotuvės ir/ar krepšelio grafinėmis sąsajomis.
 
 <!-- pagebreak -->
 ### 3.4. Šaldytuvo dalinimasis
@@ -282,9 +282,9 @@ Naudotojas lange "Dalinimasis" paspaudžia mygtuką "Atšaukti". Sistema pašali
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![3.4.3 - Šaldytuvo dalinimasis - robustiškumo diagrama](./Nuotraukos/ROBUSTSaldytuvoDali.png "Fig 3.4.3 - Šaldytuvo dalinimasis - robustiškumo diagrama")
+![Šaldytuvo dalinimasis - robustiškumo diagrama](./Nuotraukos/RD-šaldytuvo-dalinimasis.png "Fig 3.4.1 - Šaldytuvo dalinimasis - robustiškumo diagrama")
 
-Robustiškumo diagramoje 3.4.3 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su šaldytuvo dalinimosi grafine sąsaja, bei veiklos, nusakančios kaip vartotojas į šią sąsają patenka iš šaldytuvo lango.
+Robustiškumo diagramoje 3.4.1 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su šaldytuvo dalinimosi grafine sąsaja, bei veiklos, nusakančios kaip vartotojas į šią sąsają patenka iš šaldytuvo lango.
 
 <!-- pagebreak -->
 ### 3.5. Naudotojas bendrauja su kitais grupės nariais per pranešimus
@@ -299,9 +299,9 @@ Dėl kokių nors priežasčių pranešimo nepavyko nusiųsti. Sistema informuoj�
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![3.5.3 Bendravimas tarp grupės narių - robustiškumo diagrama](./Nuotraukos/ROBUSTnaudotBendrPerPranesimus.png "Bendravimas tarp grupės narių - robustiškumo diagrama")
+![Bendravimas tarp grupės narių - robustiškumo diagrama](./Nuotraukos/RD-bendravimas-pranešimais.png "fig. 3.5.1 Bendravimas tarp grupės narių - robustiškumo diagrama")
 
-Robustiškumo diagramoje 3.5.3 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su pokalbių langu, o vėliau galimai receptų dalinimosi langu bei pradinis atsiradimo pokalbių lange procesas.
+Robustiškumo diagramoje 3.5.1 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su pokalbių langu, o vėliau galimai receptų dalinimosi langu bei pradinis atsiradimo pokalbių lange procesas.
 
 <!-- pagebreak -->
 ### 3.6. Naudotojas atsiverčia kalendorių produktams peržiūrėti
@@ -315,9 +315,9 @@ Naudotojas pasirenka kurių nors metų kokį nors mėnesį. Sistema atvaizduoja 
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![3.6.3 - Produktų peržiūra kalendoriuje - robustiškumo diagrama](./Nuotraukos/Kalendoriaus-RD.jpg "Fig. 3.6.3 - Produktų peržiūra kalendoriuje - robustiškumo diagrama")
+![Produktų peržiūra kalendoriuje - robustiškumo diagrama](./Nuotraukos/RD-kalendorius.jpg "Fig. 3.6.1 - Produktų peržiūra kalendoriuje - robustiškumo diagrama")
 
-Figūroje 3.6.3 pavaizduotoje robustiškumo diagramoje pavaizduotas pagrindinis užduoties scenarijus ir alternatyvieji per objektus. Naudotojas sąveikauja pirma su kalendoriaus langu, tada su dienos produktų, o šiame lange pasirinkęs gauti receptus - su receptų langu.
+Figūroje 3.6.1 pavaizduotoje robustiškumo diagramoje pavaizduotas pagrindinis užduoties scenarijus ir alternatyvieji per objektus. Naudotojas sąveikauja pirma su kalendoriaus langu, tada su dienos produktų, o šiame lange pasirinkęs gauti receptus - su receptų langu.
 
 <!-- pagebreak -->
 ### 3.7. Reklamų rodymas  
@@ -334,9 +334,9 @@ Naudotojui paspaudus dešinį pelės mygtuką (arba ilgai palietus, jei naudojam
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![3.7.3 - Reklamų rodymas - robustiškumo diagrama](./Nuotraukos/DamnAds_Robust.png "Reklamų rodymas - robustiškumo diagrama")
+![Reklamų rodymas - robustiškumo diagrama](./Nuotraukos/RD-DamnAds.png "Fig. 3.7.1 Reklamų rodymas - robustiškumo diagrama")
 
-Robustiškumo diagramoje 3.7.3 pavaizduotos kokios veiklų sekos vyksta sistemoje, kai vartotojas teigiamai arba neigiamai sąveikauja su reklama.
+Robustiškumo diagramoje 3.7.1 pavaizduotos kokios veiklų sekos vyksta sistemoje, kai vartotojas teigiamai arba neigiamai sąveikauja su reklama.
 
 <!-- pagebreak --> 
 ### 3.8 Papildyta užduočių diagrama

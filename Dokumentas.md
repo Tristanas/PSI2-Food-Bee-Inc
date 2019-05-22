@@ -272,7 +272,7 @@ Robustiškumo diagramoje 3.4.1 pavaizduotos kokios veiklos vyksta sistemoje, kai
 ### 3.5. Naudotojas bendrauja su kitais grupės nariais per pranešimus
 
 #### Pagrindinis scenarijus
-Naudotojas, norėdamas pasidalinti receptais su kitais naudotojais, paspaudžia pokalbių skirsnio piktogramą, esančią pagrindinio lango viršuje. Atsidaro pokalbių langas, kuriame naudotojas gali susirašinėti su kitais naudotojais. Naudotojas iš pateikto adresatų sąrašo pasirenka, kam nori siųsti pranešimą. Šiame lange esantis susirašinėjimui skirtas plotas tampa aktyvus. Naudotojas šiame plote parašo pranešimą ir paspaudžia mygtuką "Siųsti". Pranešimas išsiunčiamas gavėjui.  
+Naudotojas pokalbių lange paspaudžia "Rašyti pranešimą". Sistema susiranda visas naudotojų grupes, kurioms priklauso naudotojas, ir pavaizduoja sąraše visus narius kaip galimus gavėjus. Naudotojas pasirenka, kam nori siųsti pranešimą. Sistema aktyvuoja susirašinėjimui skirtą plotą. Naudotojas šiame plote parašo pranešimo tekstą ir paspaudžia mygtuką "Siųsti". Pranešimas išsiunčiamas pasirinktiems gavėjams.  
 
 #### Alternatyvus scenarijus
 Jei naudotojas nori pasidalinti receptu, jis, pasirinkęs su kuo susirašinėti, paspaudžia mygtuką "Dalintis receptais". Atsidariusiame receptų lange naudotojas pažymi receptus, kuriais nori dalintis, tada spaudžia mygtuką "Patvirtinti". Pasirinkti receptai pridedami prie pranešimo.

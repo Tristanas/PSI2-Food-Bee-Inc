@@ -18,11 +18,20 @@
 	5. [Naudotojas bendrauja su kitais grupės nariais per pranešimus](#35-naudotojas-bendrauja-su-kitais-grupės-nariais-per-pranešimus)
 	6. [Naudotojas atsiverčia kalendorių produktams peržiūrėti](#36-naudotojas-atsiverčia-kalendorių-produktams-peržiūrėti)
 	7. [Reklamų rodymas](#37-reklamų-rodymas)
-	<!--8. [Papildyta užduočių diagrama](#38-papildyta-užduočių-diagrama)-->
-4. [Peržiūros rezultatai](#4-peržiūros-rezultatai)
-5. [Techninė architektūra](#5-techninė-architektūra)
-	1. [Sistemos architektūra](#51-sistemos-komponentai)
-	2. [Fizinis pjūvis](#52-fizinis-pjūvis)
+	8. [Papildyta užduočių diagrama](#38-papildyta-užduočių-diagrama)
+4. [Detalaus projektavimo peržiūra](#4-detalaus-projektavimo-peržiūra)
+	1. Pranešimas dėl senstančių produktų
+	2. Dalinimasis šaldytuvu
+	3. Bendravimas pranešimais
+	4. Kalendoriaus naudojimas
+	5. Reklamų peržiūra
+5. [Testavimo planas ir scenarijai](#5-testavimo-planas-ir-scenarijai)
+6. [Techninė architektūra](#6-techninė-architektūra)
+	1. [Sistemos architektūra](#61-sistemos-komponentai)
+	2. [Fizinis pjūvis](#62-fizinis-pjūvis)
+7. [Sistemos realizacija](#7-sistemos-realizacija)
+	1. [Duomenų bazės schema](#71-duomenų-bazės-schema)
+	2. [Pradiniai programų kodai](#72-pradiniai-programų-kodai)
 	
 <!-- pagebreak -->
 
@@ -335,36 +344,30 @@ Figūroje 3.8 yra pavaizduota detalesnė užduočių diagrama. Joje yra ne tik a
 Naudotojas peržiūrėdamas senstančius produktus pranešimuose ar kalendoriuje gali ieškoti tokių receptų, kuriais išvengtų sugedusio maisto. Jei naudotojas nenori gaminti ar neįmanoma sudaryti tokių receptų, jam leidžiama šalinti senstančius produktus iš sistemos. Naudotojas pažymi, kad gamina receptą, sistema pateikia gamybos informaciją ir kitokią pagalbą. Gaminimo pabaigoje sistema automatiškai pašalina sunaudotus produktus.
 
 <!-- pagebreak -->
-# 4.1 Sistemos detalusis projektas
-
-# 4.2 Detalaus projektavimo peržiūra
+# 4.1 Detalaus projektavimo peržiūra
 
 ## Pakeitimai:
 Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek robustiškumo diagramos. Robustiškumo diagramas taisyti tik tada, kai žymiai keičiasi UC tekstas.
 
-## 4.2.1 Pranešimas dėl senstančių produktų
+## 4.1.1 Pranešimas dėl senstančių produktų
 - .
 - .
 
-## 4.2.2 Produkto užsakymas
-- .
-- .
-
-## 4.2.3 Dalinimasis šaldytuvu
+## 4.1.2 dalinimasis šaldytuvu
 - .
 - .
 
 
-## 4.2.4 Bendravimas pranešimais
+## 4.1.3 Bendravimas pranešimais
 - .
 - .
 
 
-## 4.2.5 Kalendoriaus naudojimas
+## 4.1.4 Kalendoriaus naudojimas
 - .
 - .
 
-## 4.2.6 Reklamų peržiūra
+## 4.1.5 Reklamų peržiūra
 - .
 - .
 

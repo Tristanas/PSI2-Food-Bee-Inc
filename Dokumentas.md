@@ -374,8 +374,9 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 - .
 
 ## 4.6 Pakeisti projektiniai sprendimai
-- .
-- .
+- Nuspresta iš MVC architektūros pereiti prie MVP, nes MVP labiau priimtina komandai ir dažniau taikoma 
+- Nuspresta programuoti anglų kalba dėl didesnio programavimo esybių diapozono
+- Nusprendėme naudoti "Event Handler" kiekvienam GUI elementui, kuris kviečia sistemos logiką
 
 <!-- pagebreak -->
 # 5. Techninė architektūra

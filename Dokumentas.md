@@ -182,6 +182,11 @@ Figūroje 1.3.2.5 yra pavaizduota diagrama, nurodanti naudotojo bendravimo su si
 
 Sekų diagramoje 1.3.2.6 parodomi žingsniai, kuriuos sistema vykdo sąveikaudama su vartotoju vykdant pagrindinį ir/ar alternatyvius scenarijus, kai vartotojas sąveikauja (arba ne) su reklama - arba teigiamai (paspausdamas ją), arba neigiamai ("x" mygtuku ją panaikindamas, arba pranešdamas apie netinkamą turinį).
 
+## 1.4 Reikalavimų specifikacija
+
+[Pataisyta reikalavimų specifikacija.](https://1drv.ms/w/s!Ao3LSVKqY6TXg8t2cWLC-LfMPbrOEg) Raudonu šriftu žymimi nauji reikalavimai. 
+
+
 <!-- pagebreak -->
 # 2. Dalykinės srities modelis
 
@@ -330,8 +335,39 @@ Figūroje 3.8 yra pavaizduota detalesnė užduočių diagrama. Joje yra ne tik a
 Naudotojas peržiūrėdamas senstančius produktus pranešimuose ar kalendoriuje gali ieškoti tokių receptų, kuriais išvengtų sugedusio maisto. Jei naudotojas nenori gaminti ar neįmanoma sudaryti tokių receptų, jam leidžiama šalinti senstančius produktus iš sistemos. Naudotojas pažymi, kad gamina receptą, sistema pateikia gamybos informaciją ir kitokią pagalbą. Gaminimo pabaigoje sistema automatiškai pašalina sunaudotus produktus.
 
 <!-- pagebreak -->
-# 4. Peržiūros rezultatai
-[Pataisyta reikalavimų specifikacija.](https://1drv.ms/w/s!Ao3LSVKqY6TXg8t2cWLC-LfMPbrOEg) Raudonu šriftu žymimi nauji reikalavimai. 
+# 4.1 Sistemos detalusis projektas
+
+# 4.2 Detalaus projektavimo peržiūra
+
+## Pakeitimai:
+Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek robustiškumo diagramos. Robustiškumo diagramas taisyti tik tada, kai žymiai keičiasi UC tekstas.
+
+## 4.2.1 Pranešimas dėl senstančių produktų
+- .
+- .
+
+## 4.2.2 Produkto užsakymas
+- .
+- .
+
+## 4.2.3 Dalinimasis šaldytuvu
+- .
+- .
+
+
+## 4.2.4 Bendravimas pranešimais
+- .
+- .
+
+
+## 4.2.5 Kalendoriaus naudojimas
+- .
+- .
+
+## 4.2.6 Reklamų peržiūra
+- .
+- .
+
 
 <!-- pagebreak -->
 # 5. Techninė architektūra

@@ -370,7 +370,7 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 - .
 
 ## 4.5 Reklamų peržiūra
-- .
+- Pakeista robustiškumo diagrama: nupigintos prekės pridėjimas į krepšelį perduotas kitam užduoties scenarijui; patikslinta, kad nukreipiant į 3 šalies reklamos turinį dalyvauja kitas aktorius; patikslinta, kad sis. administratoriai ir reklamos tiekėjai mato pranešimus apie netinkamą reklamą informaciniame lange.
 - .
 
 ## 4.6 Pakeisti projektiniai sprendimai

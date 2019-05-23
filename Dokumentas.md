@@ -357,6 +357,7 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 
 ## 4.2 Dalinimasis šaldytuvu
 - Iš užduoties scenarijaus pašalintas pranešimo gavimas, kai pakvietas vartotojas priima kvietimą, ir tai perkelta į "Kvietimo Priėmimo" užduoties scenarijų
+- Sekų diagrama išversta į anglų kalbą
 - Robustiškumo diagrama pakeista, kad atitiktų naują užduoties scenarijaus tekstą
 
 
@@ -374,9 +375,10 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 - .
 
 ## 4.6 Pakeisti projektiniai sprendimai
-- Nuspresta iš MVC architektūros pereiti prie MVP, nes MVP labiau priimtina komandai ir dažniau taikoma 
-- Nuspresta programuoti anglų kalba dėl didesnio programavimo esybių diapozono
-- Nusprendėme naudoti "Event Handler" kiekvienam GUI elementui, kuris kviečia sistemos logiką
+- Nuspresta iš MVC architektūros pereiti prie MVP, nes MVP labiau priimtina komandai, nes turime daugiau patirties, ir dažniau taikoma praktikoje
+- Nuspresta programuoti anglų kalba, nes ši kalba labiau unifikuota
+- Nuspresta vietoje daug "Event Handler" naudoti tik vieną "Event Handler" kiekvienam GUI elementui, kuris kviečia sistemos logiką
+- 
 
 <!-- pagebreak -->
 # 5. Techninė architektūra

@@ -118,8 +118,10 @@ Robustiškumo diagramoje 1.5.1 pavaizduotos kokios veiklos vyksta sistemoje, kai
 Kalendoriaus lange naudotojui automatiškai pavaizduojamas esamas mėnesis. Sistema automatiškai pavaizduoja kiekvieną užsakymą ties diena, kada buvo užsakyta. Naudotojas spaudžia ant pliuso prie dienos. Sistema suranda dienos užsakymų informaciją ir atvaizduoja ją lange "Dienos produktai". Peržiūrėdamas produktus naudotojas pasirenka vieną ir spaudžia „Užsakyti daugiau“. Sistema suranda produktą ir įdeda jį į naudotojo krepšelį. Naudotojas spaudžia "Grįžti". Sistema grąžina naudotoją į kalendoriaus langą.  
 
 #### Alternatyvūs scenarijai  
-Naudotojas spaudžia „žiūrėti pagal galiojimo laiką“.  Sistema atvaizduoja mėnesyje produktų galiojimo pabaigas. Naudotojas pasirenka dieną ir spaudžia „Peržiūrėti“. Sistema atvaizduoja produktus lange „Dienos produktai“. Norėdamas išvengti pasenusio maisto naudotojas spaudžia „siūlyti receptus“.  Sistema ieško receptų, su produktais, kurie pasirinktą dieną baigs galioti. Sistema nuveda naudotoją į receptų langą ir pavaizduoja rastus receptus. Naudotojas išsirenka receptą ir spaudžia "gaminti". Sistema pašalina produktus, atnaujina vaizduojamą informaciją. Naudotojas grąžinamas į kalendoriaus langą.  
+Naudotojas spaudžia „žiūrėti pagal galiojimo laiką“.  Sistema atvaizduoja mėnesyje produktų galiojimo pabaigas. Naudotojas pasirenka dieną ir spaudžia „+“. Sistema atvaizduoja produktus lange „Dienos produktai“. 
+Norėdamas išvengti pasenusio maisto naudotojas spaudžia „siūlyti receptus“.  Sistema ieško receptų, su produktais, kurie pasirinktą dieną baigs galioti. Sistema nuveda naudotoją į receptų langą ir pavaizduoja rastus receptus. Naudotojas išsirenka receptą ir spaudžia "gaminti". Pradedamas gaminimo scenarijus gaminimo pagalbiniame lange.
 Naudotojas pasirenka kurių nors metų kokį nors mėnesį. Sistema atvaizduoja to mėnesio užsakytus produktus. Tada scenarijus tęsiasi kaip pagrindinis, tik su pasirinktu mėnesiu.  
+Nepavyko rasti receptų pagal dienos produktus. Naudotojas lieka dienos produktų lange, parodomas sisteminis pranešimas, kad nepavyko rasti.
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
@@ -239,7 +241,7 @@ Laukiamas rezultatas: Pakvietimas išsiunčiamas pasirinktam naudotojui, praneš
 ### 4.2.1.4 Spausti mygtuką "Atšaukti"
 Laukiamas rezultatas: Lange "Dalinimasis" išsaugoti duomenys pašalinami ir atidaromas langas "Šaldytuvas".
 
-### 4.2.4 Bendravimas su grupe
+### 4.2.3 Bendravimas su grupe
  **Pradinės salygos**: Naudotojas prisijungęs ir yra lange „Pokalbiai“.
 
 TC 1: Paspausti "Siųsti pranešimą". Laukiamas rezultatas: Iš duomenų bazės gaunami esamos grupės nariai. Jie atvaizduojami lange "Pokalbiai". Sukuriamas naujas pranešimo objektas su tuščiu adresatų sąrašu.
@@ -263,6 +265,32 @@ TC 7 **Papildoma sąlyga**: Duomanų bazė nepasiekiama. **Scenarijus**: Lange "
 TC 8.1: Sisteminio pranešimo lange spausti „Siųsti iš naujo“. Laukiamas rezultatas: Pranešimą bandoma siųsti iš naujo.
 
 TC 8.2: Sisteminio pranešimo lange spausti „atšaukti“. Laukiamas rezultatas: Uždaromas sisteminio pranešimo langas.
+
+## 4.2.4 Produktų peržiūra naudojantis kalendoriumi
+
+Pradinės sąlygos: Naudotojas yra registruotas ir prisijungęs.
+
+TC 1 Paspausti "Kalendorius". Laukiamas rezultatas: sistema atidaro kalendoriaus langą su dabartiniu mėnesiu. Sistema pavaizduoja produktus pagal jų galiojimo laiko pabaigas.
+
+TC 2.1 Paspausti "Žiūrėti pagal užsakymo laiką". Laukiamas rezultatas: sistema suranda naudotojo užsakymų informaciją ir pavaizduoja ją kalendoriuje.
+
+TC 2.2 Paspausti "Žiūrėti pagal galiojimo laiką". Laukiamas rezultatas: sistema suranda naudotojo produktų informaciją ir pavaizduoja ją kalendoriuje.
+
+TC 3.1 **Papildoma sąlyga**: Naudotojas žiūri produktus pagal užsakymo laiką. **Scenarijus**: Paspausti ant "+" ties diena, kur yra bent vienas užsakymas. Laukiamas rezultatas: atsidaro langas "Dienos produktai", kur yra pavaizduoti visi dienos produktai, sugrupuoti pagal užsakymus.
+
+TC 3.2 **Papildoma sąlyga**: Naudotojas žiūri produktus pagal galiojimo laiką. **Scenarijus**: Paspausti ant "+" ties diena, kur yra bent vienas produktas. Laukiamas rezultatas: atsidaro langas "Dienos produktai", kur yra pavaizduoti visi dienos produktai pagal jų galiojimo laiko pabaigas.
+TC 4 Lange "dienos produktai" ties pasirinktu produktu spausti "užsakyti daugiau". Laukiamas rezultatas: produktas įtraukiamas į krepšelį.
+
+TC 5 **Papildoma sąlyga**: naudotojas žiūri receptus pagal galiojimo laiką. **Scenarijus**: paspausti "siūlyti receptus". Laukiamas rezultatas: sistema ieško naudotojui žinomų receptų, kurių ingridientuose yra lange vaizduojamų produktų. Sistema atidaro receptų langą ir pavaizduoja rastus receptus.
+
+TC 5.1 **Papildoma sąlyga**: receptų nepavyko rasti. Laukiamas rezultatas: langas "Receptai" neatidaromas, parodomas sisteminis pranešimas, kad nepavyko rasti receptų.
+
+TC 6 Lange "Receptai" spausti "gaminti" ties pasirinktu receptu. Laukiamas rezultatas: sistema pažymi receptą kaip gaminamą ir pavaizduojamas langas su informacija, padedančia gaminti receptą gyvai. 
+
+TC 7 Lange "dienos produktai" spausti grįžti. Laukiamas rezultatas: atidaromas langas "Kalendorius".
+
+TC 8 Pasirinkti kokį nors kitą mėnesį nei dabartinis. Laukiamas rezultatas: sistema pavaizduoja to mėnesio produktus pagal pasirinktą metriką.
+
 
 <!-- pagebreak -->
 # 5. Sistemos techninė architektūra

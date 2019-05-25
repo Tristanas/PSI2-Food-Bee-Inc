@@ -225,19 +225,44 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 *Čia bus išvardintos užduotys, jas atitinkantys testavimo atvejai ir šiuos sudarantys testavimo scenarijai. Šalia kiekvieno testavimo atvejo, galima (ir patartina) pateikti testavimo klasės kodą.*
 
 ### 4.2.1 Šaldytuvo dalinimasis
-Pradinės salygos: Naudotojas prisijungęs ir yra "Dalinimasis" lange
+Pradinės salygos: Naudotojas prisijungęs ir yra "Dalinimasis" lange.
 
 #### 4.2.1.1 Įvesti egzistuojančius kito naudotojo duomenis į ieškojimo lauką
-Laukiamas rezultatas: Gražinama aibė naudotojų atitinkančių paiešką
+Laukiamas rezultatas: Gražinama aibė naudotojų atitinkančių paiešką.
 
 #### 4.2.1.2 Įvesti neegzistuojančius kito naudotojo duomenis į ieškojimo lauką
-Laukiamas rezultatas: Gražinama tuščia aibė
+Laukiamas rezultatas: Gražinama tuščia aibė.
 
 #### 4.2.1.3 Pažymėti norimus pakviesti naudotojus ir spausti mygtuką "Dalintis"
-Laukiamas rezultatas: Pakvietimas išsiunčiamas pasirinktam naudotojui, pranešama, kad pakvietimas išsiųstas
+Laukiamas rezultatas: Pakvietimas išsiunčiamas pasirinktam naudotojui, pranešama, kad pakvietimas išsiųstas.
 
 ### 4.2.1.4 Spausti mygtuką "Atšaukti"
-Laukiamas rezultatas: Lange "Dalinimasis" išsaugoti duomenys pašalinami ir atidaromas langas "Šaldytuvas"
+Laukiamas rezultatas: Lange "Dalinimasis" išsaugoti duomenys pašalinami ir atidaromas langas "Šaldytuvas".
+
+### 4.2.4 Bendravimas su grupe
+ **Pradinės salygos**: Naudotojas prisijungęs ir yra lange „Pokalbiai“.
+
+TC 1: Paspausti "Siųsti pranešimą". Laukiamas rezultatas: Iš duomenų bazės gaunami esamos grupės nariai. Jie atvaizduojami lange "Pokalbiai". Sukuriamas naujas pranešimo objektas su tuščiu adresatų sąrašu.
+
+TC 2: Pasirinkti adresatą. Laukiamas rezultatas: Pranešimo objektas turi vienu adresatu daugiau.
+
+TC 2.1: Pašalinti žymėjimą ties adresatu. Laukiamas rezultatas: Pranešimo objektas turi vienu adresatu mažiau. 
+
+TC 3: Paspausti "Dalintis receptais". Laukiamas rezultatas: Iš duomenų bazės gaunami receptai. Atidaromas langas "Receptai", kuriame pavaizduoti rasti receptai.
+
+TC 4 Lange "Receptai" pasirinkti receptą. Laukiamas rezultatas: Receptas pridedamas prie pasirinktų receptų sarašo.
+
+TC 5. **Scenarijus A**: Lange "receptai" paspausti mygtuką „Patvirtinti“. Laukiamas rezultatas: Parinkti receptai pridedami prie dalinimosi pranešimo objekto. Grįžtama į langą „Pokalbiai“.
+
+**Scenarijus B**: Nepasirinkus receptų paspausti mygtuką „Patvirtinti“. Laukiamas rezultatas: Jokie receptai nepridedami prie pranešimo objekto. Grįžtama į langą „Pokalbiai“.
+
+TC 6 **Papildoma sąlyga**: Duomanų bazė pasiekiama. **Scenarijus**: Lange "pokalbiai" spausti "siųsti". Laukiamas rezultatas: Duomenų bazėje atsiranda įrašas abie naują pranešimą gavėjams.
+
+TC 7 **Papildoma sąlyga**: Duomanų bazė nepasiekiama. **Scenarijus**: Lange "pokalbiai" spausti "siųsti". Laukiamas rezultatas: atidaromas Sisteminio pranešimo langas.
+
+TC 8.1: Sisteminio pranešimo lange spausti „Siųsti iš naujo“. Laukiamas rezultatas: Pranešimą bandoma siųsti iš naujo.
+
+TC 8.2: Sisteminio pranešimo lange spausti „atšaukti“. Laukiamas rezultatas: Uždaromas sisteminio pranešimo langas.
 
 <!-- pagebreak -->
 # 5. Sistemos techninė architektūra

@@ -224,7 +224,7 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 
 *Čia bus išvardintos užduotys, jas atitinkantys testavimo atvejai ir šiuos sudarantys testavimo scenarijai. Šalia kiekvieno testavimo atvejo, galima (ir patartina) pateikti testavimo klasės kodą.*
 
-#### 4.2.1 Šaldytuvo dalinimasis
+### 4.2.1 Šaldytuvo dalinimasis
 Pradinės salygos: Naudotojas prisijungęs ir yra "Dalinimasis" lange
 
 #### 4.2.1.1 Įvesti egzistuojančius kito naudotojo duomenis į ieškojimo lauką

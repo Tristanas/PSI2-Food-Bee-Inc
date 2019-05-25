@@ -272,7 +272,7 @@ Robustiškumo diagramoje 3.3.1 pavaizduotos kokios veiklos vyksta sistemoje, kai
 ### 3.4. Šaldytuvo dalinimasis
 
 #### Pagrindinis scenarijus
-Naudotojas, norėdamas dalintis šaldytuvu, lange "Šaldytuvas" spaudžia mygtuką "Dalintis". Sistema parodo langą "Dalinimasis" su jame esančia naudotojų informacija. Naudotojas pažymi žymimuosius langelius prie naudotojų vardų, su kuriais nori dalintis šaldytuvu, ir paspaudžia mygtuką "Patvirtinti". Sistema išsiunčia kvietimą kitiems naudotojams. 
+Naudotojas, norėdamas dalintis šaldytuvu, lange "Šaldytuvas" spaudžia mygtuką "Dalintis". Sistema parodo langą "Dalinimasis" su jame esančia naudotojų informacija. Naudotojas pažymi žymimuosius langelius prie naudotojų vardų, su kuriais nori dalintis šaldytuvu, ir paspaudžia mygtuką "Patvirtinti". Sistema išsiunčia kvietimą kitiems naudotojams ir praneša kvietėjui kad pasirinkti naudotojai buvo pakviesti.
 
 #### Alternatyvūs scenarijai
 Naudotojas lange "Dalinimasis" paspaudžia mygtuką "Atšaukti". Sistema pašalina visus tame lange buvusius pasirinkimus. Sistema tada sugrąžina naudotoją į langą "Šaldytuvas".
@@ -357,6 +357,7 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 
 ## 4.2 Dalinimasis šaldytuvu
 - Iš užduoties scenarijaus pašalintas pranešimo gavimas, kai pakvietas vartotojas priima kvietimą, ir tai perkelta į "Kvietimo Priėmimo" užduoties scenarijų
+- Sekų diagramoje pakeista, kad pakvietus vartotoją prezenteris kreipiasi į view kviesdamas dialogą su pranšimu apie sėkmingą pakvietimą, papildytas užduoties tekstas
 - Sekų diagrama išversta į anglų kalbą
 - Robustiškumo diagrama pakeista, kad atitiktų naują užduoties scenarijaus tekstą
 

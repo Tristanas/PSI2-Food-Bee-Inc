@@ -224,6 +224,21 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 
 *Čia bus išvardintos užduotys, jas atitinkantys testavimo atvejai ir šiuos sudarantys testavimo scenarijai. Šalia kiekvieno testavimo atvejo, galima (ir patartina) pateikti testavimo klasės kodą.*
 
+###4.2.1 Šaldytuvo dalinimasis
+Pradinės salygos: Naudotojas prisijungęs ir yra "Dalinimasis" lange
+
+###4.2.1.1 Įvesti egzistuojančius kito naudotojo duomenis į ieškojimo lauką
+Laukiamas rezultatas: Gražinama aibė naudotojų atitinkančių paiešką
+
+###4.2.1.2 Įvesti neegzistuojančius kito naudotojo duomenis į ieškojimo lauką
+Laukiamas rezultatas: Gražinama tuščia aibė
+
+###4.2.1.3 Pažymėti norimus pakviesti naudotojus ir spausti mygtuką "Dalintis"
+Laukiamas rezultatas: Pakvietimas išsiunčiamas pasirinktam naudotojui, pranešama, kad pakvietimas išsiųstas
+
+###4.2.1.4 Spausti mygtuką "Atšaukti"
+Laukiamas rezultatas: Lange "Dalinimasis" išsaugoti duomenys pašalinami ir atidaromas langas "Šaldytuvas"
+
 <!-- pagebreak -->
 # 5. Sistemos techninė architektūra
 

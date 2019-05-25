@@ -362,8 +362,9 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 
 
 ## 4.3 Bendravimas pranešimais
-- .
-- .
+- . Pastebėta, kad UC prasidėdavo per anksti, taip pat šiek tiek supaprastinta formuluotė. Atnaujinta UC, bei RD ir sekų diagramos, kad atitikti atjaujintą UC
+- . Atnaujintas antras UC alternatyvus scenarijus. Su užsakovu aptarus nuspresta, kad žinutės saugojimo įgyvendinimo kaštų/naudos santykis pernelyg didelis. Atitinkamai atnaujinta RD ir sekų diagramos
+- . Sekų diagrama išversta į anglų kalbą
 
 
 ## 4.4 Kalendoriaus naudojimas

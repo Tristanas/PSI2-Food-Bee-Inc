@@ -312,14 +312,6 @@ public class DBServiceTests
 		int result = DB.GetProduktai(); //Connection successful, got products
 		Assert.AreEqual(result, 0);
 	}
-	
-	[TestMethod]
-	public void GetProduktai_BadSelectStatement_Return1()
-	{
-		IDBService DB = new DBService();
-		int result = DB.GetProduktai(); //Connection lost/bad select
-		Assert.AreEqual(result, 1);
-	}
 }
 ```
 

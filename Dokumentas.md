@@ -222,7 +222,7 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 
 *Čia bus surašyti unit testai - pavadinimas, aprašymas, kodas*
 
-### 4.1.1 Šaldytuvo Dalinimosi užduoties vienetų testai(FridgePresenter)
+### 4.1.1 Šaldytuvo Dalinimosi užduoties vienetų testai
 
 Šioje testų klasėje testuojamas naudotojų atradimo metodas bei vartotojų pakvietimo metodas. Taip pat testuojami DBService metodai(FindUser() ir GetProduktai()) susiję su šiomis užduotimis.
 

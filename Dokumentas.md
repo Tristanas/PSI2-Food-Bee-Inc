@@ -226,6 +226,11 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 
 Šioje testų klasėje testuojamas naudotojų atradimo metodas bei vartotojų pakvietimo metodas. Taip pat testuojami DBService metodai(FindUser() ir GetProduktai()) susiję su šiomis užduotimis.
 
+Testuojamos klasės: 
+>FridgePresenter
+>SharingPresenter
+>DBService
+
 ``` cs
 [TestClass]
 public class FridgePresenterTests

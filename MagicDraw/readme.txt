@@ -1,0 +1,1 @@
+Saving magicdraw projects in XML allows versioning, while github cannot read and compare mdzip format. Thus using XML solves the conflict problem while merging branches.

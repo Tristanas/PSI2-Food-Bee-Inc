@@ -20,6 +20,7 @@
 	4. [Kalendoriaus naudojimas](#34-kalendoriaus-naudojimas)
 	5. [Reklamų peržiūra](#35-reklamų-peržiūra)
 	6. [Pakeisti projektiniai sprendimai](#36-pakeisti-projektiniai-sprendimai)
+	7. [Pokyčiai statinei struktūrai](#37-pokyčiai-statinei-struktūrai)
 4. [Testavimo planas ir scenarijai](#4-testavimo-planas-ir-scenarijai)
 	1. [Programinių vienetų testai](#41-programinių-vienetų-testai)
 	2. [Sistemos užduočių testai](#42-sistemos-užduočių-testai)
@@ -118,9 +119,9 @@ Robustiškumo diagramoje 1.5.1 pavaizduotos kokios veiklos vyksta sistemoje, kai
 Kalendoriaus lange naudotojui automatiškai pavaizduojamas esamas mėnesis. Sistema automatiškai pavaizduoja kiekvieną užsakymą ties diena, kada buvo užsakyta. Naudotojas spaudžia ant pliuso prie dienos. Sistema suranda dienos užsakymų informaciją ir atvaizduoja ją lange "Dienos produktai". Peržiūrėdamas produktus naudotojas pasirenka vieną ir spaudžia „Užsakyti daugiau“. Sistema suranda produktą ir įdeda jį į naudotojo krepšelį. Naudotojas spaudžia "Grįžti". Sistema grąžina naudotoją į kalendoriaus langą.  
 
 #### Alternatyvūs scenarijai  
-Naudotojas spaudžia „žiūrėti pagal galiojimo laiką“.  Sistema atvaizduoja mėnesyje produktų galiojimo pabaigas. Naudotojas pasirenka dieną ir spaudžia „+“. Sistema atvaizduoja produktus lange „Dienos produktai“. 
-Norėdamas išvengti pasenusio maisto naudotojas spaudžia „siūlyti receptus“.  Sistema ieško receptų, su produktais, kurie pasirinktą dieną baigs galioti. Sistema nuveda naudotoją į receptų langą ir pavaizduoja rastus receptus. Naudotojas išsirenka receptą ir spaudžia "gaminti". Pradedamas gaminimo scenarijus gaminimo pagalbiniame lange.
-Naudotojas pasirenka kurių nors metų kokį nors mėnesį. Sistema atvaizduoja to mėnesio užsakytus produktus. Tada scenarijus tęsiasi kaip pagrindinis, tik su pasirinktu mėnesiu.  
+Naudotojas pasirenka kurių nors metų kokį nors mėnesį. Sistema atvaizduoja to mėnesio informaciją pagal pasirinktą rėžimą.  
+Naudotojas yra paspaudęs „žiūrėti pagal galiojimo laiką“.  Sistema atvaizduoja mėnesyje produktų galiojimo pabaigas. Naudotojas pasirenka dieną ir spaudžia „+“. Sistema atvaizduoja produktus lange „Dienos produktai“. 
+Norėdamas išvengti pasenusio maisto naudotojas spaudžia „siūlyti receptus“.  Sistema ieško receptų, su produktais, kurie pasirinktą dieną baigs galioti. Sistema nuveda naudotoją į receptų langą ir pavaizduoja rastus receptus. Naudotojas išsirenka receptą ir spaudžia "gaminti". Pradedamas gaminimo scenarijus gaminimo pagalbiniame lange. Naudotojas baigęs gaminti receptą uždaro receptų langą.
 Nepavyko rasti receptų pagal dienos produktus. Naudotojas lieka dienos produktų lange, parodomas sisteminis pranešimas, kad nepavyko rasti.
 
 <!-- pagebreak -->
@@ -193,17 +194,20 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 
 
 ## 3.3 Bendravimas pranešimais
-- . Pastebėta, kad UC prasidėdavo per anksti, taip pat šiek tiek supaprastinta formuluotė. Atnaujinta UC, bei RD ir sekų diagramos, kad atitikti atjaujintą UC
-- . Atnaujintas antras UC alternatyvus scenarijus. Su užsakovu aptarus nuspresta, kad žinutės saugojimo įgyvendinimo kaštų/naudos santykis pernelyg didelis. Atitinkamai atnaujinta RD ir sekų diagramos
-- . Sekų diagrama išversta į anglų kalbą
+- Pastebėta, kad UC prasidėdavo per anksti, taip pat šiek tiek supaprastinta formuluotė. Atnaujinta UC, bei RD ir sekų diagramos, kad atitikti atjaujintą UC
+- Atnaujintas antras UC alternatyvus scenarijus. Su užsakovu aptarus nuspresta, kad žinutės saugojimo įgyvendinimo kaštų/naudos santykis pernelyg didelis. Atitinkamai atnaujinta RD ir sekų diagramos
+- Sekų diagrama išversta į anglų kalbą
 
 
 
 ## 3.4 Kalendoriaus naudojimas
-1. Išverstas sekų diagramos tekstas: metodų pavadinimai, argumentai ir objektų pavadinimai
-2. Pridėtas metodas klasėje DBService - "removeProducts(Fridge fridge, ProductList products)"
-3. Sekų diagramoje po gaminimo užduoties įvykdymo pašalinus produktus iš šaldytuvo kreipiamasi į DBService, kad šie būtų pašalinti ir iš duomenų bazės
-
+- Išverstas sekų diagramos tekstas: metodų pavadinimai, argumentai ir objektų pavadinimai
+- Pridėtas metodas klasėje DBService - "removeProducts(Fridge fridge, ProductList products)"
+- Ištrintas produktų šalinimas po gaminimo užduoties atlikimo, nes tai yra ne Kalendoriaus užduoties scenarijaus dalis, o gaminimo.
+- Sekų diagramoje įvestyje iš naudotojo patikslinti spaudžiamų mygtukų pavadinimai, kad sutaptų su scenarijaus tekstu.
+- Pataisytos kelios metodų kvietimu eiliškumo klaidos (pvz., 21. Presenteris ieško receptų -> 22. naudotojas spaudžia "siūlyti receptus"), atsiradusios dėl diagramos redagavimo.
+- Pridėti trūkstami argumentai displayOrders, displayProducts ir kituose metoduose.
+- Pridėtas alternatyvus scenarijus, kai nerandama receptų, turinčių ingridientų iš senstančių produktų ("dienos produktai" lange). Papildyta sekų ir robustiškumo diagramos.
 
 ## 3.5 Reklamų peržiūra
 - Pakeista robustiškumo diagrama: nupigintos prekės pridėjimas į krepšelį perduotas kitam užduoties scenarijui; patikslinta, kad nukreipiant į 3 šalies reklamos turinį dalyvauja kitas aktorius; patikslinta, kad sis. administratoriai ir reklamos tiekėjai mato pranešimus apie netinkamą reklamą informaciniame lange.
@@ -214,6 +218,10 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 - Nuspresta programuoti anglų kalba, nes ši kalba labiau unifikuota
 - Nuspresta vietoje daug "Event Handler" naudoti tik vieną "Event Handler" kiekvienam GUI elementui, kuris kviečia sistemos logiką
 -
+
+## 3.7 Pokyčiai statinei struktūrai
+- ICalendarGUI papildytas dviem metodais: displayOrders(Order[]) ir displayProducts(ProductList).
+- DayProductsPresenter papildytas metodu openRecipesWindow(Recipe[]), kuris atidaro receptų langą su nurodytais receptais.
 
 <!-- pagebreak -->
 # 4. Testavimo planas ir scenarijai

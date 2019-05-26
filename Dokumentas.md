@@ -228,7 +228,9 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 
 Testuojamos klasės: 
 >FridgePresenter
+>
 >SharingPresenter
+>
 >DBService
 
 ``` cs

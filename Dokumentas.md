@@ -200,8 +200,10 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 
 
 ## 3.4 Kalendoriaus naudojimas
-- .
-- .
+1. Išverstas sekų diagramos tekstas: metodų pavadinimai, argumentai ir objektų pavadinimai
+2. Pridėtas metodas klasėje DBService - "removeProducts(Fridge fridge, ProductList products)"
+3. Sekų diagramoje po gaminimo užduoties įvykdymo pašalinus produktus iš šaldytuvo kreipiamasi į DBService, kad šie būtų pašalinti ir iš duomenų bazės
+
 
 ## 3.5 Reklamų peržiūra
 - Pakeista robustiškumo diagrama: nupigintos prekės pridėjimas į krepšelį perduotas kitam užduoties scenarijui; patikslinta, kad nukreipiant į 3 šalies reklamos turinį dalyvauja kitas aktorius; patikslinta, kad sis. administratoriai ir reklamos tiekėjai mato pranešimus apie netinkamą reklamą informaciniame lange.
@@ -230,66 +232,66 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 Pradinės salygos: Naudotojas prisijungęs ir yra "Dalinimasis" lange.
 
 #### 4.2.1.1 Įvesti egzistuojančius kito naudotojo duomenis į ieškojimo lauką
-Laukiamas rezultatas: Gražinama aibė naudotojų atitinkančių paiešką.
+**Laukiamas rezultatas**: Gražinama aibė naudotojų atitinkančių paiešką.
 
 #### 4.2.1.2 Įvesti neegzistuojančius kito naudotojo duomenis į ieškojimo lauką
-Laukiamas rezultatas: Gražinama tuščia aibė.
+**Laukiamas rezultatas**: Gražinama tuščia aibė.
 
 #### 4.2.1.3 Pažymėti norimus pakviesti naudotojus ir spausti mygtuką "Dalintis"
-Laukiamas rezultatas: Pakvietimas išsiunčiamas pasirinktam naudotojui, pranešama, kad pakvietimas išsiųstas.
+**Laukiamas rezultatas**: Pakvietimas išsiunčiamas pasirinktam naudotojui, pranešama, kad pakvietimas išsiųstas.
 
 ### 4.2.1.4 Spausti mygtuką "Atšaukti"
-Laukiamas rezultatas: Lange "Dalinimasis" išsaugoti duomenys pašalinami ir atidaromas langas "Šaldytuvas".
+**Laukiamas rezultatas**: Lange "Dalinimasis" išsaugoti duomenys pašalinami ir atidaromas langas "Šaldytuvas".
 
 ### 4.2.3 Bendravimas su grupe
  **Pradinės salygos**: Naudotojas prisijungęs ir yra lange „Pokalbiai“.
 
-TC 1: Paspausti "Siųsti pranešimą". Laukiamas rezultatas: Iš duomenų bazės gaunami esamos grupės nariai. Jie atvaizduojami lange "Pokalbiai". Sukuriamas naujas pranešimo objektas su tuščiu adresatų sąrašu.
+TC 1: Paspausti "Siųsti pranešimą". **Laukiamas rezultatas**: Iš duomenų bazės gaunami esamos grupės nariai. Jie atvaizduojami lange "Pokalbiai". Sukuriamas naujas pranešimo objektas su tuščiu adresatų sąrašu.
 
-TC 2: Pasirinkti adresatą. Laukiamas rezultatas: Pranešimo objektas turi vienu adresatu daugiau.
+TC 2: Pasirinkti adresatą. **Laukiamas rezultatas**: Pranešimo objektas turi vienu adresatu daugiau.
 
-TC 2.1: Pašalinti žymėjimą ties adresatu. Laukiamas rezultatas: Pranešimo objektas turi vienu adresatu mažiau. 
+TC 2.1: Pašalinti žymėjimą ties adresatu. **Laukiamas rezultatas**: Pranešimo objektas turi vienu adresatu mažiau. 
 
-TC 3: Paspausti "Dalintis receptais". Laukiamas rezultatas: Iš duomenų bazės gaunami receptai. Atidaromas langas "Receptai", kuriame pavaizduoti rasti receptai.
+TC 3: Paspausti "Dalintis receptais". **Laukiamas rezultatas**: Iš duomenų bazės gaunami receptai. Atidaromas langas "Receptai", kuriame pavaizduoti rasti receptai.
 
-TC 4 Lange "Receptai" pasirinkti receptą. Laukiamas rezultatas: Receptas pridedamas prie pasirinktų receptų sarašo.
+TC 4 Lange "Receptai" pasirinkti receptą. **Laukiamas rezultatas**: Receptas pridedamas prie pasirinktų receptų sarašo.
 
-TC 5. **Scenarijus A**: Lange "receptai" paspausti mygtuką „Patvirtinti“. Laukiamas rezultatas: Parinkti receptai pridedami prie dalinimosi pranešimo objekto. Grįžtama į langą „Pokalbiai“.
+TC 5. **Scenarijus A**: Lange "receptai" paspausti mygtuką „Patvirtinti“. **Laukiamas rezultatas**: Parinkti receptai pridedami prie dalinimosi pranešimo objekto. Grįžtama į langą „Pokalbiai“.
 
-**Scenarijus B**: Nepasirinkus receptų paspausti mygtuką „Patvirtinti“. Laukiamas rezultatas: Jokie receptai nepridedami prie pranešimo objekto. Grįžtama į langą „Pokalbiai“.
+**Scenarijus B**: Nepasirinkus receptų paspausti mygtuką „Patvirtinti“. **Laukiamas rezultatas**: Jokie receptai nepridedami prie pranešimo objekto. Grįžtama į langą „Pokalbiai“.
 
-TC 6 **Papildoma sąlyga**: Duomanų bazė pasiekiama. **Scenarijus**: Lange "pokalbiai" spausti "siųsti". Laukiamas rezultatas: Duomenų bazėje atsiranda įrašas abie naują pranešimą gavėjams.
+TC 6 **Papildoma sąlyga**: Duomanų bazė pasiekiama. **Scenarijus**: Lange "pokalbiai" spausti "siųsti". **Laukiamas rezultatas**: Duomenų bazėje atsiranda įrašas abie naują pranešimą gavėjams.
 
-TC 7 **Papildoma sąlyga**: Duomanų bazė nepasiekiama. **Scenarijus**: Lange "pokalbiai" spausti "siųsti". Laukiamas rezultatas: atidaromas Sisteminio pranešimo langas.
+TC 7 **Papildoma sąlyga**: Duomanų bazė nepasiekiama. **Scenarijus**: Lange "pokalbiai" spausti "siųsti". **Laukiamas rezultatas**: atidaromas Sisteminio pranešimo langas.
 
-TC 8.1: Sisteminio pranešimo lange spausti „Siųsti iš naujo“. Laukiamas rezultatas: Pranešimą bandoma siųsti iš naujo.
+TC 8.1: Sisteminio pranešimo lange spausti „Siųsti iš naujo“. **Laukiamas rezultatas**: Pranešimą bandoma siųsti iš naujo.
 
-TC 8.2: Sisteminio pranešimo lange spausti „atšaukti“. Laukiamas rezultatas: Uždaromas sisteminio pranešimo langas.
+TC 8.2: Sisteminio pranešimo lange spausti „atšaukti“. **Laukiamas rezultatas**: Uždaromas sisteminio pranešimo langas.
 
 ## 4.2.4 Produktų peržiūra naudojantis kalendoriumi
 
-Pradinės sąlygos: Naudotojas yra registruotas ir prisijungęs.
+**Pradinės sąlygos**: Naudotojas yra registruotas ir prisijungęs.
 
-TC 1 Paspausti "Kalendorius". Laukiamas rezultatas: sistema atidaro kalendoriaus langą su dabartiniu mėnesiu. Sistema pavaizduoja produktus pagal jų galiojimo laiko pabaigas.
+TC 1 Paspausti "Kalendorius". **Laukiamas rezultatas**: sistema atidaro kalendoriaus langą su dabartiniu mėnesiu. Sistema pavaizduoja produktus pagal jų galiojimo laiko pabaigas.
 
-TC 2.1 Paspausti "Žiūrėti pagal užsakymo laiką". Laukiamas rezultatas: sistema suranda naudotojo užsakymų informaciją ir pavaizduoja ją kalendoriuje.
+TC 2.1 Paspausti "Žiūrėti pagal užsakymo laiką". **Laukiamas rezultatas**: sistema suranda naudotojo užsakymų informaciją ir pavaizduoja ją kalendoriuje.
 
-TC 2.2 Paspausti "Žiūrėti pagal galiojimo laiką". Laukiamas rezultatas: sistema suranda naudotojo produktų informaciją ir pavaizduoja ją kalendoriuje.
+TC 2.2 Paspausti "Žiūrėti pagal galiojimo laiką". **Laukiamas rezultatas**: sistema suranda naudotojo produktų informaciją ir pavaizduoja ją kalendoriuje.
 
-TC 3.1 **Papildoma sąlyga**: Naudotojas žiūri produktus pagal užsakymo laiką. **Scenarijus**: Paspausti ant "+" ties diena, kur yra bent vienas užsakymas. Laukiamas rezultatas: atsidaro langas "Dienos produktai", kur yra pavaizduoti visi dienos produktai, sugrupuoti pagal užsakymus.
+TC 3.1 **Papildoma sąlyga**: Naudotojas žiūri produktus pagal užsakymo laiką. **Scenarijus**: Paspausti ant "+" ties diena, kur yra bent vienas užsakymas. **Laukiamas rezultatas**: atsidaro langas "Dienos produktai", kur yra pavaizduoti visi dienos produktai, sugrupuoti pagal užsakymus.
 
-TC 3.2 **Papildoma sąlyga**: Naudotojas žiūri produktus pagal galiojimo laiką. **Scenarijus**: Paspausti ant "+" ties diena, kur yra bent vienas produktas. Laukiamas rezultatas: atsidaro langas "Dienos produktai", kur yra pavaizduoti visi dienos produktai pagal jų galiojimo laiko pabaigas.
-TC 4 Lange "dienos produktai" ties pasirinktu produktu spausti "užsakyti daugiau". Laukiamas rezultatas: produktas įtraukiamas į krepšelį.
+TC 3.2 **Papildoma sąlyga**: Naudotojas žiūri produktus pagal galiojimo laiką. **Scenarijus**: Paspausti ant "+" ties diena, kur yra bent vienas produktas. **Laukiamas rezultatas**: atsidaro langas "Dienos produktai", kur yra pavaizduoti visi dienos produktai pagal jų galiojimo laiko pabaigas.
+TC 4 Lange "dienos produktai" ties pasirinktu produktu spausti "užsakyti daugiau". **Laukiamas rezultatas**: produktas įtraukiamas į krepšelį.
 
-TC 5 **Papildoma sąlyga**: naudotojas žiūri receptus pagal galiojimo laiką. **Scenarijus**: paspausti "siūlyti receptus". Laukiamas rezultatas: sistema ieško naudotojui žinomų receptų, kurių ingridientuose yra lange vaizduojamų produktų. Sistema atidaro receptų langą ir pavaizduoja rastus receptus.
+TC 5 **Papildoma sąlyga**: naudotojas žiūri receptus pagal galiojimo laiką. **Scenarijus**: paspausti "siūlyti receptus". **Laukiamas rezultatas**: sistema ieško naudotojui žinomų receptų, kurių ingridientuose yra lange vaizduojamų produktų. Sistema atidaro receptų langą ir pavaizduoja rastus receptus.
 
-TC 5.1 **Papildoma sąlyga**: receptų nepavyko rasti. Laukiamas rezultatas: langas "Receptai" neatidaromas, parodomas sisteminis pranešimas, kad nepavyko rasti receptų.
+TC 5.1 **Papildoma sąlyga**: receptų nepavyko rasti. **Laukiamas rezultatas**: langas "Receptai" neatidaromas, parodomas sisteminis pranešimas, kad nepavyko rasti receptų.
 
-TC 6 Lange "Receptai" spausti "gaminti" ties pasirinktu receptu. Laukiamas rezultatas: sistema pažymi receptą kaip gaminamą ir pavaizduojamas langas su informacija, padedančia gaminti receptą gyvai. 
+TC 6 Lange "Receptai" spausti "gaminti" ties pasirinktu receptu. **Laukiamas rezultatas**: sistema pažymi receptą kaip gaminamą ir pavaizduojamas langas su informacija, padedančia gaminti receptą gyvai. 
 
-TC 7 Lange "dienos produktai" spausti grįžti. Laukiamas rezultatas: atidaromas langas "Kalendorius".
+TC 7 Lange "dienos produktai" spausti grįžti. **Laukiamas rezultatas**: atidaromas langas "Kalendorius".
 
-TC 8 Pasirinkti kokį nors kitą mėnesį nei dabartinis. Laukiamas rezultatas: sistema pavaizduoja to mėnesio produktus pagal pasirinktą metriką.
+TC 8 Pasirinkti kokį nors kitą mėnesį nei dabartinis. **Laukiamas rezultatas**: sistema pavaizduoja to mėnesio produktus pagal pasirinktą metriką.
 
 
 <!-- pagebreak -->

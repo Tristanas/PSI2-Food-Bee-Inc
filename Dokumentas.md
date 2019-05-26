@@ -222,6 +222,45 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 
 *Čia bus surašyti unit testai - pavadinimas, aprašymas, kodas*
 
+### 4.1.1 Šaldytuvo Dalinimosi užduoties vienetų testai(FridgePresenter)
+
+Šioje testų klasėje testuojamas naudotojų atradimo metodas bei vartotojų pakvietimo metodas
+
+``` cs
+[TestClass]
+public class FridgePresenterTests
+{
+	[TestMethod]
+	public void FindUser_UserFound_ReturnNot0()
+	{
+		ISharingView SV = new Sharing(new Sharing() {nameField = "admin"});
+		SV.DB = new DBService();
+		List<User> result = SV.OnInput();
+		Assert.AreNotEqual(result.Count, 0);
+	}
+
+	[TestMethod]
+	public void FindUser_UserNotFound_Return0()
+	{
+		ISharingView SV = new Sharing(new Sharing() {nameField = "******"});
+		SV.DB = new DBService();
+		List<User> result = SV.OnInput();
+		Assert.AreEqual(result.Count, 0);
+	}
+
+	[TestMethod]
+	public void InviteUser_UserInvited_Return0()
+	{
+		IDBService DB = new DBService();
+		ISharingView SV = new Sharing(new Sharing())
+		SV.Users.Add(new User() {name = "admin"});
+		int result = SV.Invite();
+		SV.ShowDialog("admin");
+		Assert.AreNotEqual(result.Count, 0);
+	}
+}
+```
+
 ## 4.2 Sistemos užduočių testai
 
 *Čia bus išvardintos užduotys, jas atitinkantys testavimo atvejai ir šiuos sudarantys testavimo scenarijai. Šalia kiekvieno testavimo atvejo, galima (ir patartina) pateikti testavimo klasės kodą.*

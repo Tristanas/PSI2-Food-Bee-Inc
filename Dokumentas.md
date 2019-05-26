@@ -224,39 +224,94 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 
 ### 4.1.1 Šaldytuvo Dalinimosi užduoties vienetų testai(FridgePresenter)
 
-Šioje testų klasėje testuojamas naudotojų atradimo metodas bei vartotojų pakvietimo metodas
+Šioje testų klasėje testuojamas naudotojų atradimo metodas bei vartotojų pakvietimo metodas. Taip pat testuojami DBService metodai(FindUser() ir GetProduktai()) susiję su šiomis užduotimis.
 
 ``` cs
 [TestClass]
 public class FridgePresenterTests
 {
 	[TestMethod]
+	public void OnInput_UserFound_Return0()
+	{
+		FridgePresenter FP = new FridgePresenter(new Fridge() {nameField = "admin"});
+		FP.DB = new DBService();
+		int result = SV.OnInput();
+		Assert.AreEqual(result, 0);
+	}
+
+	[TestMethod]
+	public void OnInput_UserNotFound_Return1()
+	{
+		FridgePresenter FP = new FridgePresenter(new Fridge() {nameField = "******"});
+		FP.DB = new DBService();
+		int result = SV.OnInput();
+		Assert.AreEqual(result, 1);
+	}
+}
+```
+
+``` cs
+[TestClass]
+public class SharingPresenterTests
+{
+	[TestMethod]
+	public void Invite_UserInvited_Return0()
+	{
+		IDBService DB = new DBService();
+		SharingPresenter SP = new SharingPresenter(new Sharing())
+		SP.Users.Add(new User() {name = "admin"});
+		int result = SP.Invite();
+		SP.ShowDialog("admin");
+		Assert.AreNotEqual(result.Count, 0);
+	}
+	
+	[TestMethod]
+	public void Invite_UserNotInvited_Return1()
+	{
+		IDBService DB = new DBService();
+		SharingPresenter SP = new SharingPresenter(new Sharing())
+		SP.Users.Add(new User() {name = "admin"});
+		int result = SP.Invite();
+		SP.ShowDialog("admin");
+		Assert.AreNotEqual(result.Count, 1);
+	}
+}
+```
+
+``` cs
+[TestClass]
+public class DBServiceTests
+{
+	[TestMethod]
 	public void FindUser_UserFound_ReturnNot0()
 	{
-		ISharingView SV = new Sharing(new Sharing() {nameField = "admin"});
-		SV.DB = new DBService();
-		List<User> result = SV.OnInput();
-		Assert.AreNotEqual(result.Count, 0);
+		IDBService DB = new DBService();
+		int result = DB.FindUser("admin").count;
+		Assert.AreNotEqual(result, 0);
 	}
 
 	[TestMethod]
 	public void FindUser_UserNotFound_Return0()
 	{
-		ISharingView SV = new Sharing(new Sharing() {nameField = "******"});
-		SV.DB = new DBService();
-		List<User> result = SV.OnInput();
-		Assert.AreEqual(result.Count, 0);
+		IDBService DB = new DBService();
+		int result = DB.FindUser(" *******").count; //Invalid characters ' ' and '*'
+		Assert.AreEqual(result, 0);
 	}
-
+	
 	[TestMethod]
-	public void InviteUser_UserInvited_Return0()
+	public void GetProduktai_ProduktaiFound_Return0()
 	{
 		IDBService DB = new DBService();
-		ISharingView SV = new Sharing(new Sharing())
-		SV.Users.Add(new User() {name = "admin"});
-		int result = SV.Invite();
-		SV.ShowDialog("admin");
-		Assert.AreNotEqual(result.Count, 0);
+		int result = DB.GetProduktai(); //Connection successful, got products
+		Assert.AreEqual(result, 0);
+	}
+	
+	[TestMethod]
+	public void GetProduktai_BadSelectStatement_Return1()
+	{
+		IDBService DB = new DBService();
+		int result = DB.GetProduktai(); //Connection lost/bad select
+		Assert.AreEqual(result, 1);
 	}
 }
 ```

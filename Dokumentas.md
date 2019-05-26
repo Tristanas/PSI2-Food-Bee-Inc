@@ -203,11 +203,11 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 ## 3.4 Kalendoriaus naudojimas
 - Išverstas sekų diagramos tekstas: metodų pavadinimai, argumentai ir objektų pavadinimai
 - Pridėtas metodas klasėje DBService - "removeProducts(Fridge fridge, ProductList products)"
-- Ištrintas produktų šalinimas po gaminimo užduoties atlikimo, nes tai yra ne Kalendoriaus užduoties scenarijaus dalis, o gaminimo.
-- Sekų diagramoje įvestyje iš naudotojo patikslinti spaudžiamų mygtukų pavadinimai, kad sutaptų su scenarijaus tekstu.
-- Pataisytos kelios metodų kvietimu eiliškumo klaidos (pvz., 21. Presenteris ieško receptų -> 22. naudotojas spaudžia "siūlyti receptus"), atsiradusios dėl diagramos redagavimo.
-- Pridėti trūkstami argumentai displayOrders, displayProducts ir kituose metoduose.
-- Pridėtas alternatyvus scenarijus, kai nerandama receptų, turinčių ingridientų iš senstančių produktų ("dienos produktai" lange). Papildyta sekų ir robustiškumo diagramos.
+- Ištrintas produktų šalinimas po gaminimo užduoties atlikimo, nes tai yra ne Kalendoriaus užduoties scenarijaus dalis, o gaminimo
+- Sekų diagramoje įvestyje iš naudotojo patikslinti spaudžiamų mygtukų pavadinimai, kad sutaptų su scenarijaus tekstu
+- Pataisytos kelios metodų kvietimu eiliškumo klaidos (pvz., 21. Presenteris ieško receptų -> 22. naudotojas spaudžia "siūlyti receptus"), atsiradusios dėl diagramos redagavimo
+- Pridėti trūkstami argumentai displayOrders, displayProducts ir kituose metoduose
+- Pridėtas alternatyvus scenarijus, kai nerandama receptų, turinčių ingridientų iš senstančių produktų ("dienos produktai" lange). Papildyta sekų ir robustiškumo diagramos
 
 ## 3.5 Reklamų peržiūra
 - Pakeista robustiškumo diagrama: nupigintos prekės pridėjimas į krepšelį perduotas kitam užduoties scenarijui; patikslinta, kad nukreipiant į 3 šalies reklamos turinį dalyvauja kitas aktorius; patikslinta, kad sis. administratoriai ir reklamos tiekėjai mato pranešimus apie netinkamą reklamą informaciniame lange.
@@ -216,13 +216,13 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 ## 3.6 Pakeisti projektiniai sprendimai
 - Nuspresta iš MVC architektūros pereiti prie MVP, nes MVP labiau priimtina komandai, nes turime daugiau patirties, ir dažniau taikoma praktikoje
 - Nuspresta programuoti anglų kalba, nes ši kalba labiau unifikuota
-- Nuspresta vietoje daug "Event Handler" naudoti tik vieną "Event Handler" kiekvienam GUI elementui, kuris kviečia sistemos logiką
+- Nuspresta vietoje daug "Event Handler" naudoti tik vieną "Event Handler" kiekvienam GUI elementui, kuris kviečia sistemos logiką ("Sanity check" rezultatas, dalyvavo programuotojai)
 -
 
 ## 3.7 Pokyčiai statinei struktūrai
 - ICalendarGUI papildytas dviem metodais: displayOrders(Order[]) ir displayProducts(ProductList).
 - DayProductsPresenter papildytas metodu openRecipesWindow(Recipe[]), kuris atidaro receptų langą su nurodytais receptais.
-
+- Sudėti trūkstami grąžinami tipai prie klasių operacijų.
 <!-- pagebreak -->
 # 4. Testavimo planas ir scenarijai
 

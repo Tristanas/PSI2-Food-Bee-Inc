@@ -180,7 +180,7 @@ Klasių ir reikalavimų matricoje (figūra 2.3) nurodomi sąryšiai tarp užsako
 Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek robustiškumo diagramos. Robustiškumo diagramas taisyti tik tada, kai žymiai keičiasi UC tekstas.
 
 ## 3.1 Pranešimas dėl senstančių produktų
-- .
+- Sekų diagrama pakeista taip, kad joje matytųsi, kad presenteriai sukuria langų, su kuriais vartotojas dirba, instancijas ir juos pavaizduoja.
 - .
 
 

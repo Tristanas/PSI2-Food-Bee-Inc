@@ -20,6 +20,7 @@
 	4. [Kalendoriaus naudojimas](#34-kalendoriaus-naudojimas)
 	5. [Reklamų peržiūra](#35-reklamų-peržiūra)
 	6. [Pakeisti projektiniai sprendimai](#36-pakeisti-projektiniai-sprendimai)
+	7. [Pokyčiai statinei struktūrai](#37-pokyčiai-statinei-struktūrai)
 4. [Testavimo planas ir scenarijai](#4-testavimo-planas-ir-scenarijai)
 	1. [Programinių vienetų testai](#41-programinių-vienetų-testai)
 	2. [Sistemos užduočių testai](#42-sistemos-užduočių-testai)
@@ -118,9 +119,9 @@ Robustiškumo diagramoje 1.5.1 pavaizduotos kokios veiklos vyksta sistemoje, kai
 Kalendoriaus lange naudotojui automatiškai pavaizduojamas esamas mėnesis. Sistema automatiškai pavaizduoja kiekvieną užsakymą ties diena, kada buvo užsakyta. Naudotojas spaudžia ant pliuso prie dienos. Sistema suranda dienos užsakymų informaciją ir atvaizduoja ją lange "Dienos produktai". Peržiūrėdamas produktus naudotojas pasirenka vieną ir spaudžia „Užsakyti daugiau“. Sistema suranda produktą ir įdeda jį į naudotojo krepšelį. Naudotojas spaudžia "Grįžti". Sistema grąžina naudotoją į kalendoriaus langą.  
 
 #### Alternatyvūs scenarijai  
-Naudotojas spaudžia „žiūrėti pagal galiojimo laiką“.  Sistema atvaizduoja mėnesyje produktų galiojimo pabaigas. Naudotojas pasirenka dieną ir spaudžia „+“. Sistema atvaizduoja produktus lange „Dienos produktai“. 
-Norėdamas išvengti pasenusio maisto naudotojas spaudžia „siūlyti receptus“.  Sistema ieško receptų, su produktais, kurie pasirinktą dieną baigs galioti. Sistema nuveda naudotoją į receptų langą ir pavaizduoja rastus receptus. Naudotojas išsirenka receptą ir spaudžia "gaminti". Pradedamas gaminimo scenarijus gaminimo pagalbiniame lange.
-Naudotojas pasirenka kurių nors metų kokį nors mėnesį. Sistema atvaizduoja to mėnesio užsakytus produktus. Tada scenarijus tęsiasi kaip pagrindinis, tik su pasirinktu mėnesiu.  
+Naudotojas pasirenka kurių nors metų kokį nors mėnesį. Sistema atvaizduoja to mėnesio informaciją pagal pasirinktą rėžimą.  
+Naudotojas yra paspaudęs „žiūrėti pagal galiojimo laiką“.  Sistema atvaizduoja mėnesyje produktų galiojimo pabaigas. Naudotojas pasirenka dieną ir spaudžia „+“. Sistema atvaizduoja produktus lange „Dienos produktai“. 
+Norėdamas išvengti pasenusio maisto naudotojas spaudžia „siūlyti receptus“.  Sistema ieško receptų, su produktais, kurie pasirinktą dieną baigs galioti. Sistema nuveda naudotoją į receptų langą ir pavaizduoja rastus receptus. Naudotojas išsirenka receptą ir spaudžia "gaminti". Pradedamas gaminimo scenarijus gaminimo pagalbiniame lange. Naudotojas baigęs gaminti receptą uždaro receptų langą.
 Nepavyko rasti receptų pagal dienos produktus. Naudotojas lieka dienos produktų lange, parodomas sisteminis pranešimas, kad nepavyko rasti.
 
 <!-- pagebreak -->
@@ -193,15 +194,20 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 
 
 ## 3.3 Bendravimas pranešimais
-- . Pastebėta, kad UC prasidėdavo per anksti, taip pat šiek tiek supaprastinta formuluotė. Atnaujinta UC, bei RD ir sekų diagramos, kad atitikti atjaujintą UC
-- . Atnaujintas antras UC alternatyvus scenarijus. Su užsakovu aptarus nuspresta, kad žinutės saugojimo įgyvendinimo kaštų/naudos santykis pernelyg didelis. Atitinkamai atnaujinta RD ir sekų diagramos
-- . Sekų diagrama išversta į anglų kalbą
+- Pastebėta, kad UC prasidėdavo per anksti, taip pat šiek tiek supaprastinta formuluotė. Atnaujinta UC, bei RD ir sekų diagramos, kad atitikti atjaujintą UC
+- Atnaujintas antras UC alternatyvus scenarijus. Su užsakovu aptarus nuspresta, kad žinutės saugojimo įgyvendinimo kaštų/naudos santykis pernelyg didelis. Atitinkamai atnaujinta RD ir sekų diagramos
+- Sekų diagrama išversta į anglų kalbą
 
 
 
 ## 3.4 Kalendoriaus naudojimas
-- .
-- .
+- Išverstas sekų diagramos tekstas: metodų pavadinimai, argumentai ir objektų pavadinimai
+- Pridėtas metodas klasėje DBService - "removeProducts(Fridge fridge, ProductList products)"
+- Ištrintas produktų šalinimas po gaminimo užduoties atlikimo, nes tai yra ne Kalendoriaus užduoties scenarijaus dalis, o gaminimo
+- Sekų diagramoje įvestyje iš naudotojo patikslinti spaudžiamų mygtukų pavadinimai, kad sutaptų su scenarijaus tekstu
+- Pataisytos kelios metodų kvietimu eiliškumo klaidos (pvz., 21. Presenteris ieško receptų -> 22. naudotojas spaudžia "siūlyti receptus"), atsiradusios dėl diagramos redagavimo
+- Pridėti trūkstami argumentai displayOrders, displayProducts ir kituose metoduose
+- Pridėtas alternatyvus scenarijus, kai nerandama receptų, turinčių ingridientų iš senstančių produktų ("dienos produktai" lange). Papildyta sekų ir robustiškumo diagramos
 
 ## 3.5 Reklamų peržiūra
 - Pakeista robustiškumo diagrama: nupigintos prekės pridėjimas į krepšelį perduotas kitam užduoties scenarijui; patikslinta, kad nukreipiant į 3 šalies reklamos turinį dalyvauja kitas aktorius; patikslinta, kad sis. administratoriai ir reklamos tiekėjai mato pranešimus apie netinkamą reklamą informaciniame lange.
@@ -210,15 +216,20 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 ## 3.6 Pakeisti projektiniai sprendimai
 - Nuspresta iš MVC architektūros pereiti prie MVP, nes MVP labiau priimtina komandai, nes turime daugiau patirties, ir dažniau taikoma praktikoje
 - Nuspresta programuoti anglų kalba, nes ši kalba labiau unifikuota
-- Nuspresta vietoje daug "Event Handler" naudoti tik vieną "Event Handler" kiekvienam GUI elementui, kuris kviečia sistemos logiką
+- Nuspresta vietoje daug "Event Handler" naudoti tik vieną "Event Handler" kiekvienam GUI elementui, kuris kviečia sistemos logiką ("Sanity check" rezultatas, dalyvavo programuotojai)
 -
 
+## 3.7 Pokyčiai statinei struktūrai
+- ICalendarGUI papildytas dviem metodais: displayOrders(Order[]) ir displayProducts(ProductList).
+- DayProductsPresenter papildytas metodu openRecipesWindow(Recipe[]), kuris atidaro receptų langą su nurodytais receptais.
+- Sudėti trūkstami grąžinami tipai prie klasių operacijų.
 <!-- pagebreak -->
 # 4. Testavimo planas ir scenarijai
 
 *Čia bus užrašytas testavimo planas: kaip užtikrinsime sistemos testuojamumą ir testų korektiškumą. (testų siejimas su reikalavimais ir užduotimis)*
 
 ## 4.1 Programinių vienetų testai
+
 
 *Čia bus surašyti unit testai - pavadinimas, aprašymas, kodas*
 
@@ -315,6 +326,168 @@ public class DBServiceTests
 }
 ```
 
+### 4.1.3 "Kalendoriaus naudojimo produktų peržiūrai" užduoties vienetų testai
+
+Testuojamos klasės: 
+>Fridge
+>
+>CalendarPresenter
+>
+>DBService
+>
+>DayProductsPresenter
+>
+>ShoppingCart
+
+```cs
+	[TestClass]
+    public class DBServiceTest
+    {
+        DBService DB;
+		List<Product> products;
+        [TestInitialize]
+        public void setUp()
+        {
+            DB = new DBService();
+            DB.knownRecipes = new List<Recipe>();
+			products = new List<Product>();
+            products.Add(new Product("apple"));
+            products.Add( new Product("milk"));
+            DB.knownRecipes.Add(new Recipe("Boiled eggs"));
+        }
+        [TestMethod]
+        public void FindRecipesTest()
+        {
+            DB.knownRecipes.Add(new Recipe("Apple pie"));
+            int results = DB.findRecipes(products).Count;
+            Assert.AreEqual(results, 1, "Only one recipe should have been found.");
+        }
+
+        [TestMethod]
+        public void NoRecipesFoundTest()
+        {
+            DB.knownRecipes.Add(new Recipe("French fries"));
+            int results = DB.findRecipes(products).Count;
+            Assert.AreEqual(results, 0, "No recipes should have been found.");
+        }
+    }
+```
+Šioje testų klasėje testuojamas DBService metodas "findRecipes", kuris suranda naudotojui žinomus receptus, kurių sudėtyje yra produktų iš duoto sąrašo. Testiniais metodais patikrinamas pagrindinis (rasta receptų) ir alternatyvus scenarijus (nerasta).
+
+```cs
+	[TestClass]
+    class CalendarPresenterTests
+    {
+        [TestMethod]
+        public void setMonthTest()
+        {
+            Calendar view = new Calendar();
+            CalendarPresenter presenter = new CalendarPresenter(view);
+            view.month = "2019/05";
+            presenter.setMonth("2019/06");
+            Assert.AreEqual("2019/06", view.month, "Month should be set to 2019/06");
+        }
+
+    }
+```
+
+Šioje klasėje yra testuojamas CalendarPresenter metodas "setMonth", kuriuo yra nustatomas mėnesis, kurio informacija rodoma grafinėje sąsajoje. Testas patikrina, ar metodas tinkamai pakeičia datą.
+
+```cs
+	[TestClass]
+    public class DayProductsPresenterTest
+    {
+        DayProducts view;
+        DayProductsPresenter presenter;
+        [TestInitialize]
+        public void setUp()
+        {
+            view = new DayProducts();
+            presenter = new DayProductsPresenter(view);
+        }
+        
+        [TestMethod]
+        public void AddToCartTest()
+        {
+            Product prod = new Product("apple"),
+                prod2 = new Product("knife");
+            presenter.cart.Add(prod);
+            presenter.addToCart(prod2);
+            Assert.AreEqual(2, presenter.cart.contents.Count, "There should be two products in the shopping cart.");
+        }
+    }
+```
+
+Testavimo klasė patikrina, ar DayProductsPresenter metodas "addToCart", kuris turėtų pridėti produktą į naudotojo krepšelį veikia taip pat, kaip ir krepšelio metodas "Add".
+
+```cs
+    [TestClass]
+    class ShoppingCartTests
+    {
+        public ShoppingCart cart;
+
+        [TestInitialize]
+        public void setUp()
+        {
+            cart = new ShoppingCart();
+        }
+
+        [TestMethod]
+        public void TestAdd()
+        {
+            Product prod = new Product("apple");
+            cart.Add(prod);
+            Assert.AreEqual(cart.contents.Count, 1, "There should be only 1 item in the cart");
+        }
+
+        [TestMethod]
+        public void TestCorrectProductAdded()
+        {
+            Product prod = new Product("apple");
+            cart.Add(prod);
+            Assert.AreEqual(cart.contents[0].name, "apple", "A correct product should be added to the cart.");
+        }
+    }
+```
+Ši testavimo klasė patikrina, ar produktas yra sėkmingai įdedamas į krepšelį bei ar įdedamas toks produktas, kuris buvo paduotas parametruose.
+
+```cs
+    [TestClass]
+    class FridgeTests
+    {
+        Fridge fridge;
+        [TestInitialize]
+        public void setUp()
+        {
+            fridge = new Fridge();
+        }
+
+        [TestMethod]
+        public void GetMonthlyOrdersTest()
+        {
+            Order order = new Order() { ordered = "2019/04/29", received = "2019/05/02" },
+                secondOrder = new Order() { ordered = "2019/04/29", received = "2019/04/30" };
+            fridge.owner.addOrder(order);
+            fridge.owner.addOrder(secondOrder);
+            int results = fridge.getMontlyOrders("2019/05").Count;
+            Assert.AreEqual(1, results, "Only one order should have been found.");
+        }
+
+        [TestMethod]
+        public void GetMonthlyProductsTest()
+        {
+            Product prod1 = new Product() { expires = "2019/04/05" },
+                prod2 = new Product() { expires = "2019/05/04" };
+            fridge.contents.Add(prod1);
+            fridge.contents.Add(prod1);
+            int result = fridge.getMontlyProducts("2019/05");
+            Assert.AreEqual(1, result, "Only one product should have been found.");
+        }
+    }
+```
+
+Paskutinė užduoties testavimo klasė turi du metodus, kuriais patikrina, ar yra randami atitinkami užsakymai ir produktai, nurodžius mėnesį, kada buvo užsakymas atliktas ar produktas baigs galioti.
+
 ## 4.2 Sistemos užduočių testai
 
 *Čia bus išvardintos užduotys, jas atitinkantys testavimo atvejai ir šiuos sudarantys testavimo scenarijai. Šalia kiekvieno testavimo atvejo, galima (ir patartina) pateikti testavimo klasės kodą.*
@@ -323,66 +496,66 @@ public class DBServiceTests
 Pradinės salygos: Naudotojas prisijungęs ir yra "Dalinimasis" lange.
 
 #### 4.2.1.1 Įvesti egzistuojančius kito naudotojo duomenis į ieškojimo lauką
-Laukiamas rezultatas: Gražinama aibė naudotojų atitinkančių paiešką.
+**Laukiamas rezultatas**: Gražinama aibė naudotojų atitinkančių paiešką.
 
 #### 4.2.1.2 Įvesti neegzistuojančius kito naudotojo duomenis į ieškojimo lauką
-Laukiamas rezultatas: Gražinama tuščia aibė.
+**Laukiamas rezultatas**: Gražinama tuščia aibė.
 
 #### 4.2.1.3 Pažymėti norimus pakviesti naudotojus ir spausti mygtuką "Dalintis"
-Laukiamas rezultatas: Pakvietimas išsiunčiamas pasirinktam naudotojui, pranešama, kad pakvietimas išsiųstas.
+**Laukiamas rezultatas**: Pakvietimas išsiunčiamas pasirinktam naudotojui, pranešama, kad pakvietimas išsiųstas.
 
 ### 4.2.1.4 Spausti mygtuką "Atšaukti"
-Laukiamas rezultatas: Lange "Dalinimasis" išsaugoti duomenys pašalinami ir atidaromas langas "Šaldytuvas".
+**Laukiamas rezultatas**: Lange "Dalinimasis" išsaugoti duomenys pašalinami ir atidaromas langas "Šaldytuvas".
 
 ### 4.2.3 Bendravimas su grupe
  **Pradinės salygos**: Naudotojas prisijungęs ir yra lange „Pokalbiai“.
 
-TC 1: Paspausti "Siųsti pranešimą". Laukiamas rezultatas: Iš duomenų bazės gaunami esamos grupės nariai. Jie atvaizduojami lange "Pokalbiai". Sukuriamas naujas pranešimo objektas su tuščiu adresatų sąrašu.
+TC 1: Paspausti "Siųsti pranešimą". **Laukiamas rezultatas**: Iš duomenų bazės gaunami esamos grupės nariai. Jie atvaizduojami lange "Pokalbiai". Sukuriamas naujas pranešimo objektas su tuščiu adresatų sąrašu.
 
-TC 2: Pasirinkti adresatą. Laukiamas rezultatas: Pranešimo objektas turi vienu adresatu daugiau.
+TC 2: Pasirinkti adresatą. **Laukiamas rezultatas**: Pranešimo objektas turi vienu adresatu daugiau.
 
-TC 2.1: Pašalinti žymėjimą ties adresatu. Laukiamas rezultatas: Pranešimo objektas turi vienu adresatu mažiau. 
+TC 2.1: Pašalinti žymėjimą ties adresatu. **Laukiamas rezultatas**: Pranešimo objektas turi vienu adresatu mažiau. 
 
-TC 3: Paspausti "Dalintis receptais". Laukiamas rezultatas: Iš duomenų bazės gaunami receptai. Atidaromas langas "Receptai", kuriame pavaizduoti rasti receptai.
+TC 3: Paspausti "Dalintis receptais". **Laukiamas rezultatas**: Iš duomenų bazės gaunami receptai. Atidaromas langas "Receptai", kuriame pavaizduoti rasti receptai.
 
-TC 4 Lange "Receptai" pasirinkti receptą. Laukiamas rezultatas: Receptas pridedamas prie pasirinktų receptų sarašo.
+TC 4 Lange "Receptai" pasirinkti receptą. **Laukiamas rezultatas**: Receptas pridedamas prie pasirinktų receptų sarašo.
 
-TC 5. **Scenarijus A**: Lange "receptai" paspausti mygtuką „Patvirtinti“. Laukiamas rezultatas: Parinkti receptai pridedami prie dalinimosi pranešimo objekto. Grįžtama į langą „Pokalbiai“.
+TC 5. **Scenarijus A**: Lange "receptai" paspausti mygtuką „Patvirtinti“. **Laukiamas rezultatas**: Parinkti receptai pridedami prie dalinimosi pranešimo objekto. Grįžtama į langą „Pokalbiai“.
 
-**Scenarijus B**: Nepasirinkus receptų paspausti mygtuką „Patvirtinti“. Laukiamas rezultatas: Jokie receptai nepridedami prie pranešimo objekto. Grįžtama į langą „Pokalbiai“.
+**Scenarijus B**: Nepasirinkus receptų paspausti mygtuką „Patvirtinti“. **Laukiamas rezultatas**: Jokie receptai nepridedami prie pranešimo objekto. Grįžtama į langą „Pokalbiai“.
 
-TC 6 **Papildoma sąlyga**: Duomanų bazė pasiekiama. **Scenarijus**: Lange "pokalbiai" spausti "siųsti". Laukiamas rezultatas: Duomenų bazėje atsiranda įrašas abie naują pranešimą gavėjams.
+TC 6 **Papildoma sąlyga**: Duomanų bazė pasiekiama. **Scenarijus**: Lange "pokalbiai" spausti "siųsti". **Laukiamas rezultatas**: Duomenų bazėje atsiranda įrašas abie naują pranešimą gavėjams.
 
-TC 7 **Papildoma sąlyga**: Duomanų bazė nepasiekiama. **Scenarijus**: Lange "pokalbiai" spausti "siųsti". Laukiamas rezultatas: atidaromas Sisteminio pranešimo langas.
+TC 7 **Papildoma sąlyga**: Duomanų bazė nepasiekiama. **Scenarijus**: Lange "pokalbiai" spausti "siųsti". **Laukiamas rezultatas**: atidaromas Sisteminio pranešimo langas.
 
-TC 8.1: Sisteminio pranešimo lange spausti „Siųsti iš naujo“. Laukiamas rezultatas: Pranešimą bandoma siųsti iš naujo.
+TC 8.1: Sisteminio pranešimo lange spausti „Siųsti iš naujo“. **Laukiamas rezultatas**: Pranešimą bandoma siųsti iš naujo.
 
-TC 8.2: Sisteminio pranešimo lange spausti „atšaukti“. Laukiamas rezultatas: Uždaromas sisteminio pranešimo langas.
+TC 8.2: Sisteminio pranešimo lange spausti „atšaukti“. **Laukiamas rezultatas**: Uždaromas sisteminio pranešimo langas.
 
 ## 4.2.4 Produktų peržiūra naudojantis kalendoriumi
 
-Pradinės sąlygos: Naudotojas yra registruotas ir prisijungęs.
+**Pradinės sąlygos**: Naudotojas yra registruotas ir prisijungęs.
 
-TC 1 Paspausti "Kalendorius". Laukiamas rezultatas: sistema atidaro kalendoriaus langą su dabartiniu mėnesiu. Sistema pavaizduoja produktus pagal jų galiojimo laiko pabaigas.
+TC 1 Paspausti "Kalendorius". **Laukiamas rezultatas**: sistema atidaro kalendoriaus langą su dabartiniu mėnesiu. Sistema pavaizduoja produktus pagal jų galiojimo laiko pabaigas.
 
-TC 2.1 Paspausti "Žiūrėti pagal užsakymo laiką". Laukiamas rezultatas: sistema suranda naudotojo užsakymų informaciją ir pavaizduoja ją kalendoriuje.
+TC 2.1 Paspausti "Žiūrėti pagal užsakymo laiką". **Laukiamas rezultatas**: sistema suranda naudotojo užsakymų informaciją ir pavaizduoja ją kalendoriuje.
 
-TC 2.2 Paspausti "Žiūrėti pagal galiojimo laiką". Laukiamas rezultatas: sistema suranda naudotojo produktų informaciją ir pavaizduoja ją kalendoriuje.
+TC 2.2 Paspausti "Žiūrėti pagal galiojimo laiką". **Laukiamas rezultatas**: sistema suranda naudotojo produktų informaciją ir pavaizduoja ją kalendoriuje.
 
-TC 3.1 **Papildoma sąlyga**: Naudotojas žiūri produktus pagal užsakymo laiką. **Scenarijus**: Paspausti ant "+" ties diena, kur yra bent vienas užsakymas. Laukiamas rezultatas: atsidaro langas "Dienos produktai", kur yra pavaizduoti visi dienos produktai, sugrupuoti pagal užsakymus.
+TC 3.1 **Papildoma sąlyga**: Naudotojas žiūri produktus pagal užsakymo laiką. **Scenarijus**: Paspausti ant "+" ties diena, kur yra bent vienas užsakymas. **Laukiamas rezultatas**: atsidaro langas "Dienos produktai", kur yra pavaizduoti visi dienos produktai, sugrupuoti pagal užsakymus.
 
-TC 3.2 **Papildoma sąlyga**: Naudotojas žiūri produktus pagal galiojimo laiką. **Scenarijus**: Paspausti ant "+" ties diena, kur yra bent vienas produktas. Laukiamas rezultatas: atsidaro langas "Dienos produktai", kur yra pavaizduoti visi dienos produktai pagal jų galiojimo laiko pabaigas.
-TC 4 Lange "dienos produktai" ties pasirinktu produktu spausti "užsakyti daugiau". Laukiamas rezultatas: produktas įtraukiamas į krepšelį.
+TC 3.2 **Papildoma sąlyga**: Naudotojas žiūri produktus pagal galiojimo laiką. **Scenarijus**: Paspausti ant "+" ties diena, kur yra bent vienas produktas. **Laukiamas rezultatas**: atsidaro langas "Dienos produktai", kur yra pavaizduoti visi dienos produktai pagal jų galiojimo laiko pabaigas.
+TC 4 Lange "dienos produktai" ties pasirinktu produktu spausti "užsakyti daugiau". **Laukiamas rezultatas**: produktas įtraukiamas į krepšelį.
 
-TC 5 **Papildoma sąlyga**: naudotojas žiūri receptus pagal galiojimo laiką. **Scenarijus**: paspausti "siūlyti receptus". Laukiamas rezultatas: sistema ieško naudotojui žinomų receptų, kurių ingridientuose yra lange vaizduojamų produktų. Sistema atidaro receptų langą ir pavaizduoja rastus receptus.
+TC 5 **Papildoma sąlyga**: naudotojas žiūri receptus pagal galiojimo laiką. **Scenarijus**: paspausti "siūlyti receptus". **Laukiamas rezultatas**: sistema ieško naudotojui žinomų receptų, kurių ingridientuose yra lange vaizduojamų produktų. Sistema atidaro receptų langą ir pavaizduoja rastus receptus.
 
-TC 5.1 **Papildoma sąlyga**: receptų nepavyko rasti. Laukiamas rezultatas: langas "Receptai" neatidaromas, parodomas sisteminis pranešimas, kad nepavyko rasti receptų.
+TC 5.1 **Papildoma sąlyga**: receptų nepavyko rasti. **Laukiamas rezultatas**: langas "Receptai" neatidaromas, parodomas sisteminis pranešimas, kad nepavyko rasti receptų.
 
-TC 6 Lange "Receptai" spausti "gaminti" ties pasirinktu receptu. Laukiamas rezultatas: sistema pažymi receptą kaip gaminamą ir pavaizduojamas langas su informacija, padedančia gaminti receptą gyvai. 
+TC 6 Lange "Receptai" spausti "gaminti" ties pasirinktu receptu. **Laukiamas rezultatas**: sistema pažymi receptą kaip gaminamą ir pavaizduojamas langas su informacija, padedančia gaminti receptą gyvai. 
 
-TC 7 Lange "dienos produktai" spausti grįžti. Laukiamas rezultatas: atidaromas langas "Kalendorius".
+TC 7 Lange "dienos produktai" spausti grįžti. **Laukiamas rezultatas**: atidaromas langas "Kalendorius".
 
-TC 8 Pasirinkti kokį nors kitą mėnesį nei dabartinis. Laukiamas rezultatas: sistema pavaizduoja to mėnesio produktus pagal pasirinktą metriką.
+TC 8 Pasirinkti kokį nors kitą mėnesį nei dabartinis. **Laukiamas rezultatas**: sistema pavaizduoja to mėnesio produktus pagal pasirinktą metriką.
 
 
 <!-- pagebreak -->

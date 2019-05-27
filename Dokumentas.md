@@ -181,7 +181,7 @@ Klasių ir reikalavimų matricoje (figūra 2.3) nurodomi sąryšiai tarp užsako
 Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek robustiškumo diagramos. Robustiškumo diagramas taisyti tik tada, kai žymiai keičiasi UC tekstas.
 
 ## 3.1 Pranešimas dėl senstančių produktų
-- .
+- Sekų diagrama pakeista taip, kad joje matytųsi, kad presenteriai sukuria langų, su kuriais vartotojas dirba, instancijas ir juos pavaizduoja.
 - .
 
 
@@ -233,6 +233,112 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 
 *Čia bus surašyti unit testai - pavadinimas, aprašymas, kodas*
 
+### 4.1.1 Šaldytuvo Dalinimosi užduoties vienetų testai
+
+Šioje testų klasėje testuojamas naudotojų atradimo metodas bei vartotojų pakvietimo metodas. Taip pat testuojami DBService metodai(FindUser() ir GetProduktai()) susiję su šiomis užduotimis.
+
+Testuojamos klasės: 
+>FridgePresenter
+>
+>SharingPresenter
+>
+>DBService
+
+``` cs
+[TestClass]
+public class FridgePresenterTests
+{
+	[TestMethod]
+	public void OnInput_UserFound_Return0()
+	{
+		FridgePresenter FP = new FridgePresenter(new Fridge() {nameField = "admin"});
+		FP.DB = new DBService();
+		int result = SV.OnInput();
+		Assert.AreEqual(result, 0);
+	}
+
+	[TestMethod]
+	public void OnInput_UserNotFound_Return1()
+	{
+		FridgePresenter FP = new FridgePresenter(new Fridge() {nameField = "******"});
+		FP.DB = new DBService();
+		int result = SV.OnInput();
+		Assert.AreEqual(result, 1);
+	}
+}
+```
+
+``` cs
+[TestClass]
+public class SharingPresenterTests
+{
+	[TestMethod]
+	public void Invite_UserInvited_Return0()
+	{
+		IDBService DB = new DBService();
+		SharingPresenter SP = new SharingPresenter(new Sharing())
+		SP.Users.Add(new User() {name = "admin"});
+		int result = SP.Invite();
+		SP.ShowDialog("admin");
+		Assert.AreNotEqual(result.Count, 0);
+	}
+	
+	[TestMethod]
+	public void Invite_UserNotInvited_Return1()
+	{
+		IDBService DB = new DBService();
+		SharingPresenter SP = new SharingPresenter(new Sharing())
+		SP.Users.Add(new User() {name = "admin"});
+		int result = SP.Invite();
+		SP.ShowDialog("admin");
+		Assert.AreNotEqual(result.Count, 1);
+	}
+}
+```
+
+``` cs
+[TestClass]
+public class DBServiceTests
+{
+	[TestMethod]
+	public void FindUser_UserFound_ReturnNot0()
+	{
+		IDBService DB = new DBService();
+		int result = DB.FindUser("admin").count;
+		Assert.AreNotEqual(result, 0);
+	}
+
+	[TestMethod]
+	public void FindUser_UserNotFound_Return0()
+	{
+		IDBService DB = new DBService();
+		int result = DB.FindUser(" *******").count; //Invalid characters ' ' and '*'
+		Assert.AreEqual(result, 0);
+	}
+	
+	[TestMethod]
+	public void GetProduktai_ProduktaiFound_Return0()
+	{
+		IDBService DB = new DBService();
+		int result = DB.GetProduktai(); //Connection successful, got products
+		Assert.AreEqual(result, 0);
+	}
+}
+```
+
+### 4.1.3 "Kalendoriaus naudojimo produktų peržiūrai" užduoties vienetų testai
+
+Testuojamos klasės: 
+>Fridge
+>
+>CalendarPresenter
+>
+>DBService
+>
+>DayProductsPresenter
+>
+>ShoppingCart
+
 ```cs
 	[TestClass]
     public class DBServiceTest
@@ -266,7 +372,7 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
         }
     }
 ```
-Insert comment here.
+Šioje testų klasėje testuojamas DBService metodas "findRecipes", kuris suranda naudotojui žinomus receptus, kurių sudėtyje yra produktų iš duoto sąrašo. Testiniais metodais patikrinamas pagrindinis (rasta receptų) ir alternatyvus scenarijus (nerasta).
 
 ```cs
 	[TestClass]
@@ -285,7 +391,7 @@ Insert comment here.
     }
 ```
 
-Insert comment here
+Šioje klasėje yra testuojamas CalendarPresenter metodas "setMonth", kuriuo yra nustatomas mėnesis, kurio informacija rodoma grafinėje sąsajoje. Testas patikrina, ar metodas tinkamai pakeičia datą.
 
 ```cs
 	[TestClass]
@@ -305,14 +411,14 @@ Insert comment here
         {
             Product prod = new Product("apple"),
                 prod2 = new Product("knife");
-            presenter.cart.contents.Add(prod);
+            presenter.cart.Add(prod);
             presenter.addToCart(prod2);
             Assert.AreEqual(2, presenter.cart.contents.Count, "There should be two products in the shopping cart.");
         }
     }
 ```
 
-Insert comment here
+Testavimo klasė patikrina, ar DayProductsPresenter metodas "addToCart", kuris turėtų pridėti produktą į naudotojo krepšelį veikia taip pat, kaip ir krepšelio metodas "Add".
 
 ```cs
     [TestClass]
@@ -343,8 +449,7 @@ Insert comment here
         }
     }
 ```
-
-Insert comment here
+Ši testavimo klasė patikrina, ar produktas yra sėkmingai įdedamas į krepšelį bei ar įdedamas toks produktas, kuris buvo paduotas parametruose.
 
 ```cs
     [TestClass]
@@ -381,7 +486,7 @@ Insert comment here
     }
 ```
 
-Insert comment here
+Paskutinė užduoties testavimo klasė turi du metodus, kuriais patikrina, ar yra randami atitinkami užsakymai ir produktai, nurodžius mėnesį, kada buvo užsakymas atliktas ar produktas baigs galioti.
 
 ## 4.2 Sistemos užduočių testai
 

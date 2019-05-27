@@ -230,7 +230,158 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 
 ## 4.1 Programinių vienetų testai
 
+
 *Čia bus surašyti unit testai - pavadinimas, aprašymas, kodas*
+
+```cs
+	[TestClass]
+    public class DBServiceTest
+    {
+        DBService DB;
+		List<Product> products;
+        [TestInitialize]
+        public void setUp()
+        {
+            DB = new DBService();
+            DB.knownRecipes = new List<Recipe>();
+			products = new List<Product>();
+            products.Add(new Product("apple"));
+            products.Add( new Product("milk"));
+            DB.knownRecipes.Add(new Recipe("Boiled eggs"));
+        }
+        [TestMethod]
+        public void FindRecipesTest()
+        {
+            DB.knownRecipes.Add(new Recipe("Apple pie"));
+            int results = DB.findRecipes(products).Count;
+            Assert.AreEqual(results, 1, "Only one recipe should have been found.");
+        }
+
+        [TestMethod]
+        public void NoRecipesFoundTest()
+        {
+            DB.knownRecipes.Add(new Recipe("French fries"));
+            int results = DB.findRecipes(products).Count;
+            Assert.AreEqual(results, 0, "No recipes should have been found.");
+        }
+    }
+```
+Insert comment here.
+
+```cs
+	[TestClass]
+    class CalendarPresenterTests
+    {
+        [TestMethod]
+        public void setMonthTest()
+        {
+            Calendar view = new Calendar();
+            CalendarPresenter presenter = new CalendarPresenter(view);
+            view.month = "2019/05";
+            presenter.setMonth("2019/06");
+            Assert.AreEqual("2019/06", view.month, "Month should be set to 2019/06");
+        }
+
+    }
+```
+
+Insert comment here
+
+```cs
+	[TestClass]
+    public class DayProductsPresenterTest
+    {
+        DayProducts view;
+        DayProductsPresenter presenter;
+        [TestInitialize]
+        public void setUp()
+        {
+            view = new DayProducts();
+            presenter = new DayProductsPresenter(view);
+        }
+        
+        [TestMethod]
+        public void AddToCartTest()
+        {
+            Product prod = new Product("apple"),
+                prod2 = new Product("knife");
+            presenter.cart.contents.Add(prod);
+            presenter.addToCart(prod2);
+            Assert.AreEqual(2, presenter.cart.contents.Count, "There should be two products in the shopping cart.");
+        }
+    }
+```
+
+Insert comment here
+
+```cs
+    [TestClass]
+    class ShoppingCartTests
+    {
+        public ShoppingCart cart;
+
+        [TestInitialize]
+        public void setUp()
+        {
+            cart = new ShoppingCart();
+        }
+
+        [TestMethod]
+        public void TestAdd()
+        {
+            Product prod = new Product("apple");
+            cart.Add(prod);
+            Assert.AreEqual(cart.contents.Count, 1, "There should be only 1 item in the cart");
+        }
+
+        [TestMethod]
+        public void TestCorrectProductAdded()
+        {
+            Product prod = new Product("apple");
+            cart.Add(prod);
+            Assert.AreEqual(cart.contents[0].name, "apple", "A correct product should be added to the cart.");
+        }
+    }
+```
+
+Insert comment here
+
+```cs
+    [TestClass]
+    class FridgeTests
+    {
+        Fridge fridge;
+        [TestInitialize]
+        public void setUp()
+        {
+            fridge = new Fridge();
+        }
+
+        [TestMethod]
+        public void GetMonthlyOrdersTest()
+        {
+            Order order = new Order() { ordered = "2019/04/29", received = "2019/05/02" },
+                secondOrder = new Order() { ordered = "2019/04/29", received = "2019/04/30" };
+            fridge.owner.addOrder(order);
+            fridge.owner.addOrder(secondOrder);
+            int results = fridge.getMontlyOrders("2019/05").Count;
+            Assert.AreEqual(1, results, "Only one order should have been found.");
+        }
+
+        [TestMethod]
+        public void GetMonthlyProductsTest()
+        {
+            Product prod1 = new Product() { expires = "2019/04/05" },
+                prod2 = new Product() { expires = "2019/05/04" };
+            fridge.contents.Add(prod1);
+            fridge.contents.Add(prod1);
+            int result = fridge.getMontlyProducts("2019/05");
+            Assert.AreEqual(1, result, "Only one product should have been found.");
+        }
+    }
+```
+
+Insert comment here
 
 ## 4.2 Sistemos užduočių testai
 

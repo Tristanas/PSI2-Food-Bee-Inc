@@ -65,7 +65,8 @@ Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių 
 
 Robustiškumo diagramoje 1.2.1 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su grafine sąsaja, kurioje rodomi senstantys produktai.
 
-![Senstantys produktai - detalizuota sekų diagrama](./Nuotraukos/XSEQ-galiojimoLaikas.png "Fig. 1.2.2 - Senstantys produktai - detalizuota sekų diagrama")
+#### Detalizuota sekų diagrama
+![Senstantys produktai - detalizuota sekų diagrama](./Nuotraukos/uzicase.png "Fig. 1.2.2 - Senstantys produktai - detalizuota sekų diagrama")
 
 <!-- pagebreak -->
 ### 1.3. Produkto užsakymas per parduotuvę
@@ -97,6 +98,7 @@ Naudotojas lange "Dalinimasis" paspaudžia mygtuką "Atšaukti". Sistema pašali
 
 Robustiškumo diagramoje 1.4.1 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su šaldytuvo dalinimosi grafine sąsaja, bei veiklos, nusakančios kaip vartotojas į šią sąsają patenka iš šaldytuvo lango.
 
+#### Detalizuota sekų diagrama
 ![Šaldytuvo dalinimasis - detalizuota sekų diagrama](./Nuotraukos/XSEQSaldytuvoDalinimasis.png "Fig. 1.4.2 - Šaldytuvo dalinimasis - detalizuota sekų diagrama")
 
 <!-- pagebreak -->
@@ -116,7 +118,8 @@ Dėl kokių nors priežasčių pranešimo nepavyko nusiųsti. Sistema informuoj�
 
 Robustiškumo diagramoje 1.5.1 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su pokalbių langu, o vėliau galimai receptų dalinimosi langu bei pradinis atsiradimo pokalbių lange procesas.
 
-![Bendravimas tarp grupės narių - detalizuota sekų diagrama](./Nuotraukos/DSEQ 3.5 Bendravimas tarp grupės narių.png "Fig. 1.5.2 - Bendravimas tarp grupės narių - detalizuota sekų diagrama")
+#### Detalizuota sekų diagrama
+![Bendravimas tarp grupės narių - detalizuota sekų diagrama]("./Nuotraukos/DSEQ 3.5 Bendravimas tarp grupės narių.png" "Fig. 1.5.2 - Bendravimas tarp grupės narių - detalizuota sekų diagrama")
 
 <!-- pagebreak -->
 ### 1.6. Naudotojas atsiverčia kalendorių produktams peržiūrėti
@@ -136,7 +139,8 @@ Nepavyko rasti receptų pagal dienos produktus. Naudotojas lieka dienos produkt�
 
 Figūroje 1.6.1 pavaizduotoje robustiškumo diagramoje pavaizduotas pagrindinis užduoties scenarijus ir alternatyvieji per objektus. Naudotojas sąveikauja pirma su kalendoriaus langu, tada su dienos produktų, o šiame lange pasirinkęs gauti receptus - su receptų langu.
 
-![Produktų peržiūra kalendoriuje - detalizuota sekų diagrama](./Nuotraukos/DSeq-Kalendorius.png "Fig. 1.6.2 - Produktų peržiūra kalendoriuje - detalizuota sekų diagrama")
+#### Detalizuota sekų diagrama
+![Produktų peržiūra kalendoriuje - detalizuota sekų diagrama](./Nuotraukos/DSeq-Kalendorius.jpg "Fig. 1.6.2 - Produktų peržiūra kalendoriuje - detalizuota sekų diagrama")
 
 <!-- pagebreak -->
 ### 1.7. Reklamų rodymas  
@@ -157,6 +161,7 @@ Naudotojui paspaudus dešinį pelės mygtuką (arba ilgai palietus, jei naudojam
 
 Robustiškumo diagramoje 1.7.1 pavaizduotos kokios veiklų sekos vyksta sistemoje, kai vartotojas teigiamai arba neigiamai sąveikauja su reklama.
 
+#### Detalizuota sekų diagrama
 ![Reklamų rodymas - detalizuota sekų diagrama](./Nuotraukos/XSeqAds.png "Fig. 1.6.2 - Reklamų rodymas - detalizuota sekų diagrama")
 
 <!-- pagebreak -->

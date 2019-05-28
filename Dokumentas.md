@@ -66,7 +66,7 @@ Nėra jokių receptų, kuriuos būtų galima pagaminti iš šaldytuve esančių 
 Robustiškumo diagramoje 1.2.1 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su grafine sąsaja, kurioje rodomi senstantys produktai.
 
 #### Detalizuota sekų diagrama
-![Senstantys produktai - detalizuota sekų diagrama](./Nuotraukos/uzicase.png "Fig. 1.2.2 - Senstantys produktai - detalizuota sekų diagrama")
+![Senstantys produktai - detalizuota sekų diagrama](./Nuotraukos/XSEQ-Senstantys-produktai.png "Fig. 1.2.2 - Senstantys produktai - detalizuota sekų diagrama")
 
 <!-- pagebreak -->
 ### 1.3. Produkto užsakymas per parduotuvę
@@ -94,7 +94,7 @@ Naudotojas lange "Dalinimasis" paspaudžia mygtuką "Atšaukti". Sistema pašali
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![Šaldytuvo dalinimasis - robustiškumo diagrama](./Nuotraukos/RD-šaldytuvo-dalinimasis.png "Fig 1.4.1 - Šaldytuvo dalinimasis - robustiškumo diagrama")
+![Šaldytuvo dalinimasis - robustiškumo diagrama](./Nuotraukos/RD-šaldytuvo-dalinimasis.jpg "Fig 1.4.1 - Šaldytuvo dalinimasis - robustiškumo diagrama")
 
 Robustiškumo diagramoje 1.4.1 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su šaldytuvo dalinimosi grafine sąsaja, bei veiklos, nusakančios kaip vartotojas į šią sąsają patenka iš šaldytuvo lango.
 

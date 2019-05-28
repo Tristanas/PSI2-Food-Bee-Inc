@@ -119,7 +119,7 @@ Dėl kokių nors priežasčių pranešimo nepavyko nusiųsti. Sistema informuoj�
 Robustiškumo diagramoje 1.5.1 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su pokalbių langu, o vėliau galimai receptų dalinimosi langu bei pradinis atsiradimo pokalbių lange procesas.
 
 #### Detalizuota sekų diagrama
-![Bendravimas tarp grupės narių - detalizuota sekų diagrama](./Nuotraukos/XSEQ-Bendravimas.png "Fig. 1.5.2 - Bendravimas tarp grupės narių - detalizuota sekų diagrama")
+![Bendravimas tarp grupės narių - detalizuota sekų diagrama](./Nuotraukos/XSEQ-Bendravimas.jpg "Fig. 1.5.2 - Bendravimas tarp grupės narių - detalizuota sekų diagrama")
 
 <!-- pagebreak -->
 ### 1.6. Naudotojas atsiverčia kalendorių produktams peržiūrėti

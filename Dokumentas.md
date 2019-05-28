@@ -703,6 +703,9 @@ Pagal išsidėstymo diagramą (5.2 figūra) numatoma, kad serveryje veiks Window
 
 # 6.1 Duomenų bazės schema
 
+![Schema](./Nuotraukos/uzidatabasescheme.png "Schema")
+
+
 Placeholder for diagrama.
 
 Placeholder for aprashymas.

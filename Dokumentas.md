@@ -68,6 +68,8 @@ Robustiškumo diagramoje 1.2.1 pavaizduotos kokios veiklos vyksta sistemoje, kai
 #### Detalizuota sekų diagrama
 ![Senstantys produktai - detalizuota sekų diagrama](./Nuotraukos/XSEQ-Senstantys-produktai.png "Fig. 1.2.2 - Senstantys produktai - detalizuota sekų diagrama")
 
+Detalizuotoje sekų diagramoje 1.2.2 pavaizduoti žingsniai kuriuos vykdo kiekvienas elementas atliekant šį scenarijų.
+
 <!-- pagebreak -->
 ### 1.3. Produkto užsakymas per parduotuvę
 
@@ -101,6 +103,8 @@ Robustiškumo diagramoje 1.4.1 pavaizduotos kokios veiklos vyksta sistemoje, kai
 #### Detalizuota sekų diagrama
 ![Šaldytuvo dalinimasis - detalizuota sekų diagrama](./Nuotraukos/XSEQSaldytuvoDalinimasis.png "Fig. 1.4.2 - Šaldytuvo dalinimasis - detalizuota sekų diagrama")
 
+Detalizuotoje sekų diagramoje 1.4.2 pavaizduoti žingsniai kuriuos vykdo kiekvienas elementas atliekant šį scenarijų.
+
 <!-- pagebreak -->
 ### 1.5. Naudotojas bendrauja su kitais grupės nariais per pranešimus
 
@@ -120,6 +124,8 @@ Robustiškumo diagramoje 1.5.1 pavaizduotos kokios veiklos vyksta sistemoje, kai
 
 #### Detalizuota sekų diagrama
 ![Bendravimas tarp grupės narių - detalizuota sekų diagrama](./Nuotraukos/XSEQ-Bendravimas.jpg "Fig. 1.5.2 - Bendravimas tarp grupės narių - detalizuota sekų diagrama")
+
+Detalizuotoje sekų diagramoje 1.5.2 pavaizduoti žingsniai kuriuos vykdo kiekvienas elementas atliekant šį scenarijų.
 
 <!-- pagebreak -->
 ### 1.6. Naudotojas atsiverčia kalendorių produktams peržiūrėti
@@ -142,6 +148,8 @@ Figūroje 1.6.1 pavaizduotoje robustiškumo diagramoje pavaizduotas pagrindinis 
 #### Detalizuota sekų diagrama
 ![Produktų peržiūra kalendoriuje - detalizuota sekų diagrama](./Nuotraukos/XSEQ-Kalendorius.jpg "Fig. 1.6.2 - Produktų peržiūra kalendoriuje - detalizuota sekų diagrama")
 
+Detalizuotoje sekų diagramoje 1.6.2 pavaizduoti žingsniai kuriuos vykdo kiekvienas elementas atliekant šį scenarijų.
+
 <!-- pagebreak -->
 ### 1.7. Reklamų rodymas  
 
@@ -163,6 +171,8 @@ Robustiškumo diagramoje 1.7.1 pavaizduotos kokios veiklų sekos vyksta sistemoj
 
 #### Detalizuota sekų diagrama
 ![Reklamų rodymas - detalizuota sekų diagrama](./Nuotraukos/XSEQ-Ads.png "Fig. 1.6.2 - Reklamų rodymas - detalizuota sekų diagrama")
+
+Detalizuotoje sekų diagramoje 1.7.2 pavaizduoti žingsniai kuriuos vykdo kiekvienas elementas atliekant šį scenarijų.
 
 <!-- pagebreak -->
 # 2. Sistemos struktūra

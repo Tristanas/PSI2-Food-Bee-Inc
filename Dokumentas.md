@@ -292,9 +292,9 @@ funkcionalumo. Apie neištestuotą funkcionalumą turi būti informuoti atsaking
 testavimas yra sėkmingas, jei buvo neaptiktos aukšto lygio klaidos. Vidutinio lygio klaidų ne
 daugiau kaip 10% ir žemo lygio klaidų ne daugiau kaip 60%.
 
-## 4.1 Programinių vienetų testai
+## 4.2 Programinių vienetų testai
 
-### 4.1.1 Šaldytuvo Dalinimosi užduoties vienetų testai
+### 4.2.1 Šaldytuvo Dalinimosi užduoties vienetų testai
 
 Šioje testų klasėje testuojamas naudotojų atradimo metodas bei vartotojų pakvietimo metodas. Taip pat testuojami DBService metodai(FindUser() ir GetProduktai()) susiję su šiomis užduotimis.
 
@@ -387,7 +387,7 @@ public class DBServiceTests
 }
 ```
 
-### 4.1.3 "Kalendoriaus naudojimo produktų peržiūrai" užduoties vienetų testai
+### 4.2.3 "Kalendoriaus naudojimo produktų peržiūrai" užduoties vienetų testai
 
 Testuojamos klasės: 
 >Fridge
@@ -549,11 +549,11 @@ Testavimo klasė patikrina, ar DayProductsPresenter metodas "addToCart", kuris t
 
 Paskutinė užduoties testavimo klasė turi du metodus, kuriais patikrina, ar yra randami atitinkami užsakymai ir produktai, nurodžius mėnesį, kada buvo užsakymas atliktas ar produktas baigs galioti.
 
-## 4.2 Sistemos užduočių testai
+## 4.3 Sistemos užduočių testai
 
 *Čia bus išvardintos užduotys, jas atitinkantys testavimo atvejai ir šiuos sudarantys testavimo scenarijai. Šalia kiekvieno testavimo atvejo, galima (ir patartina) pateikti testavimo klasės kodą.*
 
-### 4.2.1 Šaldytuvo dalinimasis
+### 4.3.1 Šaldytuvo dalinimasis
 Pradinės salygos: Naudotojas prisijungęs ir yra "Dalinimasis" lange.
 
 TC 1: Įvesti egzistuojančius kito naudotojo duomenis į ieškojimo lauką
@@ -568,7 +568,7 @@ TC 3: Pažymėti norimus pakviesti naudotojus ir spausti mygtuką "Dalintis"
 TC 4: Spausti mygtuką "Atšaukti"
 **Laukiamas rezultatas**: Lange "Dalinimasis" išsaugoti duomenys pašalinami ir atidaromas langas "Šaldytuvas".
 
-### 4.2.2 Bendravimas su grupe
+### 4.3.2 Bendravimas su grupe
  **Pradinės salygos**: Naudotojas prisijungęs ir yra lange „Pokalbiai“.
 
 TC 1: Paspausti "Siųsti pranešimą". **Laukiamas rezultatas**: Iš duomenų bazės gaunami esamos grupės nariai. Jie atvaizduojami lange "Pokalbiai". Sukuriamas naujas pranešimo objektas su tuščiu adresatų sąrašu.
@@ -603,7 +603,7 @@ TC 8.1: Sisteminio pranešimo lange spausti „Siųsti iš naujo“.
 TC 8.2: Sisteminio pranešimo lange spausti „atšaukti“. 
 **Laukiamas rezultatas**: Uždaromas sisteminio pranešimo langas.
 
-## 4.2.3 Produktų peržiūra naudojantis kalendoriumi
+## 4.3.3 Produktų peržiūra naudojantis kalendoriumi
 
 **Pradinės sąlygos**: Naudotojas yra registruotas ir prisijungęs.
 
@@ -638,7 +638,7 @@ TC 7 Lange "dienos produktai" spausti grįžti.
 TC 8 Pasirinkti kokį nors kitą mėnesį nei dabartinis. 
 **Laukiamas rezultatas**: sistema pavaizduoja to mėnesio produktus pagal pasirinktą metriką.
 
-## 4.2.4 Reklamų rodymas
+## 4.3.4 Reklamų rodymas
 
 Pradinės sąlygos: Naudotojas yra registruotas.
 

@@ -68,6 +68,8 @@ Robustiškumo diagramoje 1.2.1 pavaizduotos kokios veiklos vyksta sistemoje, kai
 #### Detalizuota sekų diagrama
 ![Senstantys produktai - detalizuota sekų diagrama](./Nuotraukos/XSEQ-Senstantys-produktai.png "Fig. 1.2.2 - Senstantys produktai - detalizuota sekų diagrama")
 
+Detalizuotoje sekų diagramoje 1.2.2 pavaizduoti žingsniai kuriuos vykdo kiekvienas elementas atliekant šį scenarijų. Sekų diagrama prasideda, kai atsidaro senstančių produktų langas ir baigiasi, kai naudotojas arba panaudoja produktus recepte, arba juos pašalina iš šaldytuvo.
+
 <!-- pagebreak -->
 ### 1.3. Produkto užsakymas per parduotuvę
 
@@ -94,12 +96,14 @@ Naudotojas lange "Dalinimasis" paspaudžia mygtuką "Atšaukti". Sistema pašali
 
 <!-- pagebreak -->
 #### Robustiškumo diagrama
-![Šaldytuvo dalinimasis - robustiškumo diagrama](./Nuotraukos/RD-šaldytuvo-dalinimasis.jpg "Fig 1.4.1 - Šaldytuvo dalinimasis - robustiškumo diagrama")
+![Šaldytuvo dalinimasis - robustiškumo diagrama](./Nuotraukos/RD-šaldytuvo-dalinimasis.png "Fig 1.4.1 - Šaldytuvo dalinimasis - robustiškumo diagrama")
 
 Robustiškumo diagramoje 1.4.1 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su šaldytuvo dalinimosi grafine sąsaja, bei veiklos, nusakančios kaip vartotojas į šią sąsają patenka iš šaldytuvo lango.
 
 #### Detalizuota sekų diagrama
 ![Šaldytuvo dalinimasis - detalizuota sekų diagrama](./Nuotraukos/XSEQSaldytuvoDalinimasis.png "Fig. 1.4.2 - Šaldytuvo dalinimasis - detalizuota sekų diagrama")
+
+Detalizuotoje sekų diagramoje 1.4.2 pavaizduoti žingsniai kuriuos vykdo kiekvienas elementas atliekant šį scenarijų. Sekų diagrama prasideda, kai vartotojas paspaudžia "dalintis" ir atidaromas dalinimosi langas, tada naudotojas pasirenka kitus naudotojus, su kuriais dalintis ir jiems išsiunčia pakvietimus.
 
 <!-- pagebreak -->
 ### 1.5. Naudotojas bendrauja su kitais grupės nariais per pranešimus
@@ -119,7 +123,9 @@ Dėl kokių nors priežasčių pranešimo nepavyko nusiųsti. Sistema informuoj�
 Robustiškumo diagramoje 1.5.1 pavaizduotos kokios veiklos vyksta sistemoje, kai vartotojas sąveikauja su pokalbių langu, o vėliau galimai receptų dalinimosi langu bei pradinis atsiradimo pokalbių lange procesas.
 
 #### Detalizuota sekų diagrama
-![Bendravimas tarp grupės narių - detalizuota sekų diagrama](./Nuotraukos/XSEQ-Bendravimas.png "Fig. 1.5.2 - Bendravimas tarp grupės narių - detalizuota sekų diagrama")
+![Bendravimas tarp grupės narių - detalizuota sekų diagrama](./Nuotraukos/XSEQ-Bendravimas.jpg "Fig. 1.5.2 - Bendravimas tarp grupės narių - detalizuota sekų diagrama")
+
+Detalizuotoje sekų diagramoje 1.5.2 pavaizduoti žingsniai kuriuos vykdo kiekvienas elementas atliekant šį scenarijų. Sekų diagrama prasideda naudotojui nunavigavus į pokalbių langą, kur jis pasirenka su kuo nori bendrauti bei ką jiems išsiųsti, ir baigiasi kai pranešimas yra išsiųstas (sėkmingai arba su klaidomis, kurios atskyrai yra tvarkomos).
 
 <!-- pagebreak -->
 ### 1.6. Naudotojas atsiverčia kalendorių produktams peržiūrėti
@@ -142,6 +148,8 @@ Figūroje 1.6.1 pavaizduotoje robustiškumo diagramoje pavaizduotas pagrindinis 
 #### Detalizuota sekų diagrama
 ![Produktų peržiūra kalendoriuje - detalizuota sekų diagrama](./Nuotraukos/XSEQ-Kalendorius.jpg "Fig. 1.6.2 - Produktų peržiūra kalendoriuje - detalizuota sekų diagrama")
 
+Detalizuotoje sekų diagramoje 1.6.2 pavaizduoti žingsniai kuriuos vykdo kiekvienas elementas atliekant šį scenarijų. Sekų diagrama prasideda naudotojui atsidarius kalendoriaus langą, kur yra keli veiklų pasirinkimai: surikiuoti ir filtruoti rodomus produktus pagal norimus kriterijus, užsakyti daugiau produktų bei gaminti receptus.
+
 <!-- pagebreak -->
 ### 1.7. Reklamų rodymas  
 
@@ -163,6 +171,8 @@ Robustiškumo diagramoje 1.7.1 pavaizduotos kokios veiklų sekos vyksta sistemoj
 
 #### Detalizuota sekų diagrama
 ![Reklamų rodymas - detalizuota sekų diagrama](./Nuotraukos/XSEQ-Ads.png "Fig. 1.6.2 - Reklamų rodymas - detalizuota sekų diagrama")
+
+Detalizuotoje sekų diagramoje 1.7.2 pavaizduoti žingsniai kuriuos vykdo kiekvienas elementas atliekant šį scenarijų. Sekų diagrama prasideda, pradedant rodyti bent kurį iš produktus rodančių langų (šaldytuvo arba parduotuvės), kai yra atvaizduojami produktai ir reklamos, su kuriomis tada vartotojas gali sąveikauti: sekti reklamą, spausti "x" ant reklamos, arba pranešti reklamą.
 
 <!-- pagebreak -->
 # 2. Sistemos struktūra
@@ -688,6 +698,9 @@ Pagal išsidėstymo diagramą (5.2 figūra) numatoma, kad serveryje veiks Window
 [Sistemos realizacija](#6-sistemos-realizacija)
 
 # 6.1 Duomenų bazės schema
+
+![Schema](./Nuotraukos/uzidatabasescheme.png "Schema")
+
 
 Placeholder for diagrama.
 

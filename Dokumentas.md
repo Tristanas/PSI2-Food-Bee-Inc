@@ -257,9 +257,9 @@ darbas.
 **Laukiami testų rezultatai**
 
 Testo rezultatas vertinamas tokiais apibūdinimais:
-• Sėkmingas. Testavimo scenarijus išpildytas idealiai arba su minimaliais komentarais.
-• Dalinai sėkmingas. Testavimo scenarijus išpildytas su komentarais apie būtinus pataisymus.
-• Nesėkmingas. Testavimo scenarijaus didžioji dalis neišpildyta.
+- Sėkmingas. Testavimo scenarijus išpildytas idealiai arba su minimaliais komentarais.
+- Dalinai sėkmingas. Testavimo scenarijus išpildytas su komentarais apie būtinus pataisymus.
+- Nesėkmingas. Testavimo scenarijaus didžioji dalis neišpildyta.
 
 **Defektų valdymo priemonės ir metodai**
 
@@ -271,11 +271,11 @@ kritinė klaida ir jo testavimas yra nukeliamas, kol tai yra įmanoma padaryti.
 **Defektų klasifikavimo strategija**
 
 Defektai klasifikuojami pagal jų įtaką projekto produktui:
-• Aukštas - stipriai daro įtaką funkcinėms produkto savybėms, dėl kurių funkcionalumas nėra
+- Aukštas - stipriai daro įtaką funkcinėms produkto savybėms, dėl kurių funkcionalumas nėra
 išpildomas.
-• Vidutinis - vidutiniškai daro įtaką funkcinėms produkto savybėms, dėl kurių
+- Vidutinis - vidutiniškai daro įtaką funkcinėms produkto savybėms, dėl kurių
 funkcionalumas yra išpildomas tik dalinai.
-• Žemas – nedideli netikslumai.
+- Žemas – nedideli netikslumai.
 
 **Defekto uždarymo strategija**
 

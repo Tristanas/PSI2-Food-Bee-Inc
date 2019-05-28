@@ -192,13 +192,10 @@ Klasių ir reikalavimų matricoje (figūra 2.3) nurodomi sąryšiai tarp užsako
 <!-- pagebreak -->
 # 3 Detalaus projektavimo peržiūra
 
-## Pakeitimai:
-Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek robustiškumo diagramos. Robustiškumo diagramas taisyti tik tada, kai žymiai keičiasi UC tekstas.
+Peržiūros metu komandos nariai apsikeitė projektuotomis užduotimis ir tikrino kitų darbą remdamiesi 10 peržiūros punktų iš vadovėlio "Use case driven object modeling with UML". Komandos nariai pastebėjo neišspręstas esmines projektines problemas ir pradėjo diskusijas, kurių metu buvo priimti projektinių sprendimų pakeitimai. Toliau pakeitimai pagal užduočių scenarijus.
 
 ## 3.1 Pranešimas dėl senstančių produktų
 - Sekų diagrama pakeista taip, kad joje matytųsi, kad presenteriai sukuria langų, su kuriais vartotojas dirba, instancijas ir juos pavaizduoja.
-- .
-
 
 ## 3.2 Dalinimasis šaldytuvu
 - Iš užduoties scenarijaus pašalintas pranešimo gavimas, kai pakvietas vartotojas priima kvietimą, ir tai perkelta į "Kvietimo Priėmimo" užduoties scenarijų
@@ -226,18 +223,18 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 
 ## 3.5 Reklamų peržiūra
 - Pakeista robustiškumo diagrama: nupigintos prekės pridėjimas į krepšelį perduotas kitam užduoties scenarijui; patikslinta, kad nukreipiant į 3 šalies reklamos turinį dalyvauja kitas aktorius; patikslinta, kad sis. administratoriai ir reklamos tiekėjai mato pranešimus apie netinkamą reklamą informaciniame lange.
-- .
 
 ## 3.6 Pakeisti projektiniai sprendimai
-- Nuspresta iš MVC architektūros pereiti prie MVP, nes MVP labiau priimtina komandai, nes turime daugiau patirties, ir dažniau taikoma praktikoje
-- Nuspresta programuoti anglų kalba, nes ši kalba labiau unifikuota
-- Nuspresta vietoje daug "Event Handler" naudoti tik vieną "Event Handler" kiekvienam GUI elementui, kuris kviečia sistemos logiką ("Sanity check" rezultatas, dalyvavo programuotojai)
--
+- Nuspręsta iš MVC architektūros pereiti prie MVP, nes MVP labiau priimtina komandai, nes turime daugiau patirties, ir dažniau taikoma praktikoje
+- Nuspręsta programuoti anglų kalba, nes ši kalba labiau unifikuota
+- Nuspręsta vietoje daug "Event Handler" naudoti tik vieną "Event Handler" kiekvienam GUI elementui, kuris kviečia sistemos logiką ("Sanity check" rezultatas, dalyvavo programuotojai)
+- Nuspręsta naudoti NTP serverius (network time protocol), kad klientai galėtų sinchronizuotis su serveriu ir gauti pranešimus realiu laiku.
 
 ## 3.7 Pokyčiai statinei struktūrai
 - ICalendarGUI papildytas dviem metodais: displayOrders(Order[]) ir displayProducts(ProductList).
 - DayProductsPresenter papildytas metodu openRecipesWindow(Recipe[]), kuris atidaro receptų langą su nurodytais receptais.
 - Sudėti trūkstami grąžinami tipai prie klasių operacijų.
+
 <!-- pagebreak -->
 # 4. Testavimo planas ir scenarijai
 
@@ -245,8 +242,7 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 
 **Tikslas**
 
-Rasti su funkciniais reikalavimais susijusius defektus kaip įmanoma anksčiau ir kokybiškai bei
-laiku ištaisyti.
+Rasti su funkciniais reikalavimais susijusius defektus kaip įmanoma anksčiau ir kokybiškai bei laiku ištaisyti.
 
 **Testavimo būdai ir prielaidos**
 

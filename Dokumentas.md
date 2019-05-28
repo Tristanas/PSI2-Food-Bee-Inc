@@ -226,7 +226,56 @@ Kiekviename punkte surašote pataisymus, tiek teksto, tiek sekų diagramos, tiek
 <!-- pagebreak -->
 # 4. Testavimo planas ir scenarijai
 
-*Čia bus užrašytas testavimo planas: kaip užtikrinsime sistemos testuojamumą ir testų korektiškumą. (testų siejimas su reikalavimais ir užduotimis)*
+## 4.1 Testavimo planas
+
+**Tikslas**
+
+Rasti su funkciniais reikalavimais susijusius defektus kaip įmanoma anksčiau ir kokybiškai bei
+laiku ištaisyti.
+
+**Testavimo būdai ir prielaidos**
+
+Testuojant sistemą bus atliekamas funkcinis testavimas, remiantis parašytais testavimo scenarijais,
+kuris atitiks ir „acceptance“ testavimą. Taip pat šiuo testavimu bus patikrintas bendras sistemos
+darbas.
+
+**Laukiami testų rezultatai**
+
+Testo rezultatas vertinamas tokiais apibūdinimais:
+• Sėkmingas. Testavimo scenarijus išpildytas idealiai arba su minimaliais komentarais.
+• Dalinai sėkmingas. Testavimo scenarijus išpildytas su komentarais apie būtinus pataisymus.
+• Nesėkmingas. Testavimo scenarijaus didžioji dalis neišpildyta.
+
+**Defektų valdymo priemonės ir metodai**
+
+Visi randami defektai yra fiksuojami ir aprašomi. Tada jie yra registruojami į defektų registravimo
+sistemą. Užregistravus defektą, pranešimas su defekto aprašu yra automatiškai išsiunčiamas
+atsakingiems žmonėms. Reikalavimas, kurio testavimas nėra įmanomas, yra pažymimas kaip
+kritinė klaida ir jo testavimas yra nukeliamas, kol tai yra įmanoma padaryti.
+
+**Defektų klasifikavimo strategija**
+
+Defektai klasifikuojami pagal jų įtaką projekto produktui:
+• Aukštas - stipriai daro įtaką funkcinėms produkto savybėms, dėl kurių funkcionalumas nėra
+išpildomas.
+• Vidutinis - vidutiniškai daro įtaką funkcinėms produkto savybėms, dėl kurių
+funkcionalumas yra išpildomas tik dalinai.
+• Žemas – nedideli netikslumai.
+
+**Defekto uždarymo strategija**
+
+Defektas uždaromas tik tokiu atveju jeigu defektą registravęs asmuo patikrina ar jis išspręstas.
+
+**Sėkmingo arba nesėkmingo testavimo kriterijai**
+
+Testavimo scenarijaus gautas rezultatas yra laikomas sėkmingu, jei jis yra įvykdytas be klaidų
+arba su keliomis žemo lygio klaidomis.
+
+Etapo testavimas yra laikomas sėkmingu, jei testavimo metu nėra rasta aukšto lygio klaidų ir
+testuojamas funkcionalumas padengia didžiąją dalį (>70%) suplanuoto testuoti skirto
+funkcionalumo. Apie neištestuotą funkcionalumą turi būti informuoti atsakingi žmonės. Projekto
+testavimas yra sėkmingas, jei buvo neaptiktos aukšto lygio klaidos. Vidutinio lygio klaidų ne
+daugiau kaip 10% ir žemo lygio klaidų ne daugiau kaip 60%.
 
 ## 4.1 Programinių vienetų testai
 
@@ -539,7 +588,7 @@ TC 8.1: Sisteminio pranešimo lange spausti „Siųsti iš naujo“.
 TC 8.2: Sisteminio pranešimo lange spausti „atšaukti“. 
 **Laukiamas rezultatas**: Uždaromas sisteminio pranešimo langas.
 
-## 4.2.4 Produktų peržiūra naudojantis kalendoriumi
+## 4.2.3 Produktų peržiūra naudojantis kalendoriumi
 
 **Pradinės sąlygos**: Naudotojas yra registruotas ir prisijungęs.
 
@@ -574,7 +623,7 @@ TC 7 Lange "dienos produktai" spausti grįžti.
 TC 8 Pasirinkti kokį nors kitą mėnesį nei dabartinis. 
 **Laukiamas rezultatas**: sistema pavaizduoja to mėnesio produktus pagal pasirinktą metriką.
 
-## 4.2.5 Reklamų rodymas
+## 4.2.4 Reklamų rodymas
 
 Pradinės sąlygos: Naudotojas yra registruotas.
 

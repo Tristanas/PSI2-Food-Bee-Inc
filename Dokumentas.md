@@ -574,6 +574,36 @@ TC 7 Lange "dienos produktai" spausti grįžti.
 TC 8 Pasirinkti kokį nors kitą mėnesį nei dabartinis. 
 **Laukiamas rezultatas**: sistema pavaizduoja to mėnesio produktus pagal pasirinktą metriką.
 
+## 4.2.5 Reklamų rodymas
+
+Pradinės sąlygos: Naudotojas yra registruotas.
+
+TC 1 Prisijungti prie programos su registruota naudotojo paskyra. Laukiamas rezultatas: sistema gauna naudotojo šaldytuve esančius produktus ir naudotojo nepraneštas reklamas, atidaromas langas "šaldytuvas" ir jame atvaizduojami produktai bei kartais įterpiamos reklamos.
+
+TC 2 Paspausti "Parduotuvė". Laukiamas rezultatas: sistema gauna parduotuvėje esančius produktus ir naudotojo nepraneštas reklamas, atidaromas langas "Parduotuvė" ir jame atvaizduojami produktai bei kartais įterpiamos reklamos.
+
+TC 3.1 **Papildoma sąlyga**: Reklama yra 3 šalies nuoroda. **Scenarijus**: paspausti ant reklamos. Laukiamas rezultatas: atidaroma reklamos nuoroda numatytoje įrenginio naršyklėje.
+
+TC 3.2 **Papildoma sąlyga**: Reklama yra produktas sistemoje. **Scenarijus**: paspausti ant reklamos. Laukiamas rezultatas: atidaromas langas pridėti reklamuojamą produktą į krepšelį.
+
+TC 4 Paspausti mygtuką "x" reklamoje. Laukiamas rezultatas: reklamos atvaizdavimas dingsta, likę atvaizduojami elementai "sugriūva" į reklamos vietą, jokių kitų pokyčių neįvyksta.
+
+TC 4.1 Perkrauti programą arba kitaip atnaujinti langą. Laukiamas rezultatas: reklama ant kurios buvo paspausta "x" gali pasirodyti vėl.
+
+TC 5  **Papildoma sąlyga**: Reklama yra 3 šalies nuoroda. **Scenarijus**: paspausti ant reklamos dešiniuoju pelės mygtuku (arba ilgai paspausti mobiliajame įrenginyje). Laukiamas rezultatas: atidaromas kontekstinis meniu su pasirinkimu "Pranešti apie netinkamą reklamos turinį".
+
+TC 5.1 Paspausti ne kontekstinio meniu ribose. Laukiamas rezultatas: kontekstinis meniu uždaromas.
+
+TC 5.2 Kontekstiame meniu paspausti "Pranešti apie netinkamą reklamos turinį". Laukiamas rezultatas: kontekstinis meniu užsidaro, atsidaro reklamos pranešimo dialogas.
+
+TC 5.2.1 **Papildoma sąlyga**: Dialogo priežasties teksto įvedimo lauke neįvestas tekstas. **Scenarijus**: paspausti "Patvirtinti pranešimą". Laukiamas rezultatas: dialogo priežasties teksto įvedimo laukas įgauna raudonus kraštus, dialoge atsiranda tekstas, paaiškinantis kad priežastis yra reikalinga, jokių kitų pokyčių neįvyksta.
+
+TC 5.2.2 Dialoge paspausti atšaukti, arba paspausti ne dialogo ribose. Laukiamas rezultatas: dialogas uždaromas, jokių kitų pokyčių neįvyksta.
+
+TC 5.2.3 **Papildoma sąlyga**: Dialogo priežasties teksto įvedimo lauke įvestas tekstas. **Scenarijus**: paspausti "Patvirtinti pranešimą". Laukiamas rezultatas: dialogas užsidaro, produktus rodančiuose languose pašalinamas praneštos reklamos atvaizdavimas, o kiti atvaizduojami elementai "sugriūva" į reklamos vietą; sistema duomenų bazėje išsaugo reklamos išimtį naudotojui; sistema apie pranešimą išsiunčia žinutę sistemos administratoriui ir reklamos tiekėjui, kurie gali tą žinutę peržiūrėti informaciniame lange.
+
+TC 5.2.3.1 Perkrauti programą, kitaip atnaujinti langą arba prisijungti prie naudotojo paskyros kitame įrenginyje. Laukiamas rezultatas: pranešta reklama nebepasirodo.
+
 
 <!-- pagebreak -->
 # 5. Sistemos techninė architektūra
